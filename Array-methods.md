@@ -190,4 +190,4 @@ var drinkStr = drinks.join ( " | " )
 ```
 ***
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSe92DgUQdU74tDBUpZpBp-15AhMfYa8vSamEEN0vzpGHcpKPg/viewform)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScAPm8aCdd7p86BkYFo9-mgsPtsgaaafv8zCz6RB58G47Skmg/viewform)
