@@ -3,6 +3,7 @@
 #### Занятие 1
 >##### 🎓 [Введение](https://github.com/garevna/js-samples/wiki/introduction)
 >##### 🎓 [Блок-схема алгоритма](https://github.com/garevna/js-samples/wiki/Block-diagram)
+>##### 🎓 [Developer Tools](https://github.com/garevna/js-course/wiki/developer-tools)
 >##### 🎓 [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
 ***
 #### Занятие 2
