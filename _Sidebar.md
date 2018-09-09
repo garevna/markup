@@ -5,7 +5,8 @@
 >##### 🎓 [Блок-схема алгоритма](https://github.com/garevna/js-samples/wiki/Block-diagram)
 >##### 🎓 [Developer Tools](https://github.com/garevna/js-course/wiki/developer-tools)
 >##### 🎓 [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
->##### 🎓 [Типы данных](https://github.com/garevna/js-course/wiki/data-types)
+>##### 🎓 [Переменные](https://github.com/garevna/js-course/wiki/data-types)
+>##### 🎓 [Оператор typeof](https://github.com/garevna/js-course/wiki/typeof)
 ***
 #### Занятие 2
 >>##### 🎓 [Консоль браузера](https://github.com/garevna/js-samples/wiki/Developer-Tools)
