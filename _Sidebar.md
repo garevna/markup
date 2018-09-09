@@ -16,7 +16,6 @@
 >>##### 🎓 [Оператор цикла for](https://github.com/garevna/js-course/wiki/for)
 >>##### 🎓 [UTF-8](https://github.com/garevna/js-course/wiki/UTF-8)
 >##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform "открывайте в новой вкладке")
->##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform "открывайте в новой вкладке")
 ***
 #### Занятие 2
 >>##### 🎓 [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
