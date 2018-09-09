@@ -1,8 +1,9 @@
 ## JS
-### [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLSeNLyw2szKvsNyp4pHBzxySGKJHtB5bZKo_x76vTL5UCfwG2g/viewform)
+### [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
 #### Занятие 1
 >##### 🎓 [Введение](https://github.com/garevna/js-samples/wiki/introduction)
 >##### 🎓 [Блок-схема алгоритма](https://github.com/garevna/js-samples/wiki/Block-diagram)
+>##### 🎓 [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
 ***
 #### Занятие 2
 >>##### 🎓 [Консоль браузера](https://github.com/garevna/js-samples/wiki/Developer-Tools)
