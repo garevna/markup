@@ -238,4 +238,4 @@ console.log ( typeof x)    // в консоли будет    "string"
 
         ✅ Object
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScO1DQE9Wjqjd33GnLBdZgWixEaSexuUvsW5kYf6ePUxCPZuw/viewform)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform)
