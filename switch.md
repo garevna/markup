@@ -24,5 +24,5 @@ switch ( season ) {
                 break
 }
 ```
-
+[☕ Пример в песочнице](https://jsfiddle.net/garevna/g4roemnL/27/)
 [🔗 w3schools](https://www.w3schools.com/js/js_switch.asp)
