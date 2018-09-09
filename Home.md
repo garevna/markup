@@ -2,4 +2,4 @@
 
 # Client-side JS
 
-### courseware for my students learning JS
+### courseware for students learning JS
