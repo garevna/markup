@@ -29,9 +29,9 @@
 * [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScjvjZHFdWxpvarXwPBzJr0Wkndnziw1zR1reul5yASN0LkBA/viewform)
 * [Методы строк](https://github.com/garevna/js-course/wiki/Strings-methods)
-* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSew34gOiFVTzk3zRFNA6X7v9lN73OR7XP3duwE01LlIrJ_5Lg/viewform)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScw7PF5eUGBDPDO8ppoqQ3XVJxbM52_hofcZuaWmKHaRjP9Eg/viewform)
 * [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
-* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSe92DgUQdU74tDBUpZpBp-15AhMfYa8vSamEEN0vzpGHcpKPg/viewform )
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScAPm8aCdd7p86BkYFo9-mgsPtsgaaafv8zCz6RB58G47Skmg/viewform )
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
 
 ***
