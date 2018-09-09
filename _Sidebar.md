@@ -20,11 +20,13 @@
 ***
 #### Занятие 2
 >>##### 🎓 [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
+>>##### 🎓 [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
 >##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform "открывайте в новой вкладке")
 >>##### 🎓 [Функции](https://github.com/garevna/js-course/wiki/function)
+>##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfhSiifjcwm7tLhcQftjAXByl-O93y3o31i91wAMr-uvi-MzQ/viewform "открывайте в новой вкладке")
 >>##### 🎓 []()
 
->##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfjTMY7jF_kLLHzrE5bwhxOX7gUpbZ-M3mNv9fdFVvkf3K0Tg/viewform "открывайте в новой вкладке")
+
 ##### 💼 [Homework](https://github.com/garevna/js-course/wiki/hw-02)
 ***
 #### Занятие 3
