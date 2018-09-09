@@ -24,6 +24,8 @@ switch ( season ) {
                 break
 }
 ```
-[☕ Пример в песочнице](https://jsfiddle.net/garevna/g4roemnL/27/)
+### [☕ Пример в песочнице](https://jsfiddle.net/garevna/g4roemnL/27/)
+
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScjvjZHFdWxpvarXwPBzJr0Wkndnziw1zR1reul5yASN0LkBA/viewform)
 
 [🔗 w3schools](https://www.w3schools.com/js/js_switch.asp)
