@@ -20,16 +20,15 @@
   * 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdsKuS6kG1r5O3H62G_m32NK8a88jmFmJ5e4N2uAiDLAb31xQ/viewform)
 ***
 #### Занятие 2
-
-##### 🎓 [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
-##### 🎓 [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
-##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
-##### 🎓 [Функции](https://github.com/garevna/js-course/wiki/function)
-##### 🎓 [Методы](https://github.com/garevna/js-course/wiki/method)
-##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfhSiifjcwm7tLhcQftjAXByl-O93y3o31i91wAMr-uvi-MzQ/viewform)
-##### 🎓 [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
-##### 💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScjvjZHFdWxpvarXwPBzJr0Wkndnziw1zR1reul5yASN0LkBA/viewform)
-##### 💼 [Homework](https://github.com/garevna/js-course/wiki/hw-02)
+* [🎓 Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
+* [🎓 NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
+* [🎓 Функции](https://github.com/garevna/js-course/wiki/function)
+* [🎓 Методы](https://github.com/garevna/js-course/wiki/method)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfhSiifjcwm7tLhcQftjAXByl-O93y3o31i91wAMr-uvi-MzQ/viewform)
+* [🎓 Оператор switch](https://github.com/garevna/js-course/wiki/switch)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScjvjZHFdWxpvarXwPBzJr0Wkndnziw1zR1reul5yASN0LkBA/viewform)
+* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
 
 ***
 #### Занятие 3
