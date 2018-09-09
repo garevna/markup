@@ -28,6 +28,10 @@
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfhSiifjcwm7tLhcQftjAXByl-O93y3o31i91wAMr-uvi-MzQ/viewform)
 * [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScjvjZHFdWxpvarXwPBzJr0Wkndnziw1zR1reul5yASN0LkBA/viewform)
+* [Методы строк](https://github.com/garevna/js-course/wiki/Strings-methods)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSew34gOiFVTzk3zRFNA6X7v9lN73OR7XP3duwE01LlIrJ_5Lg/viewform)
+* [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSe92DgUQdU74tDBUpZpBp-15AhMfYa8vSamEEN0vzpGHcpKPg/viewform )
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
 
 ***
@@ -36,10 +40,6 @@
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 #### Занятие 4
-* [Методы строк](https://github.com/garevna/js-course/wiki/Strings-methods)
-* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSew34gOiFVTzk3zRFNA6X7v9lN73OR7XP3duwE01LlIrJ_5Lg/viewform)
-* [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
-* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSe92DgUQdU74tDBUpZpBp-15AhMfYa8vSamEEN0vzpGHcpKPg/viewform )
 * [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfK5JxGB13fbuoZVr5Qo-m6oIeuRMl2sU8YmrXHUfJmAip6Qw/viewform)
 * [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
