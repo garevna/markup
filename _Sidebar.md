@@ -33,7 +33,7 @@
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScw7PF5eUGBDPDO8ppoqQ3XVJxbM52_hofcZuaWmKHaRjP9Eg/viewform)
 * [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScAPm8aCdd7p86BkYFo9-mgsPtsgaaafv8zCz6RB58G47Skmg/viewform )
-* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
+[💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
 
 ***
 #### Занятие 3
@@ -45,13 +45,13 @@
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfK5JxGB13fbuoZVr5Qo-m6oIeuRMl2sU8YmrXHUfJmAip6Qw/viewform)
 * [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScZbQw-5lHrv7kaT-OWgygYagdGiF34uDmQ0NNM-qMF6AXuNw/viewform)
->>##### 🎓 [Объект Math](https://github.com/garevna/js-course/wiki/Math)
-##### [💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
+* [Объект Math](https://github.com/garevna/js-course/wiki/Math)
+[💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
 #### Занятие 5
->>##### 🎓 [Объект function](https://github.com/garevna/js-course/wiki/function-object)
->>##### 🎓 [Контекст](https://github.com/garevna/js-course/wiki/context)
->>##### 🎓 [Контекст исполнения](https://github.com/garevna/js-course/wiki/execution-context)
->##### [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform "открывайте в новой вкладке")
-##### [💼 Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
+* [Объект function](https://github.com/garevna/js-course/wiki/function-object)
+* [Контекст](https://github.com/garevna/js-course/wiki/context)
+* [Контекст исполнения](https://github.com/garevna/js-course/wiki/execution-context)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform)
+[💼 Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
 #### Занятие 6
->>##### 🎓 [Объекты](https://github.com/garevna/js-course/wiki/objects)
+* [Объекты](https://github.com/garevna/js-course/wiki/objects)
