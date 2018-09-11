@@ -15,12 +15,10 @@
   * [Свойство length](https://github.com/garevna/js-course/wiki/length)
   * [Оператор цикла for](https://github.com/garevna/js-course/wiki/for)
   * [UTF-8](https://github.com/garevna/js-course/wiki/UTF-8)
-  *   💼 [Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdsKuS6kG1r5O3H62G_m32NK8a88jmFmJ5e4N2uAiDLAb31xQ/viewform)
 ***
 #### Занятие 2
 * [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
 * [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
-*   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
 * [Функции](https://github.com/garevna/js-course/wiki/function)
 * [Методы](https://github.com/garevna/js-course/wiki/method)
 *   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfhSiifjcwm7tLhcQftjAXByl-O93y3o31i91wAMr-uvi-MzQ/viewform)
