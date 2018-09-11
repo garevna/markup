@@ -1,8 +1,6 @@
 # 🎓 Chrome DevTools
 
-[debugger|#📖 debugger]
-
-[chrome dev tools#📖 debugger]
+[debugger](#debugger)
 
 Переходим на вкладку  `Sources` в панели разработчика
 
@@ -37,7 +35,7 @@ https://garevna.github.io/js-samples/#02
 📌  запустить код сниппета ( правая кнопка мышки ⇾ контекстное меню ⇾ Run )
 ```
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
-
+#debugger
 ## 📖 debugger
 
     ✅ Watch
