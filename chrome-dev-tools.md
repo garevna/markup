@@ -1,5 +1,9 @@
 # 🎓 Chrome DevTools
 
+[debugger|#📖 debugger]
+
+[chrome dev tools#📖 debugger]
+
 Переходим на вкладку  `Sources` в панели разработчика
 
     Слева находится панель  🔍 navigator
