@@ -99,6 +99,8 @@ https://garevna.github.io/js-samples/#02
 ```
 ## [🎦 видосик](https://youtu.be/PQYG2aJf6uI)
 
+[![🎦](http://img.youtube.com/vi/PQYG2aJf6uI/0.jpg)](http://www.youtube.com/watch?v=PQYG2aJf6uI)
+
 [🔗 google](https://developers.google.com/web/tools/chrome-devtools/)
 
 ### 💼 Задание 1
