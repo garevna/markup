@@ -116,3 +116,4 @@ for ( var i = 1;  ;  i++ ) {
 если бы мы не поставили прерывание цикла ```break``` внутри его тела 
 
 [🔗 MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdsKuS6kG1r5O3H62G_m32NK8a88jmFmJ5e4N2uAiDLAb31xQ/viewform)
