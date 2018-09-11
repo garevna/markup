@@ -36,7 +36,7 @@
 "789".charCodeAt ( 2 )  // результат будет 57 - это код символа "9"
 ```
 
-[💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdsKuS6kG1r5O3H62G_m32NK8a88jmFmJ5e4N2uAiDLAb31xQ/viewform)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdsKuS6kG1r5O3H62G_m32NK8a88jmFmJ5e4N2uAiDLAb31xQ/viewform)
 
 [🔗 шестнадцатеричные коды символов](https://www.fileformat.info/info/charset/UTF-8/list.htm "шестнадцатеричные коды символов")
 [🔗 w3schools](https://www.w3schools.com/html/html_symbols.asp)
