@@ -1,6 +1,6 @@
 # 🎓 Chrome DevTools
 
-[debugger](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger)
+✅ [debugger](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger)
 
 Переходим на вкладку  `Sources` в панели разработчика
 
@@ -112,3 +112,5 @@ https://garevna.github.io/js-samples/#02
 ### 💼 Задание 2
 
 Подкорректируйте код в Chrome DevTools так, чтобы при наведении указателя мышки на схему она плавно поворачивалась на 90 градусов 
+
+##[⬆️](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools)
