@@ -1,6 +1,6 @@
 # 🎓 Chrome DevTools
 
-[debugger](##debugger)
+[debugger](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger)
 
 Переходим на вкладку  `Sources` в панели разработчика
 
