@@ -1,8 +1,8 @@
 ## JS
-* [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
-* [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
-#### Занятие 1
   * [Введение](https://github.com/garevna/js-course/wiki/introduction)
+  * [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
+  * [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
+#### Занятие 1
   * [Блок-схема алгоритма](https://github.com/garevna/js-course/wiki/Block-diagram)
   * [Developer Tools](https://github.com/garevna/js-course/wiki/developer-tools)
   * [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
