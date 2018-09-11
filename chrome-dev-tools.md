@@ -35,7 +35,7 @@ https://garevna.github.io/js-samples/#02
 📌  запустить код сниппета ( правая кнопка мышки ⇾ контекстное меню ⇾ Run )
 ```
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
-#debugger
+
 ## 📖 debugger
 
     ✅ Watch
