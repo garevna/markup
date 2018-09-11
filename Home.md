@@ -1,5 +1,5 @@
-![](https://raw.githubusercontent.com/garevna/js-samples/gh-pages/images/js_cup_1.png)
-
+![](https://github.com/garevna/js-course/blob/master/images/js_cup-ico.png?raw=true)
 # Client-side JS
-
+***
 ### courseware for students learning JS
+![](https://github.com/garevna/js-course/blob/master/images/a-level-ico.png?raw=true)
