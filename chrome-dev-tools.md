@@ -113,4 +113,4 @@ https://garevna.github.io/js-samples/#02
 
 Подкорректируйте код в Chrome DevTools так, чтобы при наведении указателя мышки на схему она плавно поворачивалась на 90 градусов 
 
-##[⬆️](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools)
+## [⬆️](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools)
