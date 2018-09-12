@@ -1,11 +1,11 @@
 # 💼 Самостоятельная работа
 
-##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
-##### [📝3](https://github.com/garevna/js-course/wiki/self-work-02#-3)
-##### [📝4](https://github.com/garevna/js-course/wiki/self-work-02#-4)
-##### [📝5](https://github.com/garevna/js-course/wiki/self-work-02#-5)
+[:two:](https://github.com/garevna/js-course/wiki/self-work-02#-2)
+[:three:](https://github.com/garevna/js-course/wiki/self-work-02#-3)
+[:four:](https://github.com/garevna/js-course/wiki/self-work-02#-4)
+[:five:](https://github.com/garevna/js-course/wiki/self-work-02#-5)
 ***
-## 📝 1
+## Задание :one:
 
 Создать массив **group**, элементы которого будут объектами, содержащими данные каждого студента группы
 
@@ -30,7 +30,7 @@ function getStudentsList ( arrayOfStudents ) {
 ```
 >`Можно вернуть новый массив ( массив строк, а не объектов )  и вывести его в консоль`
 
-## 📝 2
+## Задание :two:
 
 Работа с предыдущим массивом **group**
 
@@ -46,7 +46,7 @@ function addNewStudent ( name, lastName, age, notebook ... ) {
 
 После этого вызвать предыдущую функцию ( **getStudentsList** ), чтобы убедиться, что студент добавлен в группу
 
-## 📝 3
+## Задание :three:
 
 Объявить функцию, которая получает в качестве аргумента строку и удаляет из нее символы, 
 
@@ -57,7 +57,7 @@ function addNewStudent ( name, lastName, age, notebook ... ) {
 Применить эту функцию к строке  
 `"Вчbvnера 789 был home work наiuyстоtящий + празrorднgfdик"`
 
-## 📝 4
+## Задание :four:
 
 Написать функцию сортировки массива
 
@@ -67,7 +67,7 @@ function addNewStudent ( name, lastName, age, notebook ... ) {
 
 >> Использовать методы работы с массивами и строками
 
-## 📝 5
+## Задание :five:
 
 Есть два массива, в первом - имена, во втором - фамилии
 
@@ -81,8 +81,8 @@ lastNames [ i ] = "Коломенцев"
 newArray [ i ] = "Сергей Коломенцев"
 ```
 ***
-##### [📝1](https://github.com/garevna/js-course/wiki/self-work-02#-1)
-##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
-##### [📝3](https://github.com/garevna/js-course/wiki/self-work-02#-3)
+[:one:](https://github.com/garevna/js-course/wiki/self-work-02#-1)
+[:two:](https://github.com/garevna/js-course/wiki/self-work-02#-2)
+[:three:](https://github.com/garevna/js-course/wiki/self-work-02#-3)
 ***
 [:link: Регистрация ссылок на выполненные работы](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
