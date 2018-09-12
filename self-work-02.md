@@ -1,9 +1,9 @@
 # 💼 Самостоятельная работа
 
-[📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
-[📝2](https://github.com/garevna/js-course/wiki/self-work-02#-3)
-[📝4](https://github.com/garevna/js-course/wiki/self-work-02#-4)
-[📝5](https://github.com/garevna/js-course/wiki/self-work-02#-5)
+##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
+##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-3)
+##### [📝4](https://github.com/garevna/js-course/wiki/self-work-02#-4)
+##### [📝5](https://github.com/garevna/js-course/wiki/self-work-02#-5)
 ***
 ## 📝 1
 
@@ -81,8 +81,8 @@ lastNames [ i ] = "Коломенцев"
 newArray [ i ] = "Сергей Коломенцев"
 ```
 ***
-[📝1](https://github.com/garevna/js-course/wiki/self-work-02#-1)
-[📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
-[📝3](https://github.com/garevna/js-course/wiki/self-work-02#-3)
+##### [📝1](https://github.com/garevna/js-course/wiki/self-work-02#-1)
+##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
+##### [📝3](https://github.com/garevna/js-course/wiki/self-work-02#-3)
 ***
 [:link: Регистрация ссылок на выполненные работы](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
