@@ -15,6 +15,7 @@
   * [Свойство length](https://github.com/garevna/js-course/wiki/length)
   * [Оператор цикла for](https://github.com/garevna/js-course/wiki/for)
   * [UTF-8](https://github.com/garevna/js-course/wiki/UTF-8)
+  * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-01)
 ***
 #### Занятие 2
 * [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
