@@ -20,6 +20,7 @@
 #### Занятие 2
 * [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
 * [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
+* [Литералы и строки](https://github.com/garevna/js-course/wiki/literals)
 * [Функции](https://github.com/garevna/js-course/wiki/function)
 * [Методы](https://github.com/garevna/js-course/wiki/method)
 * [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
