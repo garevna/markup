@@ -1,7 +1,7 @@
 # 💼 Самостоятельная работа
 
 ##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-2)
-##### [📝2](https://github.com/garevna/js-course/wiki/self-work-02#-3)
+##### [📝3](https://github.com/garevna/js-course/wiki/self-work-02#-3)
 ##### [📝4](https://github.com/garevna/js-course/wiki/self-work-02#-4)
 ##### [📝5](https://github.com/garevna/js-course/wiki/self-work-02#-5)
 ***
