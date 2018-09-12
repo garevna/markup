@@ -58,3 +58,5 @@ newData.toLocaleString()    // "10.12.2017, 12:45:45"
 newData.setDate(45)
 newData.toLocaleString()    // "14.01.2018, 12:45:45"
 ```
+
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScAFYBPpPFxuhTyuT6izba6WKRIN3ETICHKf_IIWCIL0qzkIQ/viewform)
