@@ -75,3 +75,5 @@ lastNames [ i ] = "Коломенцев"
 ```javascript
 newArray [ i ] = "Сергей Коломенцев"
 ```
+
+[:link: Регистрация ссылок на выполненные работы](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
