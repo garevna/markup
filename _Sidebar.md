@@ -26,6 +26,7 @@
 * [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
 * [Методы строк](https://github.com/garevna/js-course/wiki/Strings-methods)
 * [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
+* [Date ()](https://github.com/garevna/js-course/wiki/Date-constructor)
 * [📝 Самостоятельная работа](https://github.com/garevna/js-course/wiki/self-work-02)
 * [✍️ Практика (XSS)](https://github.com/garevna/js-course/wiki/XSS)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
