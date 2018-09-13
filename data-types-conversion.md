@@ -2,7 +2,7 @@
 
 | Приведение типов | `number` | `string` | `boolean` | `object` |
 |:-:|:-:|:-:|:-:|:-:|
-| **Явное** [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean) |  [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-object)
+| **Явное** [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean) |  [:arrow_forward:][1-object]
 | **Неявное** [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number) |  [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean) |
 
 ***
@@ -38,7 +38,8 @@ String ( 50 )     // вернет строку "50"
 ```javascript
 Boolean ( "50" )  // вернет логическое значение  true
 ```
-
+| [:arrow_heading_up:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_heading_down:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string)|
+|-|-|
 ### 📖 Явное приведение к типу ```number```
 
 ⚠️ Во всех нижеперечисленных случаях результат будет **0**:
@@ -81,6 +82,10 @@ Number ( String.fromCharCode(13) )  // 0
    ☕ Number ( [5]+[8] )       // вернет 58
    ☕ Number( null - true )    // вернет -1
 ```
+
+| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+|-|-|
+
 ### 📖 Явное приведение к типу ```boolean```   [:arrow_up:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number)
 
 ⚠️ Во всех нижеперечисленных случаях результат будет  false:
@@ -107,6 +112,8 @@ String ( x )  //  "[object Object]"
 var y = [ 5, true, "hello", 11 ]
 String ( y )  //  "5,true,hello,11"
 ```
+| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+|-|-|
 
 ### 📖 Явное приведение к типу ```object```
 
@@ -132,6 +139,8 @@ Object ( y )
 // поскольку тип данных переменной y
 // уже object
 ```
+| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+|-|-|
 
 ## 📖 Неявное приведение типов
     ✅ Приведение к типу "string"
@@ -188,6 +197,8 @@ String ( [ 4, 8 ] )
 null + +[ 4 ]          // результат  4
 +[5] + null            // результат  5
 ```
+| [:arrow_heading_up:]() | [:arrow_heading_down:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean)|
+|-|-|
 
 ### 📖 Неявное приведение к типу ```"number"```
 
@@ -232,6 +243,10 @@ a > b       // 1 > null   --> true ( 1 > 0 )
 a < b       // 1 < null   --> false
 a == b      // 1 == null  --> false
 ```
+
+| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+|-|-|
+
 ### 📖 Неявное приведение к типу ```"boolean"```
 
 ⚠️ Преобразование типов к логическому типу ( ```"boolean"``` ) происходит в условных операторах ( ```if```, тернарный оператор )
@@ -310,13 +325,26 @@ var y = !!x       // false
 !![ ]      // вернет   true
 !!+[ ]     // вернет  false
 ```
+[:arrow_heading_up:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean)
+
+[Link][1]
 
 ## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
 ***
 | Приведение типов | `number` | `string` | `boolean` | `object` |
 |:-:|:-:|:-:|:-:|:-:|
-| **Явное** [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean) |  [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-object)
-| **Неявное** [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number) |  [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string) | [:arrow_forward:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean) |
+| **Явное** [:arrow_forward:][1] | [:arrow_forward:][1-number] | [:arrow_forward:][1-string] | [:arrow_forward:][1-boolean] |  [:arrow_forward:][1-object]
+| **Неявное** [:arrow_forward:][2] | [:arrow_forward:][2-number] |  [:arrow_forward:][2-string] | [:arrow_forward:][2-boolean] |
 
+
+[1]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
+[2]: https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
+[1-number]: https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
+[1-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
+[1-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean
+[1-object]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-object
+[2-number]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
+[2-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
+[2-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean
 ***
 [🔗 w3schools](https://www.w3schools.com/jsref/jsref_infinity.asp)
