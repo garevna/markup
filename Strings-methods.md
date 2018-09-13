@@ -1,4 +1,4 @@
-[plus]: https://github.com/garevna/js-course/wiki/Strings-methods#-%D0%9A%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA
+[plus]: https://github.com/garevna/js-course/wiki/Strings-methods#-%D0%A1%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA
 [indexOf]: https://github.com/garevna/js-course/wiki/Strings-methods#-indexof
 [slice]: https://github.com/garevna/js-course/wiki/Strings-methods#-slice-
 [substring]: https://github.com/garevna/js-course/wiki/Strings-methods#-substring-
@@ -14,19 +14,12 @@
 
 ## 📖 Методы работы со строками
 
-[:arrow_right_hook: Конкатенация строк][plus]
-[:arrow_right_hook: indexOf()][indexOf]
-[:arrow_right_hook: slice ()][slice]
-[:arrow_right_hook: substring ()][substring]
-[:arrow_right_hook: substr ()][substr]
-[:arrow_right_hook: toLowerCase ()][toLowerCase]
-[:arrow_right_hook: toUpperCase ()][toUpperCase]
-[:arrow_right_hook: split ()][split]
-[:arrow_right_hook: trim ()][trim]
-[:arrow_right_hook: charAt ()][charAt]
-[:arrow_right_hook: charCodeAt ()][charCodeAt]
-[:arrow_right_hook: repeat ()][repeat]
-[:arrow_right_hook: replace ()][replace]
+|[:arrow_right_hook: Сложение строк][plus]|||
+|:-|:-|:-|
+|[:arrow_right_hook: indexOf()][indexOf]|[:arrow_right_hook: slice ()][slice]|[:arrow_right_hook: substring ()][substring]|
+|[:arrow_right_hook: substr ()][substr]|[:arrow_right_hook: toLowerCase ()][toLowerCase]|[:arrow_right_hook: toUpperCase ()][toUpperCase]|
+|[:arrow_right_hook: split ()][split]|[:arrow_right_hook: trim ()][trim]|[:arrow_right_hook: charAt ()][charAt]|
+|[:arrow_right_hook: charCodeAt ()][charCodeAt]|[:arrow_right_hook: repeat ()][repeat]|[:arrow_right_hook: replace ()][replace]
 ***
 
 [🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
@@ -259,6 +252,61 @@ console.log ( str.replace ( "провалился", "победил" ) )
 String.fromCharCode ( 123, 105, 125 )
 ```
 > `вернет строку            "{i}"`
+
+## :ledger: Переменные в литералах
+
+Конструкция `${ имя_переменной }` позволяет вставлять значения переменных непосредственно в литерал строки:
+```javascript
+var cities = [ "Неаполь", "Вашингтон", "Женева" ]
+
+for ( var i = 0; i < cities.length; i++ ) {
+        console.log ( `Город: ${ cities [ i ] } порядковый номер: ${ i }` )
+}
+```
+> Литерал строки заворачивается в символы обратных кавычек ( **`** )
+
+## :ledger: padStart & padEnd
+> **ES8** ( *2017* )
+
+Методы `padStart ()` и `padEnd ()` дополняют строку другой строкой до тех пор, пока результирующая строка не достигнет указанной длины
+
+Дополняющая строка будет повторяться необходимое число раз
+
+Первый аргумент - результирующая длина строки
+
+Второй аргумент - строка-заполнитель
+
+Если второй аргумент опущен, то заполнение происходит символом пробела
+
+`padStart` дополняет строку слева
+
+`padEnd`  дополняет строку справа
+
+☕ 1
+
+```javascript
+"Google".padStart(5)               //  "Google"
+"Google".padStart(10)              //  "    Google"
+"Google".padStart(10).padEnd(15)   //  "    Google     "
+"Google".padStart( 10, "789" )
+        .padEnd( 15, "45" )        //  "7897Google45454"
+```
+
+☕ 2
+```javascript
+var cities = [ "Неаполь", "Вашингтон", "Женева" ]
+
+for ( var city of cities ) {
+        console.log ( `Город: ${ city.padEnd (16) } ( ${ cities.indexOf ( city ) } )` )
+}
+/*  Output:
+
+Город: Неаполь          ( 0 )
+Город: Вашингтон        ( 1 )
+Город: Женева           ( 2 )
+
+*/
+```
 
 ***
 [🔗 MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String "Открывайте в новой вкладке")
