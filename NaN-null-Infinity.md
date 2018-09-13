@@ -55,8 +55,8 @@ Number.isNaN ( "привет" / 10 )   //  true
      null == NaN             // false
      null == false           // false
 ```
-| [:arrow_heading_up:][null] | [:arrow_heading_down:][Infinity] |
-|-|-|
+[:arrow_heading_up:][NaN]
+
 # 🎓 Значение Infinity
 
 📌 Тип данных  "*number*"
