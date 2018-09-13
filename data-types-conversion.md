@@ -2,19 +2,19 @@
 
 [2]: https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
 
-[1-number]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
+[1-number]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
 
-[1-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
+[1-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
 
-[1-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean---arrow_up
+[1-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean---arrow_up
 
-[1-object]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-object
+[1-object]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-object
 
-[2-number]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
+[2-number]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number
 
-[2-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
+[2-string]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string
 
-[2-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean
+[2-boolean]: https://github.com/garevna/js-course/wiki/data-types-conversion/%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-boolean
 
 # 🎓 Приведение типов
 
@@ -33,8 +33,8 @@
     ✅ Приведение к типу "boolean"
     ✅ Приведение к типу "object"
 
-Самый простой способ явного приведения данных произвольного типа к типу ```string```, ```number``` или ```boolean``` - 
-использование встроенных одноименных функций ```String()```,  ```Number()```,  ```Boolean()```
+Самый простой способ явного приведения данных произвольного типа к типу `string`, `number` или `boolean` - 
+использование встроенных одноименных функций `String()`,  `Number()`,  `Boolean()`
 
 ☕ 1
 ```javascript
@@ -56,7 +56,7 @@ String ( 50 )     // вернет строку "50"
 ```javascript
 Boolean ( "50" )  // вернет логическое значение  true
 ```
-| [:arrow_heading_up:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2) | [:arrow_heading_down:](https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-string)|
+| [:arrow_heading_up:][1] | [:arrow_heading_down:][1-string]|
 |-|-|
 ### 📖 Явное приведение к типу ```number```
 
@@ -70,7 +70,7 @@ Number ( [] )
 Number ( "\n" )
 Number ( "\t" )
 ```
->>> "пробельные" символы ```""```, ```"   "```, ```"\n"```, ```"\t"``` всегда приводятся к 0
+>>> "пробельные" символы `""`, `"   "`, `"\n"`, `"\t"` всегда приводятся к 0
 
 ```javascript 
 Number ( String.fromCharCode(9) )   // 0
@@ -79,11 +79,11 @@ Number ( String.fromCharCode(11) )  // 0
 Number ( String.fromCharCode(12) )  // 0
 Number ( String.fromCharCode(13) )  // 0
 ```
->>> ```String.fromCharCode( cod )``` возвращает символ, код которого равен **cod**
+>>> `String.fromCharCode( cod )` возвращает символ, код которого равен **cod**
 
-⚠️ ```Number ( true )```  вернет 1
+⚠️ `Number ( true )`  вернет 1
 
-⚠️ В случаях, когда преобразовать выражение к числу невозможно, результат будет  ```NaN```:
+⚠️ В случаях, когда преобразовать выражение к числу невозможно, результат будет  `NaN`:
 ```javascript
    ☕ Number ( undefined )
    ☕ Number ( " 12s " )
@@ -101,10 +101,10 @@ Number ( String.fromCharCode(13) )  // 0
    ☕ Number( null - true )    // вернет -1
 ```
 
-| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+| [:arrow_heading_up:][1-number] | [:arrow_heading_down:][1-string]|
 |-|-|
 
-### 📖 Явное приведение к типу ```boolean```   [:arrow_up:](https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%82%D0%B8%D0%BF%D1%83-number)
+### 📖 Явное приведение к типу `boolean`
 
 ⚠️ Во всех нижеперечисленных случаях результат будет  false:
 ```javascript
@@ -116,11 +116,13 @@ Boolean ( null )
 Boolean ( undefined )
 Boolean ( false ) 
 ```
->>>При приведении строки к булевому типу действует простое правило: если длина строки равна 0, то возвращается ```false```, в противном случае - ```true```
+⚠️ Во всех остальных случаях результат будет  `true`
 
-⚠️ Во всех остальных случаях результат будет  true
+При приведении строки к булевому типу действует простое правило: 
 
-### 📖 Явное приведение к типу ```string```
+если длина строки равна 0, то возвращается `false`, в противном случае - `true`
+
+### 📖 Явное приведение к типу `string`
 ```javascript
 var str = String ( 5 + 8 + false )  //  "13"
 
@@ -130,10 +132,10 @@ String ( x )  //  "[object Object]"
 var y = [ 5, true, "hello", 11 ]
 String ( y )  //  "5,true,hello,11"
 ```
-| [:arrow_heading_up:]() | [:arrow_heading_down:]()|
+| [:arrow_heading_up:][1-string] | [:arrow_heading_down:][2]|
 |-|-|
 
-### 📖 Явное приведение к типу ```object```
+### 📖 Явное приведение к типу `object`
 
 ```javascript
 Object ( 5 + 8 + false )  
@@ -161,13 +163,12 @@ Object ( y )
 |-|-|
 
 ## 📖 Неявное приведение типов
-    ✅ Приведение к типу "string"
-    ✅ Приведение к типу "number"
-    ✅ Приведение к типу "boolean"
+| string [:arrow_heading_down:][2-string] | number [:arrow_heading_down:][2-number] | boolean [:arrow_heading_down:][2-boolean]|
+|-|-|-|
 
 ⚠️ Неявное приведение типов происходит в процессе вычисления выражений
 
-### 📖 Неявное приведение к типу ```"string"```
+### 📖 Неявное приведение к типу `string`
 
 ⚠️ При сложении числа и строки JavaScript обрабатывает число как строку
 
