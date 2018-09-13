@@ -11,15 +11,21 @@
 [charCodeAt]: https://github.com/garevna/js-course/wiki/Strings-methods#-charcodeat-
 [repeat]: https://github.com/garevna/js-course/wiki/Strings-methods#-repeat-
 [replace]: https://github.com/garevna/js-course/wiki/Strings-methods#-replace-
+[literals]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D0%B0%D1%85
+[pad]:https://github.com/garevna/js-course/wiki/Strings-methods#ledger-padstart--padend
 
 ## 📖 Методы работы со строками
 
-|[:arrow_right_hook: Сложение строк][plus]|||
+|Strings|||
 |:-|:-|:-|
-|[:arrow_right_hook: indexOf()][indexOf]|[:arrow_right_hook: slice ()][slice]|[:arrow_right_hook: substring ()][substring]|
-|[:arrow_right_hook: substr ()][substr]|[:arrow_right_hook: toLowerCase ()][toLowerCase]|[:arrow_right_hook: toUpperCase ()][toUpperCase]|
-|[:arrow_right_hook: split ()][split]|[:arrow_right_hook: trim ()][trim]|[:arrow_right_hook: charAt ()][charAt]|
-|[:arrow_right_hook: charCodeAt ()][charCodeAt]|[:arrow_right_hook: repeat ()][repeat]|[:arrow_right_hook: replace ()][replace]
+|Операции|[`▶️ Сложение строк`][plus]||
+|Методы||[`▶️ padStart & padEnd`][pad]|
+|[`▶️ indexOf()`][indexOf]|[`▶️ slice ()`][slice]|[`▶️ substring ()`][substring]|
+|[`▶️ substr ()`][substr]|[`▶️ toLowerCase ()`][toLowerCase]|[`▶️ toUpperCase ()`][toUpperCase]|
+|[`▶️ split ()`][split]|[`▶️ trim ()`][trim]|[`▶️ charAt ()`][charAt]|
+|[`▶️ charCodeAt ()`][charCodeAt]|[`▶️ repeat ()`][repeat]|[`▶️ replace ()`][replace]
+||||
+|[`▶️ Переменные в литералах`][literals]||
 ***
 
 [🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
