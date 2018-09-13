@@ -24,9 +24,6 @@
 | **Неявное** [:arrow_heading_down:][2] | [:arrow_heading_down:][2-number] |  [:arrow_heading_down:][2-string] | [:arrow_heading_down:][2-boolean] |
 
 #### [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
-
-***
-[🔗 Equality in JavaScript](https://dorey.github.io/JavaScript-Equality-Table/unified/)
 ***
 ## 📖 Явное приведение типов
 
@@ -357,3 +354,4 @@ var y = !!x       // false
 
 ***
 [🔗 w3schools](https://www.w3schools.com/jsref/jsref_infinity.asp)
+[🔗 Equality in JavaScript](https://dorey.github.io/JavaScript-Equality-Table/unified/)
