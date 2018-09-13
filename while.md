@@ -58,4 +58,4 @@ console.log ( str )
 
 > `Цикл продолжается до тех пор, пока длина строки str меньше 10`
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfK5JxGB13fbuoZVr5Qo-m6oIeuRMl2sU8YmrXHUfJmAip6Qw/viewform)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSezJf3QwBjrS1mKyz56MITl_Zd2YmeRAjaolrBBGA2JjJKqAw/viewform)
