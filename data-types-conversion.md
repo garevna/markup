@@ -352,8 +352,8 @@ var y = !!x       // false
 ***
 | Приведение типов | `number` | `string` | `boolean` | `object` |
 |:-:|:-:|:-:|:-:|:-:|
-| **Явное ** [:arrow_heading_up:][1] | [:arrow_heading_up:][1-number] | [:arrow_heading_up:][1-string] | [:arrow_heading_up:][1-boolean] |  [:arrow_heading_up:][1-object]
-| **Неявное ** [:arrow_heading_up:][2] | [:arrow_heading_up:][2-number] | [:arrow_heading_up:][2-string] | [:arrow_heading_up:][2-boolean] |
+| **Явное** [:arrow_heading_up:][1] | [:arrow_heading_up:][1-number] | [:arrow_heading_up:][1-string] | [:arrow_heading_up:][1-boolean] |  [:arrow_heading_up:][1-object]
+| **Неявное** [:arrow_heading_up:][2] | [:arrow_heading_up:][2-number] | [:arrow_heading_up:][2-string] | [:arrow_heading_up:][2-boolean] |
 
 ***
 [🔗 w3schools](https://www.w3schools.com/jsref/jsref_infinity.asp)
