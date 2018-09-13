@@ -1,5 +1,9 @@
-###### [:arrow_down: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null)
-###### [:arrow_down: Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-infinity)
+[Infinity]: https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-infinity
+[null]: https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null
+[NaN]: https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-nan
+
+| [:arrow_down: null][null] | [:arrow_down: Infinity][Infinity] |
+|-|-|
 ***
 # 🎓 Значение NaN
 
@@ -37,6 +41,8 @@ Number.isNaN ( "привет" / 10 )   //  true
 
 📌 `Number.isNaN ()`  возвращает true, если аргумент имеет значение  `NaN`  ( приведения типа не происходит )
 
+| [:arrow_heading_up:][NaN] | [:arrow_heading_down:][Infinity] |
+|-|-|
 # 🎓 Значение null
 
 📌 Тип данных  "object"
@@ -51,7 +57,8 @@ Number.isNaN ( "привет" / 10 )   //  true
      null == NaN             // false
      null == false           // false
 ```
-
+| [:arrow_heading_up:][null] | [:arrow_heading_down:][Infinity] |
+|-|-|
 # 🎓 Значение Infinity
 
 📌 Тип данных  "*number*"
@@ -79,7 +86,7 @@ Infinity * Infinity  // Infinity
 Infinity + Infinity  // Infinity
 ```
 ***
-###### [:arrow_up: NaN](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-nan)
-###### [:arrow_up: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null)
+| [:arrow_heading_up: NaN][NaN] | [:arrow_heading_up: null][null] |
+|-|-|
 ***
 [🔗 w3schools](https://www.w3schools.com/jsref/jsref_infinity.asp)
