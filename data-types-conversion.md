@@ -23,7 +23,7 @@
 | **Явное** [:arrow_heading_down:][1]| [:arrow_heading_down:][1-number] | [:arrow_heading_down:][1-string] | [:arrow_heading_down:][1-boolean] |  [:arrow_heading_down:][1-object]
 | **Неявное** [:arrow_heading_down:][2] | [:arrow_heading_down:][2-number] |  [:arrow_heading_down:][2-string] | [:arrow_heading_down:][2-boolean] |
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
+#### [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdFHuyyukF2rmA04BN1AmS5MCNXWgQmR5t7mmxyTpzdBZVGGw/viewform)
 
 ***
 [🔗 Equality in JavaScript](https://dorey.github.io/JavaScript-Equality-Table/unified/)
