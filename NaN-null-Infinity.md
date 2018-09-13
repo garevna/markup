@@ -1,3 +1,6 @@
+###### [:arrow_down: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null)
+###### [:arrow_down: Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-Infinity)
+***
 # 🎓 Значение NaN
 
 📌 Тип данных  "*number*"
@@ -75,5 +78,8 @@ Infinity - Infinity  // NaN
 Infinity * Infinity  // Infinity
 Infinity + Infinity  // Infinity
 ```
-
+***
+###### [:arrow_up: NaN](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-NaN)
+###### [:arrow_up: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null)
+***
 [🔗 w3schools](https://www.w3schools.com/jsref/jsref_infinity.asp)
