@@ -30,9 +30,6 @@
 |:file_folder:` Дополнительно`|[:arrow_right:][String]` Методы объекта String`|[:arrow_right:][literals] ` Переменные в литералах`|
 ***
 
-[🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
-[🔗 String Reference](https://www.w3schools.com/jsref/jsref_obj_string.asp "Открывайте в новой вкладке")
-
 ### :ledger: Сложение строк
 
 Две символьные строки можно просто сложить
@@ -347,7 +344,9 @@ for ( var city of cities ) {
 */
 ```
 # [:arrow_up_small:][top]
-***
-[🔗 MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String "Открывайте в новой вкладке")
 
 ## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScw7PF5eUGBDPDO8ppoqQ3XVJxbM52_hofcZuaWmKHaRjP9Eg/viewform)
+***
+[🔗 MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String "Открывайте в новой вкладке")
+[🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
+[🔗 String Reference](https://www.w3schools.com/jsref/jsref_obj_string.asp "Открывайте в новой вкладке")
