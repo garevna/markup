@@ -1,24 +1,38 @@
+[plus]: https://github.com/garevna/js-course/wiki/Strings-methods#-%D0%9A%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA
+[indexOf]: https://github.com/garevna/js-course/wiki/Strings-methods#-indexof
+[slice]: https://github.com/garevna/js-course/wiki/Strings-methods#-slice-
+[substring]: https://github.com/garevna/js-course/wiki/Strings-methods#-substring-
+[substr]: https://github.com/garevna/js-course/wiki/Strings-methods#-substr-
+[toLowerCase]: https://github.com/garevna/js-course/wiki/Strings-methods#-tolowercase-
+[toUpperCase]: https://github.com/garevna/js-course/wiki/Strings-methods#-touppercase-
+[split]: https://github.com/garevna/js-course/wiki/Strings-methods#-split-
+[trim]: https://github.com/garevna/js-course/wiki/Strings-methods#-trim-
+[charAt]: https://github.com/garevna/js-course/wiki/Strings-methods#-charat-
+[charCodeAt]: https://github.com/garevna/js-course/wiki/Strings-methods#-charcodeat-
+[repeat]: https://github.com/garevna/js-course/wiki/Strings-methods#-repeat-
+[replace]: https://github.com/garevna/js-course/wiki/Strings-methods#-replace-
+
 ## 📖 Методы работы со строками
 
-    ✅ Конкатенация строк
-    ✅ indexOf()
-    ✅ slice ()
-    ✅ substring ()
-    ✅ substr ()
-    ✅ toLowerCase ()
-    ✅ toUpperCase ()
-    ✅ split ()
-    ✅ trim ()
-    ✅ charAt ()
-    ✅ charCodeAt ()
-    ✅ repeat ()
-    ✅ replace ()
+[:arrow_right_hook: Конкатенация строк][plus]
+[:arrow_right_hook: indexOf()][indexOf]
+[:arrow_right_hook: slice ()][slice]
+[:arrow_right_hook: substring ()][substring]
+[:arrow_right_hook: substr ()][substr]
+[:arrow_right_hook: toLowerCase ()][toLowerCase]
+[:arrow_right_hook: toUpperCase ()][toUpperCase]
+[:arrow_right_hook: split ()][split]
+[:arrow_right_hook: trim ()][trim]
+[:arrow_right_hook: charAt ()][charAt]
+[:arrow_right_hook: charCodeAt ()][charCodeAt]
+[:arrow_right_hook: repeat ()][repeat]
+[:arrow_right_hook: replace ()][replace]
 ***
 
 [🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
 [🔗 String Reference](https://www.w3schools.com/jsref/jsref_obj_string.asp "Открывайте в новой вкладке")
 
-### 📖 Конкатенация строк
+### 📖 Сложение строк
 
 Две символьные строки можно просто сложить
 
