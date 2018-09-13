@@ -20,7 +20,7 @@
 
 | Приведение типов | `number` | `string` | `boolean` | `object` |
 |:-:|:-:|:-:|:-:|:-:|
-| **Явное** [:arrow_forward:][1]| [:arrow_forward:][1-number] | [:arrow_forward:][1-string]) | [:arrow_forward:][1-boolean]) |  [:arrow_forward:][1-object]
+| **Явное** [:arrow_forward:][1]| [:arrow_forward:][1-number] | [:arrow_forward:][1-string] | [:arrow_forward:][1-boolean] |  [:arrow_forward:][1-object]
 | **Неявное** [:arrow_forward:][2] | [:arrow_forward:][2-number] |  [:arrow_forward:][2-string] | [:arrow_forward:][2-boolean] |
 
 ***
