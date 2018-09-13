@@ -1,4 +1,4 @@
-[1]: https://github.com/garevna/js-course/wiki/data-types-conversion/_edit#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
+[1]: https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%AF%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
 
 [2]: https://github.com/garevna/js-course/wiki/data-types-conversion#-%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
 
