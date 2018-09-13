@@ -359,4 +359,4 @@ cities [ 'whereYouLive' ]
 ```
 вернет нам "Париж"
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScZbQw-5lHrv7kaT-OWgygYagdGiF34uDmQ0NNM-qMF6AXuNw/viewform)
+## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdAAJ51lXth58N8DZQfMEdJlY5N5np_rYnFOQMYHNmHpV9EMA/viewform)
