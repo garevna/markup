@@ -20,7 +20,6 @@
 #### Занятие 2
 * [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
 * [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
-* [Литералы и строки](https://github.com/garevna/js-course/wiki/literals)
 * [Функции](https://github.com/garevna/js-course/wiki/function)
 * [Методы](https://github.com/garevna/js-course/wiki/method)
 * [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
@@ -33,14 +32,11 @@
 
 ***
 #### Занятие 3
-*   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdBjeYayGRXNi8RfSH7vrPiMDBKDnr6dNs5S9GMF5-JE3DSyg/viewform)
+* [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
+* [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 #### Занятие 4
-* [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
-*   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfK5JxGB13fbuoZVr5Qo-m6oIeuRMl2sU8YmrXHUfJmAip6Qw/viewform)
-* [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
-*   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScZbQw-5lHrv7kaT-OWgygYagdGiF34uDmQ0NNM-qMF6AXuNw/viewform)
 * [Объект Math](https://github.com/garevna/js-course/wiki/Math)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
 #### Занятие 5
