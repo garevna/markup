@@ -175,7 +175,7 @@ console.log ( sample )
        &nbsp;
     </td>
     <td width="8%">
-       <a href = "#briefcase-%D0%A3%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">
+       <a href = "#-courseware-for-students-learning-js">
           :arrow_heading_down:
        </a>
     </td>
@@ -230,7 +230,7 @@ sample ()   // "Привет, студент!"
        </a>
     </td>
     <td width="800">
-       &nbsp;
+       <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform" target="_blank" title="Переход на другой ресурс">:briefcase:</a> Упражнения
     </td>
     <td width="8%">
        <a href = "#-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-typeof">
@@ -239,9 +239,3 @@ sample ()   // "Привет, студент!"
     </td>
   </tr>
 </table>
-
-## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform)
-
-***
-
-
