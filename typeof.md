@@ -2,12 +2,12 @@
 
 Возможные значения, возвращаемые оператором `typeof`:
 
-        ✅ "string"
-        ✅ "number"
-        ✅ "boolean"
-        ✅ "object"
-        ✅ "undefined"
-        ✅ "function"
+[:arrow_right_hook: "string"](#-string)<br>
+[:arrow_right_hook: "number"](#-number)<br>
+[:arrow_right_hook: "boolean"](#-boolean)<br>
+[:arrow_right_hook: "object"](#-object)<br>
+[:arrow_right_hook: "undefined"](#-undefined)<br>
+[:arrow_right_hook: "function"](#-function)<br>
 
 Оператор  `typeof`  возвращает строку
 
@@ -51,6 +51,24 @@ var third = `Капитаном корабля "Наутилус" был Нем�
 
 ## 📖 number
 
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-string">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-boolean">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
+
 Число может быть:
 ```javascript
      ✅ целым ( 5 )
@@ -76,7 +94,23 @@ var z = x / y
         операция вернет NaN
 
 ## 📖 boolean
-
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-number">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-object">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
 Логический тип
 
 Данные логического типа могут принимать только одно из двух значений: 
@@ -97,6 +131,24 @@ var z = x / y
 
 ## 📖 undefined
 
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-boolean">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-function">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
+
 Специальный тип данных, означающий, что значение переменной не определено
 
 :coffee:
@@ -111,6 +163,24 @@ console.log ( sample )
 ```
 
 ## 📖 function
+
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-object">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-function">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
 
 С помощью ключевого слова `function` создаются объекты, содержащие фрагмент кода
 
