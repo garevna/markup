@@ -220,7 +220,7 @@ function sample () {
 }
 sample ()   // "Привет, студент!"
 ```
->>Мы будем подробнее изучать объекты типа `function` далее
+>`Мы будем подробнее изучать объекты типа function далее`
 ***
 
 ## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform)
