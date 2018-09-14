@@ -2,6 +2,24 @@
 
 ## 📖 Логические значения
 
+<table>
+  <tr>
+    <td width="5%">
+       <a href = "#-var">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="5%">
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
+
 Логических значений всего два:  **true** (истина)  и  **false**  (ложь)
 
 ## 📖 Операторы сравнения
@@ -48,7 +66,7 @@
        </a>
     </td>
     <td width="800">
-       <a href = "https://github.com/garevna/js-course/wiki/typeof" title="Переход на другую страницу">:arrow_right_hook:</a>typeof
+       &nbsp;
     </td>
     <td width="5%">
        <a href = "#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B">
