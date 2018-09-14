@@ -57,7 +57,7 @@ https://garevna.github.io/js-samples/#02
        &nbsp;
     </td>
     <td width="8%">
-       <a href = "#-tasks">
+       <a href = "#coffee-2">
           :arrow_heading_down:
        </a>
     </td>
@@ -80,7 +80,7 @@ https://garevna.github.io/js-samples/#02
 <table>
   <tr>
     <td width="8%">
-       <a href = "#-chrome-devtools">
+       <a href = "#coffee-1">
           :arrow_heading_up:
        </a>
     </td>
