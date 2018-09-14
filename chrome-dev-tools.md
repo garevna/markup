@@ -7,16 +7,16 @@
   <tr>
     <td width="800">
        <a href = "#-tasks">
-          :briefcase: homework
-       </a>
+          :briefcase:
+       </a> Задания
     </td>
     <td width="30%">
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger">
-          :arrow_down_small: debugger
-       </a><br>
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
-          :arrow_down_small: Event Listener Breakpoints
-       </a>
+       <a href = "#-debugger">
+          :arrow_down_small:
+       </a> debugger<br>
+       <a href = "#-event-listener-breakpoints">
+          :arrow_down_small:
+       </a> Event Listener Breakpoints
     </td>
   </tr>
 </table>
@@ -59,16 +59,16 @@ https://garevna.github.io/js-samples/#02
 
 <table>
   <tr>
-    <td width="10%">
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools">
+    <td width="8%">
+       <a href = "#-chrome-devtools">
           :arrow_heading_up:
        </a>
     </td>
     <td width="800">
        &nbsp;
     </td>
-    <td width="10%">
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
+    <td width="8%">
+       <a href = "#-event-listener-breakpoints">
           :arrow_heading_down:
        </a>
     </td>
@@ -99,12 +99,24 @@ https://garevna.github.io/js-samples/#02
 Теперь будет работать новая версия кода
 
 Если изменения не были сохранены, в панели  `navigator`  измененный файл будет отмечен символом `*`
-***
-***
-[:arrow_up_small:][home]
-[:arrow_down_small:][event]
-***
-***
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-chrome-devtools">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-tasks">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
+
 ### 📖 Event Listener Breakpoints
 
 В  Chrome DevTools  можно также приостанавливать выполнение кода, когда происходят события DOM
