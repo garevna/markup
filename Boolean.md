@@ -76,7 +76,7 @@
   </tr>
 </table>
 
-✅ Логическое "ИЛИ"  ( || )
+✅ Логическое "ИЛИ"  [ || ](https://github.com/garevna/js-course/wiki/Boolean#--1)
 
 ✅ Логическое "И"  ( && )
 
