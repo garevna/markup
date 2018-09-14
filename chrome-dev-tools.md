@@ -149,7 +149,7 @@ https://garevna.github.io/js-samples/#02
 
 [🔗 google](https://developers.google.com/web/tools/chrome-devtools/)
 
-### 💼 Задания
+### 💼 Tasks
 
 :one: Самостоятельно установите наблюдение за свойством    button.innerHTML
 
