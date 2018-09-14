@@ -1,9 +1,26 @@
+[home]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools
+[debugger]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger
+[event]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints
+[homework]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1
+
+<table>
+  <tr>
+    <td width="800">
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger">
+          :arrow_down_small:
+       </a>
+    </td>
+        <td width="20%">...</td>
+    </tr>
+</table>
+
 # 🎓 Chrome DevTools
+***
+[:arrow_down_small: debugger][debugger]
+[:arrow_down_small: Event Listener Breakpoints][event]
 
-[📖 debugger](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger)
-[📖 Event Listener Breakpoints](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints)
-[💼](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1)
-
+[💼 homework][homework]
+***
 Переходим на вкладку  `Sources` в панели разработчика
 
     Слева находится панель  🔍 navigator
@@ -38,6 +55,8 @@ https://garevna.github.io/js-samples/#02
 ```
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
 
+|_________________________________________|[:arrow_heading_up:][home]|[:arrow_heading_down:][event]|
+|-|-:|-:|
 ## 📖 debugger
 
     ✅ Watch
@@ -62,7 +81,12 @@ https://garevna.github.io/js-samples/#02
 Теперь будет работать новая версия кода
 
 Если изменения не были сохранены, в панели  `navigator`  измененный файл будет отмечен символом `*`
-
+***
+***
+[:arrow_up_small:][home]
+[:arrow_down_small:][event]
+***
+***
 ### 📖 Event Listener Breakpoints
 
 В  Chrome DevTools  можно также приостанавливать выполнение кода, когда происходят события DOM
@@ -101,18 +125,16 @@ https://garevna.github.io/js-samples/#02
 Здесь мы будем отслеживать работу кода пошагово 
 с помощью кнопки  Step into next function call
 ```
-## [🎦 видосик](https://youtu.be/PQYG2aJf6uI)
+## [:cinema: видосик](https://youtu.be/PQYG2aJf6uI)
 
 [![🎦](http://img.youtube.com/vi/PQYG2aJf6uI/0.jpg)](http://www.youtube.com/watch?v=PQYG2aJf6uI)
 
 [🔗 google](https://developers.google.com/web/tools/chrome-devtools/)
 
-### 💼 Задание 1
+### 💼 Задания
 
-Самостоятельно установите наблюдение за свойством    button.innerHTML
+:one: Самостоятельно установите наблюдение за свойством    button.innerHTML
 
-### 💼 Задание 2
+:two: Подкорректируйте код в `Sources` так, чтобы при наведении указателя мышки на схему она плавно поворачивалась на 90 градусов 
 
-Подкорректируйте код в Chrome DevTools так, чтобы при наведении указателя мышки на схему она плавно поворачивалась на 90 градусов 
-
-## [⬆️](https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools)
+## [:arrow_double_up:][home]
