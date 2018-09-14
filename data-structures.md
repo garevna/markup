@@ -1,19 +1,16 @@
 # :mortar_board: Структуры данных
 
 ## 📖 Массивы 
-    ( 📌 тип данных: "object" )
 
 <table>
   <tr>
-    <td width="8%">
-       <a href = "#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
+    <td width="5%">
        &nbsp;
     </td>
-    <td width="8%">
+    <td width="800">
+       <code>( 📌 тип данных: "object" )</code>
+    </td>
+    <td width="5%">
        <a href = "#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B">
           :arrow_heading_down:
        </a>
@@ -84,19 +81,19 @@ var hello = "Привет, " + students [ 1 ]
 
 
 ## 📖 Объекты 
-     ( 📌 тип данных: "object" )
+     
 
 <table>
   <tr>
-    <td width="8%">
+    <td width="5%">
        <a href = "#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B">
           :arrow_heading_up:
        </a>
     </td>
     <td width="800">
-       &nbsp;
+       <code>( 📌 тип данных: "object" )</code>
     </td>
-    <td width="8%">
+    <td width="5%">
        <a href = "#-2">
           :arrow_heading_down:
        </a>
@@ -134,7 +131,7 @@ human.age
 human.work
 ```
 
-#### ☕ 2
+#### :coffee: 2
 
 <table>
   <tr>
@@ -179,7 +176,7 @@ var students = {
 
     Значение students.names [ 2 ] будет "Костенко Павел"
 
-#### ☕ 3
+#### :coffee: 3
 
 <table>
   <tr>
