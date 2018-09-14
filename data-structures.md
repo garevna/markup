@@ -260,7 +260,7 @@ students.persons [ 1 ].homeworks [ 0 ]   // 5
        </a>
     </td>
     <td width="800">
-       [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform)
+       <a href = "https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform" target="_blank">:briefcase:</a> Упражнения
     </td>
     <td width="8%">
        <a href = "#mortar_board-%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">
@@ -270,6 +270,5 @@ students.persons [ 1 ].homeworks [ 0 ]   // 5
   </tr>
 </table>
 
-## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform)
 ***
 [🔗 MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
