@@ -139,7 +139,7 @@ var person = "Сергей",
        &nbsp;
     </td>
     <td width="8%">
-       <a href = "#-1">
+       <a href = "#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B">
           :arrow_heading_down:
        </a>
     </td>
