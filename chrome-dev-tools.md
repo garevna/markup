@@ -65,7 +65,7 @@ https://garevna.github.io/js-samples/#02
     <td width="10%">
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools">
           :arrow_heading_up:
-       </a><br>
+       </a>
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
           :arrow_heading_down:
        </a>
