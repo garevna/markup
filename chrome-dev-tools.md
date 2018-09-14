@@ -10,7 +10,7 @@
           :briefcase: homework
        </a>
     </td>
-    <td width="25%">
+    <td width="30%">
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger">
           :arrow_down_small: debugger
        </a><br>
@@ -62,7 +62,7 @@ https://garevna.github.io/js-samples/#02
     <td width="800">
        &nbsp;
     </td>
-    <td width="10%">
+    <td width="20%">
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools">
           :arrow_heading_up:
        </a>
