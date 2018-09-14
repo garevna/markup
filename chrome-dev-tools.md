@@ -141,12 +141,13 @@
 
 В  Chrome DevTools  можно также приостанавливать выполнение кода, когда происходят события DOM
 
-##### ☕️ Перейдем по [:link: ссылке](garevna.github.io):   
+##### :coffee: Перейдем по [:link: ссылке](garevna.github.io):   
 ```
 Посмотрите код примера
 
 В нем на событие  click  элемента  button 
-повешен обработчик, который скрывает / показывает элемент  div.circle, 
+повешен обработчик, который скрывает / показывает 
+элемент  div.circle, 
 изменяя значение свойства  circle.style.visibility
 
 Опять откроем панель разработчика, вкладку Sources
@@ -187,4 +188,20 @@
 
 :two: Подкорректируйте код в `Sources` так, чтобы при наведении указателя мышки на схему она плавно поворачивалась на 90 градусов 
 
-## [:arrow_double_up:][home]
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-event-listener-breakpoints">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-chrome-devtools">
+          :arrow_double_up:
+       </a>
+    </td>
+  </tr>
+</table>
