@@ -45,16 +45,24 @@ Number.isNaN ( "привет" / 10 )   //  true
 
 📌 Тип данных  "object"
 
-⚠️ `null` равен только самому себе и ( при нестрогом сравнении ) `undefined`
-```javascript
-     null == null            // true
-     null === null           // true
-     null == undefined       // true
-     null === undefined      // false
-     null == 0               // false
-     null == NaN             // false
-     null == false           // false
+### 📖 null 
+
+>Специальное значение `null` означает "ничего"
+
+⚠️ `null` может равняться только `null` или ( при нестрогом сравнении ) `undefined`
+
+```javascript      
+null == null              // true
+null === null             // true
+null == undefined         // true
+null === undefined        // false
+null == 0                 // false
+null == NaN               // false
+null == false             // false
+null == ""                // false
+null == []                // false
 ```
+
 [:arrow_heading_up:][NaN]
 
 # 🎓 Значение Infinity
