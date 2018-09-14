@@ -8,6 +8,7 @@
   * [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
   * [Переменные](https://github.com/garevna/js-course/wiki/var)
   * [Оператор typeof](https://github.com/garevna/js-course/wiki/typeof)
+  * [Структуры данных](https://github.com/garevna/js-course/wiki/data-structures)
   * [Операторы присваивания](https://github.com/garevna/js-course/wiki/Assignments)
   * [Логические выражения](https://github.com/garevna/js-course/wiki/Boolean)
   * [Условные операторы](https://github.com/garevna/js-course/wiki/Conditional-operators)
