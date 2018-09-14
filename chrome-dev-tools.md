@@ -59,13 +59,15 @@ https://garevna.github.io/js-samples/#02
 
 <table>
   <tr>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="20%">
+    <td width="10%">
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools">
           :arrow_heading_up:
        </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="10%">
        <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
           :arrow_heading_down:
        </a>
