@@ -5,13 +5,13 @@
     <td width="8%">
        <a href = "#-debugger">
           :arrow_down_small:
-       </a> debugger<br>
+       </a> <code>debugger</code><br>
        <a href = "#-event-listener-breakpoints">
           :arrow_down_small:
-       </a> Event Listener Breakpoints<br>
+       </a> <code>Event Listener Breakpoints</code><br>
        <a href = "#-tasks">
           :briefcase:
-       </a> Задания
+       </a> <code>Задания</code>
     </td>
   </tr>
 </table>
@@ -28,19 +28,24 @@
     ✅ Page
     ✅ Snippets
 
-```
-Сейчас мы находимся на странице
-
-https://garevna.github.io/js-samples/#02
-```
-Во вкладке `Pages` панели  `navigator`  мы выбираем файл проекта, содержимое которого будет отображаться в центре
+<div>
+    <code>
+      Сейчас мы находимся на странице 
+      <b><em>https://garevna.github.io/js-samples/#02</em></b>
+    </code><br/>
+    <code>
+      Во вкладке <b><em>Pages</em></b> панели  <b><em>navigator</em></b>  
+      мы выбираем файл проекта, содержимое которого будет отображаться в центре
+    </code><br/>
+    <code>
+      Сейчас выбран файл <b><em>index02.js</em></b>
+    </code>
+</div>
 
 #### :coffee: 1
 
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/01.png)
-```javascript
-Сейчас выбран файл index02.js
-```
+
 <table>
   <tr>
     <td width="8%">
@@ -176,7 +181,7 @@ https://garevna.github.io/js-samples/#02
 
 [🔗 google](https://developers.google.com/web/tools/chrome-devtools/)
 
-### 💼 Tasks
+### :briefcase: Tasks
 
 :one: Самостоятельно установите наблюдение за свойством    button.innerHTML
 
