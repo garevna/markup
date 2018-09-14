@@ -3,25 +3,59 @@
 [event]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints
 [tasks]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-tasks
 
+# 🎓 Chrome DevTools
 <table>
   <tr>
     <td width="800">
-       <a href = "#-tasks">
-          :briefcase:
-       </a> Задания
+Переходим на вкладку  `Sources` в панели разработчика
+
+    Слева находится панель  🔍 navigator
+    Справа - панель 🔧 debugger
+
+В панели `navigator` можно выбрать источник кода
+
+для этого используем кнопку `>>`
+
+    ✅ Page
+    ✅ Snippets
+
+```
+Сейчас мы находимся на странице
+
+https://garevna.github.io/js-samples/#02
+```
+Во вкладке `Pages` панели  `navigator`  мы выбираем файл проекта, содержимое которого будет отображаться в центре
+
+![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/01.png)
+```javascript
+Сейчас выбран файл index02.js
+```
+Теперь выберем `Snippets`
+
+Вы можете
+```
+📌  добавить новый сниппет
+📌  вставить код
+📌  сохранить сниппет ( Ctrl+S )
+📌  запустить код сниппета ( правая кнопка мышки ⇾ контекстное меню ⇾ Run )
+```
+![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
     </td>
-    <td width="30%">
+    <td width="20%">
        <a href = "#-debugger">
           :arrow_down_small:
        </a> debugger<br>
        <a href = "#-event-listener-breakpoints">
           :arrow_down_small:
-       </a> Event Listener Breakpoints
+       </a> Event Listener Breakpoints<br>
+       <a href = "#-tasks">
+          :briefcase:
+       </a> Задания
     </td>
   </tr>
 </table>
 
-# 🎓 Chrome DevTools
+====================
 
 Переходим на вкладку  `Sources` в панели разработчика
 
