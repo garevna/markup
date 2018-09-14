@@ -1,12 +1,12 @@
 [home]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools
 [debugger]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger
 [event]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints
-[homework]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1
+[tasks]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-tasks
 
 <table>
   <tr>
     <td width="800">
-       <a href = [homework]>
+       <a href = "#-tasks">
           :briefcase: homework
        </a>
     </td>
