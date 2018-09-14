@@ -94,7 +94,7 @@ var hello = "Привет, " + students [ 1 ]
        <code>( 📌 тип данных: "object" )</code>
     </td>
     <td width="5%">
-       <a href = "#-2">
+       <a href = "#coffee-2">
           :arrow_heading_down:
        </a>
     </td>
@@ -144,7 +144,7 @@ human.work
        &nbsp;
     </td>
     <td width="8%">
-       <a href = "#-3">
+       <a href = "#coffee-3">
           :arrow_heading_down:
        </a>
     </td>
@@ -181,7 +181,7 @@ var students = {
 <table>
   <tr>
     <td width="8%">
-       <a href = "#-2">
+       <a href = "#coffee-2">
           :arrow_heading_up:
        </a>
     </td>
@@ -252,6 +252,23 @@ students.persons [ 1 ].name              // "Андриенко Михаил"
 students.persons [ 1 ].homeworks         // [ 5, 4, 7, 6, 8, 7, 7, 6, 8 ]
 students.persons [ 1 ].homeworks [ 0 ]   // 5
 ```
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#coffee-3">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform)
+    </td>
+    <td width="8%">
+       <a href = "#mortar_board-%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">
+          :arrow_double_up:
+       </a>
+    </td>
+  </tr>
+</table>
 
 ## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform)
 ***
