@@ -88,7 +88,7 @@ var person = "Сергей",
   </tr>
   <tr>
     <td width="5%">
-       <a href="https://github.com/garevna/js-course/wiki/var#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--arrow_right_hook-typeof-">:arrow_heading_down:</a>
+       <a href="#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">:arrow_heading_down:</a>
     </td>
   </tr>
 </table>
@@ -110,12 +110,10 @@ var person = "Сергей",
        </a>
     </td>
     <td width="800">
-       <a href = "https://github.com/garevna/js-course/wiki/typeof" title="Переход на другую страницу">:arrow_right_hook:</a>typeof
+       <a href = "https://github.com/garevna/js-course/wiki/typeof" title="Переход на другую страницу">:arrow_right_hook:</a> Оператор typeof
     </td>
     <td width="8%">
-       <a href = "#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B">
-          :arrow_heading_down:
-       </a>
+       <a href = "#-%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%82%D0%B8%D0%BF%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">:arrow_heading_down:</a>
     </td>
   </tr>
 </table>
@@ -163,17 +161,13 @@ var person = "Сергей",
 <table>
   <tr>
     <td width="8%">
-       <a href = "#-3">
-          :arrow_heading_up:
-       </a>
+       <a href = "#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">:arrow_heading_up:</a>
     </td>
     <td width="800">
        &nbsp;
     </td>
     <td width="8%">
-       <a href = "#-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-ecmascript">
-          :arrow_heading_down:
-       </a>
+       <a href = "#-courseware-for-students-learning-js">:arrow_heading_down:</a>
     </td>
   </tr>
 </table>
