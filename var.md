@@ -158,24 +158,6 @@ var person = "Сергей",
 
 #### ☕ 1
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
-
 Следующий код объявляет массив с именем students, содержащий три элемента ( имена студентов ):
 ```javascript
 var students = [ "Иван", "Татьяна", "Дмитрий" ]
