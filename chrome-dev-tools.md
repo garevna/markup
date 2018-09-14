@@ -1,8 +1,3 @@
-[home]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools
-[debugger]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger
-[event]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints
-[tasks]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-tasks
-
 # 🎓 Chrome DevTools
 
 <table>
@@ -122,7 +117,7 @@ https://garevna.github.io/js-samples/#02
 <table>
   <tr>
     <td width="8%">
-       <a href = "#-chrome-devtools">
+       <a href = "#coffee-2">
           :arrow_heading_up:
        </a>
     </td>
