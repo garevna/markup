@@ -76,14 +76,14 @@ var third = `Капитаном корабля "Наутилус" был Нем�
      ✅ Infinity ( бесконечность ) 
      ✅ NaN ( Not a Number - не число )
 ```
-✋ Значение [Infinity :arrow_right_hook:](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-infinity)  может получиться при делении на ноль:
+✋ Значение [Infinity :arrow_right_hook:](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-infinity "Переход на другую страницу")  может получиться при делении на ноль:
 ```javascript
 var x = 1, y = 0
 var z = x / y
 ```
 Значением переменной  z  будет  *Infinity*
 
-✋ Значение [:arrow_right_hook: NaN](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-nan) может получиться при попытке выполнения арифметических операций с операндами, которые не являются числами, например:   ` 5 * "total" `, а так же при попытке разделить ноль на ноль: ` 0/0 `
+✋ Значение [:arrow_right_hook: NaN](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-nan "Переход на другую страницу") может получиться при попытке выполнения арифметических операций с операндами, которые не являются числами, например:   ` 5 * "total" `, а так же при попытке разделить ноль на ноль: ` 0/0 `
 
     ⚠️ Значение  NaN  не равно 
         никакому другому значению, 
@@ -122,11 +122,11 @@ var z = x / y
 
 К данным типа object относятся:
 
-[:arrow_right_hook: объекты](https://github.com/garevna/js-course/wiki/data-structures#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B)
+[:arrow_right_hook: объекты](https://github.com/garevna/js-course/wiki/data-structures#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B "Переход на другую страницу")
 
-[:arrow_right_hook: массивы](https://github.com/garevna/js-course/wiki/data-structures#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B)
+[:arrow_right_hook: массивы](https://github.com/garevna/js-course/wiki/data-structures#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B "Переход на другую страницу")
 
-[:arrow_right_hook: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null)
+[:arrow_right_hook: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null "Переход на другую страницу")
 
 
 ## 📖 undefined
