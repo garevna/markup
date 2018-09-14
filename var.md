@@ -401,8 +401,6 @@ console.log ( typeof x)    // в консоли будет    "string"
 
         ✅ Object
 
-## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform)
-
 <table>
   <tr>
     <td width="8%">
@@ -411,7 +409,7 @@ console.log ( typeof x)    // в консоли будет    "string"
        </a>
     </td>
     <td width="800">
-       &nbsp;
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform"                  target="_blank">:briefcase:</a> Упражнения<br/>
     </td>
     <td width="8%">
        <a href = "#-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">
