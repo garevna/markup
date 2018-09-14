@@ -67,8 +67,8 @@ var person = "Сергей",
 ✋ Имена переменных чувствительны к регистру ( `y` и `Y` - разные переменные )
 
 ⚠️ [Зарезервированные слова](https://www.w3schools.com/js/js_reserved.asp) не могут использоваться как имена переменных
-
-<tr>
+<table>
+  <tr>
     <td width="8%">
        <a href = "#-var">
           :arrow_heading_up:
