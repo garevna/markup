@@ -6,21 +6,23 @@
 <table>
   <tr>
     <td width="800">
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger">
-          :arrow_down_small:
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1">
+          :briefcase: homework
        </a>
     </td>
-        <td width="20%">...</td>
-    </tr>
+    <td width="25%">
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-debugger">
+          :arrow_down_small: debugger
+       </a><br>
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
+          :arrow_down_small: Event Listener Breakpoints
+       </a>
+    </td>
+  </tr>
 </table>
 
 # 🎓 Chrome DevTools
-***
-[:arrow_down_small: debugger][debugger]
-[:arrow_down_small: Event Listener Breakpoints][event]
 
-[💼 homework][homework]
-***
 Переходим на вкладку  `Sources` в панели разработчика
 
     Слева находится панель  🔍 navigator
@@ -55,8 +57,22 @@ https://garevna.github.io/js-samples/#02
 ```
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
 
-|_________________________________________|[:arrow_heading_up:][home]|[:arrow_heading_down:][event]|
-|-|-:|-:|
+<table>
+  <tr>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="10%">
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-chrome-devtools">
+          :arrow_heading_up:
+       </a><br>
+       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-event-listener-breakpoints">
+          :arrow_heading_down:
+       </a>
+    </td>
+  </tr>
+</table>
+
 ## 📖 debugger
 
     ✅ Watch
