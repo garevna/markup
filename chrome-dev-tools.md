@@ -40,12 +40,12 @@ https://garevna.github.io/js-samples/#02
 ```
 Во вкладке `Pages` панели  `navigator`  мы выбираем файл проекта, содержимое которого будет отображаться в центре
 
+#### :coffee: 1
+
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/01.png)
 ```javascript
 Сейчас выбран файл index02.js
 ```
-
-### &nbsp;
 <table>
   <tr>
     <td width="8%">
@@ -73,6 +73,8 @@ https://garevna.github.io/js-samples/#02
 📌  сохранить сниппет ( Ctrl+S )
 📌  запустить код сниппета ( правая кнопка мышки ⇾ контекстное меню ⇾ Run )
 ```
+#### :coffee: 2
+
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
 
 <table>
@@ -139,7 +141,7 @@ https://garevna.github.io/js-samples/#02
 
 В  Chrome DevTools  можно также приостанавливать выполнение кода, когда происходят события DOM
 
-##### ☕️ Перейдем по ссылке:  :link: https://garevna.github.io/devtools-sample/
+##### ☕️ Перейдем по [:link: ссылке](garevna.github.io):   
 ```
 Посмотрите код примера
 
