@@ -222,6 +222,23 @@ sample ()   // "Привет, студент!"
 ```
 >`Мы будем подробнее изучать объекты типа function далее`
 ***
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-function">
+          :arrow_heading_up:
+       </a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="8%">
+       <a href = "#-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-typeof">
+          :arrow_double_up:
+       </a>
+    </td>
+  </tr>
+</table>
 
 ## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform)
 
