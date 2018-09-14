@@ -5,17 +5,13 @@
 <table>
   <tr>
     <td width="5%">
-       <a href = "#-var">
-          :arrow_heading_up:
-       </a>
+       &nbsp;
     </td>
     <td width="800">
        &nbsp;
     </td>
     <td width="5%">
-       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8">
-          :arrow_heading_down:
-       </a>
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8">:arrow_heading_down:</a>
     </td>
   </tr>
 </table>
@@ -61,38 +57,45 @@
 <table>
   <tr>
     <td width="5%">
-       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">
-          :arrow_heading_up:
-       </a>
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">:arrow_heading_up:</a>
+    </td>
+    <td width="800">
+       <a href="#-"><b> && </b></a>  ( <code>Логическое "И"</code> )<br>
+       <a href="#--1"><b> || </b></a> ( <code>Логическое "ИЛИ"</code> )<br>
+       <a href="#--2"><b> ! </b></a> ( <code>Логическое отрицание</code> )
+    </td>
+    <td width="5%">
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-1">:arrow_heading_down:</a>
+    </td>
+  </tr>
+</table>
+
+### 📖 &&
+
+логическое "*И*"
+
+<table>
+  <tr>
+    <td width="5%">
+       <a href = "#-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">:arrow_heading_up:</a>
     </td>
     <td width="800">
        &nbsp;
     </td>
     <td width="5%">
-       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-1">
-          :arrow_heading_down:
-       </a>
+       <a href = "#--1">:arrow_heading_down:</a>
     </td>
   </tr>
 </table>
 
-✅ Логическое "ИЛИ"  [ || ](https://github.com/garevna/js-course/wiki/Boolean#--1)
-
-✅ Логическое "И"  ( && )
-
-✅ Логическое "НЕ"  ( ! ) ( отрицание )
-
-### 📖 &&
-
-логическое "*И*"
 ```javascript
-✅ true  && true    -->    true
-✅ true  && false   -->    false
-✅ false && true    -->    false
-✅ false && false   -->    false
+true  && true    //    true
+true  && false   //    false
+false && true    //    false
+false && false   //    false
 ```
 
-:coffee: 
+:coffee: 1
 ```javascript
     5 > 8 && 4 < 5   // -->    false  
     // explanation: 
@@ -100,7 +103,7 @@
     4 < 5            // -->    true,
     false && true    // -->    false
 ```
-:coffee: 
+:coffee: 2
 ```javascript
     8 > 5 && 4 < 5   // -->    true
     // explanation:
@@ -109,7 +112,7 @@
     true && true     // -->    true
 ```
 
-:coffee: 
+:coffee: 3
 ```javascript
     var    x = 4,    y = 10,    z = 8
     x > y && z < y   // -->    false
@@ -118,7 +121,7 @@
     z < y            // -->    true,
     false && true    // -->    false
 ```
-:coffee: 
+:coffee: 4
 ```javascript
     x < y && z < y   // -->    true
     // explanation:
@@ -129,15 +132,29 @@
 
 ### 📖 ||
 
+<table>
+  <tr>
+    <td width="5%">
+       <a href = "#-">:arrow_heading_up:</a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="5%">
+       <a href = "#--2">:arrow_heading_down:</a>
+    </td>
+  </tr>
+</table>
+
 логическое "*ИЛИ*"
 ```javascript
-✅ true  || true    -->    true
-✅ true  || false   -->    true
-✅ false || true    -->    true
-✅ false || false   -->    false
+true  || true    //    true
+true  || false   //    true
+false || true    //    true
+false || false   //    false
 ```
 
-:coffee: 
+:coffee: 1
 ```javascript
     5 > 8 || 4 < 5   // -->    true
     // explanation:
@@ -145,7 +162,7 @@
     4 < 5            // -->    true,
     false || true    //  -->   true
 ```
-:coffee: 
+:coffee: 2
 ```javascript
     5 > 8 || 4 > 5   // -->    false
     // explanation:
@@ -153,7 +170,7 @@
     4 > 5            // -->    false,
     false || false   // -->    false
 ```
-:coffee: 
+:coffee: 3
 ```javascript
     var  x = 4,  y = 10,  z = 8
     x > y || z < y   // -->    true
@@ -162,7 +179,7 @@
     z < y            // -->    true,
     false || true    // -->    true
 ```
-:coffee: 
+:coffee: 4
 ```javascript
     x > y || z > y   // -->    false
     // explanation:
@@ -171,6 +188,20 @@
     false || false   // -->    false
 ```
 ### 📖 !
+
+<table>
+  <tr>
+    <td width="5%">
+       <a href = "#--1">:arrow_heading_up:</a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="5%">
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-1">:arrow_heading_down:</a>
+    </td>
+  </tr>
+</table>
 
 *Логическое отрицание*
 ```javascript
@@ -246,6 +277,20 @@
 ```
 
 ## 📖 Логические выражения
+
+<table>
+  <tr>
+    <td width="5%">
+       <a href = "#--2">:arrow_heading_up:</a>
+    </td>
+    <td width="800">
+       &nbsp;
+    </td>
+    <td width="5%">
+       <a href = "#-%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">:arrow_double_up:</a>
+    </td>
+  </tr>
+</table>
 
 Логические выражения - это конструкции из переменных и/или констант, связанных между собой операторами сравнения и/или логическими операторами
 
