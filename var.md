@@ -18,6 +18,12 @@
           :arrow_down:
        </a>Спецификация ECMAScript<br/>
     </td>
+    <td>
+       <a href = "https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform"
+                 target = "_blank">
+          :briefcase:
+       </a>Упражнения<br/>
+    </td>
   </tr>
 </table>
 
@@ -399,7 +405,7 @@ console.log ( typeof x)    // в консоли будет    "string"
 
         ✅ Object
 
-## [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform)
+## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform)
 
 <table>
   <tr>
