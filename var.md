@@ -181,7 +181,7 @@ var hello = "Привет, " + students [ 1 ]
 <table>
   <tr>
     <td width="8%">
-       <a href = "#-1">
+       <a href = "#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B">
           :arrow_heading_up:
        </a>
     </td>
