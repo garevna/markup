@@ -4,6 +4,23 @@
 [tasks]: https://github.com/garevna/js-course/wiki/chrome-dev-tools#-tasks
 
 # 🎓 Chrome DevTools
+
+<table>
+  <tr>
+    <td width="8%">
+       <a href = "#-debugger">
+          :arrow_down_small:
+       </a> debugger<br>
+       <a href = "#-event-listener-breakpoints">
+          :arrow_down_small:
+       </a> Event Listener Breakpoints<br>
+       <a href = "#-tasks">
+          :briefcase:
+       </a> Задания
+    </td>
+  </tr>
+</table>
+
 <table>
   <tr>
     <td width="800">
@@ -41,16 +58,10 @@ https://garevna.github.io/js-samples/#02
 ```
 ![](https://raw.githubusercontent.com/garevna/js-course/master/images/lessons/02.png)
     </td>
-    <td width="20%">
+    <td width="8%">
        <a href = "#-debugger">
           :arrow_down_small:
-       </a> debugger<br>
-       <a href = "#-event-listener-breakpoints">
-          :arrow_down_small:
-       </a> Event Listener Breakpoints<br>
-       <a href = "#-tasks">
-          :briefcase:
-       </a> Задания
+       </a>
     </td>
   </tr>
 </table>
