@@ -6,7 +6,7 @@
 <table>
   <tr>
     <td width="800">
-       <a href = "https://github.com/garevna/js-course/wiki/chrome-dev-tools#-%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1">
+       <a href = [homework]>
           :briefcase: homework
        </a>
     </td>
