@@ -1,22 +1,12 @@
+<a name="1"></a>
 # :mortar_board: Структуры данных
+
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
+|-|-|-|
 
 ## 📖 Массивы 
 
-<table>
-  <tr>
-    <td width="5%">
-       &nbsp;
-    </td>
-    <td width="800">
-       <code>( 📌 тип данных: "object" )</code>
-    </td>
-    <td width="5%">
-       <a href = "#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+`( 📌 тип данных: "object" )`
 
 <pre>
     ✋ Массив - это упорядоченный набор переменных
@@ -79,27 +69,14 @@ var hello = "Привет, " + students [ 1 ]
 ```
 в переменной  **hello**  будет значение "*Привет, Татьяна*"
 
+<a name="2"></a>
 
 ## 📖 Объекты 
-     
 
-<table>
-  <tr>
-    <td width="5%">
-       <a href = "#-%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       <code>( 📌 тип данных: "object" )</code>
-    </td>
-    <td width="5%">
-       <a href = "#coffee-2">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+`( 📌 тип данных: "object" )`
+
+| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
+|-|-|-|
 
 <pre>
     ✋ Объекты объявляются с помощью 
@@ -131,25 +108,11 @@ human.age
 human.work
 ```
 
-#### :coffee: 2
+<a name="3"></a>
+:coffee: 2
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#coffee-3">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
+|-|-|-|
 
 ```javascript
 var students = {
@@ -176,25 +139,11 @@ var students = {
 
     Значение students.names [ 2 ] будет "Костенко Павел"
 
-#### :coffee: 3
+<a name="4"></a>
+:coffee: 3
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#coffee-2">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-courseware-for-students-learning-js">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
+|-|-|-|
 
 ```javascript
 var students = {
@@ -252,23 +201,11 @@ students.persons [ 1 ].name              // "Андриенко Михаил"
 students.persons [ 1 ].homeworks         // [ 5, 4, 7, 6, 8, 7, 7, 6, 8 ]
 students.persons [ 1 ].homeworks [ 0 ]   // 5
 ```
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#coffee-3">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       <a href = "https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform" target="_blank">:briefcase:</a> Упражнения
-    </td>
-    <td width="8%">
-       <a href = "#mortar_board-%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">
-          :arrow_double_up:
-       </a>
-    </td>
-  </tr>
-</table>
+
+| [:arrow_heading_up:](#4) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#1) |
+|-|-|-|
+
+[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSexcuOpJS2d0KNNU1qTUlD5Exnf0FGI9Wb9d2I5YvViwuSKDA/viewform)
 
 ***
 [🔗 MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
