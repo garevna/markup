@@ -1,13 +1,17 @@
+<a name="1"></a>
 # 🎓 Переменные. Типы данных
+
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
+|-|-|-|
 
 <table>
 <tr>
     <td width="80%">
-       <a href = "#-%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BC%D0%B5%D0%BD-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85">:arrow_down:</a>
+       <a href = "#3">:arrow_down:</a>
        <code>Правила построения имен переменных</code><br/>
-       <a href = "#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">:arrow_down:</a>
+       <a href = "#4">:arrow_down:</a>
        <code>Краткий обзор типов данных</code><br/>
-       <a href = "#-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-ecmascript">:arrow_down:</a> 
+       <a href = "#6">:arrow_down:</a> 
        <code>Типы данных в спецификации <b>ECMAScript</b></code><br/>
     </td>
   </tr>
@@ -18,20 +22,11 @@
   </tr>
 </table>
 
+<a name="2"></a>
 ## 📖 var
 
-<table>
-  <tr>
-    <td width="5%">
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="7%">
-       <a href="#-%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BC%D0%B5%D0%BD-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85">:arrow_heading_down:</a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
+|-|-|-|
 
 Переменные - это контейнеры для хранения данных
 
@@ -67,20 +62,12 @@ var person = "Сергей",
     age = 30
 ```
 
+<a name="3"></a>
 ## 📖 Правила построения имен переменных
-<table>
-  <tr>
-    <td width="5%">
-        <a href="#-var">:arrow_heading_up:</a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="5%">
-       <a href="#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">:arrow_heading_down:</a>
-    </td>
-  </tr>
-</table>
+
+| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
+|-|-|-|
+
 ✋ Имена переменных могут содержать буквы, цифры, символы подчеркивания и знаки доллара
 
 ✋ Имена переменных могут начинаться с буквы, сиволов `$` и `_`
@@ -89,23 +76,13 @@ var person = "Сергей",
 
 ⚠️ [Зарезервированные слова](https://www.w3schools.com/js/js_reserved.asp) не могут использоваться как имена переменных
 
+<a name="4"></a>
 ## 📖 Типы данных ( typeof )
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-var">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       <a href = "https://github.com/garevna/js-course/wiki/typeof" title="Переход на другую страницу">:arrow_right_hook:</a> Оператор typeof
-    </td>
-    <td width="8%">
-       <a href = "#-%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%82%D0%B8%D0%BF%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">:arrow_heading_down:</a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
+|-|-|-|
+
+[:arrow_right_hook: Оператор typeof](https://github.com/garevna/js-course/wiki/typeof "Переход на другую страницу")
 
 ### 📖 строка 
      ( 📌 тип данных: "string" )
@@ -145,21 +122,11 @@ var person = "Сергей",
     ( без кавычек, "<em>undefined</em>" - это уже строка )
 </pre>
 
+<a name="5"></a>
 ## 📖 Динамическая типизация
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85--typeof-">:arrow_heading_up:</a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-courseware-for-students-learning-js">:arrow_heading_down:</a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#6) |
+|-|-|-|
      
 В  JavaScript используется динамическая типизация данных
 
@@ -175,7 +142,11 @@ console.log (x)            // в консоли будет   "lol"
 console.log ( typeof x)    // в консоли будет    "string"
 ```
 
+<a name="6"></a>
 ## 📖 Спецификация ECMAScript
+
+| [:arrow_heading_up:](#5) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
+|-|-|-|
 
 Последняя спецификация языка **ECMAScript** определяет семь типов данных:
 
@@ -192,20 +163,7 @@ console.log ( typeof x)    // в консоли будет    "string"
 
         ✅ Object
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%82%D0%B8%D0%BF%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform"                  target="_blank">:briefcase:</a> Упражнения<br/>
-    </td>
-    <td width="8%">
-       <a href = "#-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%A2%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">
-          :arrow_double_up:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#6) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#1) |
+|-|-|-|
+
+[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSd0-twHJZfk-bKNkk-mg7ELLH49d3GYjcahThqGJC7A7sAJZw/viewform)
