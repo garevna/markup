@@ -1,14 +1,9 @@
 <a name="top"></a>
 ## 🎓 Методы массивов
-
-[:arrow_right_hook:](#1) `pop ()`
-[:arrow_right_hook:](#2) `push ()`
-[:arrow_right_hook:](#3) `shift ()`
-[:arrow_right_hook:](#4) `unshift ()`
-[:arrow_right_hook:](#5) `splice ()`
-[:arrow_right_hook:](#6) `slice ()`
-[:arrow_right_hook:](#7) `concat ()`
-[:arrow_right_hook:](#8) `join ()`
+| | | | |
+|-|-|-|-|
+| [:arrow_right_hook:](#1) `pop ()` | [:arrow_right_hook:](#2) `push ()` | [:arrow_right_hook:](#3) `shift ()` | [:arrow_right_hook:](#4) `unshift ()` |
+| [:arrow_right_hook:](#5) `splice ()` | [:arrow_right_hook:](#6) `slice ()` | [:arrow_right_hook:](#7) `concat ()` | [:arrow_right_hook:](#8) `join ()` |
 
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScAPm8aCdd7p86BkYFo9-mgsPtsgaaafv8zCz6RB58G47Skmg/viewform)
 
