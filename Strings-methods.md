@@ -1,36 +1,25 @@
-[top]: https://github.com/garevna/js-course/wiki/Strings-methods#-%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81%D0%BE-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0%D0%BC%D0%B8
-[plus]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-%D0%A1%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%BE%D0%BA
-[indexOf]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-indexof
-[slice]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-slice-
-[substring]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-substring-
-[substr]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-substr-
-[toLowerCase]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-tolowercase-
-[toUpperCase]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-touppercase-
-[split]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-split-
-[trim]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-trim-
-[charAt]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-charat-
-[charCodeAt]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-charcodeat-
-[repeat]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-repeat-
-[replace]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-replace-
-[String]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0-string
-[literals]: https://github.com/garevna/js-course/wiki/Strings-methods#ledger-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2-%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D0%B0%D1%85
-[pad]:https://github.com/garevna/js-course/wiki/Strings-methods#ledger-padstart--padend
+<a name="top"></a>
+# :mortar_board: Методы работы со строками
 
-## 📖 Методы работы со строками
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#1) |
+|-|-|-|
 
 ||||
 |:-|:-|:-|
-|:file_folder: Операции|[:arrow_right:][plus]` Сложение строк`||
-|:file_folder: Методы строк||[:arrow_right:][pad]` padStart & padEnd`|
-|[:arrow_right:][indexOf]` indexOf()`|[:arrow_right:][slice]` slice ()`|[:arrow_right:][substring]` substring ()`|
-|[:arrow_right:][substr]` substr ()`|[:arrow_right:][toLowerCase]` toLowerCase ()`|[:arrow_right:][toUpperCase]` toUpperCase ()`|
-|[:arrow_right:][split]` split ()`|[:arrow_right:][trim]` trim ()`|[:arrow_right:][charAt]` charAt ()`|
-|[:arrow_right:][charCodeAt]` charCodeAt ()`|[:arrow_right:][repeat]` repeat ()`|[:arrow_right:][replace]` replace ()`
+|:file_folder: Операции|[:arrow_right:](#1)` Сложение строк`||
+|:file_folder: Методы строк||[:arrow_right:](#16)` padStart & padEnd`|
+|[:arrow_right:](#2)` indexOf()`|[:arrow_right:](#3)` slice ()`|[:arrow_right:](#4)` substring ()`|
+|[:arrow_right:](#5)` substr ()`|[:arrow_right:](#6)` toLowerCase ()`|[:arrow_right:](#7)` toUpperCase ()`|
+|[:arrow_right:](#8)` split ()`|[:arrow_right:](#9)` trim ()`|[:arrow_right:](#10)` charAt ()`|
+|[:arrow_right:](#11)` charCodeAt ()`|[:arrow_right:](#12)` repeat ()`|[:arrow_right:](#13)` replace ()`
 ||||
-|:file_folder:` Дополнительно`|[:arrow_right:][String]` Методы объекта String`|[:arrow_right:][literals] ` Переменные в литералах`|
+|:file_folder:` Дополнительно`|[:arrow_right:](#14)` Методы объекта String`|[:arrow_right:](#15)` Переменные в литералах`|
 ***
-
+<a name="1"></a>
 ### :ledger: Сложение строк
+
+| [:arrow_heading_up:](#top) | <img width="800"/> | [:arrow_heading_down:](#2) |
+|-|-|-|
 
 Две символьные строки можно просто сложить
 
@@ -41,9 +30,11 @@ console.log ( str_1 + str_2 )
 ```
 в консоли будет:     *Привет, студент*
 
-# [:arrow_up_small:][top]
-
+<a name="2"></a>
 ### :ledger: indexOf()
+
+| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
+|-|-|-|
 
 Этот метод позволяет найти подстроку в строке:
 ```javascript
@@ -67,9 +58,11 @@ console.log ( pos )
 
 ⚠️ Если указанная подстрока не будет найдена в текущей строке, то метод `indexOf()` вернет значение -1
 
-# [:arrow_up_small:][top]
-
+<a name="3"></a>
 ### :ledger: slice ()
+
+| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
+|-|-|-|
 
 Этот метод извлекает часть строки и возвращает извлеченную часть
 
@@ -125,9 +118,12 @@ str.slice ( -16,  0 )                    // вернет  "" ( пустую ст
 str.slice ( -str.length )                // вернет  "Меня зовут Мария" ( всю строку )
 str.slice ( 5 )                          // вернет  "зовут Мария" ( до конца строки )
 ```
-# [:arrow_up_small:][top]
 
+<a name="4"></a>
 ### :ledger: substring ()
+
+| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
+|-|-|-|
 
 Извлекает подстроку из строки
 
@@ -141,9 +137,12 @@ str.slice ( 5 )                          // вернет  "зовут Мария
 ```javascript
 "Хорошего дня".substring ( 9 )          // "дня"
 ```
-# [:arrow_up_small:][top]
 
+<a name="5"></a>
 ### :ledger: substr ()
+
+| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#6) |
+|-|-|-|
 
 Извлекает подстроку из строки
 
@@ -161,9 +160,11 @@ console.log ( str.substr ( 0, 7 ) )
 ```
 > `в консоли будет: Веселый`
 
-# [:arrow_up_small:][top]
-
+<a name="6"></a>
 ### :ledger: toLowerCase ()
+
+| [:arrow_heading_up:](#5) | <img width="800"/> | [:arrow_heading_down:](#7) |
+|-|-|-|
 
 Преобразует символы строки к нижнему регистру
 ```javascript
@@ -172,9 +173,11 @@ console.log ( str.toLowerCase () )
 ```
 > `в консоли будет:  веселый денек был сегодня`
 
-# [:arrow_up_small:][top]
-
+<a name="7"></a>
 ### :ledger: toUpperCase ()
+
+| [:arrow_heading_up:](#6) | <img width="800"/> | [:arrow_heading_down:](#8) |
+|-|-|-|
 
 Преобразует символы строки к верхнему регистру
 ```javascript
@@ -183,9 +186,11 @@ console.log ( str.toUpperCase () )
 ```
 > `в консоли будет:   ВЕСЕЛЫЙ ДЕНЕК БЫЛ СЕГОДНЯ`
 
-# [:arrow_up_small:][top]
-
+<a name="8"></a>
 ### :ledger: split ()
+
+| [:arrow_heading_up:](#7) | <img width="800"/> | [:arrow_heading_down:](#9) |
+|-|-|-|
 
 Разбивает строку на массив подстрок и возвращает массив
 
@@ -205,9 +210,11 @@ console.log ( str.split ( ' | ' ) )
 ```
 > `в консоли будет: [ "one", "two", "three", "four", "five", "six" ]`
 
-# [:arrow_up_small:][top]
-
+<a name="9"></a>
 ### :ledger: trim ()
+
+| [:arrow_heading_up:](#8) | <img width="800"/> | [:arrow_heading_down:](#10) |
+|-|-|-|
 
 Удаляет пробелы в начале и в конце строки
 ```javascript
@@ -216,9 +223,11 @@ console.log ( str.trim () )
 ```
 > `в консоли будет:  54`
 
-# [:arrow_up_small:][top]
-
+<a name="10"></a>
 ### :ledger: charAt ()
+
+| [:arrow_heading_up:](#9) | <img width="800"/> | [:arrow_heading_down:](#11) |
+|-|-|-|
 
 Возвращает символ, находящийся в заданной аргументом позиции строки
 ```javascript
@@ -227,9 +236,11 @@ console.log ( str.charAt ( 4 ) )
 ```
 > `в консоли будет:  Ш`
 
-# [:arrow_up_small:][top]
-
+<a name="11"></a>
 ### :ledger: charCodeAt ()
+
+| [:arrow_heading_up:](#10) | <img width="800"/> | [:arrow_heading_down:](#12) |
+|-|-|-|
 
 Возвращает код символа, находящегося в заданной аргументом позиции строки
 ```javascript
@@ -243,9 +254,11 @@ console.log ( str.charCodeAt ( 4 ) )
 ```
 > `в консоли будет:  53`
 
-# [:arrow_up_small:][top]
-
+<a name="12"></a>
 ### :ledger: repeat ()
+
+| [:arrow_heading_up:](#11) | <img width="800"/> | [:arrow_heading_down:](#13) |
+|-|-|-|
 
 Возвращает новую сроку, содержащую заданное аргументом число копий исходной строки
 ```javascript
@@ -254,9 +267,11 @@ console.log ( str.repeat ( 4 ) )
 ```
 > `в консоли будет:  ХОРОШО! ХОРОШО! ХОРОШО! ХОРОШО!`
 
-# [:arrow_up_small:][top]
-
+<a name="13"></a>
 ### :ledger: replace ()
+
+| [:arrow_heading_up:](#12) | <img width="800"/> | [:arrow_heading_down:](#14) |
+|-|-|-|
 
 Возвращает новую строку, в которой заданная подстрока заменена на новое значение
 
@@ -267,17 +282,17 @@ console.log ( str.replace ( "провалился", "победил" ) )
 ```
 > `в консоли будет:  Ты победил!`
 
-# [:arrow_up_small:][top]
+<a name="14"></a>
+# :mortar_board: Методы объекта `String`
 
-## :ledger: Методы объекта `String`
+| [:arrow_heading_up:](#13) | <img width="800"/> | [:arrow_heading_down:](#15) |
+|-|-|-|
 
 У встроенного нативного объекта `String` есть несколько статических методов, которые позволяют манипулировать содержимым строк
 
 Вызывать эти методы можно только как методы объекта `String`  ( *String.имя_метода* )
 
-# [:arrow_up_small:][top]
-
-### :ledger: String.fromCharCode ()
+## :ledger: String.fromCharCode ()
 
 Это метод возвращает строку из символов, коды которых перечислены в аргументах функции ( в круглых скобках )
 
@@ -287,7 +302,11 @@ String.fromCharCode ( 123, 105, 125 )
 ```
 > `вернет строку            "{i}"`
 
-## :ledger: Переменные в литералах
+<a name="15"></a>
+# :mortar_board: Переменные в литералах
+
+| [:arrow_heading_up:](#14) | <img width="800"/> | [:arrow_heading_down:](#16) |
+|-|-|-|
 
 Конструкция `${ имя_переменной }` позволяет вставлять значения переменных непосредственно в литерал строки:
 ```javascript
@@ -299,9 +318,12 @@ for ( var i = 0; i < cities.length; i++ ) {
 ```
 :heavy_exclamation_mark: Литерал строки заворачивается в символы обратных кавычек ( **`** )
 
-# [:arrow_up_small:][top]
+<a name="16"></a>
+# :mortar_board: padStart & padEnd
 
-## :ledger: padStart & padEnd
+| [:arrow_heading_up:](#15) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
+|-|-|-|
+
 > **ES8** ( *2017* )
 
 Методы `padStart ()` и `padEnd ()` дополняют строку другой строкой до тех пор, пока результирующая строка не достигнет указанной длины
@@ -343,9 +365,10 @@ for ( var city of cities ) {
 
 */
 ```
-# [:arrow_up_small:][top]
+| [:arrow_heading_up:](#16) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
+|-|-|-|
 
-## [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScw7PF5eUGBDPDO8ppoqQ3XVJxbM52_hofcZuaWmKHaRjP9Eg/viewform)
+[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScw7PF5eUGBDPDO8ppoqQ3XVJxbM52_hofcZuaWmKHaRjP9Eg/viewform)
 ***
 [🔗 MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String "Открывайте в новой вкладке")
 [🔗 String Methods](https://www.w3schools.com/js/js_string_methods.asp "Открывайте в новой вкладке")
