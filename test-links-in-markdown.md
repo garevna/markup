@@ -75,7 +75,7 @@ Princess And The Pea – This fairy tale by Hans Christian Andersen, deals with 
 <a name="5"></a>
 # 🎓 5
 
-| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#5) |
+| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
 |-|-|-|
 
 ## 📖 Adventure Stories For Kids
