@@ -1,6 +1,7 @@
+<a name="1"></a>
 # 🎓 1
 
-| [:arrow_double_down:](#bottom) | <a name="1"><img width="800"/></a> | [:arrow_heading_down:](#2) |
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
 |-|-|-|
 
 ## 📖 Short Stories For Kids
@@ -14,9 +15,10 @@ The Prince And The Snake – This story follows the journey of a prince whose bo
 Lion And The Mouse – This story explains the proverb “Small acts of kindness will be rewarded greatly” and how anyone regardless of their size and appearance, can make a major impact in certain situations. This tale can teach your child to appreciate others and create a helping tendency in their minds.
 Hare And The Tortoise – Everyone is aware about this story where the hare is defeated by the tortoise in a race proving the proverb “Slow and steady wins the race”. But the story doesn’t end there as they eventually have another race! And it consists of a number of morals your child should learn about.
 
+<a name="2"></a>
 # 🎓 2
 
-| [:arrow_heading_up:](#1) | <a name="2"><img width="800"/></a> | [:arrow_heading_down:](#3) |
+| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
 |-|-|-|
 
 
@@ -33,9 +35,10 @@ The Greedy Crocodile – Based on the theme of greed, this story describes an en
 The Boy Who Cried Wolf – This story proves that nobody will believe a liar, even when he speaks the truth. The main plot is centered around how the habit of lying affects a shepherd boy.
 The Ugly Duckling – This tale deals with the concept of apperance, and emphazizes on the fact that beauty does not mean superority. It portrays the struggles of an ugly duckling and the challenges faced by it due to its appearance.
 
+<a name="3"></a>
 # 🎓 3
 
-| [:arrow_heading_up:](#2) | <a name="3"><img width="800"/></a> | [:arrow_heading_down:](#4) |
+| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
 |-|-|-|
 
 ## 📖 Inspirational Stories For Kids
@@ -53,9 +56,10 @@ Copyright – Arun Tiwari/Universities Press
 Wings of Fire – Teach your child the motivational ideologies of one of the greatest role models of our country with A.P.J. Abdul Kalam’s “Wings of Fire”. This book will make children understand about Insipration, Motivation, Partriotism, Knowledge and much more.
 Goodnight Stories For Rebel Girls – This awe-inspiring collection of tales, chronicles the endearing journeys of some of the greatest women personalities who played a part in empowering women all over the globe.
 
+<a name="4"></a>
 # 🎓 4
 
-| [:arrow_heading_up:](#3) | <a name="4"><img width="800"/></a> | [:arrow_heading_down:](#5) |
+| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
 |-|-|-|
 
 ## 📖 Bedtime Stories For Kids
@@ -68,9 +72,10 @@ A City Rat And A Village Rat – This story draws a parallel between the peacefu
 Princess And The Pea – This fairy tale by Hans Christian Andersen, deals with a prince who is in search of a princess and how he gets to meet her.
 5-Min Stories– This collection of stories features simple daily-life scenarios and will capture your child’s attention in 300 seconds with its wit and storylines.
 
+<a name="5"></a>
 # 🎓 5
 
-| [:arrow_heading_up:](#4) | <a name="5"><img width="800"/></a> | [:arrow_heading_down:](#5) |
+| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#5) |
 |-|-|-|
 
 ## 📖 Adventure Stories For Kids
@@ -89,5 +94,5 @@ The Secret Seven– Enid Blyton brings us the entertaining tale of a secret soci
 Tintin– Set in the 20th century, this collection follows the journey of Tintin, a courageous young Belgian reporter and the adventures that he embarks on with his dog Snowy.
 Complete Adventures of Feluda– This Fiction series created by Satyajit Ray, features Feluda, a detective from Bengal and the mysteries that he solves. Check out this interesting collection chronicling the journey of the Indian Sherlock Holmes.
 
-| [:arrow_heading_up:](#4) | <a name="bottom"><img width="800"/></a> | [:arrow_heading_down:](#1) |
+| [:arrow_heading_up:](#4) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#1) |
 |-|-|-|
