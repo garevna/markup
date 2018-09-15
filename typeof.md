@@ -1,4 +1,8 @@
-## 📖 Оператор `typeof`
+<a name="1"></a>
+# 🎓 Оператор `typeof`
+
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
+|-|-|-|
 
 Возможные значения, возвращаемые оператором `typeof`:
 
@@ -31,8 +35,11 @@ typeof x     // "string"
 var x = false
 typeof typeof x  // "boolean"
 ```
-
+<a name="2"></a>
 ## 📖 string
+
+| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
+|-|-|-|
 
 Строки состоят из символов и заворачиваются в двойные ( *"мама"* ) или одинарные ( *'мама'* ) кавычки
 
@@ -48,26 +55,11 @@ var first = 'Капитаном корабля "Наутилус" был Нем�
 var second = "Капитаном корабля 'Наутилус' был Немо"
 var third = `Капитаном корабля "Наутилус" был Немо`
 ```
-
+<a name="3"></a>
 ## 📖 number
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-string">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-boolean">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
+|-|-|-|
 
 Число может быть:
 ```javascript
@@ -93,24 +85,12 @@ var z = x / y
         поскольку в случае ошибки 
         операция вернет NaN
 
+<a name="4"></a>
 ## 📖 boolean
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-number">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-object">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+
+| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
+|-|-|-|
+
 Логический тип
 
 Данные логического типа могут принимать только одно из двух значений: 
@@ -118,7 +98,11 @@ var z = x / y
     ✅ true ( истина ) 
     ✅ false ( ложь )
 
+<a name="5"></a>
 ## 📖 object
+
+| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#5) |
+|-|-|-|
 
 К данным типа object относятся:
 
@@ -128,26 +112,11 @@ var z = x / y
 
 [:arrow_right_hook: null](https://github.com/garevna/js-course/wiki/NaN-null-Infinity#-%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-null "Переход на другую страницу")
 
-
+<a name="6"></a>
 ## 📖 undefined
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-boolean">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-function">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#5) | <img width="800"/> | [:arrow_heading_down:](#7) |
+|-|-|-|
 
 Специальный тип данных, означающий, что значение переменной не определено
 
@@ -162,25 +131,11 @@ console.log ( sample )
     // никакого значения
 ```
 
+<a name="7"></a>
 ## 📖 function
 
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-object">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       &nbsp;
-    </td>
-    <td width="8%">
-       <a href = "#-courseware-for-students-learning-js">
-          :arrow_heading_down:
-       </a>
-    </td>
-  </tr>
-</table>
+| [:arrow_heading_up:](#6) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
+|-|-|-|
 
 С помощью ключевого слова `function` создаются объекты, содержащие фрагмент кода
 
@@ -221,21 +176,10 @@ function sample () {
 sample ()   // "Привет, студент!"
 ```
 >`Мы будем подробнее изучать объекты типа function далее`
+
 ***
-<table>
-  <tr>
-    <td width="8%">
-       <a href = "#-function">
-          :arrow_heading_up:
-       </a>
-    </td>
-    <td width="800">
-       <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform" target="_blank" title="Переход на другой ресурс">:briefcase:</a> Упражнения
-    </td>
-    <td width="8%">
-       <a href = "#-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-typeof">
-          :arrow_double_up:
-       </a>
-    </td>
-  </tr>
-</table>
+
+| [:arrow_heading_up:](#7) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#1) |
+|-|-|-|
+
+[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdegQYfzld6s0CYJekJ2uvu84fUU2-BXiu7g9X2wzcutF1CWQ/viewform)
