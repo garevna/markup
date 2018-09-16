@@ -49,6 +49,7 @@
 
 * [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
 * [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
+* [Параметры по умолчанию](https://github.com/garevna/js-course/wiki/default-params-values)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 <a name="4"></a>
