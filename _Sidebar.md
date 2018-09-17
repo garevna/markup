@@ -3,7 +3,7 @@
   * [Введение](https://github.com/garevna/js-course/wiki/introduction)
   * [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
   * [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
-
+***
 <a name="toc-1"></a>
 #### Занятие 1
 | [:arrow_double_down:](#toc-bottom) | <img width="800"/> | [:arrow_heading_down:](#toc-2) |
@@ -41,6 +41,7 @@
 * [📝 Самостоятельная работа](https://github.com/garevna/js-course/wiki/self-work-02)
 * [✍️ Практика (XSS)](https://github.com/garevna/js-course/wiki/XSS)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
+***
 
 <a name="toc-3"></a>
 #### Занятие 3
@@ -59,6 +60,7 @@
 
 * [Объект Math](https://github.com/garevna/js-course/wiki/Math)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
+***
 
 <a name="toc-5"></a>
 #### Занятие 5
@@ -70,10 +72,13 @@
 * [Контекст исполнения](https://github.com/garevna/js-course/wiki/execution-context)
 *   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
+***
 
 <a name="toc-6"></a>
 #### Занятие 6
 * [Объекты](https://github.com/garevna/js-course/wiki/objects)
+
+***
 
 | [:arrow_heading_up:](#toc-6) | <a name="toc-bottom"><img width="800"/></a> | [:arrow_double_up:](#toc-top) |
 |-|-|-|
