@@ -168,7 +168,7 @@ testArguments ( 5, false )
 Объявим функцию  **getArguments**:
 ```javascript
 function getArguments ( param ) {
-        return param ? param : arguments.callee
+    return param ? param : arguments.callee
 }
 ```
     которая, если ей был передан аргумент, 
@@ -216,7 +216,7 @@ x ( "До свидания!" )
 #### :coffee: 3
 ```javascript
 function setProperty ( prop, val ) {
-        arguments.callee [ prop ] = val
+    arguments.callee [ prop ] = val
 }
 ```
 
@@ -231,7 +231,7 @@ setProperty ( "value", 50 )
 
 ```javascript
 setProperty ( "method", function () {
-        console.log ( "А еще я умею вышивать крестиком" )
+    console.log ( "А еще я умею вышивать крестиком" )
 } ) 
 ```
     здесь мы передаем ей 
@@ -261,25 +261,27 @@ var factorial = function ( num ) {
     "модифицируем" ее следующим образом:
 ```javascript
 var factorial = function ( num ) {
-        if ( !arguments.callee.res )  arguments.callee.res = []
-        var res = 1, n = 1
-        while ( n <= num )  res *= n++
-        arguments.callee.res.push ( res )
-        return res
+     if ( !arguments.callee.res )  arguments.callee.res = []
+     var res = 1, n = 1
+     while ( n <= num )  res *= n++
+     arguments.callee.res.push ( res )
+     return res
 }
 ```
 #### :coffee: 5
 ```javascript
 var buttons = []
 for ( var n = 0; n < 5; n++ ) {
-        buttons [ n ] = document.body.appendChild ( document.createElement( 'button' ) )
-        buttons [ n ].innerText = n
-        buttons [ n ].onclick = function ( event ) {
-                if ( !arguments.callee.res )
-                        arguments.callee.res = []
-                arguments.callee.res.push ( event.timeStamp )
-                console.log ( arguments.callee.res )
-        }
+    buttons [ n ] = document.body.appendChild ( 
+          document.createElement( 'button' ) 
+    )
+    buttons [ n ].innerText = n
+    buttons [ n ].onclick = function ( event ) {
+       if ( !arguments.callee.res )
+             arguments.callee.res = []
+       arguments.callee.res.push ( event.timeStamp )
+             console.log ( arguments.callee.res )
+    }
 }
 ```
     В этом примере создаются анонимные функции,
@@ -291,19 +293,21 @@ for ( var n = 0; n < 5; n++ ) {
 ```javascript
 var buttons = []
 for ( var n = 0; n < 5; n++ ) {
-        buttons [ n ] = document.body.appendChild ( document.createElement( 'button' ) )
-        buttons [ n ].innerText = n
-        buttons [ n ].onclick = function ( event ) {
-                if ( !arguments.callee.clicksTime )
-                        arguments.callee.clicksTime = []
-                arguments.callee.clicksTime.push ( event.timeStamp )
-                console.log ( arguments.callee.clicksTime )
-                arguments.callee.res = arguments.callee.clicksTime.length > 1 ? 
-                        arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 1 ] -
-                        arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 2 ] : 0
+    buttons [ n ] = document.body.appendChild ( 
+             document.createElement( 'button' ) 
+    )
+    buttons [ n ].innerText = n
+    buttons [ n ].onclick = function ( event ) {
+        if ( !arguments.callee.clicksTime )
+            arguments.callee.clicksTime = []
+        arguments.callee.clicksTime.push ( event.timeStamp )
+        console.log ( arguments.callee.clicksTime )
+        arguments.callee.res = arguments.callee.clicksTime.length > 1 ? 
+            arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 1 ] -
+            arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 2 ] : 0
 
-                console.info ( `Интервал между последними кликами: ${arguments.callee.res}` )
-        }
+        console.info ( `Интервал между последними кликами: ${arguments.callee.res}` )
+    }
 }
 ```
 
