@@ -1,12 +1,12 @@
-<a name="top"></a>
+<a name="toc-top"></a>
 ## JS
   * [Введение](https://github.com/garevna/js-course/wiki/introduction)
   * [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
   * [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
 
-<a name="1"></a>
+<a name="toc-1"></a>
 #### Занятие 1
-| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
+| [:arrow_double_down:](#toc-bottom) | <img width="800"/> | [:arrow_heading_down:](#toc-2) |
 |-|-|-|
   * [Блок-схема алгоритма](https://github.com/garevna/js-course/wiki/Block-diagram)
   * [Developer Tools](https://github.com/garevna/js-course/wiki/developer-tools)
@@ -24,10 +24,10 @@
   * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-01)
 ***
 
-<a name="2"></a>
+<a name="toc-2"></a>
 #### Занятие 2
 
-| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
+| [:arrow_heading_up:](#toc-1) | <img width="800"/> | [:arrow_heading_down:](#toc-3) |
 |-|-|-|
 
 * [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
@@ -42,9 +42,9 @@
 * [✍️ Практика (XSS)](https://github.com/garevna/js-course/wiki/XSS)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
 
-<a name="3"></a>
+<a name="toc-3"></a>
 #### Занятие 3
-| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#4) |
+| [:arrow_heading_up:](#toc-2) | <img width="800"/> | [:arrow_heading_down:](#toc-4) |
 |-|-|-|
 
 * [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
@@ -52,17 +52,17 @@
 * [Параметры по умолчанию](https://github.com/garevna/js-course/wiki/default-params-values)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
-<a name="4"></a>
+<a name="toc-4"></a>
 #### Занятие 4
-| [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
+| [:arrow_heading_up:](#toc-3) | <img width="800"/> | [:arrow_heading_down:](#toc-5) |
 |-|-|-|
 
 * [Объект Math](https://github.com/garevna/js-course/wiki/Math)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
 
-<a name="5"></a>
+<a name="toc-5"></a>
 #### Занятие 5
-| [:arrow_heading_up:](#4) | <img width="800"/> | [:arrow_heading_down:](#6) |
+| [:arrow_heading_up:](#toc-4) | <img width="800"/> | [:arrow_heading_down:](#toc-6) |
 |-|-|-|
 
 * [Объект function](https://github.com/garevna/js-course/wiki/function-object)
@@ -71,9 +71,9 @@
 *   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform)
 * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
 
-<a name="6"></a>
+<a name="toc-6"></a>
 #### Занятие 6
 * [Объекты](https://github.com/garevna/js-course/wiki/objects)
 
-| [:arrow_heading_up:](#6) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
+| [:arrow_heading_up:](#toc-6) | <a name="toc-bottom"><img width="800"/></a> | [:arrow_double_up:](#toc-top) |
 |-|-|-|
