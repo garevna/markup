@@ -313,4 +313,4 @@ for ( var n = 0; n < 5; n++ ) {
 | [:arrow_heading_up:](#6) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
 |-|-|-|
 
-[:briefcase: Упражнения]()
+[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfMKUQjVnYrQq_YpPCNG81_DXOU0x8rVnb1bAJ4O_UnvvzwKg/viewform)
