@@ -4,25 +4,32 @@
 | [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#2) |
 |-|-|-|
 
-[:arrow_right_hook:](#3) Объект   arguments
-
-[:arrow_right_hook:](#4) Контекст выполнения
-
-[:arrow_right_hook:](#5) Контекст вызова
-
-[:arrow_right_hook:](#6) Область видимости
-
-![](https://github.com/garevna/js-course/blob/master/pictures/medical-car.png?raw=true)
+<table>
+    <tr>
+        <td width="500"><a href="#3">▶️</a><code> Объект <strong>arguments</strong></code></td>
+        <td rowspan=4 width="30%">
+            <img src="https://github.com/garevna/js-course/blob/master/pictures/medical-car.png"
+                 width="120">
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#4">▶️</a><code> Контекст выполнения</code></td>
+    </tr>
+    <tr>
+        <td><a href="#5">▶️</a><code> Контекст вызова</code></td>
+    </tr>
+    <tr>
+        <td><a href="#6">▶️</a><code> Область видимости</code></td>
+    </tr>
+</table>
 
 Как машина скорой помощи, функция может перемещаться от одного объекта к другому ( откуда она вызвана )
 
-:ambulance: В машине "скорой помощи" есть "`контекст исполнения`": 
-- **свойства** ( переменные ): `комплект инструментов, медикаментов, 
-   перевязочных матералов, различные приборы 
-   ( капельницы, дефибриллятор, аппарат искусственного дыхания и т.д.  )` 
-- **методы** ( функции ): `профессиональные навыки персонала
-   машины скорой помощи ( могут сделать укол, поставить капельницу,
-   применить дефибриллятор, перенести больного на носилках и т.д. )`
+У :ambulance:  есть "`контекст исполнения`": 
+
+| **свойства** ( переменные ) | **методы** ( функции ) |
+|-|-|
+| `комплект инструментов, медикаментов, перевязочных матералов, различные приборы ( капельницы, дефибриллятор, аппарат искусственного дыхания и т.д.  )` | `профессиональные навыки персонала машины скорой помощи ( могут сделать укол, поставить капельницу, применить дефибриллятор, перенести больного на носилках и т.д. )` |
 
 Все это функция :ambulance: возит с собой
 
@@ -141,6 +148,163 @@ testArguments ( 27, false, "Fill", [ 7, 4, 5 ], null )
 | [:arrow_heading_up:](#3) | <img width="800"/> | [:arrow_heading_down:](#5) |
 |-|-|-|
 
+У объекта **arguments** есть свойство **arguments.`callee`** - 
+
+ссылка на выполняемую функцию ( функцию-"хозяина" объекта  `arguments` )
+
+#### :coffee: 1
+```javascript
+function testArguments () {
+        console.log ( arguments.callee )
+}
+
+testArguments ( 5, false )
+```
+`В свойстве  arguments.callee  находится ссылка на саму функцию  testArguments`
+
+
+#### :coffee: 2
+
+Объявим функцию  **getArguments**:
+```javascript
+function getArguments ( param ) {
+        return param ? param : arguments.callee
+}
+```
+    которая, если ей был передан аргумент, 
+    возвращает значение этого аргумента,
+    в противном случае 
+    возвращает ссылку на саму себя
+
+    Теперь вызовем эту функцию с параметром и без:
+
+```javascript
+var x = getArguments ()
+var y = getArguments ( "Привет!" )
+```
+    результат вызова функции без аргументов 
+    мы поместили в переменную  x,
+    а результат вызова с аргументом "Привет!" 
+    мы поместили в переменную  y
+
+    Теперь выведем в консоль переменные x и y
+    в переменной x находится 
+    точная копия функции getArguments
+    а в переменной y - строка "Привет!"
+
+    Вызовем функцию x:
+```javascript
+x ( "До свидания!" )
+```
+    и получим строку "До свидания!"
+
+❓ как мы можем использовать **`arguments.callee`**
+
+    Мы знаем, что функция является объектом 
+    Значит, у нее могут быть свойства
+    предположим, мы хотим динамически определять 
+    свойства объекта-функции 
+    внутри самой функции
+
+    Объявим функцию, которая "сама себя лечит",
+    т.е. сама добавляет себе свойства и методы:
+
+#### :coffee: 3
+```javascript
+function setProperty ( prop, val ) {
+        arguments.callee [ prop ] = val
+}
+```
+
+    Теперь заставим ее создать себе парочку свойств:
+
+```javascript
+setProperty ( "isActive", false )
+setProperty ( "value", 50 )
+```
+    Ну, и для пущей убедительности 
+    заставим ее создать себе метод:
+
+```javascript
+setProperty ( "method", function () {
+        console.log ( "А еще я умею вышивать крестиком" )
+} ) 
+```
+    здесь мы передаем ей 
+    в качестве второго аргумента функцию
+
+    Теперь проверим, что эти свойства и метод 
+    появились у функции  setProperty
+
+    Выведем в консоль свойства isActive и value
+    функции  setProperty
+    и вызовем ее метод  method
+
+#### :coffee: 4
+
+    Создадим функцию, которая "накапливает" 
+    результаты собственных вычислений
+
+    Пусть это будет функция, 
+    вычисляющая факториал числа
+
+```javascript
+var factorial = function ( num ) {
+        var res = 1, n = 1
+        while ( n <= num )  res *= n++
+}
+```
+    "модифицируем" ее следующим образом:
+```javascript
+var factorial = function ( num ) {
+        if ( !arguments.callee.res )  arguments.callee.res = []
+        var res = 1, n = 1
+        while ( n <= num )  res *= n++
+        arguments.callee.res.push ( res )
+        return res
+}
+```
+#### :coffee: 5
+```javascript
+var buttons = []
+for ( var n = 0; n < 5; n++ ) {
+        buttons [ n ] = document.body.appendChild ( document.createElement( 'button' ) )
+        buttons [ n ].innerText = n
+        buttons [ n ].onclick = function ( event ) {
+                if ( !arguments.callee.res )
+                        arguments.callee.res = []
+                arguments.callee.res.push ( event.timeStamp )
+                console.log ( arguments.callee.res )
+        }
+}
+```
+    В этом примере создаются анонимные функции,
+    которые обрабатывают событие click  кнопок
+    Каждая функция "накапливает" данные
+    о времени клика на кнопке
+    в массиве arguments.callee.res
+    Модифицируем этот код:
+```javascript
+var buttons = []
+for ( var n = 0; n < 5; n++ ) {
+        buttons [ n ] = document.body.appendChild ( document.createElement( 'button' ) )
+        buttons [ n ].innerText = n
+        buttons [ n ].onclick = function ( event ) {
+                if ( !arguments.callee.clicksTime )
+                        arguments.callee.clicksTime = []
+                arguments.callee.clicksTime.push ( event.timeStamp )
+                console.log ( arguments.callee.clicksTime )
+                arguments.callee.res = arguments.callee.clicksTime.length > 1 ? 
+                        arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 1 ] -
+                        arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 2 ] : 0
+
+                console.info ( `Интервал между последними кликами: ${arguments.callee.res}` )
+        }
+}
+```
+
+    Что теперь делает каждый обработчик
+    клика на кнопке ?
 
 | [:arrow_heading_up:](#6) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
 |-|-|-|
