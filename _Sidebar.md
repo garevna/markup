@@ -69,19 +69,48 @@
 |-|-|-|
 
 ***
-
 <a name="toc-5"></a>
 #### Занятие 5
 | [:arrow_heading_up:](#toc-4) | <img width="800"/> | [:arrow_heading_down:](#toc-6) |
 |-|-|-|
 
 ***
-
 <a name="toc-6"></a>
 #### Занятие 6
 
+| [:arrow_heading_up:](#toc-5) | <img width="800"/> | [:arrow_heading_down:](#toc-7) |
+|-|-|-|
+
+
+***
+<a name="toc-7"></a>
+#### Занятие 7
+
+| [:arrow_heading_up:](#toc-6) | <img width="800"/> | [:arrow_heading_down:](#toc-8) |
+|-|-|-|
+
+***
+<a name="toc-8"></a>
+#### Занятие 8
+
+| [:arrow_heading_up:](#toc-7) | <img width="800"/> | [:arrow_heading_down:](#toc-9) |
+|-|-|-|
+
+***
+<a name="toc-9"></a>
+#### Занятие 9
+
+| [:arrow_heading_up:](#toc-8) | <img width="800"/> | [:arrow_heading_down:](#toc-10) |
+|-|-|-|
 
 ***
 
+<a name="toc-10"></a>
+#### Занятие 10
+
+| [:arrow_heading_up:](#toc-9) | <img width="800"/> | [:arrow_heading_down:](#toc-11) |
+|-|-|-|
+
+***
 | [:arrow_heading_up:](#toc-3) | <a name="toc-bottom"><img width="800"/></a> | [:arrow_double_up:](#toc-top) |
 |-|-|-|
