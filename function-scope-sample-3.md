@@ -1,4 +1,4 @@
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#scope) **scope**
+[:arrow_backward:](function-object#scope) **scope**
 
 #### :coffee: 3
 
@@ -27,4 +27,4 @@ __num = 10
 
 Цепочка областей видимости включает области видимости всех предыдущих контекстов в стеке
 
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#scope) **scope**
+[:arrow_backward:](function-object#scope) **scope**
