@@ -1,4 +1,4 @@
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#execution-context)
+[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#callee)
 
 #### :coffee: 1
 
@@ -44,4 +44,4 @@ x = 1, y = 1
 ```
 не произойдет, поскольку выход из контекста выполнения будет раньше этого кода
 
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#execution-context)
+[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#callee)
