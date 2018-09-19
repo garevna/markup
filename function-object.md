@@ -375,6 +375,9 @@ func ()  // window
 <a name="8"></a>
 #### :coffee: 8
 
+| [:arrow_heading_up:](#this) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
+|-|-|-|
+
 Если же функция является методом объекта, то ее контекстом вызова будет этот объект
 
 ```javascript
@@ -400,23 +403,17 @@ function girl () {
    console.log ( 'function girl: this: ', this )
 }
 ```
-Добавим функции   girl   свойство   say:
+Добавим функции  **`girl`**  свойство  **`say`** и вызовем функцию girl и ее свойство say:
 ```javascript
 girl.say = say
-```
-А теперь вызовем свойство  say  функции  girl:
-```javascript
-girl.say ()  //  girl
-```
-и саму функцию   girl:
-```javascript
-girl ()     // window
+girl.say ()     //  girl
+girl ()         // window
 ```
 
 ***
 [:link: w3schools](https://www.w3schools.com/js/js_scope.asp)
 
-| [:arrow_heading_up:](#6) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
+| [:arrow_heading_up:](#8) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
 |-|-|-|
 
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfMKUQjVnYrQq_YpPCNG81_DXOU0x8rVnb1bAJ4O_UnvvzwKg/viewform)
