@@ -163,7 +163,7 @@ testArguments ( 27, false, "Fill", [ 7, 4, 5 ], null )
 
 ссылка на выполняемую функцию ( функцию-"хозяина" объекта  `arguments` )
 
-#### [:coffee: 1](https://github.com/garevna/js-course/wiki/function-sample-1)
+#### :coffee: 1
 
 ```javascript
 function testArguments () {
@@ -175,33 +175,8 @@ testArguments ( 5, false )
 `В свойстве  arguments.callee  находится ссылка на саму функцию  testArguments`
 
 
-#### :coffee: 2
+#### [:coffee: 2](callee-sample-2)
 
-Объявим функцию  **getArguments**:
-```javascript
-function getArguments ( param ) {
-    return param ? param : arguments.callee
-}
-```
-которая, если ей был передан аргумент, возвращает значение этого аргумента, в противном случае возвращает ссылку на саму себя
-
-Теперь вызовем эту функцию с параметром и без:
-
-```javascript
-var x = getArguments ()
-var y = getArguments ( "Привет!" )
-```
-|:coffee:| |
-|-|-|
-| | `результат вызова функции без аргументов мы поместили в переменную  x,` |
-| | `а результат вызова с аргументом "Привет!" мы поместили в переменную  y` |
-| | `Теперь выведем в консоль переменные x и y` |
-| | `в переменной x находится точная копия функции getArguments` |
-| | `а в переменной y - строка "Привет!"` |
-| | `Вызовем функцию x:` **`x ( "До свидания!" )`** |
-| | `и получим строку "До свидания!"` |
-
-<a name="callee"></a>
 ### :wrench: как мы можем использовать **`arguments.callee`**
 
 | [:arrow_heading_up:](#callee) | <img width="800"/> | [:arrow_heading_down:](#1) |
@@ -213,35 +188,8 @@ var y = getArguments ( "Привет!" )
     свойства объекта-функции 
     внутри самой функции
 
-    Объявим функцию, которая "сама себя лечит",
-    т.е. сама добавляет себе свойства и методы:
+#### [:coffee: 3](callee-sample-3)
 
-#### :coffee: 3
-```javascript
-function setProperty ( prop, val ) {
-    arguments.callee [ prop ] = val
-}
-```
-
-    Теперь заставим ее создать себе парочку свойств:
-
-```javascript
-setProperty ( "isActive", false )
-setProperty ( "value", 50 )
-```
-    Ну, и для пущей убедительности 
-    заставим ее создать себе метод:
-
-```javascript
-setProperty ( "method", function () {
-    console.log ( "А еще я умею вышивать крестиком" )
-} ) 
-```
->> `здесь мы передаем ей в качестве второго аргумента функцию`
-
->> `Теперь проверим, что эти свойства и метод появились у функции  setProperty`
-
->>    `Выведем в консоль свойства isActive и value   функции  setProperty  и вызовем ее метод  method`
 
 <a name="2"></a>
 #### :coffee: 4
