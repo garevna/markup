@@ -7,7 +7,7 @@
 <table>
     <tr>
         <td width="300"><a href="#arguments">▶️</a><code> Объект <strong>arguments</strong></code></td>
-        <td rowspan=5 width="70%">
+        <td rowspan=5 width="50%">
             <code><em>📋 ECMAScript® 2016 Language Specification:</em></code><br>
             <code>☝️ Функция является вызываемым объектом</code><br>
             <code>☝️ Функция, связанная с объектом через свойство, называется методом</code><br>
