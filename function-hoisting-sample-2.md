@@ -1,4 +1,4 @@
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#hoisting) **hoisting**
+[:arrow_backward:](function-object#hoisting) **hoisting**
 
 #### :coffee: 2
 
@@ -22,4 +22,4 @@ console.log ( treg )  // 5
 
 Поэтому  в результате в консоли будет **5**
 
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#hoisting) **hoisting**
+[:arrow_backward:](function-object#hoisting) **hoisting**
