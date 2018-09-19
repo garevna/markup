@@ -48,11 +48,12 @@
 | [:arrow_heading_up:](#toc-2) | <img width="800"/> | [:arrow_heading_down:](#toc-4) |
 |-|-|-|
 
-* [Циклы while и do...while](https://github.com/garevna/js-course/wiki/while)
-* [Циклы for...of и for...in](https://github.com/garevna/js-course/wiki/for-of-and-for-in)
-* [Параметры по умолчанию](https://github.com/garevna/js-course/wiki/default-params-values)
-* [Объект function](https://github.com/garevna/js-course/wiki/function-object)
-* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-03)
+* [Циклы while и do...while](while)
+* [Циклы for...of и for...in](for-of-and-for-in)
+* [Параметры по умолчанию](default-params-values)
+* [Объект function](function-object)
+* [:briefcase: Упражнение](practice-03)
+* [:briefcase: Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 <a name="toc-4"></a>
 #### Занятие 4
