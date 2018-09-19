@@ -20,8 +20,8 @@
   * [Инкремент](https://github.com/garevna/js-course/wiki/Increment)
   * [Свойство length](https://github.com/garevna/js-course/wiki/length)
   * [Оператор цикла for](https://github.com/garevna/js-course/wiki/for)
-  * [UTF-8](https://github.com/garevna/js-course/wiki/UTF-8)
-  * [💼 Homework](https://github.com/garevna/js-course/wiki/hw-01)
+  * [UTF-8](UTF-8)
+  * [:briefcase: Homework](hw-01)
 ***
 
 <a name="toc-2"></a>
@@ -30,17 +30,17 @@
 | [:arrow_heading_up:](#toc-1) | <img width="800"/> | [:arrow_heading_down:](#toc-3) |
 |-|-|-|
 
-* [Приведение типов](https://github.com/garevna/js-course/wiki/data-types-conversion)
-* [NaN | null | Infinity](https://github.com/garevna/js-course/wiki/NaN-null-Infinity)
-* [Функции](https://github.com/garevna/js-course/wiki/function)
-* [Методы](https://github.com/garevna/js-course/wiki/method)
-* [Оператор switch](https://github.com/garevna/js-course/wiki/switch)
-* [Методы строк](https://github.com/garevna/js-course/wiki/Strings-methods)
-* [Методы массивов](https://github.com/garevna/js-course/wiki/Array-methods)
-* [Date ()](https://github.com/garevna/js-course/wiki/Date-constructor)
-* [📝 Самостоятельная работа](https://github.com/garevna/js-course/wiki/self-work-02)
-* [✍️ Практика (XSS)](https://github.com/garevna/js-course/wiki/XSS)
-* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-02)
+* [Приведение типов](data-types-conversion)
+* [NaN | null | Infinity](NaN-null-Infinity)
+* [Функции](function)
+* [Методы](method)
+* [Оператор switch](switch)
+* [Методы строк](Strings-methods)
+* [Методы массивов](Array-methods)
+* [Date ()](Date-constructor)
+* [📝 Самостоятельная работа](self-work-02)
+* [:briefcase: Практика (XSS)](XSS)
+* [:briefcase: Homework](hw-02)
 ***
 
 <a name="toc-3"></a>
@@ -52,7 +52,7 @@
 * [Циклы for...of и for...in](for-of-and-for-in)
 * [Параметры по умолчанию](default-params-values)
 * [Объект function](function-object)
-* [:briefcase: Упражнение](practice-03)
+* [:briefcase: Практика](practice-03)
 * [:briefcase: Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 <a name="toc-4"></a>
@@ -61,7 +61,7 @@
 |-|-|-|
 
 * [Объект Math](https://github.com/garevna/js-course/wiki/Math)
-* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-04)
+* [:briefcase: Homework](https://github.com/garevna/js-course/wiki/hw-04)
 ***
 
 <a name="toc-5"></a>
@@ -72,8 +72,8 @@
 * [Объект function](https://github.com/garevna/js-course/wiki/function-object)
 * [Контекст](https://github.com/garevna/js-course/wiki/context)
 * [Контекст исполнения](https://github.com/garevna/js-course/wiki/execution-context)
-*   [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform)
-* [💼 Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
+*   [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSc1dKqyxEoSI9Z61KNtXPu7DUdIjFoNw7S_c-HDY8iCkmPonQ/viewform)
+* [:briefcase: Homework](https://github.com/garevna/js-course/wiki/hw-05 "открывайте в новой вкладке")
 ***
 
 <a name="toc-6"></a>
