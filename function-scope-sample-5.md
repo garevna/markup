@@ -1,4 +1,4 @@
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#scope) **scope**
+[:arrow_backward:](function-object#scope) **scope**
 
 #### :coffee: 5
 
