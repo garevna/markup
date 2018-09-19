@@ -1,6 +1,6 @@
 [:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#hoisting)
 
-#### :coffee: 1
+#### :coffee: 1 ( hoisting )
 
 ```javascript
 function delegat () {
