@@ -197,7 +197,8 @@ testArguments ( 27, false, "Fill", [ 7, 4, 5 ], null )
 
 ссылка на выполняемую функцию ( функцию-"хозяина" объекта  `arguments` )
 
-#### :coffee: 1
+#### [:coffee: 1](https://github.com/garevna/js-course/wiki/function-sample-1)
+
 ```javascript
 function testArguments () {
         console.log ( arguments.callee )
