@@ -1,9 +1,16 @@
 <a name="toc-top"></a>
 ## JS
   * [Введение](https://github.com/garevna/js-course/wiki/introduction)
-  * [✋️ Перекличка FEA](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
-  * [✋️ Перекличка FS](https://docs.google.com/forms/d/e/1FAIpQLScBwPdTMDFxSP_m7Yen_ZQnLxNrFlAtPbIO967VZXjkJf_LVg/viewform)
-  * [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
+
+Перекличка
+
+  * [✋️ FEA](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
+  * [✋️ FS](https://docs.google.com/forms/d/e/1FAIpQLScBwPdTMDFxSP_m7Yen_ZQnLxNrFlAtPbIO967VZXjkJf_LVg/viewform)
+
+Регистрация ДЗ
+
+  * [🔗 FEA](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
+  * [🔗 FS](https://docs.google.com/forms/d/e/1FAIpQLSfOSdwsiPYl1NO2hnzv6vEp4On2X03sU2RafmnLQrWE_1znzA/viewform)
 ***
 <a name="toc-1"></a>
 #### Занятие 1
