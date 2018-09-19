@@ -1,4 +1,4 @@
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#scope) **scope**
+[:arrow_backward:](function-object#scope) **scope**
 
 #### :coffee: 4
 
@@ -32,4 +32,4 @@ console.info ( `Теперь __num === ${__num}` )
 
 После завершения выполнения кода функции **`__showNum`** ее контекст будет "демонтирован", и опять активным станет глобальный контекст, в котором  переменная **`__num`**  имеет значение   1
 
-[:arrow_backward:](https://github.com/garevna/js-course/wiki/function-object#scope) **scope**
+[:arrow_backward:](function-object#scope) **scope**
