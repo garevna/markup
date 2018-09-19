@@ -188,87 +188,9 @@ testArguments ( 5, false )
     свойства объекта-функции 
     внутри самой функции
 
-#### [:coffee: 3](callee-sample-3)
+| #### [:coffee: 3](callee-sample-3) | #### [:coffee: 4](callee-sample-4) | #### [:coffee: 5](callee-sample-5) |
 
 
-<a name="2"></a>
-#### :coffee: 4
-
-| [:arrow_heading_up:](#1) | <img width="800"/> | [:arrow_heading_down:](#3) |
-|-|-|-|
-
-`Создадим функцию, которая "накапливает" результаты собственных вычислений`
-
-`Пусть это будет функция, вычисляющая факториал числа`
-
-```javascript
-var factorial = function ( num ) {
-        var res = 1, n = 1
-        while ( n <= num )  res *= n++
-}
-```
-`"модифицируем" ее следующим образом:`
-```javascript
-var factorial = function ( num ) {
-     if ( !arguments.callee.res )  arguments.callee.res = []
-     var res = 1, n = 1
-     while ( n <= num )  res *= n++
-     arguments.callee.res.push ( res )
-     return res
-}
-```
-
-<a name="3"></a>
-#### :coffee: 5
-
-| [:arrow_heading_up:](#2) | <img width="800"/> | [:arrow_heading_down:](#execution-context) |
-|-|-|-|
-
-```javascript
-var buttons = []
-for ( var n = 0; n < 5; n++ ) {
-    buttons [ n ] = document.body.appendChild ( 
-          document.createElement( 'button' ) 
-    )
-    buttons [ n ].innerText = n
-    buttons [ n ].onclick = function ( event ) {
-       if ( !arguments.callee.res )
-             arguments.callee.res = []
-       arguments.callee.res.push ( event.timeStamp )
-             console.log ( arguments.callee.res )
-    }
-}
-```
-    В этом примере создаются анонимные функции,
-    которые обрабатывают событие click  кнопок
-    Каждая функция "накапливает" данные
-    о времени клика на кнопке
-    в массиве arguments.callee.res
-    Модифицируем этот код:
-
-```javascript
-var buttons = []
-for ( var n = 0; n < 5; n++ ) {
-    buttons [ n ] = document.body.appendChild ( 
-             document.createElement( 'button' ) 
-    )
-    buttons [ n ].innerText = n
-    buttons [ n ].onclick = function ( event ) {
-        if ( !arguments.callee.clicksTime )
-            arguments.callee.clicksTime = []
-        arguments.callee.clicksTime.push ( event.timeStamp )
-        console.log ( arguments.callee.clicksTime )
-        arguments.callee.res = arguments.callee.clicksTime.length > 1 ? 
-            arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 1 ] -
-            arguments.callee.clicksTime [ arguments.callee.clicksTime.length - 2 ] : 0
-
-        console.info ( `Интервал между последними кликами: ${arguments.callee.res}` )
-    }
-}
-```
-
-    Что теперь делает каждый обработчик
-    клика на кнопке ?
 
 <a name="execution-context"></a>
 ## :mortar_board: КОНТЕКСТ ИСПОЛНЕНИЯ
@@ -347,7 +269,7 @@ for ( var n = 0; n < 5; n++ ) {
 <a name="hoisting"></a>
 ### :pencil2: hoisting
 
-| [:arrow_heading_up:](#lexical-environment) | <img width="800"/> | [:arrow_heading_down:](#3) |
+| [:arrow_heading_up:](#lexical-environment) | <img width="800"/> | [:arrow_heading_down:](#scope) |
 |-|-|-|
 
 После вызова функции:
@@ -370,14 +292,13 @@ for ( var n = 0; n < 5; n++ ) {
 
 #### [:coffee: 2](function-hoisting-sample-2)
 
-   
 <a name="scope"></a>
-## :ledger: Область видимости 
+## :pencil2: Область видимости 
 
-| [:arrow_heading_up:](#5) | <img width="800"/> | [:arrow_heading_down:](#6) |
+| [:arrow_heading_up:](#hoisting) | <img width="800"/> | [:arrow_heading_down:](#this) |
 |-|-|-|
 
-Область видимости ( **scope** ) ограничивает действие идентификаторов переменных и функций
+Область видимости ( **`scope`** ) ограничивает действие идентификаторов переменных и функций
 
     Представьте себе двух человек по имени Саша:
     👨‍💼 парня и 🙎 девушку
@@ -438,16 +359,10 @@ for ( var n = 0; n < 5; n++ ) {
 #### [:coffee: 4](function-scope-sample-4)
 #### [:coffee: 5](function-scope-sample-5)
 
-| [:arrow_heading_up:](#scope) | <img width="800"/> | [:arrow_heading_down:](#8) |
-|-|-|-|
-
-
-
-
 <a name="this"></a>
-## :ledger: this
+## :pencil2: this
 
-| [:arrow_heading_up:](#6) | <img width="800"/> | [:arrow_heading_down:](#8) |
+| [:arrow_heading_up:](#scope) | <img width="800"/> | [:arrow_heading_down:](#8) |
 |-|-|-|
 
 **`this`** - это еще одна составляющая контекста исполнения функции
@@ -462,9 +377,9 @@ function func () {
    console.log ( this )
 }
 ```
-> при вызове функции  func () в консоль будет выведен объект  **window**
+при вызове функции  **`func ()`** в консоль будет выведен объект  *`window`*
 
-> Внутри  функции  func () **`this`**   указывает на объект  **window**
+Внутри  функции  **`func ()`** *`this`*   указывает на объект  *`window`*
 
 #### :coffee: 7
 ```javascript
@@ -477,6 +392,8 @@ function func () {
 
 func ()  // window
 ```
+
+<a name="8"></a>
 #### :coffee: 8
 
 Если же функция является методом объекта, то ее контекстом вызова будет этот объект
