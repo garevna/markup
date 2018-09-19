@@ -188,9 +188,8 @@ testArguments ( 5, false )
     свойства объекта-функции 
     внутри самой функции
 
-| #### [:coffee: 3](callee-sample-3) | #### [:coffee: 4](callee-sample-4) | #### [:coffee: 5](callee-sample-5) |
-
-
+| [:coffee: 3](callee-sample-3) | [:coffee: 4](callee-sample-4) | [:coffee: 5](callee-sample-5) |
+|-|-|-|
 
 <a name="execution-context"></a>
 ## :mortar_board: КОНТЕКСТ ИСПОЛНЕНИЯ
