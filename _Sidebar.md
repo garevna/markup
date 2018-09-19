@@ -1,7 +1,8 @@
 <a name="toc-top"></a>
 ## JS
   * [Введение](https://github.com/garevna/js-course/wiki/introduction)
-  * [✋️ Перекличка](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
+  * [✋️ Перекличка FEA](https://docs.google.com/forms/d/e/1FAIpQLScGN1NIrWMu42sr3lVGOzf3KHd4099eSnRHMOokIpnjXKSSjw/viewform)
+  * [✋️ Перекличка FS](https://docs.google.com/forms/d/e/1FAIpQLScBwPdTMDFxSP_m7Yen_ZQnLxNrFlAtPbIO967VZXjkJf_LVg/viewform)
   * [🔗 Регистрация ДЗ](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
 ***
 <a name="toc-1"></a>
