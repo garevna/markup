@@ -152,7 +152,7 @@ testArguments ( 27, false, "Fill", [ 7, 4, 5 ], null )
 <a name="callee"></a>
 ### :pencil2: arguments.callee
 
-| [:arrow_heading_up:](#arguments) | <img width="800"/> | [:arrow_heading_down:](#1) |
+| [:arrow_heading_up:](#arguments) | <img width="800"/> | [:arrow_heading_down:](#execution-context) |
 |-|-|-|
 
 У объекта **arguments** есть свойство **arguments.`callee`** - 
