@@ -445,8 +445,7 @@ console.dir ( sample )
 * это свидетельствует о том, что функция - это **объект**
 * свойство **`constructor`** в **`__proto__`** - это ссылка на **Function ()**
 
-
-`[[Scopes]] добавляет Chrome DevTools для целей отладки`
+`[[FunctionLocation]] и [[Scopes]] добавляет Chrome DevTools для целей отладки`
 
 ***
 [:link: w3schools](https://www.w3schools.com/js/js_scope.asp)
