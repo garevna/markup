@@ -408,6 +408,46 @@ girl.say ()     //  girl
 girl ()         // window
 ```
 
+<a name="prototype"></a>
+## :mortar_board: prototype
+
+* Функцию *как объект* нельзя вывести с помощью метода ~~`console.log`~~
+* Для этой цели следует использовать метод **`console.dir`**
+
+```javascript
+function sample () {}
+
+console.dir ( sample )
+```
+В консоли мы получим следующую картинку:
+```
+▼ ƒ sample()
+      arguments: null
+      caller: null
+      length: 0
+      name: "sample"
+    ▼ prototype:
+        ▶ constructor: ƒ sample()
+        ▶ __proto__: Object
+    ▶ __proto__: ƒ ()
+      [[FunctionLocation]]: VM476:1
+    ▼ [[Scopes]]: Scopes[1]
+        ▶ 0: Global {type: "global", name: "", object: Window}
+```
+Обратите внимание на свойство **`prototype`**, которое есть только у функций
+* это объект
+* в этом объекте есть свойство **`constructor`**
+* свойство **`constructor`** - это ссылка на саму функцию *sample()*
+
+Обратите также внимание на свойство **`__proto__`**, которое мы разберем далее
+* это **ссылка** на объект, от которого функция унаследовала свои свойства и методы
+* любая функция создается встроенным нативным объектом ( конструктором ) **Function ()**
+* это свидетельствует о том, что функция - это **объект**
+* свойство **`constructor`** в **`__proto__`** - это ссылка на **Function ()**
+
+
+`[[Scopes]] добавляет Chrome DevTools для целей отладки`
+
 ***
 [:link: w3schools](https://www.w3schools.com/js/js_scope.asp)
 
