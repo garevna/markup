@@ -1,7 +1,7 @@
 <a name="top"></a>
 # 🎓 Модель наследования в JS
 
-| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#) |
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#host) |
 |-|-|-|
 
 ||
