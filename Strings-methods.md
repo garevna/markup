@@ -6,14 +6,14 @@
 
 ||||
 |:-|:-|:-|
-|:file_folder: Операции|[:arrow_right:](#1)` Сложение строк`||
-|:file_folder: Методы строк||[:arrow_right:](#16)` padStart & padEnd`|
-|[:arrow_right:](#2)` indexOf()`|[:arrow_right:](#3)` slice ()`|[:arrow_right:](#4)` substring ()`|
-|[:arrow_right:](#5)` substr ()`|[:arrow_right:](#6)` toLowerCase ()`|[:arrow_right:](#7)` toUpperCase ()`|
-|[:arrow_right:](#8)` split ()`|[:arrow_right:](#9)` trim ()`|[:arrow_right:](#10)` charAt ()`|
-|[:arrow_right:](#11)` charCodeAt ()`|[:arrow_right:](#12)` repeat ()`|[:arrow_right:](#13)` replace ()`
+|:file_folder: Операции|[:arrow_right_hook:](#1)` Сложение строк`||
+|:file_folder: Методы строк||[:arrow_right_hook:](#16)` padStart & padEnd`|
+|[:arrow_right_hook:](#2)` indexOf()`|[:arrow_right_hook:](#3)` slice ()`|[:arrow_right_hook:](#4)` substring ()`|
+|[:arrow_right_hook:](#5)` substr ()`|[:arrow_right_hook:](#6)` toLowerCase ()`|[:arrow_right_hook:](#7)` toUpperCase ()`|
+|[:arrow_right_hook:](#8)` split ()`|[:arrow_right_hook:](#9)` trim ()`|[:arrow_right_hook:](#10)` charAt ()`|
+|[:arrow_right_hook:](#11)` charCodeAt ()`|[:arrow_right_hook:](#12)` repeat ()`|[:arrow_right_hook:](#13)` replace ()`
 ||||
-|:file_folder:` Дополнительно`|[:arrow_right:](#14)` Методы объекта String`|[:arrow_right:](#15)` Переменные в литералах`|
+|:file_folder:` Дополнительно`|[:arrow_right_hook:](#14)` Методы объекта String`|[:arrow_right_hook:](#15)` Переменные в литералах`|
 ***
 <a name="1"></a>
 ### :ledger: Сложение строк
