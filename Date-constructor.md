@@ -44,6 +44,7 @@ newData instanceof Date    // true
     ✅ Метод  getMinutes ()      вернет минуты
     ✅ Метод  getSeconds()       вернет секунды
 
+:coffee:
 ```javascript
 var newData = new Date ( 2017,  11,  10 )
 newData
