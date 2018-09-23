@@ -1,6 +1,6 @@
 <a name="toc-top"></a>
 ## JS
-  * [Введение](https://github.com/garevna/js-course/wiki/introduction)
+  * [Введение](introduction)
 
 Перекличка
 
@@ -16,18 +16,18 @@
 #### Занятие 1
 | [:arrow_double_down:](#toc-bottom) | <img width="800"/> | [:arrow_heading_down:](#toc-2) |
 |-|-|-|
-  * [Блок-схема алгоритма](https://github.com/garevna/js-course/wiki/Block-diagram)
-  * [Developer Tools](https://github.com/garevna/js-course/wiki/developer-tools)
-  * [Chrome DevTools](https://github.com/garevna/js-course/wiki/chrome-dev-tools)
-  * [Переменные](https://github.com/garevna/js-course/wiki/var)
-  * [Оператор typeof](https://github.com/garevna/js-course/wiki/typeof)
-  * [Структуры данных](https://github.com/garevna/js-course/wiki/data-structures)
-  * [Операторы присваивания](https://github.com/garevna/js-course/wiki/Assignments)
-  * [Логические выражения](https://github.com/garevna/js-course/wiki/Boolean)
-  * [Условные операторы](https://github.com/garevna/js-course/wiki/Conditional-operators)
-  * [Инкремент](https://github.com/garevna/js-course/wiki/Increment)
-  * [Свойство length](https://github.com/garevna/js-course/wiki/length)
-  * [Оператор цикла for](https://github.com/garevna/js-course/wiki/for)
+  * [Блок-схема алгоритма](Block-diagram)
+  * [Developer Tools](developer-tools)
+  * [Chrome DevTools](chrome-dev-tools)
+  * [Переменные](var)
+  * [Оператор typeof](typeof)
+  * [Структуры данных](data-structures)
+  * [Операторы присваивания](Assignments)
+  * [Логические выражения](Boolean)
+  * [Условные операторы](Conditional-operators)
+  * [Инкремент](Increment)
+  * [Свойство length](length)
+  * [Оператор цикла for](for)
   * [UTF-8](UTF-8)
   * [:briefcase: Homework](hw-01)
 ***
@@ -71,8 +71,8 @@
 
 * [Нативные и host-объекты](native-and-host-objects)
 * [Модель наследования](inheritance-model)
+* [Унаследованные свойства](inherited-properties)
 * [:coffee: 1](inheritance-model-sample-1)
-
 
 ***
 <a name="toc-5"></a>
