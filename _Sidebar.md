@@ -73,6 +73,7 @@
 * [Модель наследования](inheritance-model)
 * [Унаследованные свойства](inherited-properties)
 * [Конструктор](constructor)
+* [Публичные и приватные свойства](public-and-private-properties)
 * [:coffee: 1](inheritance-model-sample-1)
 * [:briefcase: Homework](hw-04)
 
