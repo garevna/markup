@@ -72,6 +72,7 @@
 * [Нативные и host-объекты](native-and-host-objects)
 * [Модель наследования](inheritance-model)
 * [Унаследованные свойства](inherited-properties)
+* [Конструктор](constructor)
 * [:coffee: 1](inheritance-model-sample-1)
 * [:briefcase: Homework](hw-04)
 
