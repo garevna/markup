@@ -62,3 +62,71 @@ for ( var student in presence ) {
    ] ( student )
 }
 ```
+Теперь создадим журнал группы:
+```javascript
+var fea7 = [
+   {
+      name: "Артюх Илья",
+      present: []
+   },
+   {
+      name: "Боднарь Михаил",
+      present: []
+   },
+   {
+      name: "Гончар Виктор",
+      present: []
+   },
+   {
+      name: "Дмитренко Пётр",
+      present: []
+   },
+   {
+      name: "Дорошенко Дмитрий",
+      present: []
+   },
+   {
+      name: "Калашников Григорий",
+      present: []
+   },
+   {
+      name: "Кержакова Марина",
+      present: []
+   },
+   {
+      name: "Москаленко Андрей",
+      present: []
+   },
+   {
+      name: "Ничипоренко Иван",
+      present: []
+   },
+   {
+      name: "Опрышкин Дмитрий",
+      present: []
+   },
+   {
+      name: "Подобреева Юлия",
+      present: []
+   },
+   {
+      name: "Саратова Ольга",
+      present: []
+   },
+   {
+      name: "Алескерова Евгения",
+      present: []
+   }
+]
+```
+и запустим цикл:
+```javascript
+var lessonDate = new Date().toLocaleString().split(', ')[0]
+for ( var student of fea7 )
+   student.present.push ( {
+      data: lessonDate,
+      name: presence [ student.name ]
+   } )
+```
+
+Выведите результат в консоль
