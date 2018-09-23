@@ -69,7 +69,9 @@
 | [:arrow_heading_up:](#toc-3) | <img width="800"/> | [:arrow_heading_down:](#toc-5) |
 |-|-|-|
 
-* [Модель наследования](https://github.com/garevna/js-course/wiki/native-objects)
+* [Модель наследования](native-objects)
+* [:coffee: 1](inheritance-model-sample-1)
+
 
 ***
 <a name="toc-5"></a>
