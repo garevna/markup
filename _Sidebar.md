@@ -73,6 +73,7 @@
 * [Модель наследования](inheritance-model)
 * [Унаследованные свойства](inherited-properties)
 * [:coffee: 1](inheritance-model-sample-1)
+* [:briefcase: Homework](hw-04)
 
 ***
 <a name="toc-5"></a>
