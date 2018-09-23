@@ -70,9 +70,10 @@
 |-|-|-|
 
 * [Нативные и host-объекты](native-and-host-objects)
-* [Модель наследования](inheritance-model)
+* [Литерал объекта](object-literal)
 * [Унаследованные свойства](inherited-properties)
 * [Конструктор](constructor)
+* [Модель наследования](inheritance-model)
 * [Публичные и приватные свойства](public-and-private-properties)
 * [:coffee: 1](inheritance-model-sample-1)
 * [:briefcase: Homework](hw-04)
