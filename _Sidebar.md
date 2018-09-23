@@ -69,6 +69,7 @@
 | [:arrow_heading_up:](#toc-3) | <img width="800"/> | [:arrow_heading_down:](#toc-5) |
 |-|-|-|
 
+* [Нативные и host-объекты](native-and-host-objects)
 * [Модель наследования](inheritance-model)
 * [:coffee: 1](inheritance-model-sample-1)
 
