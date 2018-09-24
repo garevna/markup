@@ -76,6 +76,7 @@
 * [Модель наследования](inheritance-model)
 * [Публичные и приватные свойства](public-and-private-properties)
 * [:coffee: 1](inheritance-model-sample-1)
+* [Метод valueOf](valueOf)
 * [:briefcase: Homework](hw-04)
 
 ***
