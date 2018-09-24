@@ -77,6 +77,7 @@
 * [Публичные и приватные свойства](public-and-private-properties)
 * [:coffee: 1](inheritance-model-sample-1)
 * [Метод valueOf](valueOf)
+* [Конструктор Error](Error)
 * [:briefcase: Homework](hw-04)
 
 ***
