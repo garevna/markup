@@ -39,6 +39,8 @@ var human = {
       return this.name + ": " + this.age
    }
 }
+
+console.info ( human + "!" ) // Ivan: 25!
 ```
 :coffee: 2
 
