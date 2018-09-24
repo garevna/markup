@@ -44,6 +44,23 @@ console.info ( human + "!" ) // Ivan: 25!
 ```
 :coffee: 2
 
+Конечно, так делать не стоит, но все-таки интересно :wink:
+
+в результате выполнения следующего кода:
+```javascript
+Object.prototype.valueOf = function () {
+    return "Это объект, блин, а не игрушка!"
+}
+```
+все нативные объекты JS будут "ругаться" соответствующим образом при попытке получить их примитивное значение
+```javascript
+console.info ( Number + "" )
+```
+```console
+Это объект, блин, а не игрушка!
+```
+:coffee: 3
+
 ```javascript
 const test = {
    num: 0,
