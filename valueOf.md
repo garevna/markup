@@ -39,7 +39,7 @@ var human = {
       return this.name + ": " + this.age
    }
 }
-
+```
 :coffee: 2
 
 ```javascript
