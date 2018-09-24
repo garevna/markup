@@ -79,6 +79,23 @@ try {
 }
 
 console.dir ( err )
+```
+```console.error
+❌ ValidationError: Arguments not valid
+```
+```console
+Error: Arguments not valid
+        at <anonymous>:4:17
+    name: "ValidationError"
+    message: "Arguments not valid"
+    stack: "ValidationError: Arguments not valid↵    at <anonymous>:4:17"
+    ▼ __proto__:
+        ► constructor: ƒ Error()
+          message: ""
+          name: "Error"
+        ► toString: ƒ toString()
+        ► __proto__: Object
+```
 
 ***
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf-i0cr7AEXzSJrggqS1AgZz-OBW5ES-l_ntO1R4Q7XZqZaEw/viewform)
