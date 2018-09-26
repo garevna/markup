@@ -148,10 +148,9 @@ Object.getOwnPropertyNames ( obj )
 А вот если итерировать **obj** с помощью цикла **`for ... in`**, мы получим свойство **_crocodile_**
 
 Это означает, что свойство, добавленное нами в прототип объекта, не является собственным, но является перечислимым
-```
 
 <a name="Object_proto"></a>
-### Object.\_\_proto\_\_
+### Object.`__proto__`
 
 | [:arrow_heading_up:](#static) | <img width="800"/> | [:arrow_heading_down:](#bottom) |
 |-|-|-|
@@ -206,7 +205,7 @@ Object.getOwnPropertyNames ( obj )
 | `Object.__proto__` | `Function.prototype` |
 | `Function.prototype.__proto__` | `Object.prototype` |
 ***
-| [:arrow_heading_up:](#Object) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
+| [:arrow_heading_up:](#Object_proto) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
 |-|-|-|
 
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf-i0cr7AEXzSJrggqS1AgZz-OBW5ES-l_ntO1R4Q7XZqZaEw/viewform)
