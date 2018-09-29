@@ -81,7 +81,7 @@ try {
 console.dir ( err )
 ```
 ```console.error
-❌ ValidationError: Arguments not valid
+⛔️ ValidationError: Arguments not valid
 ```
 ```console
 Error: Arguments not valid
@@ -96,6 +96,14 @@ Error: Arguments not valid
         ► toString: ƒ toString()
         ► __proto__: Object
 ```
+:coffee: 4
 
+```javascript
+try {
+    throw ( { name: "Hi", message: "It's a joke" } )
+} catch ( err ) { 
+    console.log ( err.name, err.message ) 
+}
+```
 ***
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf-i0cr7AEXzSJrggqS1AgZz-OBW5ES-l_ntO1R4Q7XZqZaEw/viewform)
