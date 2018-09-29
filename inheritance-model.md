@@ -195,6 +195,10 @@ Object.getOwnPropertyNames ( obj )
     ► __proto__: Object
 ```
 Очевидно, что **Object** наследует от **Function**, что логично, поскольку **Object** - это конструктор, т.е. функция
+```javascript
+console.dir ( Object.__proto__.constructor.name )
+// Function
+```
 
 При этом объект **Function.prototype** наследует от **Object** 
 
