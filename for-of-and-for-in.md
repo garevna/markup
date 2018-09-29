@@ -223,7 +223,7 @@ var article = {
         likes: 0
 }
 
-for ( var prop in obj ) {
+for ( var prop in article ) {
         console.log ( obj [ prop ] )
 }
 ```
