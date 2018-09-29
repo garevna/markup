@@ -1,3 +1,4 @@
+_( черновик )_
 # :mortar_board: Browser Object Model
 
 ## Объект window
