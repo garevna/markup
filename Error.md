@@ -105,5 +105,21 @@ try {
     console.log ( err.name, err.message ) 
 }
 ```
+:coffee: 5
+
+```javascript
+try {
+     throw ( {
+          name: "Hi", 
+          message: "It's a joke", 
+          stack: `
+              Привет,
+              извините за вмешательство,
+              очень хотелось поздороваться 😉
+          ` 
+     } )
+} catch ( err ) { console.error ( err.stack ) }
+
+```
 ***
 [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf-i0cr7AEXzSJrggqS1AgZz-OBW5ES-l_ntO1R4Q7XZqZaEw/viewform)
