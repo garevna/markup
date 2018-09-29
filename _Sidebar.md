@@ -83,8 +83,12 @@
 ***
 <a name="toc-5"></a>
 #### Занятие 5
+
 | [:arrow_heading_up:](#toc-4) | <img width="800"/> | [:arrow_heading_down:](#toc-6) |
 |-|-|-|
+
+* [BOM](BOM)
+* [DOM](DOM)
 
 ***
 <a name="toc-6"></a>
