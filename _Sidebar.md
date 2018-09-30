@@ -89,6 +89,7 @@
 
 * [BOM](BOM)
 * [Oбъект document](document)
+* [Типы узлов дерева DOM](NodeTypes)
 * [Элементы DOM](DOM-elements)
 
 ***
