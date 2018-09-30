@@ -32,7 +32,7 @@
 </pre>
 [🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
 </code>
-:coffee: 1
+[:coffee: 1](childNodes-sample-1)
 
 <code>
 <b>✅ children</b>
