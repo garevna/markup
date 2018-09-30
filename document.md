@@ -66,20 +66,31 @@ Object
 :warning: `Все html-элементы наследуют от класса HTMLElement`
 ***
 ## :mortar_board:  Свойства объекта **`document`**:
+
+* `✅ document.head      // __proto__: HTMLHeadElement`
+* `✅ document.body      // __proto__: HTMLBodyElement`
+* `✅ document.doctype   // строка`
+* `✅ document.URL           // строка`
+* `✅ document.location      // объект`
+* `✅ document.images        // HTMLCollection`
+* `✅ document.forms         // HTMLCollection`
+* `✅ document.links         // HTMLCollection`
+* `✅ document.scripts       // HTMLCollection`
 ```javascript
-✅ document.head      // __proto__: HTMLHeadElement
-✅ document.body      // __proto__: HTMLBodyElement
-
-✅ document.doctype   // строка
-
-✅ document.URL       // строка
-✅ document.location  // объект
-
-✅ document.images    // HTMLCollection
-✅ document.forms     // HTMLCollection
-✅ document.links     // HTMLCollection
-
-✅ document.cookie    // строка
+for ( var script of document.scripts )
+     console.log ( script.innerText )
+```
+* `✅ document.styleSheets   // StyleSheetList`
+```javascript
+for ( var sheet of document.styleSheets ) {
+     for ( var rule of sheet.cssRules ) {
+          console.warn ( rule.selectorText )
+          console.info ( rule.cssText )
+     }
+}
+```
+* `✅ document.cookie        // строка`
+* `✅ document.lastModified  // строка ( '09/30/2018 11:00:15' )`
 ...
 ```
 Выполним код в консоли:
@@ -105,7 +116,7 @@ document.onmouseover = function ( event ) {
 
 ##### ✅ document.createElement
 
-Метод **`createElement`** создает элемент DOM
+`Создает элемент DOM и возвращает ссылку на него`
 
 <code>Аргументом метода является строка, содержащая имя тега html-элемента ( `регистр не имеет значения` )</code>
 
@@ -152,28 +163,7 @@ document.querySelector ( "[title]" )
 ***
 [:link: MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 ***
-## Элементы DOM 
 
-## Свойства элементов DOM 
-#### ✅ **`childNodes`**
-
-`Объект` [**`NodeList`**](#nodeType "Типы узлов дерева DOM")
-
-| [:coffee: 1](childNodes-sample-1) |
-|-|
-
-[🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
-***
-#### ✅ **`children`**
-
-`Объект` **`HTMLCollection`**
-
-#### ✅ **`lastModified`**
-
-    Строка ( 09/30/2018 11:00:15 )
-</code>
-
-## Методы
 
 <a name="nodeType"></a>
 ### 🎓 Типы узлов дерева DOM
