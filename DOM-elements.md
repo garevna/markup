@@ -4,7 +4,7 @@
 
 ##### ✅ **`childNodes`**
 
-`Объект` [**`NodeList`**](#nodeType "Типы узлов дерева DOM")
+`Объект` [**`NodeList`**](nodeTypes "Типы узлов дерева DOM")
 
 | [:coffee: 1](childNodes-sample-1) |
 |-|
@@ -19,7 +19,7 @@
 
 `Ссылка на родительский элемент ( контейнер, в котором находится элемент )`
 
-:coffee: 1
+:coffee: 2
 ```html
 <body>
     <div id="demo">
@@ -38,6 +38,8 @@ console.dir ( section.parentNode )  // ► div#demo
 ##### ✅ appendChild()
 
 Добавляет элементу дочерний элемент
+
+:coffee: 3
 ```html
 <body>
     <div id="demo">
@@ -60,13 +62,39 @@ document.querySelector ( "#demo" ).appendChild ( section )
 </body>
 ```
 
+:coffee: 4
+
+```javascript
+var style = document.createElement ( 'style' )
+document.head.appendChild ( style )
+style.innerText = `p { color: red; }`
+
+style.sheet.cssRules[0]          // объект
+style.sheet.cssRules[0].cssText  // "p { color: red; }"
+
+style.appendChild (
+    document.createTextNode (
+        `div { color: blue; }`
+    ) 
+)
+```
+Результат:
+```html
+<head>
+    <style>
+        p { color: red; }
+        div { color: blue; }
+    </style>
+</head>
+```
+
 ##### ✅ removeChild()
 
 Удаление элемента
 
 :warning: `Удалить элемент может только его непосредственный родитель`
 
-:coffee: 2
+:coffee: 5
 ```html
 <body>
     <div id="demo">
@@ -95,7 +123,7 @@ figure.appendChild ( removed )
 
 ##### ✅ insertBefore()
 
-:coffee: 1
+:coffee: 6
 ```javascript
 function addElement ( tagName, container ) {
     var _container = 
@@ -114,7 +142,7 @@ main.insertBefore ( document.createElement ( "p" ), section )
 ```
 ##### ✅ insertAdjacentHTML()
 
-:coffee: 2
+:coffee: 7
 
 Используя функцию addElement из предыдущего примера, вставим на страницу элементы _`main`_, _`section`_ и _`figure`_:
 
