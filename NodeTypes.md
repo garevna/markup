@@ -28,15 +28,18 @@ document.querySelector ( "main" ).childNodes
 | `12` | `NOTATION_NODE` | |
 
 :coffee: 1
+
+Выполним код в консоли:
 ```javascript
 document.body.appendChild ( new Text( "Hello" ) )
 document.body.childNodes
 ```
+Результат:
 ```console
 ▼ NodeList [text]
       0: text
       length: 1
     ► __proto__: NodeList
 ```
-______________________________
-https://www.w3schools.com/xml/dom_nodetype.asp
+***
+[:link: w3schools](https://www.w3schools.com/xml/dom_nodetype.asp)
