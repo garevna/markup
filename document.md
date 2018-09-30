@@ -1,23 +1,45 @@
 # :mortar_board: Объект **`document`**
 
-Объект **`document`** 
+`__proto__: HTMLDocument`
 
-## Свойства
-### ✅ **`childNodes`**
+Свойства:
+```javascript
+✅ document.head
+✅ document.body
 
-`Объект` [**`NodeList`**](#nodeType)
+✅ document.URL       // строка
+✅ document.location  // объект
+
+✅ document.images    // HTMLCollection
+✅ document.forms     // HTMLCollection
+✅ document.links     // HTMLCollection
+...
+```
+Методы:
+```javascript
+✅ document.createElement
+✅ document.getElementById
+✅ document.getElementsByTagName
+✅ document.getElementsByClassName
+✅ document.querySelector
+✅ document.querySelectorAll
+...
+```
+## Свойства элементов DOM 
+#### ✅ **`childNodes`**
+
+`Объект` [**`NodeList`**](#nodeType "Типы узлов дерева DOM")
 
 | [:coffee: 1](childNodes-sample-1) |
 |-|
 
 [🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
+***
+#### ✅ **`children`**
 
-<b>✅ children</b>
+`Объект` **`HTMLCollection`**
 
-Объект <b><em>HTMLCollection</em></b>
-</code>
-<code>
-<b>✅ lastModified</b>
+#### ✅ **`lastModified`**
 
     Строка ( 09/30/2018 11:00:15 )
 </code>
