@@ -29,4 +29,20 @@ document.body.childNodes
     length: 7
   ► __proto__: NodeList
 ```
+Теперь выведем в консоль все дочерние узлы первого элемента с атрибутом **_title_**
+```javascript
+document.querySelector ( '[ title ]' ).childNodes
+```
+Результат:
+```console
+▼ NodeList(5) [text, a.paragraph, text, img#picture.galleryPicture, text]
+    0: text
+  ► 1: a.paragraph
+  ► 2: text
+  ► 3: img#picture.galleryPicture
+  ► 4: text
+    length: 5
+  ► __proto__: NodeList
+```
+
 [:rewind:](document)
