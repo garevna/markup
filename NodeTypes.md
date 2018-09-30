@@ -41,5 +41,20 @@ document.body.childNodes
       length: 1
     ► __proto__: NodeList
 ```
+:coffee: 2
+
+```javascript
+var style = document.createElement ( 'style' )
+document.head.appendChild ( style )
+style.innerText = `p { color: red; }`
+
+var p = document.body.appendChild (
+    document.createElement ( "p" )
+)
+p.innerText = "Hello!"
+
+document.head.childNodes // ▶ NodeList [style]
+document.head.childNodes[0].nodeType // 1
+```
 ***
 [:link: w3schools](https://www.w3schools.com/xml/dom_nodetype.asp)
