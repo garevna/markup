@@ -88,7 +88,8 @@
 |-|-|-|
 
 * [BOM](BOM)
-* [DOM](DOM)
+* [Oбъект document](document)
+* [Элементы DOM](DOM-elements)
 
 ***
 <a name="toc-6"></a>
