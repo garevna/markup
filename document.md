@@ -92,7 +92,7 @@ for ( var sheet of document.styleSheets ) {
 * `✅ document.cookie        // строка`
 * `✅ document.lastModified  // строка ( '09/30/2018 11:00:15' )`
 ...
-```
+
 Выполним код в консоли:
 ```javascript
 for ( var prop in document ) 
@@ -106,6 +106,7 @@ for ( var prop in document )
 `по умолчанию эти значениями этих свойств будет null`
 
 :coffee:
+
 `например, присвойте свойству onmouseover объекта document ссылку на функцию:`
 ```javascript
 document.onmouseover = function ( event ) {
@@ -122,6 +123,29 @@ document.onmouseover = function ( event ) {
 
 <code>Если переданная строка не соответствует никакому тегу в спецификации языка html, то созданный элемент будет иметь класс **`HTMLUnknownElement`**</code>
 
+:coffee: 1
+
+```javascript
+var style = document.createElement ( 'style' )
+style.appendChild (
+    document.createTextNode (
+        `section { border: inset 1px; }`
+    )
+)
+console.log ( style )
+```
+
+##### ✅ document.createTextNode
+
+:coffee: 2
+```javascript
+style.appendChild ( 
+    document.createTextNode (
+        `div { color: blue; }`
+    ) 
+)
+```
+***
 Для поиска элементов на странице у объекта **`document`** есть несколько методов:
 
 ##### ✅ document.getElementById
