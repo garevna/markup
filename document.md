@@ -3,38 +3,15 @@
 Объект **`document`** 
 
 ## Свойства
+### ✅ **`childNodes`**
 
-<code>
-<b>✅ childNodes</b>
+`Объект` [**`NodeList`**](#nodeType)
 
-Объект <b><em>[NodeList](#nodeType)</em></b>
-<pre>
-&lt;body>
-  &lt;div class="container" 
-          title="Контейнер">
-     &lt;a class="paragraph" 
-           href="https://translate.google.com/" 
-           title="Перевод">Translator
-     &lt;/a>
-     &lt;img src="http://www.abc.net.au/news/image/9154542-1x1-940x940.jpg" 
-             width="200" id="picture" class="galleryPicture">
-  &lt;/div>
-  &lt;h1 class="header">Hello!</h1>
-  &lt;p class="paragraph">You study JS</p>
-&lt;/body>
+| [:coffee: 1](childNodes-sample-1) |
+|-|
 
-&lt;script>
-   <b>document.body.childNodes</b>
-   // вернет  NodeList(3) [ div.container, h1.header, p.paragraph ]
-   <b>document.querySelector ( '[ title ]' ).childNodes</b>
-   // вернет  NodeList(2) [ a.paragraph, img#picture.galleryPicture ]
-&lt;/script>
-</pre>
 [🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
-</code>
-[:coffee: 1](childNodes-sample-1)
 
-<code>
 <b>✅ children</b>
 
 Объект <b><em>HTMLCollection</em></b>
