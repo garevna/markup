@@ -67,15 +67,15 @@ Object
 ***
 ## :mortar_board:  Свойства объекта **`document`**:
 
-* `✅ document.head      // __proto__: HTMLHeadElement`
-* `✅ document.body      // __proto__: HTMLBodyElement`
+* `✅ document.head      // HTMLHeadElement`
+* `✅ document.body      // HTMLBodyElement`
 * `✅ document.doctype   // строка`
-* `✅ document.URL           // строка`
-* `✅ document.location      // объект`
-* `✅ document.images        // HTMLCollection`
-* `✅ document.forms         // HTMLCollection`
-* `✅ document.links         // HTMLCollection`
-* `✅ document.scripts       // HTMLCollection`
+* `✅ document.URL       // строка`
+* `✅ document.location  // объект`
+* `✅ document.images    // HTMLCollection`
+* `✅ document.forms     // HTMLCollection`
+* `✅ document.links     // HTMLCollection`
+* `✅ document.scripts   // HTMLCollection`
 ```javascript
 for ( var script of document.scripts )
      console.log ( script.innerText )
