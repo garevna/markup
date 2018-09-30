@@ -29,6 +29,8 @@ document.body.childNodes
     length: 7
   ► __proto__: NodeList
 ```
+:warning: `Обратите внимание, что все переводы строк ( и пустые строки ) рассматриваются как тестовые узлы документа`
+
 Теперь выведем в консоль все дочерние узлы первого элемента с атрибутом **_title_**
 ```javascript
 document.querySelector ( '[ title ]' ).childNodes
