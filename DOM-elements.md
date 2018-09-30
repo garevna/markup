@@ -88,13 +88,25 @@ style.appendChild (
 </head>
 ```
 
+:coffee: 5
+
+```javascript
+var script = document.createElement ( 'script' )
+script.appendChild (
+    document.createTextNode (
+        `alert ( "Hello" )`
+    )
+)
+document.body.appendChild ( script )
+```
+
 ##### ✅ removeChild()
 
 Удаление элемента
 
 :warning: `Удалить элемент может только его непосредственный родитель`
 
-:coffee: 5
+:coffee: 6
 ```html
 <body>
     <div id="demo">
@@ -123,7 +135,7 @@ figure.appendChild ( removed )
 
 ##### ✅ insertBefore()
 
-:coffee: 6
+:coffee: 7
 ```javascript
 function addElement ( tagName, container ) {
     var _container = 
@@ -142,7 +154,7 @@ main.insertBefore ( document.createElement ( "p" ), section )
 ```
 ##### ✅ insertAdjacentHTML()
 
-:coffee: 7
+:coffee: 8
 
 Используя функцию addElement из предыдущего примера, вставим на страницу элементы _`main`_, _`section`_ и _`figure`_:
 
