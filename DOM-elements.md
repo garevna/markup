@@ -19,7 +19,7 @@
 
 `Ссылка на родительский элемент ( контейнер, в котором находится элемент )`
 
-:coffee: 2
+### :coffee: :two:
 ```html
 <body>
     <div id="demo">
@@ -39,7 +39,7 @@ console.dir ( section.parentNode )  // ► div#demo
 
 Добавляет элементу дочерний элемент
 
-:coffee: 3
+### :coffee: :three:
 ```html
 <body>
     <div id="demo">
@@ -62,7 +62,7 @@ document.querySelector ( "#demo" ).appendChild ( section )
 </body>
 ```
 
-:coffee: 4
+### :coffee: :four:
 
 ```javascript
 var style = document.createElement ( 'style' )
@@ -88,7 +88,7 @@ style.appendChild (
 </head>
 ```
 
-:coffee: 5
+### :coffee: :five:
 
 ```javascript
 var script = document.createElement ( 'script' )
@@ -106,7 +106,7 @@ document.body.appendChild ( script )
 
 :warning: `Удалить элемент может только его непосредственный родитель`
 
-:coffee: 6
+### :coffee: :six:
 ```html
 <body>
     <div id="demo">
@@ -135,7 +135,7 @@ figure.appendChild ( removed )
 
 ##### ✅ insertBefore()
 
-:coffee: 7
+### :coffee: :seven:
 ```javascript
 function addElement ( tagName, container ) {
     var _container = 
@@ -154,7 +154,7 @@ main.insertBefore ( document.createElement ( "p" ), section )
 ```
 ##### ✅ insertAdjacentHTML()
 
-:coffee: 8
+### :coffee: :eight:
 
 Используя функцию addElement из предыдущего примера, вставим на страницу элементы _`main`_, _`section`_ и _`figure`_:
 
@@ -184,6 +184,57 @@ section.insertAdjacentHTML ( `afterEnd`, `<p>Bye</p>` )
         </section>
         <p>Bye</p>
         <figure></figure>
+    </main>
+</body>
+```
+
+##### ✅ insertAdjacentElement()
+
+### :coffee: :nine:
+
+```html
+<body>
+    <main>
+        <section id="demo">
+        </section>
+        <figure></figure>
+    </main>
+</body>
+```
+```javascript
+document.getElementById ( "demo" )
+    .insertAdjacentElement( 
+        "beforeend",
+        document.createElement ( "p" )
+    )
+document.querySelector ( "figure" )
+    .insertAdjacentElement( 
+        "afterend",
+        document.createElement ( "h3" )
+    )
+document.querySelector ( "#demo" )
+    .insertAdjacentElement( 
+        "beforebegin",
+        document.createElement ( "img" )
+    )
+document.getElementsByTagName ( "figure" )[0]
+    .insertAdjacentElement( 
+        "afterbegin",
+        document.createElement ( "li" )
+    )
+```
+Результат во вкладке Elements:
+```html
+<body>
+    <main>
+        <img>
+        <section id="demo">
+            <p></p>
+        </section>
+        <figure>
+            <li></li>
+        </figure>
+        <h3></h3>
     </main>
 </body>
 ```
