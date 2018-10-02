@@ -66,14 +66,16 @@ _( черновик )_
         ► get state: ƒ ()
         ► __proto__: Object
 ```
-:white_check_mark: Свойство **`history.state`** ( строка ) содержит адрес текущей страницы
+<code>
 
-:white_check_mark: Свойство **`history.length`** ( целое число ) содержит число переходов в истории текущей страницы ( `на единицу больше, чем максимально возможное значение для метода go()` )
+✅ Свойство <b>history.state</b> ( строка ) содержит адрес текущей страницы
 
-:white_check_mark: С помощью методов **`history.back()`** и **`history.forward()`** можно управлять переходами назад / вперед по истории
+✅ Свойство <b>history.length</b> ( целое число ) содержит число переходов в истории текущей страницы ( `на единицу больше, чем максимально возможное значение для метода go()` )
 
-:white_check_mark: С помощью метода **`go()`** ( `если аргумент метода - целое число` ) можно перейти на заданное число страниц вперед ( положительное значение аргумента ) или назад ( отрицательное значение аргумента )
+✅ С помощью методов <b>history.back()</b> и <b>history.forward()</b> можно управлять переходами назад / вперед по истории
 
+✅ С помощью метода <b>go()</b> ( `если аргумент метода - целое число` ) можно перейти на заданное число страниц вперед ( положительное значение аргумента ) или назад ( отрицательное значение аргумента )
+</code>
 ```javascript
 window.history.go(-2)
 ```
@@ -86,15 +88,15 @@ window.history.go(-2)
 
 К свойствам объекта **`location`** относятся:
 
-:white_check_mark: hash
-:white_check_mark: host
-:white_check_mark: hostname
-:white_check_mark: href
-:white_check_mark: origin
-:white_check_mark: pathname
-:white_check_mark: port
-:white_check_mark: protocol
-:white_check_mark: search
+    ✅ hash
+    ✅ host
+    ✅ hostname
+    ✅ href
+    ✅ origin
+    ✅ pathname
+    ✅ port
+    ✅ protocol
+    ✅ search
 
 Посмотрим на 
 ```console
@@ -104,3 +106,4 @@ window.history.go(-2)
     ► __proto__: Object
 ```
 
+##### [:briefcase:](https://docs.google.com/forms/d/e/1FAIpQLSegoz325rD2axv1Trw3EYZVPFhXbRaEa40WQhSO22EzEEYvZA/viewform) Упражнения
