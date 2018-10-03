@@ -106,4 +106,4 @@ window.history.go(-2)
     ► __proto__: Object
 ```
 
-##### [:briefcase:](https://docs.google.com/forms/d/e/1FAIpQLSegoz325rD2axv1Trw3EYZVPFhXbRaEa40WQhSO22EzEEYvZA/viewform) Упражнения
+##### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSegoz325rD2axv1Trw3EYZVPFhXbRaEa40WQhSO22EzEEYvZA/viewform) 
