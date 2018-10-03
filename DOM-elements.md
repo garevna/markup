@@ -1,45 +1,22 @@
 # :mortar_board: Элементы DOM 
 
-### Свойства 
-
-##### ✅ **`childNodes`**
-
-`Объект` [**`NodeList`**](nodeTypes "Типы узлов дерева DOM")
-
-| [:coffee: :one:](childNodes-sample-1) |
-|-|
-
-[🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
-***
-##### ✅ **`children`**
-
-`Объект` **`HTMLCollection`**
-
-##### ✅ **`parentNode`**
-
-`Ссылка на родительский элемент ( контейнер, в котором находится элемент )`
-
-### :coffee: :two:
-```html
-<body>
-    <div id="demo">
-        <section id="section"></section>
-        <figure></figure>
-    </div>
-</body>
-```
-```javascript
-var section = document.querySelector ( "#section" )
-console.dir ( section.parentNode )  // ► div#demo
-```
-
 ## Методы
 
+| | |
+|-|-|
+|[:arrow_right_hook:](#appendChild) `appendChild`|[:arrow_right_hook:](#removeChild)`removeChild`|
+|[:arrow_right_hook:](#insertBefore) `insertBefore`|[:arrow_right_hook:](#replaceChild) `replaceChild`|
+|[:arrow_right_hook:](#insertAdjacentHTML) `insertAdjacentHTML`|[:arrow_right_hook:](#insertAdjacentElement) `insertAdjacentElement`|
+|[:arrow_right_hook:](#setAttribute) `setAttribute`|[:arrow_right_hook:](#getAttribute) `getAttribute`|
+|[:arrow_right_hook:](#getBoundingClientRect) `getBoundingClientRect`|[:arrow_right_hook:](#scrollIntoView) `scrollIntoView`|
+|[:arrow_right_hook:](#addEventListener) `addEventListener`|[:arrow_right_hook:](#removeEventListener) `removeEventListener`|
+
+<a name="appendChild"></a>
 ##### ✅ appendChild()
 
 Добавляет элементу дочерний элемент
 
-### :coffee: :three:
+### :coffee: :one:
 ```html
 <body>
     <div id="demo">
@@ -62,7 +39,7 @@ document.querySelector ( "#demo" ).appendChild ( section )
 </body>
 ```
 
-### :coffee: :four:
+### :coffee: :two:
 
 ```javascript
 var style = document.createElement ( 'style' )
@@ -88,7 +65,7 @@ style.appendChild (
 </head>
 ```
 
-### :coffee: :five:
+### :coffee: :three:
 
 ```javascript
 var script = document.createElement ( 'script' )
@@ -99,14 +76,14 @@ script.appendChild (
 )
 document.body.appendChild ( script )
 ```
-
+<a name="removeChild"></a>
 ##### ✅ removeChild()
 
 Удаление элемента
 
 :warning: `Удалить элемент может только его непосредственный родитель`
 
-### :coffee: :six:
+### :coffee: :four:
 ```html
 <body>
     <div id="demo">
@@ -132,10 +109,10 @@ figure.appendChild ( removed )
     </div>
 </body>
 ```
-
+<a name="insertBefore"></a>
 ##### ✅ insertBefore()
 
-### :coffee: :seven:
+### :coffee: :five:
 ```javascript
 function addElement ( tagName, container ) {
     var _container = 
@@ -152,9 +129,10 @@ var figure = addElement ( "figure", main )
 
 main.insertBefore ( document.createElement ( "p" ), section )
 ```
+<a name="insertAdjacentHTML"></a>
 ##### ✅ insertAdjacentHTML()
 
-### :coffee: :eight:
+### :coffee: :six:
 
 Используя функцию addElement из предыдущего примера, вставим на страницу элементы _`main`_, _`section`_ и _`figure`_:
 
@@ -187,10 +165,10 @@ section.insertAdjacentHTML ( `afterEnd`, `<p>Bye</p>` )
     </main>
 </body>
 ```
-
+<a name="insertAdjacentElement"></a>
 ##### ✅ insertAdjacentElement()
 
-### :coffee: :nine:
+### :coffee: :seven:
 
 ```html
 <body>
@@ -237,6 +215,59 @@ document.getElementsByTagName ( "figure" )[0]
         <h3></h3>
     </main>
 </body>
+```
+***
+### Свойства 
+
+##### ✅ **`childNodes`**
+
+`Объект` [**`NodeList`**](nodeTypes "Типы узлов дерева DOM")
+
+| [:coffee: :eight:](childNodes-sample-1) |
+|-|
+
+[🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
+***
+##### ✅ **`children`**
+
+`Объект` **`HTMLCollection`**
+
+##### ✅ **`parentNode`**
+
+`Ссылка на родительский элемент ( контейнер, в котором находится элемент )`
+
+### :coffee: :nine:
+```html
+<body>
+    <div id="demo">
+        <section id="section"></section>
+        <figure></figure>
+    </div>
+</body>
+```
+```javascript
+var section = document.querySelector ( "#section" )
+console.dir ( section.parentNode )  // ► div#demo
+```
+
+##### ✅ **`on`** + тип события
+
+Все свойства элементов DOM, начинающиеся на **`on`**, являются потенциальными ссылками на обработчика соответствующего события
+
+Изначально они имеют значение **null**
+
+### :coffee: :keycap_ten:
+
+```javascript
+var section = document.body.appendChild (
+     document.createElement ( 'section' )
+)
+section.innerHTML = "<h3>Hello</h3>"
+
+for ( var prop in section ) {
+     if ( prop.indexOf ( 'on' ) !== 0 ) continue
+     console.info ( `Event: ${prop.slice(2)}` )
+}
 ```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
