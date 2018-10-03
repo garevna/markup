@@ -1,4 +1,8 @@
+<a name="top"></a>
 # :mortar_board: Элементы DOM 
+
+| [:arrow_double_down:](#bottom) | <img width="800"/> | [:arrow_heading_down:](#appendChild) |
+|-|-|-|
 
 ## Методы
 
@@ -13,6 +17,9 @@
 
 <a name="appendChild"></a>
 ##### ✅ appendChild()
+
+| [:arrow_heading_up:](#top) | <img width="800"/> | [:arrow_heading_down:](#removeChild) |
+|-|-|-|
 
 Добавляет элементу дочерний элемент
 
@@ -79,6 +86,9 @@ document.body.appendChild ( script )
 <a name="removeChild"></a>
 ##### ✅ removeChild()
 
+| [:arrow_heading_up:](#appendChild) | <img width="800"/> | [:arrow_heading_down:](#insertBefore) |
+|-|-|-|
+
 Удаление элемента
 
 :warning: `Удалить элемент может только его непосредственный родитель`
@@ -112,6 +122,9 @@ figure.appendChild ( removed )
 <a name="insertBefore"></a>
 ##### ✅ insertBefore()
 
+| [:arrow_heading_up:](#removeChild) | <img width="800"/> | [:arrow_heading_down:](#insertAdjacentHTML) |
+|-|-|-|
+
 ### :coffee: :five:
 ```javascript
 function addElement ( tagName, container ) {
@@ -131,6 +144,9 @@ main.insertBefore ( document.createElement ( "p" ), section )
 ```
 <a name="insertAdjacentHTML"></a>
 ##### ✅ insertAdjacentHTML()
+
+| [:arrow_heading_up:](#insertBefore) | <img width="800"/> | [:arrow_heading_down:](#insertAdjacentElement) |
+|-|-|-|
 
 ### :coffee: :six:
 
@@ -167,6 +183,9 @@ section.insertAdjacentHTML ( `afterEnd`, `<p>Bye</p>` )
 ```
 <a name="insertAdjacentElement"></a>
 ##### ✅ insertAdjacentElement()
+
+| [:arrow_heading_up:](#insertAdjacentHTML) | <img width="800"/> | [:arrow_heading_down:](#props) |
+|-|-|-|
 
 ### :coffee: :seven:
 
@@ -217,6 +236,7 @@ document.getElementsByTagName ( "figure" )[0]
 </body>
 ```
 ***
+<a name="props"></a>
 ### Свойства 
 
 ##### ✅ **`childNodes`**
