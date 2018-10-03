@@ -86,7 +86,23 @@ for ( var prop in HTMLElement.prototype ) {
 
 Свойство  **_`prototype`_**  конструктора **`Event`** содержит свойства, которые будут унаследованы всеми событиями 
 ***
+```javascript
+var userEvent = new Event( 'user' )
+```
+## :mortar_board: dispatchEvent
 
+Метод dispatchEvent "отправляет" событие элементу
+
+```javascript
+document.body.onclick = function ( event ) {
+    this.style.backgroundColor = "#fa0"
+}
+document.body.dispatchEvent ( new Event ( 'click' ) )
+```
+
+## :mortar_board: CustomEvent
+
+Конструктор CustomEvent создает кастомное событие c дополнительными параметрами
 
 :coffee: 1
 ```javascript
