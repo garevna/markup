@@ -92,6 +92,7 @@
 * [Типы узлов дерева DOM](NodeTypes)
 * [Элементы DOM](DOM-elements)
 * [События  DOM](Event)
+* [:briefcase: Homework](hw-05)
 ***
 <a name="toc-6"></a>
 #### Занятие 6
