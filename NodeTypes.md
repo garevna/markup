@@ -27,7 +27,7 @@ document.querySelector ( "main" ).childNodes
 | `11` | `DOCUMENT_FRAGMENT_NODE` | |
 | `12` | `NOTATION_NODE` | |
 
-:coffee: 1
+:coffee: :one:
 
 Выполним код в консоли:
 ```javascript
@@ -41,7 +41,7 @@ document.body.childNodes
       length: 1
     ► __proto__: NodeList
 ```
-:coffee: 2
+:coffee: :two:
 
 ```javascript
 var style = document.createElement ( 'style' )
