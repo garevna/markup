@@ -175,6 +175,7 @@ elem.onmouseover = function ( mev ) { ... }
 Методы добавления и удаления прослушивателей событий:
 
 ✅ addEventListener
+
 ✅ removeEventListener
 
 👀 Свойства "on..." позволяют "повесить" только одного обработчика данного события на данный элемент
@@ -182,6 +183,7 @@ elem.onmouseover = function ( mev ) { ... }
 👂 eventListener-ов может быть сколько угодно для одного и того же элемента и одного и того же события
 
 Предположим, мы вешаем обработчика события mousemove на все элементы **div**
+
 Затем вешаем "персонального" обработчика события **_`mousemove`_** на  **`div#sample`**
 
 На  элементе  **`div#sample`**  "сработают" оба обработчика при наведении указателя мышки
@@ -220,6 +222,29 @@ function clickdHandler ( event ) {
 }
 elem.addEventListener ( 'click', clickdHandler )
 ```
+Третий аргумент - логическое значение - будучи установленным в **`true`**, позволяет перехватить событие на фазу погружения ( **_capturing_** )
+
+:coffee: :three:
+```javascript
+var btn = document.createElement ( 'button' )
+btn.innerText = "OK"
+btn.style = `
+    background-image: url(https://cdn2.iconfinder.com/data/icons/user-23/512/User_Yuppie_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 5px 10px 5px 30px;
+`
+document.body.appendChild ( btn )
+
+btn.addEventListener ( 'click', function ( event ) {
+    console.log ( event.currentTarget.tagName, event.eventPhase )
+}, true )
+
+document.body.addEventListener ( 'click', function ( event ) {
+    console.info ( event.currentTarget.tagName, event.eventPhase )
+}, true )
+```
 
 <a name="removeEventListener"></a>
 ### :mortar_board: removeEventListener
@@ -228,7 +253,7 @@ elem.addEventListener ( 'click', clickdHandler )
 
 При удалении нужно передавать точно такие же аргументы, какие были переданы методу addEventListener при создании прослушивателя
 
-:coffee: :three:
+:coffee: :four:
 
 Такой вариант удаления не сработает:
 ```javascript
@@ -241,7 +266,7 @@ document.getElementById ( 'sample' )
          console.log ( 'sample click event: ', event )
     })
 ```
-:coffee: :four:
+:coffee: :five:
 
 А такой - да:
 ```javascript
@@ -251,7 +276,7 @@ function clickHandler ( event ) {
 elem.addEventListener ( 'click', clickHandler )
 elem.removeEventListener ( 'click', clickHandler )
 ```
-:coffee: :five:
+:coffee: :six:
 ```html
 <div id="main-frame" class="wrapper">
     <div id="main-content">
@@ -310,7 +335,7 @@ elem.addEventListener ( 'click', clickHandler )
 
 Мы можем внутри обработчика события **_`click`_** элемента **`a`** вызвать метод **_`preventDefault()`_**, что предотвратит поведение по умолчанию, и перехода не будет
 
-:coffee: :six:
+:coffee: :seven:
 ```javascript
 var elem = document.body.appendChild ( 
      document.createElement ( 'a' )
@@ -326,11 +351,11 @@ elem.addEventListener ( 'click',
 ```
 ### :mortar_board: stopPropagation()
 
-События "всплывают"
+Почти все события "всплывают" ( но не все, например, событие *_focus_* не всплывает )
 
 Предотвращает "всплытие" события, т.е. срабатывание обработчиков этого события на элементах, внутри которых находится целевой элемент
 
-:coffee: :seven:
+:coffee: :eight:
 
 Запустите код в консоли, кликните на самом маленьком кружке и посмотрите, что будет выведено в консоль
 
@@ -388,7 +413,7 @@ event.stopPropagation()
 
 Если один из обработчиков, установленных одним из этих listener-ов, вызовет метод **`event.stopImmediatePropagation ()`**, то остальные listener-ы, следующие за ним, уже не сработают
 
-:coffee:
+:coffee: :nine:
 
 Если выполнить следующий код в консоли:
 ```javascript
