@@ -11,8 +11,8 @@
 |[:arrow_right_hook:](#appendChild) `appendChild`|[:arrow_right_hook:](#removeChild)`removeChild`|
 |[:arrow_right_hook:](#insertBefore) `insertBefore`|[:arrow_right_hook:](#replaceChild) `replaceChild`|
 |[:arrow_right_hook:](#insertAdjacentHTML) `insertAdjacentHTML`|[:arrow_right_hook:](#insertAdjacentElement) `insertAdjacentElement`|
-|[:arrow_right_hook:](#setAttribute) `setAttribute`|[:arrow_right_hook:](#getAttribute) `getAttribute`|
-|[:arrow_right_hook:](#getBoundingClientRect) `getBoundingClientRect`|[:arrow_right_hook:](#scrollIntoView) `scrollIntoView`|
+|[:arrow_right_hook:](#addon) `setAttribute`|[:arrow_right_hook:](#addon) `getAttribute`|
+|[:arrow_right_hook:](#addon) `getBoundingClientRect`|[:arrow_right_hook:](#scrollIntoView) `scrollIntoView`|
 |[:arrow_right_hook:](#addEventListener) `addEventListener`|[:arrow_right_hook:](#removeEventListener) `removeEventListener`|
 
 <a name="appendChild"></a>
@@ -288,6 +288,34 @@ for ( var prop in section ) {
      if ( prop.indexOf ( 'on' ) !== 0 ) continue
      console.info ( `Event: ${prop.slice(2)}` )
 }
+```
+
+***
+<a name="addon"></a>
+### Дополнительно
+
+### :coffee: **`setAttribute`** | **`getAttribute`**
+```javascript
+document.body.setAttribute ( 'title', 'Hello' )
+
+console.info (
+    document.body.getAttribute ( 'title' )
+)
+```
+### :coffee: **`getBoundingClientRect`**
+```javascript
+var div = document.body.appendChild (
+    document.createElement ( "div" )
+)
+div.setAttribute ( 'style', `
+    width: 200px;
+    height: 200px;
+    border: solid 1px blue;
+` )
+
+console.info (
+    div.getBoundingClientRect ()
+)
 ```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
