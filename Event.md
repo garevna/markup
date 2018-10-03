@@ -150,6 +150,9 @@ elem.onmouseover = function ( mev ) { ... }
 #### :mortar_board: event.clientX | event.clientY
 Координаты указателя мышки относительно верхнего левого края видимой части окна браузера ( **_viewport_** )
 
+| [:coffee:](https://codepen.io/garevna/pen/jLbaMg) |
+|-|
+
 Эти координаты не зависят от положения полосы прокрутки окна браузера
 
 #### :mortar_board: event.pageX | event.pageY
@@ -157,6 +160,11 @@ elem.onmouseover = function ( mev ) { ... }
 Координаты указателя мышки относительно верхнего левого края страницы
 
 Эти координаты зависят от положения полосы прокрутки окна браузера
+
+#### :mortar_board: eventPhase
+
+| [:coffee:](https://jsfiddle.net/garevna/1cL6nk8j/4/) |
+|-|
 
 ## :mortar_board: eventListener
 
@@ -312,7 +320,6 @@ elem.addEventListener ( 'click',
 ### :mortar_board: stopPropagation()
 
 События "всплывают"
-Если 
 
 Предотвращает "всплытие" события, т.е. срабатывание обработчиков этого события на элементах, внутри которых находится целевой элемент
 
@@ -368,8 +375,65 @@ event.stopPropagation()
 ```
 кликните на самом маленьком кружке и посмотрите, что будет выведено в консоль
 
+### :mortar_board: stopImmediatePropagation()
+
+Если у элемента есть несколько прослушивателей одного и того же события, они будут вызваны в том порядке, в котором они были добавлены
+
+Если один из обработчиков, установленных одним из этих listener-ов, вызовет метод **`event.stopImmediatePropagation ()`**, то остальные listener-ы, следующие за ним, уже не сработают
+
+:coffee:
+
+Если выполнить следующий код в консоли:
+```javascript
+var elem = document.body.appendChild (
+    document.createElement ( 'p' )
+)
+elem.innerHTML = 'Click me, please'
+
+var text = [
+    'Hello',
+    'are you happy?',
+    'what is your favorite language?',
+    'Bye'
+]
+elem.addEventListener ( 'click', 
+   function ( event ) {
+      // event.stopImmediatePropagation()
+      console.log ( 'Я тут первый, остальные на фиг!' )
+   }
+)
+for ( var txt of text ) {
+    elem.addEventListener ( 'click', 
+        ( function ( message ) {
+            return function () {
+                console.log ( message )
+            }
+        })( txt )
+    )
+}
+```
+то при клике на элементе сработают все прослушиватели собятия click элемента в той последовательности, в какой мы их определили
+
+Однако если убрать слеши перед строчкой
+```javascript
+event.stopImmediatePropagation()
+```
+то сработает только один прослушиватель, и выведена в консоль будет только одна строчка
 ***
 🔗 https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+***
+Примеры в песочнице:
+
+[:coffee: mouseover & mouseout](https://codepen.io/garevna/pen/jLrReP?editors=1010)
+
+[:coffee: mouseover & mouseout vs mouseenter & mouseleave](https://codepen.io/garevna/pen/gxaOXq)
+
+[:coffee: onscroll | onwheel](https://jsfiddle.net/garevna/ayoLy5eL/1/)
+
+[:coffee: keypress vs keydown](https://codepen.io/garevna/pen/PKPQVR)
+
+[:coffee: dispatchEvent](https://codepen.io/garevna/pen/gxpQvy)
 
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdeCCJVXykUJdr9gIroRT1H4K2JD6bhSreAs_tvsLd9vaNReQ/viewform)
