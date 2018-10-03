@@ -319,3 +319,5 @@ console.info (
 ```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
+***
+[:link: w3schools](https://www.w3schools.com/jsref/dom_obj_all.asp)
