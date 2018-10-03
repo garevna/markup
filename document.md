@@ -185,5 +185,7 @@ document.querySelector ( "[title]" )
 
 <code>Возвращает итерабельный объект класса **`NodeList`**, содержащий все элементы, соответствующие указанному селектору</code>
 ***
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
+***
 [:link: MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 ***
