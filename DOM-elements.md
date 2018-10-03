@@ -91,6 +91,10 @@ document.body.appendChild ( script )
 
 Удаление элемента
 
+Метод возвращает ссылку на удаленный элемент
+
+`( это означает, что элемент удален со страницы, но `
+
 :warning: `Удалить элемент может только его непосредственный родитель`
 
 ### :coffee: :four:
@@ -316,6 +320,19 @@ div.setAttribute ( 'style', `
 console.info (
     div.getBoundingClientRect ()
 )
+```
+### :coffee: **`backgroundImage`**
+```javascript
+var btn = document.createElement ( 'button' )
+btn.innerText = "OK"
+btn.style = `
+    background-image: url(https://cdn2.iconfinder.com/data/icons/user-23/512/User_Yuppie_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 5px 10px 5px 30px;
+`
+document.body.appendChild ( btn )
 ```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
