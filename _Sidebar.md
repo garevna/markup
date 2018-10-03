@@ -91,7 +91,7 @@
 * [Oбъект document](document)
 * [Типы узлов дерева DOM](NodeTypes)
 * [Элементы DOM](DOM-elements)
-
+* [События  DOM](Event)
 ***
 <a name="toc-6"></a>
 #### Занятие 6
