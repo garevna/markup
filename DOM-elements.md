@@ -6,7 +6,7 @@
 
 `Объект` [**`NodeList`**](nodeTypes "Типы узлов дерева DOM")
 
-| [:coffee: 1](childNodes-sample-1) |
+| [:coffee: :one:](childNodes-sample-1) |
 |-|
 
 [🔗 w3schools](https://www.w3schools.com/jsref/prop_node_childnodes.asp)
@@ -238,3 +238,5 @@ document.getElementsByTagName ( "figure" )[0]
     </main>
 </body>
 ```
+***
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfOAAnZrszP3EiO3zgYzfkqBpH68ggE9mFzsDyK40_WUjB89A/viewform)
