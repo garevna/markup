@@ -27,6 +27,10 @@ console.dir ( EventTarget )
 ```
 Здесь мы видим три метода, которые унаследуют все объекты, имеющие в цепочке прототипов  **`EventTarget`**
 
+* [addEventListener](#addEventListener)
+* [removeEventListener](#removeEventListener)
+* [dispatchEvent](#dispatchEvent)
+
 Мы уже в курсе, что объект **`Node`** наследует от объекта **`EventTarget`**, 
 
 а объект **`Element`** наследует от **`Node`**,
@@ -182,6 +186,7 @@ elem.onmouseover = function ( mev ) { ... }
 
 На  элементе  **`div#sample`**  "сработают" оба обработчика при наведении указателя мышки
 
+<a name="addEventListener"></a>
 ### :mortar_board: addEventListener
 
 Первый аргумент метода addEventListener - это тип события ( строка ), например:
@@ -215,6 +220,8 @@ function clickdHandler ( event ) {
 }
 elem.addEventListener ( 'click', clickdHandler )
 ```
+
+<a name="removeEventListener"></a>
 ### :mortar_board: removeEventListener
 
 Прослушивателей событий нужно удалять, поскольку они не убираются автоматически при удалении элемента
@@ -433,6 +440,7 @@ event.stopImmediatePropagation()
 
 [:coffee: keypress vs keydown](https://codepen.io/garevna/pen/PKPQVR)
 
+<a name="dispatchEvent"></a>
 [:coffee: dispatchEvent](https://codepen.io/garevna/pen/gxpQvy)
 
 ***
