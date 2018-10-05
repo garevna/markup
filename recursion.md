@@ -63,7 +63,18 @@ function factor ( num ) {
 
 Она вернет рекурсивный вызов самой себя
 
-Это будет каждый раз добавлять в стек контекст функции
+<table>
+   <tr>
+      <td width="10%">
+         <a href="https://www.youtube.com/watch?time_continue=2&v=nbqLBlanSMk">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png"/>
+         </a>
+      </td>
+      <td width="90%">
+         Это будет каждый раз добавлять в стек контекст функции
+      </td>
+   </tr>
+</table>
 
 Если хвостовая рекурсия достаточно глубокая, это может привести к переполнению стека и генерации исключения  **`RangeError`**
 
