@@ -102,6 +102,8 @@
 |-|-|-|
 
 * [Элементы форм](https://docs.google.com/forms/d/e/1FAIpQLSe2uALpHzKiId5zdyeceqIrxl3q5_kPYiQcKtHF4ggkMCN23g/viewform)
+* [Рекурсия](recursion)
+* [Замыкание](closure)
 * [Итерирующие методы массивов](https://docs.google.com/forms/d/e/1FAIpQLSfs0mRJb0__3zWj07WJeGBvMRUq6zp3NWS6Kik5qK7YBEdP5g/viewform)
 * [:coffee: Примеры](lesson-06-samples)
 * [:briefcase: Homework](hw-06)
