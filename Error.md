@@ -147,4 +147,4 @@ finally {
 
 ```
 ***
-### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf-i0cr7AEXzSJrggqS1AgZz-OBW5ES-l_ntO1R4Q7XZqZaEw/viewform)
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSeOjdukTUBYGDKDv6s_hg_YyI2oDGLXzD6za0vUKVMYcQzw2Q/viewform)
