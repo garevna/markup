@@ -94,21 +94,26 @@
 * [События  DOM](Event)
 * [:briefcase: Homework](hw-05)
 ***
+
 <a name="toc-6"></a>
 #### Занятие 6
 
 | [:arrow_heading_up:](#toc-5) | <img width="800"/> | [:arrow_heading_down:](#toc-7) |
 |-|-|-|
 
-* [Стрелочные функции](https://docs.google.com/forms/d/e/1FAIpQLScagd6KJZKArmU74hl913A3zLENlimFRciMcJ6nU63coxPT_Q/viewform)
-* [Статические методы Object](https://docs.google.com/forms/d/e/1FAIpQLSft2nqFhPiggk3ZgszO8Z3b3FmPaG26XHaAleTYfnlzAO3QnA/viewform)
-* [:briefcase: Homework](hw-06)
+* [Элементы форм](https://docs.google.com/forms/d/e/1FAIpQLSe2uALpHzKiId5zdyeceqIrxl3q5_kPYiQcKtHF4ggkMCN23g/viewform)
+* [Итерирующие методы массивов](https://docs.google.com/forms/d/e/1FAIpQLSfs0mRJb0__3zWj07WJeGBvMRUq6zp3NWS6Kik5qK7YBEdP5g/viewform)
 ***
+
 <a name="toc-7"></a>
 #### Занятие 7
 
 | [:arrow_heading_up:](#toc-6) | <img width="800"/> | [:arrow_heading_down:](#toc-8) |
 |-|-|-|
+
+* [Стрелочные функции](https://docs.google.com/forms/d/e/1FAIpQLScagd6KJZKArmU74hl913A3zLENlimFRciMcJ6nU63coxPT_Q/viewform)
+* [Статические методы Object](https://docs.google.com/forms/d/e/1FAIpQLSft2nqFhPiggk3ZgszO8Z3b3FmPaG26XHaAleTYfnlzAO3QnA/viewform)
+* [:briefcase: Homework](hw-07)
 
 ***
 <a name="toc-8"></a>
