@@ -106,6 +106,7 @@
 * [Замыкание](closure)
 * [Итерирующие методы массивов](https://docs.google.com/forms/d/e/1FAIpQLSfs0mRJb0__3zWj07WJeGBvMRUq6zp3NWS6Kik5qK7YBEdP5g/viewform)
 * [:coffee: Примеры](lesson-06-samples)
+* [SHA](https://docs.google.com/forms/d/e/1FAIpQLSfV6vHH1zsVVNzYU7wwuM8cFpP-S44jBZBwMfCxVG5g6guEOA/viewform)
 * [:briefcase: Homework](hw-06)
 ***
 
