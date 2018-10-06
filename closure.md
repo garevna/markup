@@ -4,11 +4,12 @@
 
 ***
 [:link: w3schools](https://www.w3schools.com/js/js_function_closures.asp) 
-[:link: MDN](https://developer.mozilla.org/uk/docs/Glossary/IIFE)
 
 #### :mortar_board: IIFE
 
 Immediately Invoked Function Expression
+
+[:link: MDN](https://developer.mozilla.org/uk/docs/Glossary/IIFE)
 
 В следующем примере мы видим функциональное выражение **IIFE**, т.е. вызов объявляемой анонимной функции "на месте"
 ( в месте ее объявления )
