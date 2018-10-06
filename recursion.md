@@ -98,3 +98,5 @@ var circle = function ( radius ) {
 }
 ```
 Вызовите функцию circle
+
+#### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScC1JCRSlsA-4ldgUvslbrXSq0Ta3frOauVv6DujoLoB357iA/viewform)
