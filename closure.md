@@ -38,3 +38,5 @@ var func = ( function ( arg ) {
 func ( "Дима" )
 func ( "Николай" )
 ```
+
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScC1JCRSlsA-4ldgUvslbrXSq0Ta3frOauVv6DujoLoB357iA/viewform)
