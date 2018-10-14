@@ -124,6 +124,8 @@
 <a name="toc-8"></a>
 #### Занятие 8
 
+* [JSON](JSON)
+
 | [:arrow_heading_up:](#toc-7) | <img width="800"/> | [:arrow_heading_down:](#toc-9) |
 |-|-|-|
 
