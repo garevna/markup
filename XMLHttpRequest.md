@@ -19,7 +19,7 @@ var request = new XMLHttpRequest ()
 | ✅ `setRequestHeader()` | ✅ `load` | ✅ `response` |
 | ✅ `send()` | ✅ `error`  | ✅ `onerror` |
 | ✅ `abort()` |  | ✅ `onabort` |
-| ✅ `getAllResponseHeaders()` | ✅  | ✅ `onerror()` |
+| ✅ [`getAllResponseHeaders()`](#getallresponseheaders) | ✅  | ✅ `onerror()` |
 | ✅ `getResponseHeader()` | | ✅ **`responseText`** |
 | | | ✅ `responseType` |
 | | | ✅ `responseURL` |
