@@ -2,23 +2,38 @@
 
 ## :mortar_board: `XMLHttpRequest`
 
-Это конструктор
-С его помощью создается объект для обмена данными с сервером:
+Конструктор
+
+Создает экземпляр объекта для обмена данными с сервером:
 ```javascript
 var request = new XMLHttpRequest ()
 ```
-Экземпляр объекта, созданного с помощью конструктора `XMLHttpRequest`, имеет ряд унаследованных событий, свойств и методов
+
+Прототипом является **`XMLHttpRequestEventTarget`**, который наследует от **`EventTarget`**
+
+Экземпляры `XMLHttpRequest` имеют ряд унаследованных событий, свойств и методов
 
 | Методы | События | Свойства |
 |-|-|-|
 | ✅ `open()` | ✅ `readystatechange` | ✅ `onreadystatechange` |
 | ✅ `setRequestHeader()` | ✅ `load` | ✅ `response` |
-| ✅ `send()` | ✅ `error`  | ✅ **`responseText`** |
+| ✅ `send()` | ✅ `error`  | ✅ `onerror` |
+| ✅ `abort()` |  | ✅ `onabort` |
+| ✅ `getAllResponseHeaders()` | ✅  | ✅ `onerror()` |
+| ✅ `getResponseHeader()` | | ✅ **`responseText`** |
 | | | ✅ `responseType` |
+| | | ✅ `responseURL` |
 | | | ✅ `responseURL` |
 | | | ✅ **`status`** |
 | | | ✅ `statusText` |
 | | | ✅ **`readyState`** |
+
+onload()
+onloadend: (...)
+onloadstart: (...)
+onprogress: (...)
+onreadystatechange: (...)
+ontimeout: (...)
 
 Ответ сервера имеет заголовок ответа ( **`header`** ) и тело ответа ( **`responseText`** )
 
@@ -137,3 +152,26 @@ transport.onerror = function ( err ) {
 ```
 | [:coffee::two:](https://plnkr.co/edit/BqbCvoAnbikBtTFTRBHp?p=preview) | [:coffee::three:](https://plnkr.co/edit/DLH49iWObtxqcijNT9oY?p=preview) |
 |-|-|
+
+
+## getAllResponseHeaders()
+
+```javascript
+var transport = new XMLHttpRequest ()
+
+transport.onload = function ( event ) {
+    console.dir ( this.getAllResponseHeaders() )
+}
+transport.open ( 
+    'GET', 
+    'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'
+)
+transport.send()
+```
+Заголовки ответа сервера:
+```console
+last-modified: Tue, 20 Dec 2016 18:17:03 GMT
+content-type: text/javascript; charset=UTF-8
+cache-control: public, max-age=31536000, stale-while-revalidate=2592000
+expires: Wed, 09 Oct 2019 00:23:02 GMT
+```
