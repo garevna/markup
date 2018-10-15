@@ -15,18 +15,18 @@ var request = new XMLHttpRequest ()
 
 | Методы | События | Свойства |
 |-|-|-|
-| ✅ `open()` | ✅ `readystatechange` | ✅ `onreadystatechange` |
-| ✅ `setRequestHeader()` | ✅ `load` | ✅ `response` |
-| ✅ `send()` | ✅ `error`  | ✅ `onerror` |
+| [:arrow_right_hook: `open()`](#mortar_board-open) | ✅ `readystatechange` | [:arrow_right_hook: `onreadystatechange`](#mortar_board-onreadystatechange) |
+| ✅ `setRequestHeader()` | ✅ `load` | [:arrow_right_hook: `onload`](#mortar_board-onload) |
+| ✅ `send()` | ✅ `error`  | [:arrow_right_hook: `onerror`](#mortar_board-onerror) |
 | ✅ `abort()` |  | ✅ `onabort` |
-| :arrow_right_hook: [`getAllResponseHeaders()`](#getallresponseheaders) | ✅  | ✅ `onerror()` |
-| ✅ `getResponseHeader()` | | ✅ **`responseText`** |
+| :arrow_right_hook: [`getAllResponseHeaders()`](#getallresponseheaders) |   |  |
+| ✅ `getResponseHeader()` | | [:arrow_right_hook: **`responseText`**](#mortar_board-responsetext) |
+| | | ✅ `` |
 | | | ✅ `responseType` |
 | | | ✅ `responseURL` |
-| | | ✅ `responseURL` |
-| | | ✅ **`status`** |
-| | | ✅ `statusText` |
-| | | ✅ **`readyState`** |
+| | | [:arrow_right_hook: **`status`**](#mortar_board-status) |
+| | | [:arrow_right_hook: `statusText`](#mortar_board-statustext) |
+| | | [:arrow_right_hook: **`readyState`**](#mortar_board-readystate) |
 
 onload()
 onloadend: (...)
@@ -47,12 +47,18 @@ ontimeout: (...)
 
 Метод `open` устанавливает соединение с сервером
 
-Первый аргумент - метод ( строка ), может принимать одно из значений:
+Первый аргумент - метод доступа ( строка ), может принимать одно из значений:
 
     ✅ GET
     ✅ POST
     ✅ PUT
     ✅ DELETE
+
+Второй аргумент - URL ресурса ( файла ), откуда предполагается получить ( **`GET`** ) или куда предполагается записать ( **`POST`**, **`PUT`**, **`DELETE`**,  ) данные
+
+Третий аргумент ( опциональный, по умолчанию **`true`** ) позволяет сделать запрос синхронным, если установить его значение в `false` ( :warning: чего делать категорически не рекомендуется )
+
+:coffee:
 ```javascript
 var request = new XMLHttpRequest ()
 request.open ( 
@@ -85,6 +91,7 @@ request.open (
 
 В противном случае значением будет код ошибки ( например, 404 )
 
+***
 ### :mortar_board: `statusText`
 
 :warning: Только для чтения
@@ -95,6 +102,7 @@ request.open (
 
 если `status === 404`,  то  `statusText` будет `"Not Found"`
 
+***
 ### :mortar_board: `responseText`
 
 :warning: Только для чтения
@@ -153,8 +161,8 @@ transport.onerror = function ( err ) {
 | [:coffee::two:](https://plnkr.co/edit/BqbCvoAnbikBtTFTRBHp?p=preview) | [:coffee::three:](https://plnkr.co/edit/DLH49iWObtxqcijNT9oY?p=preview) |
 |-|-|
 
-
-## getAllResponseHeaders()
+***
+### :mortar_board: getAllResponseHeaders()
 
 ```javascript
 var transport = new XMLHttpRequest ()
