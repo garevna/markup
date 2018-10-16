@@ -19,7 +19,7 @@ var request = new XMLHttpRequest ()
 
 | `Методы` | `События` | `Свойства` |
 |-|-|-|
-| [:arrow_right_hook: `open()`](#mortar_board-open) | ✅ `readystatechange` | [:arrow_right_hook: `onreadystatechange`](#mortar_board-onreadystatechange) |
+| [:arrow_right_hook: `open()`](#mortar_board-open) | ✅ `readystatechange` | [:arrow_right_hook: **`onreadystatechange`**](#mortar_board-onreadystatechange) |
 | [:arrow_right_hook: `send()`](#mortar_board-send) | | [:arrow_right_hook: **`readyState`**](#mortar_board-readystate) |
 |  | | [:arrow_right_hook: **`status`**](#mortar_board-status) |
 |  | | [:arrow_right_hook: `statusText`](#mortar_board-statustext) |
@@ -28,20 +28,13 @@ var request = new XMLHttpRequest ()
 |  | ✅ `loadend` | [:arrow_right_hook: `loadend`](#on) |
 |  | ✅ `load` | [:arrow_right_hook: `onload`](#mortar_board-onload) |
 |  | ✅ `error`  | [:arrow_right_hook: `onerror`](#mortar_board-onerror) |
+|  | ✅ `timeout` | [:arrow_right_hook: `ontimeout`](#mortar_board-ontimeout)|
 | ✅ `abort()` | ✅ `abort` | ✅ `onabort` |
-| [:arrow_right_hook: `setRequestHeader()`](#mortar_board-setrequestheader) |  |  |
-| :arrow_right_hook: [`getAllResponseHeaders()`](#mortar_board-getallresponseheaders) |   |  |
-| ✅ `getResponseHeader()` | | [:arrow_right_hook: **`responseText`**](#mortar_board-responsetext) |
-| | | ✅ `` |
-| | | [:arrow_right_hook: **`responseType`**](#mortar_board-responsetype) |
-| | | ✅ `responseURL` |
+| [:arrow_right_hook: `setRequestHeader()`](#mortar_board-setrequestheader) |  | [:arrow_right_hook: **`responseType`**](#mortar_board-responsetype) |
+| :arrow_right_hook: [`getAllResponseHeaders()`](#mortar_board-getallresponseheaders) | | [:arrow_right_hook: **`responseText`**](#mortar_board-responsetext) |
+| ✅ `getResponseHeader()` | | ✅ `responseURL` |
 
-onloadend: (...)
-onloadstart: (...)
-onprogress: (...)
-ontimeout: (...)
-
-Ответ сервера имеет заголовок ответа ( **`header`** ) и тело ответа ( **`responseText`** )
+Ответ сервера имеет заголовок ответа ( **`header`** ) и тело ответа ( **`response`** )
 
 >> :warning: `Ограничение   "Same Origin Policy"`
 
@@ -133,6 +126,9 @@ request.send()
 
 если `status === 404`,  то  `statusText` будет `"Not Found"`
 
+| [:link: MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) |
+|-|
+
 ***
 ### :mortar_board: `responseText`
 
@@ -148,6 +144,10 @@ request.send()
 Свойство `responseText` допустимо только для текстового содержимого
 ***
 ### :mortar_board: Обработка событий
+Значения свойств, начинающиеся на **`on`**, могут быть ссылкой на колбэк-функцию, которая будет вызвана в момент возникновения события
+
+Тип обрабатываемого события - текст, следующий за **`on`** в имени свойства
+
 #### :mortar_board: `onreadystatechange`
 
 Свойство, значение которого является ссылкой на колбэк-функцию, которая будет обрабатывать событие изменения значения  `readyState`
@@ -156,11 +156,30 @@ request.send()
 ```javascript
 var transport = new XMLHttpRequest ()
 
-transport.onreadystatechange = function () {
+transport.onreadystatechange = function ( event ) {
    if ( this.readyState === 4 && 
         this.status === 200 ) 
-           console.log ( this.responseText )
+           console.log ( event )
 }
+```
+При вызове колбэк-функции ей будет передан объект события:
+```console
+▼ Event {isTrusted: true, type: "readystatechange", target: XMLHttpRequest, currentTarget: XMLHttpRequest, eventPhase: 2, …}
+    bubbles: false
+    cancelBubble: false
+    cancelable: false
+    composed: false
+  ► currentTarget: XMLHttpRequest { onreadystatechange: ƒ, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, … }
+    defaultPrevented: false
+    eventPhase: 0
+    isTrusted: true
+  ► path: []
+    returnValue: true
+  ► srcElement: XMLHttpRequest { onreadystatechange: ƒ, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, … }
+  ► target: XMLHttpRequest { onreadystatechange: ƒ, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, … }
+    timeStamp: 87810968.4
+    type: "readystatechange"
+  ► __proto__: Event
 ```
 Функция-колбэк должна проверять значение `readyState`, и если это значение равно 4, то можно проверить значение свойства `status`
 
@@ -168,6 +187,18 @@ transport.onreadystatechange = function () {
 
 |[:coffee::one:](https://plnkr.co/edit/b5gXN9q5FdturHenpo3b?p=preview)|[:link: `Errors ( status values )` ](https://www.w3schools.com/tags/ref_httpmessages.asp)
 |-|-|
+
+###### Остальные события ( `loadstart`, `loadend`, `progress`, `load`, `error`, `timeout` ) отличаются от события **`readystatechange`** - они относятся к категории **_`ProgressEvent`_**:
+
+```console
+▼ ƒ ProgressEvent()
+    arguments: null
+    caller: null
+    length: 1
+    name: "ProgressEvent"
+  ► prototype: ProgressEvent {constructor: ƒ, Symbol(Symbol.toStringTag): "ProgressEvent"}
+  ► __proto__: ƒ Event()
+```
 
 #### :mortar_board: `onload`
 
@@ -204,6 +235,27 @@ request.onload = function( event ) {
 }
 request.send ()
 ```
+
+#### :mortar_board: `ontimeout`
+
+Это свойство содержит ссылку колбэк-функцию, которая будет вызвана, когда истечет временной интервал, установленный с
+```javascript
+var request = new XMLHttpRequest()
+request.open (
+    "POST",
+    'https://httpbin.org/post'
+)
+
+request.setRequestHeader (
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+)
+request.timeout = 100
+request.ontimeout = function( event ) {
+   console.log ( event )
+}
+```
+
 #### :mortar_board: `onerror`
 
 Это свойство содержит ссылку колбэк-функцию, которая будет обрабатывать ошибки, возникающие при загрузке данных с сервера
