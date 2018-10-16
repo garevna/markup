@@ -1,3 +1,6 @@
+| [:rewind:](XMLHttpRequest#-content-type) Back |
+|-|
+
 ## :briefcase: Упражнения
 Далее мы будем использовать фейковые серверы для апробирования методов  **`XMLHttpRequest()`**
 
@@ -191,3 +194,6 @@ transport.onreadystatechange = function() {
 }
 transport.send( "Show must go on" )
 ```
+
+| [:rewind:](XMLHttpRequest#-content-type) Back |
+|-|
