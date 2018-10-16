@@ -2,37 +2,43 @@
 
 ## :mortar_board: `XMLHttpRequest`
 
-Конструктор
-
-Создает экземпляр объекта для обмена данными с сервером:
+###### Спецификация XMLHttpRequest
+```
+это API, 
+предоставляющий функциональность на стороне клиента 
+для передачи данных между клиентом и сервером 
+с помощью скриптов
+```
+###### Конструктор
+###### Создает экземпляр объекта для обмена данными с сервером:
 ```javascript
 var request = new XMLHttpRequest ()
 ```
+###### Прототипом является **`XMLHttpRequestEventTarget`**, который наследует от **`EventTarget`**
+###### Экземпляры `XMLHttpRequest` имеют ряд унаследованных событий, свойств и методов
 
-Прототипом является **`XMLHttpRequestEventTarget`**, который наследует от **`EventTarget`**
-
-Экземпляры `XMLHttpRequest` имеют ряд унаследованных событий, свойств и методов
-
-| Методы | События | Свойства |
+| `Методы` | `События` | `Свойства` |
 |-|-|-|
 | [:arrow_right_hook: `open()`](#mortar_board-open) | ✅ `readystatechange` | [:arrow_right_hook: `onreadystatechange`](#mortar_board-onreadystatechange) |
-| ✅ `setRequestHeader()` | ✅ `load` | [:arrow_right_hook: `onload`](#mortar_board-onload) |
-| ✅ `send()` | ✅ `error`  | [:arrow_right_hook: `onerror`](#mortar_board-onerror) |
-| ✅ `abort()` |  | ✅ `onabort` |
-| :arrow_right_hook: [`getAllResponseHeaders()`](#getallresponseheaders) |   |  |
+| [:arrow_right_hook: `send()`](#mortar_board-send) | | [:arrow_right_hook: **`readyState`**](#mortar_board-readystate) |
+|  | | [:arrow_right_hook: **`status`**](#mortar_board-status) |
+|  | | [:arrow_right_hook: `statusText`](#mortar_board-statustext) |
+|  | ✅ `loadstart` | [:arrow_right_hook: `onloadstart`](#on) |
+|  | ✅ `progress` | [:arrow_right_hook: `onprogress`](#on) |
+|  | ✅ `loadend` | [:arrow_right_hook: `loadend`](#on) |
+|  | ✅ `load` | [:arrow_right_hook: `onload`](#mortar_board-onload) |
+|  | ✅ `error`  | [:arrow_right_hook: `onerror`](#mortar_board-onerror) |
+| ✅ `abort()` | ✅ `abort` | ✅ `onabort` |
+| [:arrow_right_hook: `setRequestHeader()`](#mortar_board-setrequestheader) |  |  |
+| :arrow_right_hook: [`getAllResponseHeaders()`](#mortar_board-getallresponseheaders) |   |  |
 | ✅ `getResponseHeader()` | | [:arrow_right_hook: **`responseText`**](#mortar_board-responsetext) |
 | | | ✅ `` |
-| | | ✅ `responseType` |
+| | | [:arrow_right_hook: **`responseType`**](#mortar_board-responsetype) |
 | | | ✅ `responseURL` |
-| | | [:arrow_right_hook: **`status`**](#mortar_board-status) |
-| | | [:arrow_right_hook: `statusText`](#mortar_board-statustext) |
-| | | [:arrow_right_hook: **`readyState`**](#mortar_board-readystate) |
 
-onload()
 onloadend: (...)
 onloadstart: (...)
 onprogress: (...)
-onreadystatechange: (...)
 ontimeout: (...)
 
 Ответ сервера имеет заголовок ответа ( **`header`** ) и тело ответа ( **`responseText`** )
@@ -54,7 +60,7 @@ ontimeout: (...)
     ✅ PUT
     ✅ DELETE
 
-Второй аргумент - URL ресурса ( файла ), откуда предполагается получить ( **`GET`** ) или куда предполагается записать ( **`POST`**, **`PUT`**, **`DELETE`**,  ) данные
+Второй аргумент - URL ресурса ( файла ), откуда предполагается получить ( **`GET`** ) или куда предполагается записать ( **`POST`**, **`PUT`**, **`DELETE`** ) данные
 
 Третий аргумент ( опциональный, по умолчанию **`true`** ) позволяет сделать запрос синхронным, если установить его значение в `false` ( :warning: чего делать категорически не рекомендуется )
 
@@ -66,7 +72,32 @@ request.open (
     'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'
 )
 ```
+***
+### :mortar_board: `send()`
 
+Метод send() отправляет тело запроса на сервер
+
+При запросе на получение данных ( **`GET`** ) тело запроса отсутствует
+
+:coffee:
+```javascript
+var request = new XMLHttpRequest ()
+request.open ( 
+    'GET', 
+    'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'
+)
+request.send()
+```
+При передаче данных на сервер ( **`POST`**, **`PUT`**, **`DELETE`** ) структура данных должна соответствовать формату, переданному в заголовке запроса [**`Content-Type`**](#-content-type)
+:coffee:
+```javascript
+var request = new XMLHttpRequest ()
+request.open ( 
+    'GET', 
+    'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'
+)
+request.send()
+```
 ### :mortar_board: `readyState`
 
 :warning: Только для чтения
@@ -115,8 +146,9 @@ request.open (
 тот текст, который уже получен от сервера
 
 Свойство `responseText` допустимо только для текстового содержимого
-
-### :mortar_board: `onreadystatechange`
+***
+### :mortar_board: Обработка событий
+#### :mortar_board: `onreadystatechange`
 
 Свойство, значение которого является ссылкой на колбэк-функцию, которая будет обрабатывать событие изменения значения  `readyState`
 
@@ -137,7 +169,7 @@ transport.onreadystatechange = function () {
 |[:coffee::one:](https://plnkr.co/edit/b5gXN9q5FdturHenpo3b?p=preview)|[:link: `Errors ( status values )` ](https://www.w3schools.com/tags/ref_httpmessages.asp)
 |-|-|
 
-### :mortar_board: `onload`
+#### :mortar_board: `onload`
 
 Это свойство содержит ссылку колбэк-функцию, которая будет обрабатывать событие благополучного завершения загрузки данных с сервера
 ```javascript
@@ -147,8 +179,32 @@ transport.onload = function () {
     console.log ( this.responseText )
 }
 ```
+<a name="on"></a>
+#### :mortar_board: `onloadstart` | `onprogress` | `onloadend`
+```javascript
+var request = new XMLHttpRequest()
+request.open (
+    "get",
+    'https://httpbin.org/get',
+    true 
+)
+request.responseType = "arraybuffer";
 
-### :mortar_board: `onerror`
+request.onloadstart = function( event ) {
+   console.log ( 'START' )
+}
+request.onloadend = function( event ) {
+   console.log ( 'END' )
+}
+request.onprogress = function( event ) {
+   console.log ( `progress: ${event.loaded} / ${event.total}` )
+}
+request.onload = function( event ) {
+   console.log ( this.response )
+}
+request.send ()
+```
+#### :mortar_board: `onerror`
 
 Это свойство содержит ссылку колбэк-функцию, которая будет обрабатывать ошибки, возникающие при загрузке данных с сервера
 ```javascript
@@ -160,6 +216,109 @@ transport.onerror = function ( err ) {
 ```
 | [:coffee::two:](https://plnkr.co/edit/BqbCvoAnbikBtTFTRBHp?p=preview) | [:coffee::three:](https://plnkr.co/edit/DLH49iWObtxqcijNT9oY?p=preview) |
 |-|-|
+
+***
+### :mortar_board: setRequestHeader()
+
+Метод
+
+устанавливает заголовок запроса
+
+* первый аргумент - имя заголовка
+* второй аргумент - значение
+
+:warning: вызывается после **`open ()`**, но перед **`send ()`**
+
+#### :memo: [**Заголовки запроса**](https://flaviocopes.com/http-request-headers/)
+
+###### ✅ Content-Type
+Этот заголовок определяет тип пересылаемого контента
+
+**`"Content-Type"  :  "тип  /  подтип  [ ; параметр ]"`**
+
+`Тип используется для объявления общего типа данных, а подтип определяет специальный формат для данных этого типа`
+
+Типы:
+
+        ✅ application
+        ✅ audio
+        ✅ image
+        ✅ message
+        ✅ multipart
+        ✅ text
+        ✅ video
+
+**`multipart`**  `- содержимое состоит из нескольких частей, включающих данные различных типов`
+
+:warning: `Для незарегестрированного типа содежимого имя должно начинаться с "X-"`
+
+:clipboard: `Примеры возможных значений `**`Content-Type:`**
+
+        ✏️ application/msword
+        ✏️ application/pdf
+        ✏️ image/gif
+        ✏️ image/jpeg
+        ✏️ image/png
+        ✏️ text/html
+        ✏️ text/plain
+        ✏️ video/mpeg
+        ✏️ text/html; charset=utf-8
+        ✏️ multipart/form-data
+        ✏️ multipart/mixed; boundary="____________________"
+
+`( в последнем примере строка "____________________" указывается как разделитель для различных фрагментов контента`
+
+`В начале каждого фрагмента может быть задана своя строка с полем "Content-Type" )`
+
+`boundary ( граница ) — это последовательность байтов, которая не должна встречаться внутри пересылаемого контента`
+
+| [:coffee: Упражнения](setRequestHeader-samples) |
+|-|
+
+### :mortar_board: `responseType`
+
+Свойство **`responseType`** объекта `XMLHttpRequest` определяет тип данных ответа сервера
+
+Возможными значениями являются:
+
+* пустая строка (по умолчанию)
+* arraybuffer
+* blob
+* document
+* json
+* text
+
+Свойство **`response`** будет содержать тело объекта в соответствии с `responseType`
+
+* ArrayBuffer
+* Blob
+* Document
+* JSON
+* string
+
+Если запрос завершился неудачей, то значением **`response`** будет `null`
+
+:coffee:
+###### Получение двоичных данных
+```javascript
+var request = new XMLHttpRequest()
+request.open (
+    "get",
+    'https://httpbin.org/get'
+)
+request.responseType = "arraybuffer"
+
+request.onreadystatechange = function() {
+   if (
+      this.readyState === 4
+      && this.status === 200 
+   ) {
+        console.log ( this.response )
+   }
+}
+request.send ()
+```
+***
 
 ***
 ### :mortar_board: getAllResponseHeaders()
