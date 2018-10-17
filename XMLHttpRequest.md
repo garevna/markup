@@ -449,8 +449,8 @@ cache-control: public, max-age=31536000, stale-while-revalidate=2592000
 expires: Wed, 09 Oct 2019 00:23:02 GMT
 ```
 
-| [:arrow_double_up:](#table) | [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdA3JwhlOTXdZxCO3y1MdLe-pe-cynNVGeboy7IV0aWHliGHA/viewform)
-|-|
+| [:arrow_double_up:](#table) | [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdA3JwhlOTXdZxCO3y1MdLe-pe-cynNVGeboy7IV0aWHliGHA/viewform) |
+|-|-|
 
 ***
 [Протокол TCP](https://xakep.ru/2002/04/11/14943/)
