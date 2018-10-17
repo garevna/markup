@@ -114,7 +114,8 @@ var promise = new Promise (
 ( метод  **_getBattery()_**  объекта  **navigator** возвращает промис ):
 ```javascript
 navigator.getBattery().then ( result => {
-        for ( var x in result ) console.log ( `${x}: ${result[x]}` )
+    for ( var x in result ) 
+        console.log ( `${x}: ${result[x]}` )
 })
 ```
 
