@@ -119,6 +119,28 @@ navigator.getBattery().then ( result => {
 })
 ```
 
-| [:coffee: :three:](https://plnkr.co/edit/WpZrRvD1ScHbCN3eUfC8?p=preview) | [:coffee: :four:](https://plnkr.co/edit/BpFFu73mwsXDmZSdVOTn?p=preview) | [:coffee: :five:](https://repl.it/@garevna/promise-sample-1) |
+:coffee: :three:
+
+```javascript
+var promises = []
+promises.push ( new Promise (
+  function ( resolve, reject ) {
+    setTimeout ( function () { resolve ( "Hello" ) }, 2000 )
+  }
+))
+promises.push ( new Promise (
+  function ( resolve, reject ) {
+    setTimeout ( function () { resolve ( "Bye" ) }, 5000 )
+  }
+))
+promises.push ( new Promise (
+  function ( resolve, reject ) {
+    setTimeout ( function () { resolve ( "How are you?" ) }, 4000 )
+  }
+))
+
+Promise.all ( promises ).then ( response => document.body.innerHTML += response + "<br/>" )
+```
+| [:coffee: :four:](https://plnkr.co/edit/WpZrRvD1ScHbCN3eUfC8?p=preview) | [:coffee: :five:](https://plnkr.co/edit/BpFFu73mwsXDmZSdVOTn?p=preview) | [:coffee: :six:](https://repl.it/@garevna/promise-sample-1) |
 |-|-|-|
 
