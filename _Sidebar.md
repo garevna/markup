@@ -126,6 +126,8 @@
 
 * [JSON](JSON)
 * [XMLHttpRequest](XMLHttpRequest)
+* [Promise](Promise)
+* [💼 Homework](hw-08)
 
 | [:arrow_heading_up:](#toc-7) | <img width="800"/> | [:arrow_heading_down:](#toc-9) |
 |-|-|-|
