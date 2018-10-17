@@ -453,5 +453,5 @@ expires: Wed, 09 Oct 2019 00:23:02 GMT
 |-|-|
 
 ***
-[Протокол TCP](https://xakep.ru/2002/04/11/14943/)
-[RFC793](https://www.lissyara.su/doc/rfc/rfc793/)
+| [Протокол TCP](https://xakep.ru/2002/04/11/14943/) | [RFC793](https://www.lissyara.su/doc/rfc/rfc793/) |
+|-|-|
