@@ -119,6 +119,6 @@ navigator.getBattery().then ( result => {
 })
 ```
 
-| [:coffee: :three:](https://plnkr.co/edit/WpZrRvD1ScHbCN3eUfC8?p=preview) | [:coffee: :four:](https://plnkr.co/edit/BpFFu73mwsXDmZSdVOTn?p=preview) | [:coffee: :five:](promise-sample-1) |
+| [:coffee: :three:](https://plnkr.co/edit/WpZrRvD1ScHbCN3eUfC8?p=preview) | [:coffee: :four:](https://plnkr.co/edit/BpFFu73mwsXDmZSdVOTn?p=preview) | [:coffee: :five:](https://repl.it/@garevna/promise-sample-1) |
 |-|-|-|
 
