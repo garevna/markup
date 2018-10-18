@@ -1,16 +1,9 @@
 # :mortar_board: Fetch API
 
-Интерфейс Fetch API 
+Интерфейсы Fetch API 
 
-| | |
+| [:arrow_right_hook: Request](#mortar_board-request) | [:arrow_right_hook: Response](#mortar_board-response) |
 |-|-|
-| [:arrow_right_hook: Request](#mortar_board-request) | |
-| [:arrow_right_hook: Response](#mortar_board-response) | ✅ json () |
-|             | ✅ text () |
-|             | ✅ blob () |
-|             | ✅ arrayBuffer() |
-| ✅ URL.createObjectURL() | |
-
 
 Метод **`fetch`** объекта `window` реализует AJAX-запросы на основе промисов, что является его главным отличием от **`XMLHttpRequest`**
 
