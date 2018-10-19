@@ -5,9 +5,7 @@
 | [:arrow_right_hook: Request](#mortar_board-request) | [:arrow_right_hook: Response](#mortar_board-response) |
 |-|-|
 
-Метод **`fetch`** объекта `window` реализует AJAX-запросы на основе промисов, что является его главным отличием от **`XMLHttpRequest`**
-
-Кроме того, в отличие от **`XMLHttpRequest`**, метод **`fetch`** осуществляет только асинхронные запросы
+Метод **`fetch`** объекта `window` реализует только асинхронные AJAX-запросы
 
 Метод **`fetch`** возвращает **_промис_**
 
@@ -18,39 +16,231 @@ fetch ( "message.txt" )
         ...
     })
 ```
-Когда промис завершится, он вернет объект **`Response`**
+Когда промис завершится, он вернет объект [**`Response`**](#mortar_board-response)
 
 ## :mortar_board: Request
 
-Выведите в консоль объект Request
+В свойстве **`prototype`** конструктора **`Request`**
+
+| Свойства | Методы |
+|-|-|
+| bodyUsed | arrayBuffer() |
+| cache | blob() |
+| credentials | clone() |
+| destination | formData() |
+| headers | json() |
+| integrity | text() |
+| isHistoryNavigation |  |
+| keepalive |  |
+| [method](#method) |  |
+| [mode](#mode) |  |
+| redirect |  |
+| referrer |  |
+| referrerPolicy |  |
+| signal |  |
+| [url](#url) |  |
+
+###### method
+
+| [:arrow_heading_up:](#mortar_board-request) | `GET` | `POST` | `PUT` | `DELETE` | `HEAD` |
+|-|-|-|-|-|-|
+
 ```javascript
-console.dir ( Request )
+var request = new Request( 
+    'https://httpbin.org/post', 
+    {
+        method: 'GET'
+    }
+)
 ```
 
-Объект запроса
+###### mode
 
-| Свойства | Значения | |
+`Режим запроса`
+
+| [:arrow_heading_up:](#mortar_board-request) | `cors` | `no-cors` | `same-origin` | `navigate` |
+|-|-|-|-|-|
+
+* `same-origin`
+
+Запросы из других источников будут приводить к генерации исключения
+
+:coffee: Например, запрос
+```javascript
+var request = new Request( 
+    'https://avatars2.githubusercontent.com/u/46?v=4',
+    {
+        mode: 'same-origin'
+    }
+)
+fetch ( request )
+    .then ( response => {
+        console.log ( response )
+    })
+```
+приведет к генерации исключения:
+```console
+Fetch API cannot load https://avatars2.githubusercontent.com/u/46?v=4
+Request mode is "same-origin" 
+but the URL's origin is not same as the request origin null
+```
+в результате чего промис завершится неудачей:
+```console
+Promise {<rejected>: TypeError: Failed to fetch
+```
+
+* `no-cors`
+
+В таком режиме при кросс-доменном запросе исключение не будет сгенерировано, но ответ будет пустым
+```javascript
+var request = new Request( 
+    'https://avatars2.githubusercontent.com/u/46?v=4',
+    {
+        mode: 'no-cors'
+    }
+)
+
+fetch ( request )
+    .then ( response => {
+        response.blob().then ( response => {
+            console.log ( response )
+        })
+    })
+```
+На такой запрос ответ будет:
+
+```console
+Blob(0) { size: 0, type: "" }
+```
+Если тот же запрос сделать без
+```javascript
+mode: 'no-cors'
+```
+то ответ будет:
+```console
+Blob(35635) { size: 35635, type: "image/jpeg" }
+```
+
+* `cors`
+
+Разрешает кросс-доменные запросы ( :warning: если домен, куда направляется запрос, поддерживает CORS )
+
+:coffee: Например, запрос:
+```javascript
+var request = new Request( 
+    'http://bm.img.com.ua/img/prikol/images/large/0/0/307600.jpg',
+    {
+        mode: 'cors'
+    }
+)
+fetch ( request )
+    .then ( response => {
+        console.log ( response )
+    })
+```
+приведет к генерации исключения:
+```console
+Failed to load http://bm.img.com.ua/img/prikol/images/large/0/0/307600.jpg: 
+No 'Access-Control-Allow-Origin' header is present on the requested resource
+Origin 'null' is therefore not allowed access
+If an opaque response serves your needs, 
+set the request's mode to 'no-cors' to fetch the resource with CORS disabled
+```
+и соответствующему "провалу" запроса
+```console
+Uncaught (in promise) TypeError: Failed to fetch
+```
+Это происходит потому, что в режиме **`cors`** требуется, чтобы сервер запрошенного ресурса вернул заголовок **`Access-Control-Allow-Origin`** со значением, совпадающим со значением **`Origin`** запроса ( а заголовок **`Origin`** нельзя подделать, он устанавливается браузером при отправке запроса на сервер )
+
+:coffee: Если сервер запрошенного ресурса вернет заголовок **`Access-Control-Allow-Origin`** со значением **`*`**, то запрос будет выполнен нормально
+```javascript
+var request = new Request( 
+    'https://httpbin.org/get',
+    {
+        mode: 'cors'
+    }
+)
+fetch ( request )
+    .then ( response => {
+        response.text().then ( response => {
+            console.log ( response )
+        })
+    })
+```
+```console
+{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate, br", 
+    "Accept-Language": "en-US,en;q=0.9,ru;q=0.8", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "Origin": "null", 
+    "Save-Data": "on", 
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+  }, 
+  "origin": "185.38.217.69", 
+  "url": "https://httpbin.org/get"
+}
+```
+
+**_Cross-Origin Resource Sharing_** ( **CORS** ) - это механизм, который использует дополнительные заголовки HTTP, чтобы сообщить браузеру, что веб-приложение, работающее в одном домене, имеет разрешение на доступ к выбранным ресурсам другого домена
+
+По соображениям безопасности браузеры ограничивают кросс-доменные запросы, инициированные из сценариев
+
+XMLHttpRequest и Fetch API следуют политике одинакового происхождения
+
+Это означает, что веб-приложение, использующее эти API, может запрашивать только ресурсы из того же источника, из которого было загружено приложение ( если только ответ от другого источника не содержит правильные заголовки CORS )
+
+Когда объект запроса создается с помощью конструктора **`Request`**, значение свойства `mode` для этого запроса устанавливается в _`cors`_
+
+```javascript
+var request = new Request (
+   'http://bm.img.com.ua/img/prikol/images/large/0/0/307600.jpg'
+)
+console.log ( request.mode ) // cors
+```
+В противном случае в качестве режима обычно используется **`no-cors`**
+
+например, когда запрос инициируется из разметки, и атрибут `crossorigin` отсутствует 
+( для элементов `<link>`, `<script>`, `<img>`, `<audio>`, `<video>`, `<object>`, `<embed>` или `<iframe>` запрос выполняется в режиме **`no-cors`** )
+
+
+
+###### url
+`url  запрошенного ресурса`
+
+###### headers
+`заголовки запроса`
+
+###### referrer
+`источник запроса`
+
+###### credentials
+`должны ли файлы cookie отправляться с запросом`
+
+| `omit` | `same-origin` | `follow` | `include` |
 |-|-|-|
-| **`method`** | `✅ GET` | |
-| | `✅ POST` | |
-| | `✅ PUT` | |
-| | `✅ DELETE` | |
-| | `✅ HEAD` | |
-| **`url`** | | `url  запрошенного ресурса` |
-| **`headers`** | | `заголовки запроса` |
-| **`referrer`** | | `источник запроса` |
-| **`mode`** | `✅ cors` | |
-| | `✅ no-cors` | |
-| | `✅ same-origin` | |
-| **`credentials`** | `✅ omit` | `должны ли файлы cookie отправляться с запросом` |
-| | `✅ same-origin` | |
-| **`redirect`** | | `✅ follow` |
-| | `✅ error` | |
-| | `✅ manual` | |
-| **`integrity`** | | `дайджест ресурса` |
-| **`cache`** | `режим кэширования` | `✅ default` |
-| | `✅ reload` | |
-| | `✅ no-cache` | |
+
+```javascript
+fetch( 'https://httpbin.org/post', {
+    credentials: 'include'  
+})
+```
+###### redirect
+
+| `error` | `manual` |
+|-|-|
+
+###### integrity
+`дайджест ресурса`
+
+###### cache
+`режим кэширования`
+
+| `default` | `reload` | ` no-cache` |
+|-|-|-|
 
 ### :mortar_board: Заголовки запроса
 
