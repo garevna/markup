@@ -26,7 +26,7 @@ fetch ( "message.txt" )
 |-|-|
 | bodyUsed | arrayBuffer() |
 | cache | blob() |
-| credentials | clone() |
+| [credentials](#credentials) | clone() |
 | destination | formData() |
 | headers | json() |
 | integrity | text() |
