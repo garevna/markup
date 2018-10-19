@@ -228,7 +228,7 @@ console.log ( request.mode ) // cors
 `должны ли файлы cookie отправляться с запросом`
 
 | `omit` | `same-origin` | `follow` | `include` |
-|-|-|-|
+|-|-|-|-|
 
 ```javascript
 fetch( 'https://httpbin.org/post', {
