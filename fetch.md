@@ -349,8 +349,8 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
     .then ( response => {
         response.blob().then ( response => {
     	    urlObject = URL.createObjectURL( response)
-    	        picture.src = urlObject
-            })
+    	    picture.src = urlObject
+        })
     })
 ```
 Если вывести полученный объект в консоль, то мы увидим:
@@ -361,14 +361,81 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
 
 Поскольку на странице могут отображаться только объекты ( ресурсы ), размещенные в сети и имеющие URL, основная задача - создать такой URL для объекта, уже находящегося в нашем распоряжении и являющимся локальным объектом текущей страницы
 
-Для этого существует метод [**URL.createObjectURL**]()
-
-
-
-
+Для этого существует метод [**URL.createObjectURL**](createObjectURL)
 
 | [:arrow_heading_up:](#mortar_board-response) |
 |-|
+
+###### arrayBuffer()
+
+Этот формат ответа сервера представляет собой строку из нулей и единиц
+
+Объект ArrayBuffer не фрагментирует данные, не выделяет отдельные байты или другие кластеры
+
+Для этого у объекта  ArrayBuffer  есть конструкторы:
+
+✅ Int8Array
+
+Для представления данных в виде последовательности байт
+
+✅ Uint8Array
+
+Для представления данных в виде последовательности шестнадцатибитных значений ( чисел )
+
+Результатом работы конструкторов будет итерабельный объект
+```javascript
+fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
+    .then ( response => {
+        response.arrayBuffer().then ( response => {
+            console.log ( response )
+            console.log ( new Int8Array( response ) )
+            console.log ( new Uint8Array( response ) )
+        })
+    })
+```
+
+| [:arrow_heading_up:](#mortar_board-response) |
+|-|
+
+###### arrayBuffer --> blob
+
+Можно получить  объект **`Blob`**  из объекта **`arrayBuffer`** с помощью конструктора  **`Blob`**, которому нужно передать объект **`arrayBuffer`**, "завернутый" в массив
+
+:coffee: :one: Закиньте в консоль следующий код, и посмотрите результат:
+```javascript
+console.log ( new Blob ( [ 
+    '01101000110000100000011101011010010001000100011101011' 
+] ) )
+console.log ( new Blob ( [ 
+    '01101000110000100000011101011010010001000100011101011', 
+    '01101000110000100000011101011010010001000100011101011' 
+] ) )
+```
+:coffee: :two: Закиньте в консоль следующий код:
+```javascript
+fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
+   .then ( response => {
+      response.arrayBuffer()
+         .then ( response => {
+            console.log ( new Blob ( [ response ] ) )
+         })
+   })
+```
+:coffee: :three: Закиньте в консоль следующий код:
+```javascript
+var picture = document.createElement ( 'img' )
+document.body.appendChild ( picture )
+
+fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
+   .then ( response => {
+      response.arrayBuffer()
+         .then ( response => {
+            var pixels = new Uint8Array( response )
+    	    urlObject = URL.createObjectURL( new Blob ( [ response ] ))
+    	    picture.src = urlObject
+      })
+   })
+```
 
 | Свойства | объекта Response |
 |-|-|
@@ -379,10 +446,8 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
 | **`ok`** | `логическое выражение; принимает значение true, если получение данных произошло без ошибок ( status от 200 до 299 )` |
 | **`bodyUsed`** | `логическое выражение; принимает значение true, если body загружено` |
 
-:coffee: :two:
-```javascript
+:coffee: :four:
 
-```
 ```javascript
 fetch ( 'https://httpbin.org/get' )
     .then ( response => response.json()
@@ -405,7 +470,7 @@ fetch ( 'https://httpbin.org/get' )
  ► __proto__: Object
 ```
 
-:coffee: :three:
+:coffee: :five:
 Сделаем кросс-доменный запрос:
 ```javascript
 var request = new Request ( 
