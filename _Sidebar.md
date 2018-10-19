@@ -136,6 +136,8 @@
 <a name="toc-9"></a>
 #### Занятие 9
 
+* [Fetch API](fetch)
+
 | [:arrow_heading_up:](#toc-8) | <img width="800"/> | [:arrow_heading_down:](#toc-10) |
 |-|-|-|
 
