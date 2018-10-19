@@ -20,7 +20,7 @@ fetch ( "message.txt" )
 
 ## :mortar_board: Request
 
-В свойстве **`prototype`** конструктора **`Request`**
+Свойство **`prototype`** конструктора **`Request`**:
 
 | Свойства | Методы |
 |-|-|
@@ -28,19 +28,19 @@ fetch ( "message.txt" )
 | cache | blob() |
 | [credentials](#credentials) | clone() |
 | destination | formData() |
-| headers | json() |
+| [headers](#headers) | json() |
 | integrity | text() |
 | isHistoryNavigation |  |
 | keepalive |  |
-| [method](#method) |  |
-| [mode](#mode) |  |
+| [:information_source: method](#method) |  |
+| [:information_source: mode](#mode) |  |
 | redirect |  |
 | referrer |  |
 | referrerPolicy |  |
 | signal |  |
-| [url](#url) |  |
+| [:information_source: url](#url) |  |
 
-###### method
+### :information_source: method
 
 | [:arrow_heading_up:](#mortar_board-request) | `GET` | `POST` | `PUT` | `DELETE` | `HEAD` |
 |-|-|-|-|-|-|
@@ -54,14 +54,14 @@ var request = new Request(
 )
 ```
 
-###### mode
+### :information_source: mode
 
 `Режим запроса`
 
-| [:arrow_heading_up:](#mortar_board-request) | `cors` | `no-cors` | `same-origin` | `navigate` |
+| [:arrow_heading_up:](#mortar_board-request) | [`cors`](#cors) | [`no-cors`](#no-cors) | `same-origin` | `navigate` |
 |-|-|-|-|-|
 
-* `same-origin`
+###### `same-origin`
 
 Запросы из других источников будут приводить к генерации исключения
 
@@ -89,7 +89,10 @@ but the URL's origin is not same as the request origin null
 Promise {<rejected>: TypeError: Failed to fetch
 ```
 
-* `no-cors`
+###### `no-cors`
+
+| [:arrow_heading_up:](#information_source-mode) |
+|-|
 
 В таком режиме при кросс-доменном запросе исключение не будет сгенерировано, но ответ будет пустым
 ```javascript
@@ -121,7 +124,10 @@ mode: 'no-cors'
 Blob(35635) { size: 35635, type: "image/jpeg" }
 ```
 
-* `cors`
+###### `cors`
+
+| [:arrow_heading_up:](#information_source-mode) |
+|-|
 
 Разрешает кросс-доменные запросы ( :warning: если домен, куда направляется запрос, поддерживает CORS )
 
@@ -206,7 +212,8 @@ console.log ( request.mode ) // cors
 например, когда запрос инициируется из разметки, и атрибут `crossorigin` отсутствует 
 ( для элементов `<link>`, `<script>`, `<img>`, `<audio>`, `<video>`, `<object>`, `<embed>` или `<iframe>` запрос выполняется в режиме **`no-cors`** )
 
-
+| [:arrow_heading_up:](#information_source-mode) |
+|-|
 
 ###### url
 `url  запрошенного ресурса`
@@ -270,27 +277,135 @@ fetch ( url )
 
 ## :mortar_board: Response
 
-| Методы | возвращают промис, результатом которого будет |
+###### body
+Это объект _ReadableStream_, доступ к которому обеспечивают такие методы объекта **_`Response`_**, как  
+**`arrayBuffer()`**,  **`blob()`**,  **`formData()`**,  **`json()`**  или   **`text()`**
+
+Эти методы возвращают ответ сервера в заданном формате
+
+| Методы | возвращают **_промис_**, результатом которого будет |
 |-|-|
-| **`arrayBuffer()`** | `ArrayBuffer ( строка из нулей и единиц )`
-| **`blob()`** | `объект Blob ( данные в двоичном формате )` |
-| **`clone()`** | `копию объекта Response` |
-| **`formData()`** | `данные FormData` |
-| **`json()`** | `данные в JSON-формате` |
-| **`text()`** | `данные в текстовом формате` |
+| [**`arrayBuffer()`**](#arrayBuffer()) | `ArrayBuffer ( строка из нулей и единиц )`
+| [**`blob()`**](#blob()) | `объект Blob ( данные в двоичном формате )` |
+| [**`clone()`**](#clone()) | `копию объекта Response` |
+| [**`formData()`**](#formData()) | `данные FormData` |
+| [**`json()`**](#json()) | `данные в JSON-формате` |
+| [**`text()`**](#text()) | `данные в текстовом формате` |
 
- объекта Response:
+###### json()
 
-| Свойства |  |
+:coffee: Воспользуемся [**сервисом**](https://api.2ip.ua) для получения полной информации о пользователе ( в данном случае - о самом себе )
+
+Для получения такой инфо методу  **`fetch`**  нужно передать в качестве аргумента строку
+```
+https://api.2ip.ua/geo.json?ip=
+```
+Метод  **`fetch`**  вернет промис, поэтому "повесим" обработчика успешного завершения  **`then`**
+
+Как мы знаем, метод  **`then`**  принимает один аргумент - функцию, которая будет вызвана в случае успешного завершения асинхронной операции:
+```javascript
+fetch ( 'https://api.2ip.ua/geo.json?ip=' )
+    .then ( response => {
+        ...
+    })
+```
+Эта функция получит в качестве аргумента ответ сервера  **_response_** ( так мы назвали эту переменную )
+
+Нам не нужен весь объект  **_response_**, который вернет нам метод  **`fetch`**
+
+Нам нужен результат ( данные ) в формате  _json_
+
+Используем метод   **`json()`** объекта  **`Response`** 
+
+Мы знаем, что этот метод также вернет промис, т.е. нам нужно еще одного обработчика **`then`**:
+```javascript
+fetch ( 'https://api.2ip.ua/geo.json?ip=' )
+    .then ( response => {
+        response.json().then ( response => 
+            ...
+        )
+    })
+```
+Осталось добавить код, который будет выполнен при успешном завершении второго промиса
+
+Функция, которую мы передали в качестве аргумента второму **`then`**, получит на входе объект данных, являющийся результатом парсинга json-строки
+
+| [:arrow_heading_up:](#mortar_board-response) |
+|-|
+
+###### blob()
+
+Давайте посмотрим, что такое объект Blob
+
+Создадим элемент img на странице:
+```javascript
+var picture = document.createElement ( 'img' )
+document.body.appendChild ( picture )
+```
+Теперь загрузим с помощью fetch изображение из сети ( например, аватар пользователя github ) и итерпретируем ответ сервера как объект Blob:
+
+```javascript
+fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
+    .then ( response => {
+        response.blob().then ( response => {
+    	    urlObject = URL.createObjectURL( response)
+    	        picture.src = urlObject
+            })
+    })
+```
+Если вывести полученный объект в консоль, то мы увидим:
+```
+► Blob(35635) { size: 35635, type: "image/jpeg" }
+```
+Изображение получено нами в виде объекта **`Blob`**, и теперь оно является локальным объектом, который нам нужно отобразить на странице в нашем элементе  **_img_**
+
+Поскольку на странице могут отображаться только объекты ( ресурсы ), размещенные в сети и имеющие URL, основная задача - создать такой URL для объекта, уже находящегося в нашем распоряжении и являющимся локальным объектом текущей страницы
+
+Для этого существует метод **URL.createObjectURL**
+
+###### URL.createObjectURL()
+
+
+
+| [:arrow_heading_up:](#mortar_board-response) |
+|-|
+
+| Свойства | объекта Response |
 |-|-|
 | **`type`** | `строка, содержащая тип данных ( "basic" — все ОК )` |
 | **`url`** | `URL адрес ответа сервера` |
 | **`status`** | `код статуса ответа сервера` |
 | **`statusText`** | `текст статуса ответа сервера` |
 | **`ok`** | `логическое выражение; принимает значение true, если получение данных произошло без ошибок ( status от 200 до 299 )` |
-| **`bodyUsed`** | логическое выражение; принимает значение true, если body загружено |
+| **`bodyUsed`** | `логическое выражение; принимает значение true, если body загружено` |
 
 :coffee: :two:
+```javascript
+
+```
+```javascript
+fetch ( 'https://httpbin.org/get' )
+    .then ( response => response.json()
+        .then ( 
+            response => 
+                console.log ( response.headers )
+        )
+    )
+```
+```console
+▼ {Accept: "*/*", Accept-Encoding: "gzip, deflate, br", Accept-Language: "en-US,en;q=0.9,ru;q=0.8", Connection: "close", Host: "httpbin.org", …}
+   Accept: "*/*"
+   Accept-Encoding: "gzip, deflate, br"
+   Accept-Language: "en-US,en;q=0.9,ru;q=0.8"
+   Connection: "close"
+   Host: "httpbin.org"
+   Origin: "null"
+   Save-Data: "on"
+   User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+ ► __proto__: Object
+```
+
+:coffee: :three:
 Сделаем кросс-доменный запрос:
 ```javascript
 var request = new Request ( 
