@@ -137,6 +137,7 @@
 #### Занятие 9
 
 * [Fetch API](fetch)
+* [CORS](CORS)
 * [💼 Homework](hw-09)
 
 | [:arrow_heading_up:](#toc-8) | <img width="800"/> | [:arrow_heading_down:](#toc-10) |
