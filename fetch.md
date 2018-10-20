@@ -158,6 +158,9 @@ Uncaught (in promise) TypeError: Failed to fetch
 ```
 Это происходит потому, что в режиме **`cors`** требуется, чтобы сервер запрошенного ресурса вернул заголовок **`Access-Control-Allow-Origin`** со значением, совпадающим со значением **`Origin`** запроса ( а заголовок **`Origin`** нельзя подделать, он устанавливается браузером при отправке запроса на сервер )
 
+| [:arrow_heading_up:](#information_source-mode) |
+|-|
+
 :coffee: Если сервер запрошенного ресурса вернет заголовок **`Access-Control-Allow-Origin`** со значением **`*`**, то запрос будет выполнен нормально
 ```javascript
 var request = new Request( 
@@ -191,6 +194,9 @@ fetch ( request )
 }
 ```
 
+| [:arrow_heading_up:](#mortar_board-request) |
+|-|
+
 **_Cross-Origin Resource Sharing_** ( **CORS** ) - это механизм, который использует дополнительные заголовки HTTP, чтобы сообщить браузеру, что веб-приложение, работающее в одном домене, имеет разрешение на доступ к выбранным ресурсам другого домена
 
 По соображениям безопасности браузеры ограничивают кросс-доменные запросы, инициированные из сценариев
@@ -212,7 +218,7 @@ console.log ( request.mode ) // cors
 например, когда запрос инициируется из разметки, и атрибут `crossorigin` отсутствует 
 ( для элементов `<link>`, `<script>`, `<img>`, `<audio>`, `<video>`, `<object>`, `<embed>` или `<iframe>` запрос выполняется в режиме **`no-cors`** )
 
-| [:arrow_heading_up:](#information_source-mode) |
+| [:arrow_heading_up:](#mortar_board-request) |
 |-|
 
 ### :information_source: url
@@ -221,7 +227,7 @@ console.log ( request.mode ) // cors
 ### :information_source: headers
 `заголовки запроса`
 
-###:information_source: referrer
+### :information_source: referrer
 `источник запроса`
 
 ### :information_source: credentials
@@ -235,21 +241,24 @@ fetch( 'https://httpbin.org/post', {
     credentials: 'include'  
 })
 ```
-###### redirect
+### :information_source: redirect
 
 | `error` | `manual` |
 |-|-|
 
-###### integrity
+### :information_source: integrity
 `дайджест ресурса`
 
-###### cache
+### :information_source: cache
 `режим кэширования`
 
 | `default` | `reload` | ` no-cache` |
 |-|-|-|
 
 ### :mortar_board: Заголовки запроса
+
+| [:arrow_heading_up:](#mortar_board-request) |
+|-|
 
 Объект заголовка запроса можно создать с помощью конструктора:
 ```javascript
@@ -277,7 +286,10 @@ fetch ( url )
 
 ## :mortar_board: Response
 
-###### body
+| [:arrow_heading_up:](#mortar_board-request) |
+|-|
+
+### :information_source: body
 Это объект _ReadableStream_, доступ к которому обеспечивают такие методы объекта **_`Response`_**, как  
 **`arrayBuffer()`**,  **`blob()`**,  **`formData()`**,  **`json()`**  или   **`text()`**
 
@@ -292,7 +304,7 @@ fetch ( url )
 | [**`json()`**](#json()) | `данные в JSON-формате` |
 | [**`text()`**](#text()) | `данные в текстовом формате` |
 
-###### json()
+### :information_source: json()
 
 :coffee: Воспользуемся [**сервисом**](https://api.2ip.ua) для получения полной информации о пользователе ( в данном случае - о самом себе )
 
@@ -359,7 +371,7 @@ fetch ( 'https://api.github.com/users?since=135' )
       })
    )
 ```
-###### blob()
+### :information_source: blob()
 
 Давайте посмотрим, что такое объект Blob
 
@@ -392,7 +404,7 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
 | [:arrow_heading_up:](#mortar_board-response) |
 |-|
 
-###### arrayBuffer()
+### :information_source: arrayBuffer()
 
 Этот формат ответа сервера представляет собой строку из нулей и единиц
 
@@ -423,7 +435,7 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
 | [:arrow_heading_up:](#mortar_board-response) |
 |-|
 
-###### arrayBuffer --> blob
+### :information_source: arrayBuffer --> blob
 
 Можно получить  объект **`Blob`**  из объекта **`arrayBuffer`** с помощью конструктора  **`Blob`**, которому нужно передать объект **`arrayBuffer`**, "завернутый" в массив
 
@@ -463,6 +475,9 @@ fetch ( 'https://avatars2.githubusercontent.com/u/46?v=4' )
    })
 ```
 
+| [:arrow_heading_up:](#mortar_board-response) |
+|-|
+
 | Свойства | объекта Response |
 |-|-|
 | **`type`** | `строка, содержащая тип данных ( "basic" — все ОК )` |
@@ -495,6 +510,9 @@ fetch ( 'https://httpbin.org/get' )
    User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
  ► __proto__: Object
 ```
+
+| [:arrow_heading_up:](#mortar_board-response) |
+|-|
 
 :coffee: :five:
 Сделаем кросс-доменный запрос:
@@ -548,5 +566,5 @@ fetch( request )
     url: "https://httpbin.org/post"
   ► __proto__: Object
 ```
-
+***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf3Qcz6-DrAlgTLqpy-tZGiARxm80cdnQmvga-Oj6xGvONXTA/viewform)
