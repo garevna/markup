@@ -26,14 +26,14 @@ fetch ( "message.txt" )
 |-|-|
 | bodyUsed | arrayBuffer() |
 | cache | blob() |
-| [credentials](#credentials) | clone() |
+| [:information_source: credentials](#information_source-credentials) | clone() |
 | destination | formData() |
-| [headers](#headers) | json() |
+| [:information_source: headers](#information_source-headers) | json() |
 | integrity | text() |
 | isHistoryNavigation |  |
 | keepalive |  |
-| [:information_source: method](#method) |  |
-| [:information_source: mode](#mode) |  |
+| [:information_source: method](#information_source-method) |  |
+| [:information_source: mode](#information_source-mode) |  |
 | redirect |  |
 | referrer |  |
 | referrerPolicy |  |
@@ -215,16 +215,16 @@ console.log ( request.mode ) // cors
 | [:arrow_heading_up:](#information_source-mode) |
 |-|
 
-###### url
+### :information_source: url
 `url  запрошенного ресурса`
 
-###### headers
+### :information_source: headers
 `заголовки запроса`
 
-###### referrer
+###:information_source: referrer
 `источник запроса`
 
-###### credentials
+### :information_source: credentials
 `должны ли файлы cookie отправляться с запросом`
 
 | `omit` | `same-origin` | `follow` | `include` |
@@ -333,6 +333,32 @@ fetch ( 'https://api.2ip.ua/geo.json?ip=' )
 | [:arrow_heading_up:](#mortar_board-response) |
 |-|
 
+:coffee: 
+
+:warning: В этом примере нужно вместо **`...`** подставить имя своего _toilet_
+
+Сначала мы получим данные юзера гитхаба, а потом запишем эти данные в свой _toilet_
+
+```javascript
+document.cookie = "name=garevna;token=qw4654Rzsxc-*/w5"
+fetch ( 'https://api.github.com/users?since=135' )
+   .then ( response => response.json()
+      .then ( response => {
+          fetch ( 
+              'http://ptsv2.com/t/.../post',
+              {
+                 method: 'POST',
+                 credentials: 'include',
+                 headers: new Headers({
+                   'Content-Type': 'application/json'
+                 }),
+                 body: JSON.stringify ( response[5] )
+              }
+    	  )
+          .then ( response => console.log ( response ) )
+      })
+   )
+```
 ###### blob()
 
 Давайте посмотрим, что такое объект Blob
