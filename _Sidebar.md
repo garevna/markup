@@ -138,7 +138,7 @@
 
 * [Fetch API](fetch)
 * [CORS](CORS)
-* [cokie](https://docs.google.com/forms/d/e/1FAIpQLSfFS3gfvEDWkj5qU_E9U0LBi3JkHFuqUf44ZeXi9acM7ClJlw/viewform)
+* [cookie](https://docs.google.com/forms/d/e/1FAIpQLSfFS3gfvEDWkj5qU_E9U0LBi3JkHFuqUf44ZeXi9acM7ClJlw/viewform)
 * [localStorage](https://docs.google.com/forms/d/e/1FAIpQLScGYFPKo9iDtUD52-iMG3AfokQrI0NP2G96nHsCTr_A4EOZww/viewform)
 * [💼 Homework](hw-09)
 
