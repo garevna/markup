@@ -334,11 +334,6 @@ transport.onerror = function ( err ) {
 | [:arrow_double_up:](#table) | [:coffee: Упражнения](setRequestHeader-samples) |
 |-|-|
 
-
-
-| [:arrow_double_up:](#table) |
-|-|
-
 ### :mortar_board: `responseType`
 
 Свойство **`responseType`** объекта `XMLHttpRequest` определяет тип данных ответа сервера
