@@ -23,14 +23,14 @@ Cross-origin resource sharing
 
 Все CORS-заголовки **_ответа_** сервера имеют префикс «**Access-Control-**»
 
-###### Access-Control-Allow-Origin ( обязательный )
+###### :package: Access-Control-Allow-Origin ( обязательный )
 этот заголовок должен быть включен во все валидные ответы CORS
 
 отсутствие этого заголовка приведет к сбою запроса CORS
 
 Значение заголовка может либо таким же, как и заголовок запроса **Origin**, либо "*", что означает, что запросы разрешены из любого источника
 
-###### Access-Control-Allow-Credentials ( необязательный )
+###### :package: Access-Control-Allow-Credentials ( необязательный )
 По умолчанию файлы _cookie_ не включены в запросы CORS
 
 Этот заголовок означает обязательность включения файлов cookie в CORS-запросы
@@ -44,7 +44,7 @@ Cross-origin resource sharing
 Если свойство withCredentials имеет значение true, а заголовок Access-Control-Allow-Credentials отсутствует, 
 запрос будет отклонен, и наоборот
 
-###### Access-Control-Expose-Headers ( необязательный )
+###### :package: Access-Control-Expose-Headers ( необязательный )
 Объект XMLHttpRequest 2 имеет метод getResponseHeader (), который возвращает значение конкретного заголовка ответа
 
 Во время запроса CORS метод getResponseHeader () может получить доступ только к простым заголовкам ответов
@@ -67,7 +67,7 @@ Cross-origin resource sharing
 
 ## :mortar_board: Заголовки
 
-###### Access-Control-Allow-Origin
+###### :package: Access-Control-Allow-Origin
 
 Этот заголовок должен быть возвращен сервером
 
@@ -79,25 +79,25 @@ Cross-origin resource sharing
 полное доменное имя ( например, https://example.com )
 `( если нужно, чтобы клиент передавал заголовки аутентификации, например, файлы cookie, значение не может быть * - это должен быть полностью квалифицированный домен )`
 
-###### Access-Control-Allow-Credentials
+###### :package: Access-Control-Allow-Credentials
 
 Этот заголовок должен присутствовать в ответе только тогда, когда сервер поддерживает аутентификацию через файлы cookie
 
 Единственное допустимое значение для этого случая - true
 
-###### Access-Control-Allow-Headers
+###### :package: Access-Control-Allow-Headers
 
 Предоставляет список значений заголовков запроса, разделенных запятыми, которые сервер хочет поддерживать
 
 Если вы используете пользовательские заголовки ( например, x-authentication-token ), ваш сервер должен вернуть его в ответе на вызов OPTIONS, иначе запрос будет заблокирован
 
-###### Access-Control-Expose-Headers
+###### :package: Access-Control-Expose-Headers
 
 Аналогично, этот ответ должен содержать список заголовков, которые будут присутствовать в фактическом ответе на вызов и должны быть доступны клиенту
 
 Все остальные заголовки будут ограничены
 
-###### Access-Control-Allow-Methods
+###### :package: Access-Control-Allow-Methods
 
 Разделяемый запятыми список типов HTTP-запросов ( например, GET, POST ), которые сервер хочет поддерживать
 
