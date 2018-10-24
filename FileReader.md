@@ -4,37 +4,37 @@
 
 Создает экземпляр объекта, который позволяет веб-приложению асинхронно читать содержимое файлов ( объекты класса **_File_** ) на компьютере пользователя или объекты класса **_Blob_**
 
-:warning: Не может читать объекты класса **_ReadableStream_**
+:warning: `Не может читать объекты класса` **_`ReadableStream`_**
 
 ```javascript
 var reader = new FileReader ()
 ```
-###### Методы
+### :clipboard: Методы
 ```javascript
 ƒ readAsArrayBuffer()
 ƒ readAsBinaryString()
 ƒ readAsDataURL()
 ƒ readAsText()
 ```
-###### Свойства
+### :clipboard: Свойства
 
-✅ error 
+###### ✅ error 
 ```
 объект DOMError со свойствами name и message
 ```
-✅ readyState
+###### ✅ readyState
 ```
 ✋ EMPTY   : 0 ( данные еще не загружены )
 ✋ LOADING : 1 ( данные загружаются )
 ✋ DONE    : 2 ( операция чтения завершена )
 ```
-✅ result
+###### ✅ result
 ```
 данные
 ✋ значение свойства result определено только после завершения операции чтения
 ✋ формат данных зависит от способа, с помощью которого процесс был вызван
 ```
-⏰ `Обработка событий`
+###### ⏰ `Обработка событий`
 ```javascript
 ✅ onabort
 ✅ onerror
@@ -52,17 +52,19 @@ var selector = document.body.appendChild ( document.createElement ( 'input' ) )
 selector.type = 'file'
 
 selector.onchange = function handleFiles( event ) {
-        fileReader.readAsDataURL ( event.target.files [0] )
-        fileReader.onload = function ( event ) {
-                picture.src = event.target.result
-        }
+    fileReader.readAsDataURL ( event.target.files [0] )
+    fileReader.onload = function ( event ) {
+        picture.src = event.target.result
+    }
 }
 
-var picture = document.body.appendChild ( document.createElement ( 'img' ) )
+var picture = document.body.appendChild (
+    document.createElement ( 'img' )
+)
 
 var fileReader = new FileReader ()
 ```
-Сравните с уже знакомым методом  URL.createObjectURL:
+Сравните с уже знакомым методом  **URL.createObjectURL**:
 ```javascript
 picture.src = URL.createObjectURL( selected )
 ```
@@ -139,7 +141,6 @@ selector.onchange = function ( event ) {
     for ( var file of event.target.files ) {
         if ( file.type.split('/')[0] !== 'image' ) return
         var picture = document.createElement ( "img" )
-        picture.file = file
         document.body.appendChild( picture )
         var fileReader = new FileReader ()
         fileReader.onload = ( 
