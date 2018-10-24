@@ -121,13 +121,17 @@ var fileReader = new FileReader ()
 
 ✍ Разберите работу кода в Chrome DevTools:
 ```javascript
-var selector = document.body.appendChild ( document.createElement ( 'input' ) )
+var selector = document.body.appendChild (
+    document.createElement ( 'input' )
+)
 selector.type = 'file'
 selector.multiple = true
 selector.id = 'selectImages'
 selector.style.display = 'none'
 
-var label = document.body.appendChild ( document.createElement ( 'label' ) )
+var label = document.body.appendChild (
+    document.createElement ( 'label' )
+)
 label.htmlFor = 'selectImages'
 label.innerText = 'Select images'
 
