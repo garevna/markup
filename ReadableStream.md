@@ -101,15 +101,20 @@ ArrayBuffer(1401) {0: 123, 1: 34, 2: 84, 3: 105, 4: 109, 5: 101, 6: 115, 7: 116
 ### :mortar_board: Blob
 ```javascript
 fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
-   .then ( response => 
+   .then ( response => {
+      console.log ( response.body )
       response.body.getReader().read()
          .then ( response => {
             var buffer = new ArrayBuffer ( response.value.length )
-            response.value.map ( ( value, i ) => { buffer[i] = value } )
+            response.value.forEach ( 
+                ( val, index ) => {
+                    buffer [ index ] = val
+                } 
+            )
             var blob = new Blob ( [ buffer ] )
             console.log ( blob )
          })
-   )
+   })
 ```
 ###### Результат
 ```console
