@@ -89,7 +89,11 @@ fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
       response.body.getReader().read()
          .then ( response => {
             var buffer = new ArrayBuffer ( response.value.length )
-            response.value.map ( ( value, i ) => { buffer[i] = value } )
+            response.value.forEach ( 
+                ( val, index ) => {
+                    buffer [ index ] = val
+                } 
+            )
             console.log ( buffer ) 
          })
    )
