@@ -42,7 +42,7 @@ fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
       ► get locked: ƒ locked()
       ► __proto__: Object
 ```
-### getReader
+### :mortar_board: getReader
 
 ```javascript
 fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
@@ -65,6 +65,8 @@ fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
 ```
 > `Метод read() возвращает промис`
 
+### :mortar_board: read()
+
 ```javascript
 fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
    .then ( response => 
@@ -80,13 +82,12 @@ fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
   ► __proto__: Object
 ```
 
-### ArrayBuffer
+### :mortar_board: ArrayBuffer
 ```javascript
 fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
    .then ( response => 
       response.body.getReader().read()
          .then ( response => {
-            console.log ( response.value.length )
             var buffer = new ArrayBuffer ( response.value.length )
             response.value.map ( ( value, i ) => { buffer[i] = value } )
             console.log ( buffer ) 
@@ -96,4 +97,24 @@ fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
 ###### Результат
 ```console
 ArrayBuffer(1401) {0: 123, 1: 34, 2: 84, 3: 105, 4: 109, 5: 101, 6: 115, 7: 116, 8: 97, 9: 109, 10: 112, 11: 34, 12: 58, 13: 34, 14: 50, 15: 48, 16: 49, 17: 56, 18: 45, 19: 49, 20: 48, 21: 45, 22: 50, 23: 52, 24: 84, 25: 48, 26: 55, 27: 58, 28: 48, 29: 52, 30: 58, 31: 49, 32: 56, 33: 46, 34: 48, 35: 57, 36: 51, 37: 49, 38: 90, 39: 34, 40: 44, 41: 34, 42: 77, 43: 101, 44: 116, 45: 104, 46: 111, 47: 100, 48: 34, 49: 58, 50: 34, 51: 80, 52: 79, 53: 83, 54: 84, 55: 34, 56: 44, 57: 34, 58: 82, 59: 101, 60: 109, 61: 111, 62: 116, 63: 101, 64: 65, 65: 100, 66: 100, 67: 114, 68: 34, 69: 58, 70: 34, 71: 49, 72: 56, 73: 53, 74: 46, 75: 51, 76: 56, 77: 46, 78: 50, 79: 49, 80: 55, 81: 46, 82: 54, 83: 57, 84: 34, 85: 44, 86: 34, 87: 73, 88: 68, 89: 34, 90: 58, 91: 57, 92: 56, 93: 48, 94: 48, 95: 48, 96: 49, 97: 44, 98: 34, 99: 72, …}
+```
+### :mortar_board: Blob
+```javascript
+fetch ( 'http://ptsv2.com/t/garevna/d/980001/json')
+   .then ( response => 
+      response.body.getReader().read()
+         .then ( response => {
+            var buffer = new ArrayBuffer ( response.value.length )
+            response.value.map ( ( value, i ) => { buffer[i] = value } )
+            var blob = new Blob ( [ buffer ] )
+            console.log ( blob )
+         })
+   )
+```
+###### Результат
+```console
+▼ Blob(1401) {size: 1401, type: ""}
+    size: 1401
+    type: ""
+    __proto__: Blob
 ```
