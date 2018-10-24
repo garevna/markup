@@ -3,8 +3,9 @@
 
 :coffee:
 
-###### Создадим форму
+Создадим форму с атрибутом **name**, имеющим значение **_upload_file_**, 
 
+и элемент **img**, значение атрибута **name** которого будет **_picture_**
 ```html
 <form enctype="multipart/form-data" 
       method="post" 
@@ -20,11 +21,16 @@
 
     <input type="submit" value="Upload">
 </form>
+
+<img name = "picture"/>
 ```
-###### Получим данные формы после заполнения и отправим на сервер
+
+Получим данные формы после заполнения и отправим на сервер
+
 ```javascript
 var form = document.forms.namedItem ( "upload_file" )
 form.addEventListener( 'submit', function ( event ) {
+
     event.preventDefault()
     var data = new FormData(form)
     data.append ( "comment", "Hello everybody!" )
@@ -32,9 +38,11 @@ form.addEventListener( 'submit', function ( event ) {
     var request = new XMLHttpRequest()
     request.open ( "POST", "https://httpbin.org/post" )
     request.onload = function( event ) {
-       if ( this.status === 200 )
-           console.log ( "success" )
-       else console.log ( "Error uploading file" )
+       console.log ( 
+          JSON.parse ( this.responseText ).files.file
+       )
+       document.images.namedItem ( "img" ) .src = 
+          JSON.parse ( this.responseText ).files.file
     }
 
     request.send( data )
@@ -42,7 +50,7 @@ form.addEventListener( 'submit', function ( event ) {
 }, false )
 ```
 ###### Посмотрим результат в панели Network браузера
-![](http://icecream.me/uploads/b0d4d73f21508dd67e0c57a590f582f0.png)
+![](https://github.com/garevna/js-course/blob/master/images/lessons/b0d4d73f21508dd67e0c57a590f582f0%5B1%5D.png?raw=true)
 
 ###### Заглянем во вкладку _Response_ вкладки _Network_
 ```
