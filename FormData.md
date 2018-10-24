@@ -1,6 +1,7 @@
 # :mortar_board: FormData
 
-###### конструктор FormData() создает объект класса **FormData**
+## :mortar_board: FormData()
+Конструктор FormData() создает объект класса **_FormData_**
 
 ```console
 ▼ FormData {}
@@ -26,8 +27,7 @@ var formData = new FormData()
 formData instanceof FormData   // true
 ```
 
-* Объекты класса **FormData** предоставляют интефейс для манипулирования данными
-* Объекты класса **FormData** могут быть отправлены на сервер с помощью `XMLHttpRequest` или `Fetch API`
+:clipboard: Объекты класса **FormData** предоставляют интефейс для манипулирования данными форм и могут быть отправлены на сервер с помощью `XMLHttpRequest` или `Fetch API`
 
 ## Методы
 
