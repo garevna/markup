@@ -151,6 +151,11 @@
 <a name="toc-10"></a>
 #### Занятие 10
 
+* [Метод namedItem](namedItem)
+* [FormData](FormData)
+* [File API](https://docs.google.com/forms/d/e/1FAIpQLSfWyl5nx2exEulEAW2LitdvyjSddTEeqP0Y4O5smow4nWc85Q/viewform)
+* [💼 Homework](hw-10)
+
 | [:arrow_heading_up:](#toc-9) | <img width="800"/> | [:arrow_heading_down:](#toc-11) |
 |-|-|-|
 
