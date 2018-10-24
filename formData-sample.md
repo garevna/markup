@@ -49,10 +49,10 @@ form.addEventListener( 'submit', function ( event ) {
 
 }, false )
 ```
-###### Посмотрим результат в панели Network браузера
+###### Посмотрим результат в панели _**Network**_ браузера
 ![](https://github.com/garevna/js-course/blob/master/images/lessons/b0d4d73f21508dd67e0c57a590f582f0%5B1%5D.png?raw=true)
 
-###### Заглянем во вкладку _Response_ вкладки _Network_
+###### Заглянем во вкладку _**Response**_ вкладки _**Network**_
 ```
 {
   "args": {}, 
