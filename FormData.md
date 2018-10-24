@@ -38,23 +38,36 @@ formData instanceof FormData   // true
 
 Принимает два аргумента - имя ключа и его значение
 
-добавляет пару ключ/значение в форму
+Если такого ключа еще нет, добавляет пару ключ/значение
+
+Если такой ключ уже существует, добавляет ему новое значение
 
 ```javascript
 var formData = new FormData()
 formData.append ( "username", "garevna" )
 formData.append ( "token", "HgTY78-jdfhj91*/jskdfj" )
 ```
+### has()
+```javascript
+formData.has ( "token" )     // true
+```
 ### get()
 ```javascript
 formData.get ( "username" )  // "garevna"
 formData.get ( "token" )     // "HgTY78-jdfhj91*/jskdfj"
 ```
-### has()
+### getAll()
+Возвращает массив всех значений, связанных с указанным в аргументе ключом
 ```javascript
-formData.has ( "token" )     // true
+formData.append ( "pictures", "http://icecream.me/uploads/b0d4d73f21508dd67e0c57a590f582f0.png" )
+formData.getAll ( "pictures" )
+formData.append ( "pictures", "https://github.com/garevna/js-course/raw/master/images/js_cup-ico.png" )
+formData.getAll ( "pictures" )
 ```
 ### set()
+Аргументы: ключ, значение
+
+Если указанный аргументом ключ уже существует, устанавливает ему новое значение, в противном случае добавляет новый ключ и значение 
 ```javascript
 formData.set ( "token", "gF&op*i91/54gkjHU" )
 formData.get ( "token" )  // "gF&op*i91/54gkjHU"
@@ -64,9 +77,32 @@ formData.get ( "token" )  // "gF&op*i91/54gkjHU"
 formData.delete ( "token" )
 formData.get ("token")    // null
 ```
-## fetch data
+### keys()
+
+Возвращает объект-итератор ( будем изучать позже )
+
+### entries()
+
+Возвращает объект-итератор ( будем изучать позже )
 
 :coffee: :one:
+```javascript
+var iterator = formData.keys()
+iterator.next()
+iterator.next()
+...
+```
+:coffee: :two:
+```javascript
+var iterator = formData.keys()
+iterator.next()
+iterator.next()
+...
+```
+***
+## fetch data
+
+:coffee: :three:
 
 ```javascript
 var fileSelector = document.body.appendChild (
@@ -81,7 +117,7 @@ fileSelector.onchange = function ( event ) {
     console.log ( formData.get ( "avatar" ) )
 }
 ```
-:coffee: :two:
+:coffee: :four:
 
 ```javascript
 var fileSelector = document.body.appendChild (
@@ -107,7 +143,7 @@ fileSelector.onchange = function ( event ) {
     }
 }
 ```
-:coffee: :three:
+:coffee: :five:
 
 :warning: Для выполнения упражнения перейдем на страницу http://ptsv2.com
 
