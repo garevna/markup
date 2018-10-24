@@ -153,6 +153,7 @@
 
 * [Метод namedItem](namedItem)
 * [FormData](FormData)
+* [:coffee: Пример](formData-sample)
 * [File API](https://docs.google.com/forms/d/e/1FAIpQLSfWyl5nx2exEulEAW2LitdvyjSddTEeqP0Y4O5smow4nWc85Q/viewform)
 * [💼 Homework](hw-10)
 
