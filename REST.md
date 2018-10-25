@@ -1,7 +1,8 @@
 # :mortar_board: REST
 
-| ![](https://pbs.twimg.com/profile_images/2195030209/roy_fielding_sq.jpg) | <img width="800"/>`Автор концепции`<br/>**Roy Thomas Fielding**<br/><hr/>_DOCTOR OF PHILOSOPHY_<br/>_in Information and Computer Science_<br/>_`https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm`_<br/> |
-|-|-|
+| Roy Thomas Fielding | `Автор концепции` |
+|:-:|:-:|
+| <img width="200" src="https://pbs.twimg.com/profile_images/2195030209/roy_fielding_sq.jpg"/> | `DOCTOR OF PHILOSOPHY`<br/>_`in Information and Computer Science`_<br/>[DISSERTATION](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) |
 
 ## :mortar_board: HATEOAS
 
