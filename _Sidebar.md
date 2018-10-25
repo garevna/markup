@@ -125,6 +125,7 @@
 #### Занятие 8
 
 * [JSON](JSON)
+* [curl](https://docs.google.com/forms/d/e/1FAIpQLSedkOQqHL7gYVxExpEubGlFqWPsX8xe2inxNSPoInOaI1DwCw/viewform)
 * [XMLHttpRequest](XMLHttpRequest)
 * [CSRF](CSRF)
 * [Promise](Promise)
@@ -147,7 +148,6 @@
 |-|-|-|
 
 ***
-
 <a name="toc-10"></a>
 #### Занятие 10
 
@@ -160,6 +160,81 @@
 * [💼 Homework](hw-10)
 
 | [:arrow_heading_up:](#toc-9) | <img width="800"/> | [:arrow_heading_down:](#toc-11) |
+|-|-|-|
+
+***
+<a name="toc-11"></a>
+#### Занятие 11
+
+* [API](API)
+* [REST | HATEOAS](REST)
+* []()
+* []()
+* []()
+* []()
+* [💼 Homework](hw-11)
+
+| [:arrow_heading_up:](#toc-10) | <img width="800"/> | [:arrow_heading_down:](#toc-12) |
+|-|-|-|
+
+***
+<a name="toc-12"></a>
+#### Занятие 12
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* [💼 Homework](hw-12)
+
+| [:arrow_heading_up:](#toc-11) | <img width="800"/> | [:arrow_heading_down:](#toc-13) |
+|-|-|-|
+
+***
+<a name="toc-13"></a>
+#### Занятие 13
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* [💼 Homework](hw-13)
+
+| [:arrow_heading_up:](#toc-12) | <img width="800"/> | [:arrow_heading_down:](#toc-14) |
+|-|-|-|
+
+***
+<a name="toc-11"></a>
+#### Занятие 14
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* [💼 Homework](hw-14)
+
+| [:arrow_heading_up:](#toc-13) | <img width="800"/> | [:arrow_heading_down:](#toc-15) |
+|-|-|-|
+
+***
+<a name="toc-15"></a>
+#### Занятие 15
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* [💼 Homework](hw-15)
+
+| [:arrow_heading_up:](#toc-14) | <img width="800"/> | [:arrow_heading_down:](#toc-16) |
 |-|-|-|
 
 ***
