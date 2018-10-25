@@ -1,0 +1,171 @@
+## :coffee: JSON server
+
+### :open_file_folder: Установка пакета
+
+```console
+npm install -g json-server
+```
+
+### :package: База данных
+
+Создадим папку  **_test_**  и поместим в эту папку файл  **db.json** со следующим содержимым:
+```javascript
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Владимир",
+            "lastName": "Кононенко",
+            "email": "vladimir.kononenko@gmail.com",
+            "photoURL": "https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_960_720.png"
+        },
+        {
+            "id": 2,
+            "name": "Никита",
+            "lastName": "Терещенко",
+            "email": "nikita.tereshenko@gmail.com",
+            "photoURL": "https://i.pinimg.com/originals/3d/47/4f/3d474f82ff71595e8081f9a120892ae8.gif"
+        },
+        {
+            "id": 3,
+            "name": "Tim",
+            "lastName": "Wagner",
+            "email": "timVagner@gmail.com",
+            "photoURL": "https://vignette.wikia.nocookie.net/yogscast/images/8/8a/Avatar_Turps_2015.jpg"
+        },
+        {
+            "id": 4,
+            "name": "James",
+            "lastName": "Bond",
+            "email": "jamesBond@gmail.com",
+            "photoURL": "https://vignette2.wikia.nocookie.net/yogscast/images/5/59/Avatar_Lewis_2015.png"
+        }
+    ],
+    "posts": [
+        {
+            "userID": 2,
+            "title": "My first post here",
+            "body": "It's really wonder!",
+            "id": 1
+        },
+        {
+            "postId": 2,
+            "id": 2,
+            "title": "Автопробег",
+            "body": "Завтра планируется автопробег. Участвовать могут все желающие"
+        },
+        {
+            "userId": 2,
+            "title": "*Бетономешалка",
+            "body": "Это жесть. Собираюсь купить. Лучше, чем АК!",
+            "id": 3
+        },
+        {
+            "id": 4,
+            "userId": 3,
+            "title": "JS",
+            "body": "Look here - there are some samples"
+        },
+        {
+            "userId": 3,
+            "title": "XMLHttpRequest",
+            "body": "Method POST",
+            "id": 8
+        }
+    ],
+    "comments": [
+        {
+            "postId": 0,
+            "id": 0,
+            "userId": 1,
+            "body": "wow!"
+        },
+        {
+            "postId": 0,
+            "id": 1,
+            "userId": 2,
+            "body": "Hi, I'm wonder!"
+        },
+        {
+            "postId": 1,
+            "id": 2,
+            "userId": 3,
+            "body": "It's really wonder!"
+        },
+        {
+            "postId": 2,
+            "id": 3,
+            "userId": 2,
+            "body": "Ударим автопробегом по бездорожью и разгильдяйству!"
+        }
+    ]
+}
+```
+### :rocket: Запуск сервера
+
+Запустим  **JSON Server**  с базой данных **_db.json_**
+
+<img src="https://github.com/garevna/js-course/blob/master/images/git-bush-ico.png" width="40"/> Перейдем в Bush:
+```console
+$ json-server  --watch  <путь к файлу>/db.json
+```
+Можно использовать сокращение:
+```console
+$ json-server  <путь к файлу>/db.json  -w
+```
+Поскольку мы установили  json-server  глобально, <br/>
+корневой папкой сайта будет папка <br/>
+для установки глобальных пакетов по умолчанию ( ~ )<br/>
+Указывая  <путь к файлу>, нужно задавать его относительно этой папки<br/>
+`В данном случае папка для установки глобальных покетов C:/Users/Irina`<br/>
+
+Файл users.json  находится в папке  z:/home/test<br/>
+поэтому нужно указать полный путь к файлу:
+```console
+json-server  z:/home/test/users.json –w
+```
+
+### :construction: endpoints
+
+Сервер сгенерировал нам **_endpoints_**:
+```
+http://localhost:3000/users
+http://localhost:3000/posts
+http://localhost:3000/comments
+```
+( ссылки на ресурсы **_users_**, **_posts_**, **_comments_**, описанные нами в базе данных **users.json** )
+
+Теперь, пока сервер запущен ( т.е. пока вы не воспользуетесь `Ctrl + C` в консоли _Bush_ ), можно записывать и вытягивать данные из базы данных, пользуясь указанными **endpoints**<br/>
+( при этом в консоли  Bush  логируются все запросы )
+
+### fetch
+
+Теперь проверим, как работают наши запросы, из консоли браузера
+
+:coffee: :one:
+```javascript
+fetch ( 'http://localhost:3000/comments' )
+    .then ( response => response.json ()
+        .then ( json => console.log ( json ) )
+    )
+```
+:coffe: :two:
+
+Теперь получим данные из базы данных в переменные  **_users_**,  **_posts_** и  **_comments_**, используя асинхронную функцию  **getAllData**
+
+Наберем следущий код в консоли браузера:
+```javascript
+function getData ( ref ) {
+        return fetch ( 'http://localhost:3000/' + ref )
+                .then ( response => response.json () )
+                .then ( json => console.log ( json ) )
+}
+async function getAllData () {
+        var users = await getData ( "users" ).then ( response => response )
+        var posts = await getData ( "posts" ).then ( response => response )
+        var comments = await getData ( "comments" ).then ( response => response )
+        console.log ( users, posts, comments )
+}
+
+getAllData ()
+```
