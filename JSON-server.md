@@ -8,7 +8,8 @@ npm install -g json-server
 
 ### :package: База данных
 
-Создадим папку  **_test_**  и поместим в эту папку файл  **db.json** со следующим содержимым:
+Создадим папку ( например, **_test_** ) и поместим в нее файл  **db.json**:
+###### db.json
 ```javascript
 {
     "users": [
@@ -115,7 +116,7 @@ $ json-server  <путь к файлу>/db.json  -w
 ```
 Поскольку мы установили  json-server  глобально, <br/>
 корневой папкой сайта будет папка <br/>
-для установки глобальных пакетов по умолчанию ( ~ )<br/>
+для установки глобальных пакетов по умолчанию ( **~** )<br/>
 Указывая  <путь к файлу>, нужно задавать его относительно этой папки<br/>
 `В данном случае папка для установки глобальных покетов C:/Users/Irina`<br/>
 
@@ -142,30 +143,152 @@ http://localhost:3000/comments
 
 Теперь проверим, как работают наши запросы, из консоли браузера
 
-:coffee: :one:
+###### :coffee: :one: GET
 ```javascript
 fetch ( 'http://localhost:3000/comments' )
     .then ( response => response.json ()
         .then ( json => console.log ( json ) )
     )
 ```
-:coffe: :two:
+###### :coffee: :two: GET
 
 Теперь получим данные из базы данных в переменные  **_users_**,  **_posts_** и  **_comments_**, используя асинхронную функцию  **getAllData**
 
 Наберем следущий код в консоли браузера:
 ```javascript
 function getData ( ref ) {
-        return fetch ( 'http://localhost:3000/' + ref )
-                .then ( response => response.json () )
-                .then ( json => console.log ( json ) )
+    return fetch ( 'http://localhost:3000/' + ref )
+        .then ( response => response.json ()
+            .then ( json => console.log ( json ) )
+        )
 }
 async function getAllData () {
-        var users = await getData ( "users" ).then ( response => response )
-        var posts = await getData ( "posts" ).then ( response => response )
-        var comments = await getData ( "comments" ).then ( response => response )
-        console.log ( users, posts, comments )
+    var users = await getData ( "users" )
+        .then ( response => response )
+    var posts = await getData ( "posts" )
+        .then ( response => response )
+     var comments = await getData ( "comments" )
+        .then ( response => response )
+    console.log ( users, posts, comments )
 }
 
 getAllData ()
+```
+###### :coffee: :three: POST
+
+Добавим новый комментарий:
+```javascript
+fetch ( 'http://localhost:3000/comments', {
+    method: 'POST',
+    body: JSON.stringify ({
+        "postId": 1,
+      	"userID": 1,
+      	"body": "Good for you!"
+    }),
+    headers: {
+        "Content-type": "application/json"
+    }
+})
+    .then ( response => {
+        console.log ( 'response: ', response )
+})
+```
+Обратите внимание, что поле **id** добавляемой записи вычисляется на стороне сервера<br/>
+Вам не нужно устанавливать его значение<br/>
+( но вы можете это делать, если будете отслеживать существующие значения, потому что в противном случае при попытке записи дублирующихся значений **id** будет сгенерировано исключение )
+
+Вытащим добавленный коммент в консоли:
+```javascript
+fetch ( 'http://localhost:3000/comments?postId=1&id=4' )
+    .then ( response => response.json () )
+        .then ( json => console.log ( json ) )
+```
+
+###### :coffee: :four: PUT
+Изменим содержание первого поста :
+```javascript
+fetch ( 'http://localhost:3000/posts/1', {
+    method: 'PUT',
+    body: JSON.stringify ({
+        userID: 2,
+      	title: "My first post here",
+      	body: "It's really wonder!"
+    }),
+    headers: {
+        "Content-type": "application/json"
+    }
+})
+   .then ( response => {
+       console.log ( 'response: ', response )
+})
+```
+###### :coffee: :five: DELETE
+
+Удалим первый комментарий
+
+В консоли браузера наберем код:
+```javascript
+fetch ( 'http://localhost:3000/comments/1', {
+    method: 'DELETE',
+    headers: {
+        "Content-type": "application/json"
+    }
+})
+   .then ( response => {
+       console.log ( 'response: ', response )
+})
+```
+***
+### XMLHttpRequest
+```javascript
+function workWithData ( method, url, data ) {
+    let request = new XMLHttpRequest ()
+    request.onreadystatechange = function ( event ) {
+        if ( this.readyState === 4 ) 
+            if ( this.status === 200 || this.status === 201 )
+                console.log ( this.responseText )
+        request.open ( method, url )
+        request.setRequestHeader ( 
+            'Content-type', 'application/json; charset=utf-8' 
+        )
+        request.send ( data )
+}
+```
+###### GET
+```javascript
+workWithData (
+    'GET',
+    'http://localhost:3000/posts'
+)
+```
+###### POST
+```javascript
+workWithData (
+    'POST', 
+    'http://localhost:3000/posts',
+    JSON.stringify ( {
+        userId: 2,
+        title: 'XMLHttpRequest',
+        body: 'Method POST'
+    } )
+)
+```
+###### DELETE
+```javascript
+workWithData (
+    'DELETE',
+    'http://localhost:3000/posts/7'
+)
+```
+###### PUT
+```javascript
+workWithData (
+    'PUT', 
+    'http://localhost:3000/posts/3', 
+    JSON.stringify ( { 
+        userId: 2,
+        title: "*Бетономешалка",
+        body: "Это жесть. Собираюсь купить. Лучше, чем АК!"
+    } )
+)
 ```
