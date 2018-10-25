@@ -102,11 +102,10 @@ npm install -g json-server
     ]
 }
 ```
-### :rocket: Запуск сервера
+### <img src="https://github.com/garevna/js-course/blob/master/images/git-bush-ico.png" width="25"/> Запуск сервера
 
-Запустим  **JSON Server**  с базой данных **_db.json_**
+Перейдем в Bush и запустим  **JSON Server**  с базой данных **_db.json_**
 
-<img src="https://github.com/garevna/js-course/blob/master/images/git-bush-ico.png" width="40"/> Перейдем в Bush:
 ```console
 $ json-server  --watch  <путь к файлу>/db.json
 ```
@@ -118,10 +117,9 @@ $ json-server  <путь к файлу>/db.json  -w
 корневой папкой сайта будет папка <br/>
 для установки глобальных пакетов по умолчанию ( **~** )<br/>
 Указывая  <путь к файлу>, нужно задавать его относительно этой папки<br/>
-`В данном случае папка для установки глобальных покетов C:/Users/Irina`<br/>
-
-Файл users.json  находится в папке  z:/home/test<br/>
-поэтому нужно указать полный путь к файлу:
+> `В данном случае файл `**`users.json`**<br/>
+> `находится в папке `**`z:/home/test`**<br/>
+> `поэтому нужно указать полный путь к файлу:`
 ```console
 json-server  z:/home/test/users.json –w
 ```
