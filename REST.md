@@ -1,13 +1,34 @@
 # :mortar_board: REST
 
-| Roy Thomas Fielding | `Автор концепции` |
+**`Hypermedia`**` — это способ структурирования информации и доступа к её элементам с помощью `_`гиперсвязей`_
+
+Обычно URL указывает на _ресурс_
+
+В архитектуре **REST** :warning: URL указывает на _операцию с ресурсом_
+
+Для каждой операции с ресурсом ( GET, POST, PUT, DELETE ) устанавливается <b>endpoint</b> ( URL )<br/>
+
+
+POST
+```console
+http://ptsv2.com/t/garevna/post
+```
+GET в формате JSON-строки
+```console
+http://ptsv2.com/t/garevna/d/940001/json
+```
+GET в текстовом формате
+```console
+http://ptsv2.com/t/garevna/d/940001/text
+```
+
+###### Автор концепции
+| Roy Thomas Fielding |  |
 |:-:|:-:|
 | <img width="200" src="https://pbs.twimg.com/profile_images/2195030209/roy_fielding_sq.jpg"/> | `DOCTOR OF PHILOSOPHY`<br/>_`in Information and Computer Science`_<br/>[DISSERTATION](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) |
 
 ## :mortar_board: HATEOAS
 
-Hypermedia — это способ структурирования информации 
-и доступа к её элементам с помощью гиперсвязей
 
 ✅ **_Hypermedia As The Engine Of Application State_** ( **HATEOAS** ) — это специфическое ограничение архитектуры **REST**, отличающее его от других сетевых архитектур
 
