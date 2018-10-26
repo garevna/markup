@@ -4,21 +4,32 @@
 Внесем некоторые изменения в базу данных **db.json**
 
 ###### :pencil2: lastUpdate
-Добавим запись **_lastUpdate_** с двумя полями:
- 
-✅ **data**  
-✅ **time**
-
-Мы будем использовать эти данные для обновления чата<br/>
-после того, как данные в  **db.json**  были обновлены<br/>
+`Добавим запись `**_`lastUpdate`_**` с двумя полями:`
+```javascript
+"lastUpdate": {
+    "data": "26.10.2018",
+    "time": "12:38:01"
+}
+```
+`Мы будем использовать эти данные для обновления чата`<br/>
+`после того, как данные в  `**`db.json`**`  были обновлены`<br/>
 `( операции POST | PUT | DELETE )`
 
 ###### :pencil2: posts
-В каждую запись базы данных **posts** добавим свойства
-
-✅ **data**  
-✅ **time**
-
+`В каждую запись базы данных `**`posts`**` добавим свойства `**`date`**` и `**`time`**`
+```javascript
+"posts": [
+    {
+      "id": 0,
+      "date": "05.08.2018",
+      "time": "10:30:15",
+      "userId": 2,
+      "title": "My first post here",
+      "body": "It's really wonder!"
+    },
+    ...
+}
+```
 ***
 ### :clipboard: json-server
 
@@ -38,13 +49,22 @@ Home
         http://localhost:3000
 ```
 ***
-### :clipboard: http://localhost:3000
-
 * Открываем в браузере страницу **http://localhost:3000**
 * заходим в _Chrome DevTools_
 * Создаем  snippet
 
-###### lastUpdate
+<a name="snippet"></a>
+
+| vars | functions |  |
+|-|-|-|
+| [`lastUpdate`](lastUpdate) | [`getData`](getData) |  |
+| [`chat`](vars) | [`appelem`](appelem) |  |
+| [`posts`](vars) | [`buildChat`](buildChat) |  |
+| [`users`](vars) | [`initChat`](initChat) |  |
+| [`currentUser`](vars) | [`updateChat`](updateChat) |  |
+| [`chatInput`](chatInput) | [`Запуск`](Запуск) |  |
+
+###### 
 `Объявляем переменную `**_`lastUpdate`_**`,`<br>`в которой будем хранить дату и время модификации загруженных данных`
 ```javascript
 let lastUpdate
@@ -76,6 +96,7 @@ let appElem = ( tagName, container ) =>
             document.createElement ( tagName )
         )
 ```
+<a name="vars"></a>
 ###### chat
 `ссылка на элемент DOM, который будет контейнером для сообщений чата`
 ###### posts & users
