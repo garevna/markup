@@ -240,3 +240,6 @@
 ***
 | [:arrow_heading_up:](#toc-3) | <a name="toc-bottom"><img width="800"/></a> | [:arrow_double_up:](#toc-top) |
 |-|-|-|
+
+###### Справочная инфо
+* [localhost](localhost)
