@@ -13,7 +13,7 @@
   * [🔗 FS](https://docs.google.com/forms/d/e/1FAIpQLSfOSdwsiPYl1NO2hnzv6vEp4On2X03sU2RafmnLQrWE_1znzA/viewform)
 ***
 <a name="toc-1"></a>
-#### Занятие 1
+###### Занятие 1
 | [:arrow_double_down:](#toc-bottom) | <img width="800"/> | [:arrow_heading_down:](#toc-2) |
 |-|-|-|
   * [Блок-схема алгоритма](Block-diagram)
@@ -33,7 +33,7 @@
 ***
 
 <a name="toc-2"></a>
-#### Занятие 2
+###### Занятие 2
 
 | [:arrow_heading_up:](#toc-1) | <img width="800"/> | [:arrow_heading_down:](#toc-3) |
 |-|-|-|
@@ -52,7 +52,7 @@
 ***
 
 <a name="toc-3"></a>
-#### Занятие 3
+###### Занятие 3
 | [:arrow_heading_up:](#toc-2) | <img width="800"/> | [:arrow_heading_down:](#toc-4) |
 |-|-|-|
 
@@ -64,7 +64,7 @@
 * [:briefcase: Homework](https://github.com/garevna/js-course/wiki/hw-03)
 ***
 <a name="toc-4"></a>
-#### Занятие 4
+###### Занятие 4
 
 | [:arrow_heading_up:](#toc-3) | <img width="800"/> | [:arrow_heading_down:](#toc-5) |
 |-|-|-|
@@ -82,7 +82,7 @@
 
 ***
 <a name="toc-5"></a>
-#### Занятие 5
+###### Занятие 5
 
 | [:arrow_heading_up:](#toc-4) | <img width="800"/> | [:arrow_heading_down:](#toc-6) |
 |-|-|-|
