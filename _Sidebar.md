@@ -12,6 +12,13 @@
   * [🔗 FEA](https://docs.google.com/forms/d/e/1FAIpQLScoUhG6mHKhnPYZKBbjocQ496LjCZkkPYLV8Mudu4DIK6UjFQ/viewform)
   * [🔗 FS](https://docs.google.com/forms/d/e/1FAIpQLSfOSdwsiPYl1NO2hnzv6vEp4On2X03sU2RafmnLQrWE_1znzA/viewform)
 ***
+|    |    |    |    |
+|:-: |:-: |:-: |:-: |
+|  [1](#toc-1) |  [2](#toc-2) |  [3](#toc-3) |  [4](#toc-4) |
+|  [5](#toc-5) |  [6](#toc-6) |  [7](#toc-7) |  [8](#toc-8) |
+|  [9](#toc-9) | [10](#toc-10) | [11](#toc-11) | [12](#toc-12) |
+| [13](#toc-13) | [14](#toc-14) | [15](#toc-15) | [16](#toc-16) |
+***
 <a name="toc-1"></a>
 #### Занятие 1
 | [:arrow_double_down:](#toc-bottom) | <img width="800"/> | [:arrow_heading_down:](#toc-2) |
