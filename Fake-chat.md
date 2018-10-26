@@ -284,4 +284,4 @@ chatInput.onchange = function ( event ) {
 }
 ```
 ***
-[Полный код сниппета]()
+[:page_with_curl: **Полный код сниппета**](fake-chat-snippet)
