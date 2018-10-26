@@ -136,11 +136,11 @@ var getPosts = () =>
 Объявим асинхронную функцию:
 ```javascript
 async function getData () {
-    var t = new Date ().getSeconds ()
+    console.time ( 'time' )
     var posts = await getPosts ().then ( response => response )
     var names = await getNames ().then ( response => response )
-    console.info ( new Date ().getSeconds () - t + " сек. " +
-                    'names: ' + names, ' | posts: ' + posts )
+    console.timeEnd ( 'time' )
+    console.info ( `names: ${ names } | posts: ${ posts }` )
 }
 ```
 Функция **getData ()** фиксирует время начала операций ( в секундах )
