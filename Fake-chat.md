@@ -1,7 +1,6 @@
 ## :briefcase: Fake chat
 
 ### :clipboard: db.json
-
 Внесем некоторые изменения в базу данных **db.json**
 
 ###### :pencil2: lastUpdate
@@ -20,6 +19,7 @@
 ✅ **data**  
 ✅ **time**
 
+***
 ### :clipboard: json-server
 
 <img src="https://github.com/garevna/js-course/blob/master/images/git-bush-ico.png" width="25"/> Запускаем  json-server
@@ -37,6 +37,7 @@ Resources
 Home
         http://localhost:3000
 ```
+***
 ### :clipboard: http://localhost:3000
 
 * Открываем в браузере страницу **http://localhost:3000**
@@ -234,3 +235,53 @@ chat.scrollTop = chat.offsetTop
 ```
 `то элемент `**`chat`**` будет прокручен до конца`<br/>
 `( мы будем видеть последние сообщения в чате )`
+***
+### :clipboard: Запуск
+
+* вызваем **buildChat ()**, чтобы создать контейнер для чата
+* вызваем **updateChat ()**, чтобы заполнить контейнер данными
+* устанавливаем интервал обновления чата ( **setInterval** )
+```
+через заданные интервалы времени 
+мы будем вызывать updateChat (),
+чтобы проверить, было ли за это время
+обновление базы данных на серевере,
+и если да - обновлять 
+содержимое чата на клиенте
+```
+* вешаем обработчика события **change** элемента **chatInput**
+```
+если клиент введет сообщение, это сообщение нужно
+отправить на сервер для добавления в базу данных
+```
+Итак:
+```javascript
+buildChat ()
+updateChat ()
+
+setTimeout ( function () {
+    chat.scrollTop = chat.scrollHeight
+}, 100 )
+
+let interval = setInterval ( function () {
+    updateChat ()
+}, 1000 )
+
+chatInput.onchange = function ( event ) {
+    let postTime = new Date().toLocaleString ().split ( ', ' )
+    fetch ( 'http://localhost:3000/posts', {
+        method: 'POST',
+        body: JSON.stringify ({
+            date: postTime [0],
+            time: postTime [1],
+            userId: currentUserId,
+            body: event.target.value
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+}
+```
+***
+[Полный код сниппета]()
