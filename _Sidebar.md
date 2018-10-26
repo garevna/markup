@@ -173,6 +173,7 @@
 <a name="toc-11"></a>
 #### Занятие 11
 * [Размеры и прокрутка элемента](scroll)
+* [let | const](let-const)
 * [async | await](async-await)
 * [API](API)
 * [REST | HATEOAS](REST)
