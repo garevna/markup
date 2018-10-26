@@ -173,12 +173,12 @@
 <a name="toc-11"></a>
 #### Занятие 11
 * [Размеры и прокрутка элемента](scroll)
+* []()
 * [API](API)
 * [REST | HATEOAS](REST)
+* [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSeJd1VfRPKOkcZoqcybhS9u53MN2i55pTAejoRAgKtOEEVBPA/viewform)
 * [💼 Практика](JSON-server)
 * [💼 fake chat](Fake-chat)
-
-* []()
 * [💼 Homework](hw-11)
 
 | [:arrow_heading_up:](#toc-10) | <img width="800"/> | [:arrow_heading_down:](#toc-12) |
@@ -215,7 +215,7 @@
 |-|-|-|
 
 ***
-<a name="toc-11"></a>
+<a name="toc-14"></a>
 #### Занятие 14
 
 * []()
