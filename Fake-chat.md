@@ -62,7 +62,7 @@ Home
 | [**`posts`**](#vars) | [**`buildChat`**](#buildChat) |
 | [**`users`**](#vars) | [**`initChat`**](#initChat) |
 | [**`currentUser`**](#vars) | [**`updateChat`**](#updateChat) |
-| [**`chatInput`**](#chatInput) | [**`Запуск`**](#clipboard-%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA) |
+| [**`chatInput`**](#chatInput) | [**`Запуск`**](#start) |
 
 ###### 
 `Объявляем переменную `**_`lastUpdate`_**`,`<br>`в которой будем хранить дату и время модификации загруженных данных`
@@ -280,6 +280,7 @@ chat.scrollTop = chat.offsetTop
 `то элемент `**`chat`**` будет прокручен до конца`<br/>
 `( мы будем видеть последние сообщения в чате )`
 ***
+<a name="start"></a>
 ### :clipboard: Запуск
 
 | [:arrow_heading_up:](#snippet) |
