@@ -118,6 +118,7 @@ let buildChat = function () {
         padding: 10px;
     `
 }
+```
 ###### initChat
 Ранее мы уже объявили переменную  chat
 
