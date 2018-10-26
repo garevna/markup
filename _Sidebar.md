@@ -173,7 +173,7 @@
 <a name="toc-11"></a>
 #### Занятие 11
 * [Размеры и прокрутка элемента](scroll)
-* []()
+* [async | await](async-await)
 * [API](API)
 * [REST | HATEOAS](REST)
 * [💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSeJd1VfRPKOkcZoqcybhS9u53MN2i55pTAejoRAgKtOEEVBPA/viewform)
