@@ -57,12 +57,12 @@ Home
 
 | vars | functions |
 |-|-|
-| [`lastUpdate`](#lastUpdate) | [`getData`](#getData) |
-| [`chat`](#chat) | [`appelem`](#appelem) |
-| [`posts`](#vars) | [`buildChat`](#buildChat) |
-| [`users`](#vars) | [`initChat`](#initChat) |
-| [`currentUser`](#vars) | [`updateChat`](#updateChat) |
-| [`chatInput`](#chatInput) | [`Запуск`](#clipboard-%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA) |
+| [**`lastUpdate`**](#lastUpdate) | [**`getData`**](#getData) |
+| [**`chat`**](#chat) | [**`appelem`**](#appelem) |
+| [**`posts`**](#vars) | [**`buildChat`**](#buildChat) |
+| [**`users`**](#vars) | [**`initChat`**](#initChat) |
+| [**`currentUser`**](#vars) | [**`updateChat`**](#updateChat) |
+| [**`chatInput`**](#chatInput) | [**`Запуск`**](#clipboard-%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA) |
 
 ###### 
 `Объявляем переменную `**_`lastUpdate`_**`,`<br>`в которой будем хранить дату и время модификации загруженных данных`
@@ -81,6 +81,9 @@ let getData = function ( ref ) {
 ```
 ###### appElem
 
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `Объявляем переменную `**_`appElem`_**<br/>
 `В этой переменной будет ссылка на анонимную стрелочную функцию`<br/>
 `Функция получает в первом аргументе имя тега `**_`tagName`_**,<br/>
@@ -98,6 +101,10 @@ let appElem = ( tagName, container ) =>
 ```
 <a name="vars"></a>
 ###### chat
+
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `ссылка на элемент DOM, который будет контейнером для сообщений чата`
 ###### posts & users
 `В переменные posts и users будем получать данные из базы данных на сервере`
@@ -112,6 +119,10 @@ let users
 let currentUser
 ```
 ###### chatInput
+
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `Создаем элемент input ( поле для ввода текста сообщения )`<br/>
 `и стилизуем элемент:`
 ```javascript
@@ -127,6 +138,10 @@ chatInput.style = `
 `
 ```
 ###### buildChat
+
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `Ссылка на функцию, создающую элемент section ( это будет чат )`
 ```javascript
 let buildChat = function () {
@@ -144,6 +159,10 @@ let buildChat = function () {
 }
 ```
 ###### initChat
+
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `Ранее мы уже объявили переменную `**`chat`**
 
 `После вызова функции `**`buildChat`**<br/>
@@ -193,6 +212,10 @@ let initChat = async function () {
 }
 ```
 ###### updateChat
+
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 `Объявляем переменную `**`updateChat`**`,<br/>
 `в которую помещаем ссылку на асинхронную анонимную функцию `**`updateChat`**
 
@@ -259,6 +282,9 @@ chat.scrollTop = chat.offsetTop
 ***
 ### :clipboard: Запуск
 
+| [:arrow_heading_up:](#snippet) |
+|-|
+
 * вызваем **buildChat ()**, чтобы создать контейнер для чата
 * вызваем **updateChat ()**, чтобы заполнить контейнер данными
 * устанавливаем интервал обновления чата ( **setInterval** )
@@ -305,4 +331,5 @@ chatInput.onchange = function ( event ) {
 }
 ```
 ***
-[:page_with_curl: **Полный код сниппета**](fake-chat-snippet)
+| [:arrow_heading_up:](#snippet) | [:page_with_curl: **Полный код сниппета**](fake-chat-snippet) |
+|-|-|
