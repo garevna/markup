@@ -169,7 +169,7 @@
 * [API](API)
 * [REST | HATEOAS](REST)
 * [💼 Практика](JSON-server)
-* []()
+* [💼 fake chat](practice-11)
 * []()
 * []()
 * [💼 Homework](hw-11)
