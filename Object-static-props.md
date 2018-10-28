@@ -20,10 +20,10 @@
 | Object.preventExtensions() |
 | Object.seal() |
 | Object.setPrototypeOf() |
-| ES8 ( 2017 ) |
-| ✅ Object.values () |
-| ✅ Object.entries () |
-| ✅ Object.getOwnPropertyDescriptors () |
+| **ES8 ( 2017 )** |
+| [**`Object.values()`**](#mortar_board-objectvalues) |
+| [**`Object.entries()`**](#mortar_board-objectentries) |
+| [**`Object.getOwnPropertyDescriptors()`**](#mortar_board-objectgetownpropertydescriptors) |
 ***
 [:link: MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
@@ -120,7 +120,30 @@ console.log ( man.__proto__.employed ) // false
 
 ## :mortar_board: Object.getOwnPropertyDescriptors()
 ###### ES8 ( 2017 )
+Получает объект<br/>
+Возвращает объект<br/>
+Имена свойств возвращаемого объекта - это имена свойств объекта-аргумента<br/>
+Значения свойств возвращаемого объекта - это дескрипторы свойств объекта-аргумента<br/>
 ```javascript
+var obj = {
+        name: "first",
+        type: "circle",
+        color: "red",
+        radius: 100,
+        center: [ 120, 120 ]
+}
+
+Object.getOwnPropertyDescriptors( obj )
+```
+###### Результат:
+```console
+▼ {name: {…}, type: {…}, color: {…}, radius: {…}, center: {…}}
+  ► center: {value: Array(2), writable: true, enumerable: true, configurable: true}
+  ► color: {value: "red", writable: true, enumerable: true, configurable: true}
+  ► name: {value: "first", writable: true, enumerable: true, configurable: true}
+  ► radius: {value: 100, writable: true, enumerable: true, configurable: true}
+  ► type: {value: "circle", writable: true, enumerable: true, configurable: true}
+  ► __proto__: Object
 ```
 
 | [:arrow_double_up:](#top) |
@@ -128,7 +151,22 @@ console.log ( man.__proto__.employed ) // false
 
 ## :mortar_board: Object.values()
 ###### ES8 ( 2017 )
+Возвращает **массив** **_значений_** собственных перечислимых свойств экземпляра,
+т.е. тех свойств, имена которых возвращает метод **`Object.keys()`**
 ```javascript
+var obj = {
+    name: "first",
+    type: "circle",
+    color: "red",
+    radius: 100,
+    center: [ 120, 120 ]
+}
+
+console.log ( Object.values( obj ) )
+```
+###### Результат:
+```console
+(5) ["first", "circle", "red", 100, Array(2)]
 ```
 
 | [:arrow_double_up:](#top) |
@@ -136,7 +174,67 @@ console.log ( man.__proto__.employed ) // false
 
 ## :mortar_board: Object.entries()
 ###### ES8 ( 2017 )
+Возвращает массив собственных перечислимых свойств экземпляра<br/>
+в виде массива из двух элементов: имени свойства и его значения  
 ```javascript
+var obj = {
+    name: "first",
+    type: "circle",
+    color: "red",
+    radius: 100,
+    center: [ 120, 120 ]
+}
+
+console.log ( Object.entries( obj ) )
+```
+###### Результат:
+```console
+▼ (5) [Array(2), Array(2), Array(2), Array(2), Array(2)]
+  ► 0: (2) ["name", "first"]
+  ► 1: (2) ["type", "circle"]
+  ► 2: (2) ["color", "red"]
+  ► 3: (2) ["radius", 100]
+  ► 4: (2) ["center", Array(2)]
+    length: 5
+  ► __proto__: Array(0)
+```
+###### :coffee: :one: Нарисуем окружность
+```javascript
+var obj = {
+    width: "30%",
+    height: "30%",
+    border: "solid 1px red",
+    borderRadius: "50%",
+    position: "fixed",
+    top: "10%",
+    left: "10%"
+}
+var elem = document.body.appendChild (
+    document.createElement ( "div" )
+)
+Object.entries( obj )
+   .forEach ( prop => elem.style [ prop [0] ] = prop [1] )
+```
+
+###### :coffee: :two: Выведем все свойства объекта **obj** в консоль
+```javascript
+console.info ( 'obj = {\n' )
+for ( var x of Object.entries( obj ) ) {
+    console.info ( `     ${x[0]}:${x[1]}\n` )
+}
+console.info ( '}' )
+```
+###### Результат:
+```console
+obj = {
+      width:30%
+      height:30%
+      border:solid 1px red
+      borderRadius:50%
+      position:fixed
+      top:10%
+      left:10%
+}
 ```
 
 | [:arrow_double_up:](#top) |
