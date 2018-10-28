@@ -18,6 +18,7 @@
 ###### [Object.getOwnPropertyDescriptors()](Object-static-props#mortar_board-objectgetownpropertydescriptors)
 ###### [Object.entries()](Object-static-props#mortar_board-objectentries)
 ###### [Object.values()](Object-static-props#mortar_board-objectvalues)
+###### [includes()](Array-methods#9)
 ***
 ### ES9
 ###### 2018
