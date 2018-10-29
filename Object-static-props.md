@@ -1,29 +1,19 @@
 <a name="top"></a>
 # :mortar_board: Статические методы конструктора  Object
 
-| ES5 |
-|-|
-| ✅ Object.assign() | 
-| ✅ Object.create()
-| ✅ Object.defineProperty() |
-| ✅ Object.defineProperties() |
-| Object.freeze() |
-| [**`Object.getOwnPropertyDescriptor()`**](#mortar_board-objectgetownpropertydescriptor) |
-| [**`Object.getOwnPropertyNames()`**](#objectgetownpropertynames-) |
-| Object.getOwnPropertySymbols() |
-| Object.getPrototypeOf() |
-| Object.is() |
-| Object.isExtensible() |
-| Object.isFrozen() |
-| Object.isSealed() |
-| [**`Object.keys()`**](#objectkeys) |
-| Object.preventExtensions() |
-| Object.seal() |
-| Object.setPrototypeOf() |
-| **ES8 ( 2017 )** |
-| [**`Object.values()`**](#mortar_board-objectvalues) |
-| [**`Object.entries()`**](#mortar_board-objectentries) |
-| [**`Object.getOwnPropertyDescriptors()`**](#mortar_board-objectgetownpropertydescriptors) |
+| ES5 | |
+|-|-|
+| ✅ Object.assign() |  [**`Object.defineProperty()`**](#mortar_board-objectdefineproperty) |
+| ✅ Object.create() | ✅ Object.defineProperties() |
+| Object.freeze() | [**`Object.getOwnPropertyDescriptor()`**](#mortar_board-objectgetownpropertydescriptor) |
+| Object.is() | [**`Object.getOwnPropertyNames()`**](#objectgetownpropertynames-) |
+| Object.isExtensible() | Object.getOwnPropertySymbols() |
+| Object.isFrozen() | Object.getPrototypeOf() |
+| Object.isSealed() | [**`Object.keys()`**](#objectkeys) |
+| Object.seal() | Object.preventExtensions() |
+| Object.setPrototypeOf() | [**`Object.getOwnPropertyDescriptors()`**](#mortar_board-objectgetownpropertydescriptors) |
+| [**`Object.values()`**](#mortar_board-objectvalues) | [**`Object.entries()`**](#mortar_board-objectentries) | |
+
 ***
 [:link: MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
@@ -169,7 +159,52 @@ Object.getOwnPropertyDescriptor ( newObject, "getName" )
 |-|
 
 ## :mortar_board: Object.defineProperty()
+###### Этот метод позволяет создать объекту свойство с дескриптором
+###### Первый аргумент метода - ссылка на объект, которому добавляется свойство
+###### Второй аргумент - имя свойства ( строка )
+###### Третий аргумент - объект дескриптора свойства
+
+<code>Добавим свойство <b>type</b> объекту <b>sample</b> и сделаем это свойство неперечислимым</code>
 ```javascript
+var sample = {
+    name: "figure",
+    size: 100,
+    color: "red"
+}
+Object.defineProperty ( sample, 'type', {
+    value: "svg",
+    enumerable: false
+})
+
+Object.keys ( sample )
+```
+###### Результат:
+```console
+► (3) ["name", "size", "color"]
+```
+###### геттер и сеттер свойства
+<code>Добавим еще одно свойство объекту  **sample**</code><br/>
+<code>Свойство   **_operation_**   будет  с геттером и сеттером</code><br/>
+:warning: <code>Когда определяются атрибуты _`get()`_  и  _`set()`_ в дескрипторе свойства, </code><br/>
+<code>нельзя использовать атрибуты  _`writable`_ и _`value`_</code>
+```javascript
+Object.defineProperty ( sample, "operation", {
+    get: () => this.operation ? 
+               this.operation.substr ( 0, 1 ) : "?",
+    set: newVal => this.operation = newVal + "***"
+})
+```
+###### Результат:
+```console
+▼ {name: "figure", size: 100, color: "red", type: "svg"}
+    color: "red"
+    name: "figure"
+    size: 100
+    operation: (...)
+    type: "svg"
+  ► get operation: () => {…}
+  ► set operation: newVal => this.operation = newVal + "***"
+  ► __proto__: Object
 ```
 
 | [:arrow_double_up:](#top) |
