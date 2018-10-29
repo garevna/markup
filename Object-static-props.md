@@ -8,7 +8,7 @@
 | ✅ Object.defineProperty() |
 | ✅ Object.defineProperties() |
 | Object.freeze() |
-| ✅ Object.getOwnPropertyDescriptor() |
+| [**`Object.getOwnPropertyDescriptor()`**](#mortar_board-objectgetownpropertydescriptor) |
 | [**`Object.getOwnPropertyNames()`**](#objectgetownpropertynames-) |
 | Object.getOwnPropertySymbols() |
 | Object.getPrototypeOf() |
@@ -84,14 +84,85 @@ console.log ( man.__proto__.employed ) // false
 |-|
 
 ## :mortar_board: Object.getOwnPropertyNames()
+Возвращает имена собственных свойств объекта
+
+Свойства объекта могут быть функциями ( методы )
 ```javascript
+var funcObject = {
+    getName() {},
+    setName() {}
+}
+var newObject = Object.assign (
+    {},
+    { name: "Егор", age: 25 },
+    {  write: true, read: true  },
+    funcObject
+)
+Object.getOwnPropertyNames ( newObject )
+```
+###### Результат:
+```console
+(6) ["name", "age", "write", "read", "getName", "setName"]
 ```
 
 | [:arrow_double_up:](#top) |
 |-|
 
 ## :mortar_board: Object.getOwnPropertyDescriptor()
+
+###### Этот метод позволяет получить дескриптор собственного свойства объекта
+###### Возвращает объект дескриптора свойства
+###### Первым аргументом метода является объект
+###### второй аргумент - имя свойства объекта
+
+### Атрибуты свойств
+<code>Для каждого свойства объекта существует **дескриптор свойства**</code><br/>
+<code>Дескриптор свойства - это объект</code><br/>
+<code>Он содержит атрибуты свойства:</code>
+###### ✋ value
+> <code>значение свойства</code><br/>
+> <code>( по умолчанию _undefined_ )</code>
+###### ✋ writable 
+> <code>( _true_ | _false_ )</code>
+> <code>можно ли изменять значение свойства</code>
+> <code>( по умолчанию _true_ )</code>
+###### ✋ set
+> <code>сеттер свойства</code><br/>
+> <code>( функция, которая вызывается при записи значения свойства )</code><br/>
+> <code>( по умолчанию имеет значение _undefined_ )</code>
+###### ✋ **get**
+> <code>геттер свойства </code><br/>
+> <code>( функция, которая вызывается при чтении значения свойства )</code><br/>
+> <code>( по умолчанию имеет значение _undefined_ )</code>
+###### ✋ **enumerable** ( `true` | `false` )
+> <code>является свойство перечислимым, или нет </code><br/>
+> <code>т.е. будет ли оно итерироваться оператором **_for..in_**</code><br/>
+> <code>и возвращаться при вызове метода **_Object.keys()_**</code><br/>
+> <code>( по умолчанию имеет значение _false_ )</code>
+###### ✋ **configurable** ( `true` | `false` )
+> <code>доступно ли свойство для модификации ( удаления, изменения атрибутов свойства )</code><br/>
+> <code>можно ли конфигурировать свойство с помощью метода **_defineProperty_** </code><br/>
+> <code>( по умолчанию _false_ )</code><br/>
+
 ```javascript
+var newObject = {
+    name: "Егор",
+    age: 25,
+    write: true,
+    read: true,
+    getName() {},
+    setName() {}
+}
+Object.getOwnPropertyDescriptor ( newObject, "getName" )
+```
+###### Результат:
+```console
+▼ {value: ƒ, writable: true, enumerable: true, configurable: true}
+    configurable: true
+    enumerable: true
+  ► value: ƒ getName()
+    writable: true
+  ► __proto__: Object
 ```
 
 | [:arrow_double_up:](#top) |
