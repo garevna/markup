@@ -191,7 +191,7 @@
 
 * [strict mode](strict-mode)
 * [Вычисляемые имена свойств](calculated-prop-names)
-* []()
+* [Краткий синтаксис методов](short-form-of-method-declaration)
 * []()
 * []()
 * []()
