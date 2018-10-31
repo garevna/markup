@@ -1,4 +1,4 @@
-| [:rewind:](Class#coffee-seven) |
+| [:rewind:](Class#mortar_board-static) |
 |-|
 
 ###### :coffee: :seven:
@@ -30,5 +30,5 @@ name: ""
 поскольку  `this`  внутри **_resizeCanvas()_** теперь указывает
 на глобальный объект  ( `window` )
 
-| [:rewind:](Class#coffee-seven) |
+| [:rewind:](Class#mortar_board-static) |
 |-|
