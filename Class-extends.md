@@ -1,12 +1,12 @@
-| [:rewind:](Class#mortar_board-extends) |
+| [:rewind:](Class#es6--ecmascript-2015-) |
 |-|
 
-### Наследование
-
+###### Наследование
+### extends
 Ключевое слово **`extends`** используется для создания дочернего класса<br/>
 Фактически мы передаем с помощью  extends  ссылку на прототип
 
-:coffee: :nine:
+:coffee:
 ```javascript
 const Canvas = class {
     constructor () {
@@ -42,5 +42,5 @@ newCanvas.drawLine (  [ { x: 20, y: 20 }, { x: 300, y: 400 } ] )
 ( что соответствует прототипной модели наследования - <br/>
 мы получили цепочку прототипов )
 
-| [:rewind:](Class#mortar_board-extends) |
+| [:rewind:](Class#es6--ecmascript-2015-) |
 |-|
