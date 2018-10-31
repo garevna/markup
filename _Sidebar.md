@@ -192,9 +192,7 @@
 * [strict mode](strict-mode)
 * [Вычисляемые имена свойств](calculated-prop-names)
 * [Краткий синтаксис методов](short-form-of-method-declaration)
-* []()
-* []()
-* []()
+* [Классы](Class)
 * [💼 Homework](hw-12)
 
 | [:arrow_heading_up:](#toc-11) | <img width="800"/> | [:arrow_heading_down:](#toc-13) |
