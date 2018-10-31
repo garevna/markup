@@ -6,8 +6,8 @@
 Директива `'use strict'` распознается только в начале скрипта или функции
 ```javascript
 function sample () {
-        'use strict'
-        ...
+    'use strict'
+    ...
 }
 ```
 Директива 'use strict' переводит выполнение скрипта в строгий режим ( **`strict mode`** )
