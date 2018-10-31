@@ -4,8 +4,9 @@
 
 | [class declaration](#mortar_board-class-declaration) | [class expression](#mortar_board-class-expression) |
 |-|-|
-| [**static**](Class-static) | [ **get & set** ](Class-get-set) |
-| [**extends**](Class-extends) | [**super**](Class-super) |
+| [**`Потеря контекста`**](#mortar_board-%D0%9F%D0%BE%D1%82%D0%B5%D1%80%D1%8F-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0) | [**static**](Class-static) | 
+| [ **get & set** ](Class-get-set) | [**extends**](Class-extends) |
+| [**super**](Class-super) | [:coffee: **`Пример`**](Class-sample) |
 
 :warning: Код внутри тела класса всегда выполняется в **`strict mode`**<br/>
 `( даже если вы не использовали директиву **_'use strict'_** )`
@@ -163,8 +164,7 @@ let drawLine = pict.drawLine.bind ( pict )
 > в строгом режиме `this` не будет ссылкой на глобальный объект  `window`<br/>
 > В строгом режиме `this` будет  `undefined`
 ***
-
-
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdQqNcBcLuvW7d7_Msf2a7y1BRbVcUptun6IFQ2ybfqCheTRA/viewform)
 ***
 
 | [:arrow_double_up:](#es6--ecmascript-2015-) |
