@@ -190,7 +190,7 @@
 #### Занятие 12
 
 * [strict mode](strict-mode)
-* []()
+* [Вычисляемые имена свойств](calculated-prop-names)
 * []()
 * []()
 * []()
