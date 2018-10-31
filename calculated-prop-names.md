@@ -81,3 +81,11 @@ console.log ( bag.getRose() )
 console.log ( bag.getFlower() )
 console.log ( bag.getMashroom() )
 ```
+###### Результат
+```console
+► {name: "👜", putContent: ƒ}
+► {name: "👜", getRose: ƒ, getFlower: ƒ, getMashroom: ƒ}
+🌹
+🌸
+🍄
+```
