@@ -1,4 +1,4 @@
-| [:rewind:](Class#coffee-six) |
+| [:rewind:](Class#mortar_board-static) |
 |-|
 
 ###### :coffee: :six:
@@ -61,5 +61,5 @@ drawLine ( points ) {
 ```
 > чтобы контекстом вызова был экземпляр, создаваемый конструктором
 
-| [:rewind:](Class#coffee-six) |
+| [:rewind:](Class#mortar_board-static) |
 |-|
