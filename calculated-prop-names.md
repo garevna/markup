@@ -55,3 +55,29 @@ console.log ( sample.mouse )
 console.log ( sample.monkey )
 console.log ( sample.chicken )
 ```
+:coffee: :five:
+```javascript
+var bag = {
+    name: "👜",
+    putContent: ( function ( things ) {
+        return function () {
+            for ( let item of things ) {
+                this[ `get${item.name}` ] = function () {
+                    return item.val
+                }
+            }
+            delete this.putContent
+        }
+    }) ([
+           { name: "Rose", val: '🌹' },
+           { name: "Flower", val: "🌸" },
+           { name: "Mashroom", val: "🍄" }
+        ])
+}
+console.log ( bag )
+bag.putContent ()
+console.log ( bag )
+console.log ( bag.getRose() )
+console.log ( bag.getFlower() )
+console.log ( bag.getMashroom() )
+```
