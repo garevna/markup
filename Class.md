@@ -2,6 +2,11 @@
 ###### ES6 ( ECMAScript 2015 )
 Синтаксический сахар на поверхности прототипной модели наследования
 
+| [class declaration](#mortar_board-class-declaration) | [class expression](#mortar_board-class-expression) |
+|-|-|
+| [**static**](Class-static) | [ **get & set** ](Class-get-set) |
+| [**extends**](Class-extends) | [**super**](Class-super) |
+
 :warning: Код внутри тела класса всегда выполняется в **`strict mode`**<br/>
 `( даже если вы не использовали директиву **_'use strict'_** )`
 
@@ -17,6 +22,10 @@
 `( приватных нет )`
 ***
 ### :mortar_board: class declaration
+
+| [:arrow_double_up:](#es6--ecmascript-2015-) |
+|-|
+
 ###### :no_entry_sign: hoisting
 `объявление класса дожно быть раньше первого обращения к нему`
 
@@ -44,6 +53,10 @@ document.body.appendChild ( x.elem )
 ```
 ***
 ### :mortar_board: class expression
+
+| [:arrow_double_up:](#es6--ecmascript-2015-) |
+|-|
+
 ###### еще один способ определить класс
 ###### class expression может быть именованным или аниномным
 
@@ -125,6 +138,10 @@ console.log ( Sample.name ) // "Canvas"
 ```
 ***
 ### :mortar_board: Потеря контекста
+
+| [:arrow_double_up:](#es6--ecmascript-2015-) |
+|-|
+
 ###### :pushpin: В строгом режиме не происходит неявной передачи контекста вызова 
 
 :warning: Потеря контекста происходит всегда, если ссылка на метод передается в новую переменную:
@@ -146,13 +163,9 @@ let drawLine = pict.drawLine.bind ( pict )
 > в строгом режиме `this` не будет ссылкой на глобальный объект  `window`<br/>
 > В строгом режиме `this` будет  `undefined`
 ***
-## :mortar_board: static
 
-Статические методы класса объявляются с помощью ключевого слова **static**
 
-Эти методы могут быть вызваны только как методы класса
+***
 
-:warning: Внутри статического метода `this` указывает на конструктор класса, а не на экземпляр
-
-###### [:coffee: :six:](Class-sample-6) 
-###### [:coffee: :seven:](Class-sample-7) 
+| [:arrow_double_up:](#es6--ecmascript-2015-) |
+|-|
