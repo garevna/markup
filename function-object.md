@@ -6,7 +6,10 @@
 
 <table>
     <tr>
-        <td width="300"><a href="#arguments">:arrow_forward:</a><code> Объект <strong>arguments</strong></code></td>
+        <td width="300">
+            <a href="#arguments">:arrow_forward:</a><code><strong> arguments</strong></code><br/>
+            <a href="#mortar_board-prototype">:arrow_forward:</a><code><strong> prototype</strong></code><br/>
+        </td>
         <td rowspan=5 width="50%">
             <code><em>📋 ECMAScript® 2016 Language Specification:</em></code><br>
             <code>☝️ Функция является вызываемым объектом</code><br>
@@ -15,7 +18,7 @@
     </tr>
     <tr>
         <td>
-           <a href="#execution-context">:arrow_forward:</a><code> Контекст выполнения</code><br>
+           <a href="#execution-context">:arrow_forward:</a><code> <b>Контекст выполнения</b></code><br>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#lexical-environment">:arrow_forward:</a><code> Lexical Environment</code><br>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#hoisting">:arrow_forward:</a><code> hoisting</code><br>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#scope">:arrow_forward:</a><code> Область видимости</code><br>
@@ -23,7 +26,7 @@
         </td>
     </tr>
     <tr>
-        <td><a href="#call-context">:arrow_forward:</a><code> Контекст вызова</code></td>
+        <td><a href="#call-context">:arrow_forward:</a><code> <b>Контекст вызова</b></code></td>
     </tr>
 </table>
 <img src="https://github.com/garevna/js-course/blob/master/pictures/medical-car.png" width="100"><br>
@@ -453,4 +456,5 @@ console.dir ( sample )
 | [:arrow_heading_up:](#8) | <a name="bottom"><img width="800"/></a> | [:arrow_double_up:](#top) |
 |-|-|-|
 
-[:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfMKUQjVnYrQq_YpPCNG81_DXOU0x8rVnb1bAJ4O_UnvvzwKg/viewform)
+***
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSfMKUQjVnYrQq_YpPCNG81_DXOU0x8rVnb1bAJ4O_UnvvzwKg/viewform)
