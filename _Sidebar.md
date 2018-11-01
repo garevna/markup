@@ -124,7 +124,8 @@
 |-|-|-|
 
 * [Стрелочные функции](https://docs.google.com/forms/d/e/1FAIpQLScagd6KJZKArmU74hl913A3zLENlimFRciMcJ6nU63coxPT_Q/viewform)
-* [Статические методы Object](https://docs.google.com/forms/d/e/1FAIpQLSft2nqFhPiggk3ZgszO8Z3b3FmPaG26XHaAleTYfnlzAO3QnA/viewform)
+* [Статические методы Object](Object-static-props)
+* [Статические методы Object*](https://docs.google.com/forms/d/e/1FAIpQLSft2nqFhPiggk3ZgszO8Z3b3FmPaG26XHaAleTYfnlzAO3QnA/viewform)
 * [:briefcase: Homework](hw-07)
 
 ***
