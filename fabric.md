@@ -175,3 +175,40 @@ currentUser.write ( `I'm here since ${new Date ().toLocaleString()}` )
   ► write: ƒ ( text )
   ► __proto__: Object
 ```
+```javascript
+console.dir ( currentUser.__proto__.constructor )
+```
+###### currentUser.__proto__.constructor
+```console
+▼ ƒ User()
+    createNewUser: ƒ ( params )
+    arguments: null
+    caller: null
+    length: 0
+    name: "User"
+    prototype: {constructor: ƒ}
+  ► __proto__: ƒ ()
+```
+Получили _перечислимый_ статический метод **_createNewUser_** конструктора
+
+Сделаем то же самое с помощью класса
+```javascript
+class User {
+    constructor () {
+        this.talk = function ( key ) {
+            document.write ( `<p>${key}: <b>${this [ key ]}</b></p>` )
+        }
+    }
+    static createNewUser ( params ) {
+        var user = new this
+        for ( var key in params ) 
+            user [ key ] = params [ key ]
+        return user
+    }
+}
+```
+В этом случае статический метод класса **_createNewUser_**<br/>
+будет неперечислимым,<br/>
+а в остальном все будет аналогично варианту с конструктором<br/>
+<code>Так что "под капотом" работает все то же прототипное наследование,<br/>
+только с косметическими "добавками"</code>
