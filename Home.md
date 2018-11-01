@@ -9,7 +9,6 @@
         <td>
             <p>«<em>Я думаю, что ООП без классов — это подарок человечеству от JavaScript</em>»</p>
             <p><b><a href="http://www.crockford.com/" target="_blank">Дуглас Крокфорд</a></b></p>
-            <p><code>автор "<b>Java Script The Good Parts</b>"</code></p>
         </td>
     </tr>
 </table>
