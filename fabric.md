@@ -1,3 +1,15 @@
+<table>
+    <tr>
+        <td width="200">
+            <img src="https://github.com/garevna/js-course/blob/master/pictures/douglas-crockford.jpg" width="200"/>
+        </td>
+        <td>
+            <p>«<em>Я думаю, что ООП без классов — это подарок человечеству от JavaScript</em>»</p>
+            <p><b><a href="http://www.crockford.com/" target="_blank">Дуглас Крокфорд</a></b></p>
+        </td>
+    </tr>
+</table>
+
 ## :mortar_board: Фабричные методы
 
 ООП без классов, базирующееся на фабричных методах — 
