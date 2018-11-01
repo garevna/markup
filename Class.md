@@ -148,7 +148,7 @@ console.log ( Sample.name ) // "Canvas"
 
 :warning: Потеря контекста происходит всегда, если ссылка на метод передается в новую переменную:
 
-:coffee: :six:
+###### :coffee: :six:
 ```javascript
      let drawLine = pict.drawLine
      drawLine ( [ { x: 50, y: 50 }, { x: 250, y: 250 } ] )
@@ -167,7 +167,7 @@ let drawLine = pict.drawLine.bind ( pict )
 > в строгом режиме `this` не будет ссылкой на глобальный объект  `window`<br/>
 > В строгом режиме `this` будет  `undefined`
 
-:coffee: :seven:
+####### :coffee: :seven:
 В этом примере контекст теряется в функции **_getProp()_**,<br/>
 объявленной внутри метода **_addSomeInfo_**<br/>
 ( внутренняя функция не наследует контекст внешней )<br/>
