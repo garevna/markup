@@ -44,7 +44,7 @@ npm install -g json-server
     ],
     "posts": [
         {
-            "userID": 2,
+            "userId": 2,
             "title": "My first post here",
             "body": "It's really wonder!",
             "id": 1
