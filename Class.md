@@ -147,6 +147,8 @@ console.log ( Sample.name ) // "Canvas"
 ###### :pushpin: В строгом режиме не происходит неявной передачи контекста вызова 
 
 :warning: Потеря контекста происходит всегда, если ссылка на метод передается в новую переменную:
+
+:coffee: :six:
 ```javascript
      let drawLine = pict.drawLine
      drawLine ( [ { x: 50, y: 50 }, { x: 250, y: 250 } ] )
@@ -164,6 +166,80 @@ let drawLine = pict.drawLine.bind ( pict )
 > При отсутствии явного указания на объект, вызывающий метод, <br/>
 > в строгом режиме `this` не будет ссылкой на глобальный объект  `window`<br/>
 > В строгом режиме `this` будет  `undefined`
+
+:coffee: :seven:
+В этом примере контекст теряется в функции **_getProp()_**,<br/>
+объявленной внутри метода **_addSomeInfo_**<br/>
+( внутренняя функция не наследует контекст внешней )<br/>
+```javascript
+class User {
+    constructor ( name ) {
+        this.name = name || 'unknown'
+    }
+    addSomeInfo ( props ) {
+        if ( !Array.isArray ( props ) ) return
+        function getProp ( prop ) {
+            this [ prop.name ] = prop.value
+        }
+        for ( var prop of props ) {
+            getProp ( prop )
+        }
+    }
+}
+```
+Создадим экземпляр **user** класса **User**<br/>
+и вызовем метод **_addSomeInfo_**<br/>
+в контексте объекта **user**
+```javascript
+var user = new User ( "Grig" )
+user.addSomeInfo ([
+    { name: "age", value: 25 },
+    { name: "hobby", value: [ "football", "fishing" ] }
+])
+```
+###### :scream_cat: Результат
+```console
+⛔️ Uncaught TypeError: Cannot set property 'age' of undefined
+```
+:heavy_exclamation_mark: Внутри функции **_getProp_** контекст вызова ( **`this`** ) оказался `undefined`
+
+Теперь используем стрелочную функцию **_getProp_**, которая не теряет контекст :wink:
+```javascript
+class User {
+    constructor ( name ) {
+        this.name = name || 'unknown'
+    }
+    addSomeInfo ( props ) {
+        if ( !Array.isArray ( props ) ) return
+        var getProp = prop => this [ prop.name ] = prop.value
+        for ( var prop of props ) {
+            getProp ( prop )
+        }
+    }
+}
+```
+Создадим экземпляр **user** класса **User**<br/>
+и вызовем метод **_addSomeInfo_**<br/>
+в контексте объекта **user**
+```javascript
+var user = new User ( "Grig" )
+user.addSomeInfo ([
+    { name: "age", value: 25 },
+    { name: "hobby", value: [ "football", "fishing" ] }
+])
+console.log ( user )
+```
+###### :scream_cat: Результат
+```console
+▼ User {name: "Grig", age: 25, hobby: Array(2)}
+    age: 25
+  ► hobby: (2) ["football", "fishing"]
+    name: "Grig"
+  ▼ __proto__:
+      ► addSomeInfo: addSomeInfo ( props ) { if ( !Array.isArray ( props ) ) return var getProp = prop => {…}
+      ► constructor: class User
+      ► __proto__: Object
+```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdQqNcBcLuvW7d7_Msf2a7y1BRbVcUptun6IFQ2ybfqCheTRA/viewform)
 ***
