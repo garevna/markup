@@ -23,8 +23,8 @@ var obj = new Sample()
 ```javascript
 ▼ Sample {}
     ▼ __proto__:
-        ▶ constructor: ƒ Sample( params )
-        ▶ __proto__: Object
+        ► constructor: ƒ Sample( params )
+        ► __proto__: Object
 ```
 * мы создали пустой объект класса **Sample** `( точнее, мы создали экземпляр объекта )`
 * у него нет собственных свойств `( потому что в конструкторе ничего не объявлено )`
@@ -40,8 +40,8 @@ Sample.prototype
 ```
 ```
 ▼ {constructor: ƒ}
-    ▶ constructor: ƒ Sample( params )
-    ▶ __proto__: Object
+    ► constructor: ƒ Sample( params )
+    ► __proto__: Object
 ```
 
 Мы можем добавить свойства в **`prototype`** конструктора **Sample**
@@ -61,3 +61,30 @@ obj.setNewProperty ( "name", "Petro" )
 :warning: При обращении к свойству сначала оно ищется среди собственных свойств экземпляра, и если не будет найдено, то поиск будет продолжен среди свойств прототипа, и так далее, пока не закончится цепочка прототипов
 
 :white_square_button: Конструктор позволяет создавать экземпляры объектов, имеющих не только публичные, но и приватные свойства и методы
+
+## :mortar_board: Function
+
+###### Конструктор
+```javascript
+var func = new Function (
+    `
+        var x = "Hello"
+        var y = "baby"
+        console.log ( x + ", " + y )
+    `
+)
+console.log ( func )
+func()
+```
+###### Result:
+```console
+ƒ anonymous(
+) {
+
+        var x = "Hello"
+        var y = "baby"
+        console.log ( x + ", " + y )
+    
+}
+Hello, baby
+```
