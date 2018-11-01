@@ -4,7 +4,7 @@
 
 | [class declaration](#mortar_board-class-declaration) | [class expression](#mortar_board-class-expression) |
 |-|-|
-| [**`Потеря контекста`**](#mortar_board-%D0%9F%D0%BE%D1%82%D0%B5%D1%80%D1%8F-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0) | [**static**](Class-static) | 
+| [**`Потеря контекста`**](#context) | [**static**](Class-static) | 
 | [ **get & set** ](Class-get-set) | [**extends**](Class-extends) |
 | [**super**](Class-super) | [:coffee: **`Пример`**](Class-sample) |
 
@@ -138,6 +138,7 @@ pict.drawLine (  [ { x: 250, y: 250 }, { x: 100, y: 250 } ] )
 console.log ( Sample.name ) // "Canvas"
 ```
 ***
+<a name="context"></a>
 ### :mortar_board: Потеря контекста
 
 | [:arrow_double_up:](#es6--ecmascript-2015-) |
