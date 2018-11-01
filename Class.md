@@ -43,7 +43,37 @@ class User {
 var user = new User ( "Крокодил" )
 user.show()
 ```
+###### Result
+```console
+Ай-яй-яй, у меня контекст вызова undefined
+Зато я вижу приватную переменную: 789
+```
+Для того, чтобы избавиться от иллюзий по поводу "классов" в JS,<br/>
+создадим аналогичный экземпляр с помощью обычного конструктора
+```javascript
+function User ( name ) {
+    var privateVar = prompt ( "Set privateVar value: " )
+    function showPrivate () {
+        console.log ( `Ай-яй-яй, у меня контекст вызова ${this}` )
+        console.log ( `Зато я вижу приватную переменную: ${privateVar}` )
+    }
+    this.name = name || "Бегемот"
+    this.show = function () {
+        showPrivate ()
+    }
+}
 
+var user = new User ( "Крокодил" )
+user.show()
+```
+###### Result
+```console
+Ай-яй-яй, у меня контекст вызова [object Window]
+Зато я вижу приватную переменную: 789
+```
+Выведем в консоль оба варианта **user** и найдем те косметические отличия, которые там должны быть :wink:
+
+* `constructor: class User`    /    `constructor: ƒ User( name )`
 ***
 ### :mortar_board: class declaration
 
