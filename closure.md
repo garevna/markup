@@ -39,5 +39,29 @@ var func = ( function ( arg ) {
 func ( "Дима" )
 func ( "Николай" )
 ```
+***
+#### :warning: Function
 
+Функции, созданные конструктором **Function**, :heavy_exclamation_mark: не создают замыкания
+
+:coffee:
+```javascript
+var __var__ = "Global Scope"
+
+function functionConstructor() {
+    var __var__ = "Function Scope"
+    return new Function ( "console.warn ( __var__ )" )
+}
+
+function functionDeclaration() {
+    var __var__ = "Closured Scope"
+    return function () {
+        console.info ( __var__ )
+    }
+}
+
+functionConstructor()()   // Global Scope
+functionDeclaration()()   // Closured Scope 
+```
+***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLScC1JCRSlsA-4ldgUvslbrXSq0Ta3frOauVv6DujoLoB357iA/viewform)
