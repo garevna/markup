@@ -151,7 +151,7 @@ console.log( speciality )  // "слесарь"
 * остаток от дестуктурированного массива
 
 :coffee: :one:
-###### функция  _func_  принимает 4 аргумента:
+###### функция  _getAngleData_  возвращает массив
 ```javascript
 let getAngleData = 
     deg => [ 
@@ -160,6 +160,9 @@ let getAngleData =
         Math.tan ( deg ), 
         Math.atan ( deg ) 
     ]
+```
+###### функция  _func_  принимает 4 аргумента
+```javascript
 let func = ( x, y, z, w ) => {
     console.log ( x )
     console.log ( y )
@@ -167,7 +170,7 @@ let func = ( x, y, z, w ) => {
     console.log ( w )
 }
 ```
-###### Передадим результат работы функции _getAngleData_ ( возвращающей массив ) функции _func_
+###### Передадим результат работы функции _getAngleData_ функции _func_
 ```javascript
 func ( ...getAngleData ( Math.PI/3 ) )
 
@@ -186,3 +189,33 @@ console.info ( sin30 )  // 0.8660254037844386
 console.log ( rest30 )  
 // (3) [0.5000000000000001, 1.7320508075688767, 0.808448792630022]
 ```
+
+:coffee: :three:
+###### разметка
+```html
+<body>
+    <p class="paragraph">1</p>
+    <p class="paragraph">2</p>
+    <p class="paragraph">3</p>
+    <p class="paragraph">4</p>
+</body>
+```
+###### код
+```javascript
+let collection = document.querySelectorAll ( '.paragraph' )
+let [ first, second, third, forth ] = collection
+```
+###### или
+```javascript
+let [ first, second, third, forth ] = 
+    document.querySelectorAll ( '.paragraph' )
+```
+###### результат
+```javascript
+console.log ( first )   // <p class="paragraph">1</p>
+console.log ( second )  // <p class="paragraph">2</p>
+console.log ( third )   // <p class="paragraph">3</p>
+console.log ( forth )   // <p class="paragraph">4</p>
+```
+***
+### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSeSywg6vOrnZ0JJdvqOjB9OSNT3FcBBRJox7Qt2661Nz_C8CA/viewform)
