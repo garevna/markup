@@ -146,6 +146,11 @@ user [ Symbol.iterator ] = function* () {
         yield this.showAvatar ()
 }
 ```
+Теперь наш объект можно итерировать обычным `for...of`
+```javascript
+for ( var x of user )
+    console.log ( `working...` )
+```
 ✍ Добавим свойство  **_iterator_**  объекту  **user**:
 ```javascript
 user.iterator = user [ Symbol.iterator ]()
@@ -223,6 +228,30 @@ var elems = [
 ]
 
 var newElement = elemsGenerator ( elems )
+```
+
+:coffee: :five:
+```javascript
+let btn = document.body.appendChild (
+    document.createElement ( "button" )
+)
+btn.innerText = "new"
+btn.onclick = function ( event ) {
+    let ava = getAvatar.next()
+    if ( !ava.done ) document.body.appendChild ( ava.value )
+}
+
+function* avaGenerator () {
+    let num = 9
+    while ( ++num < 99 ) {
+        let ava = document.createElement ( "img" )
+        ava.src = `https://www.shareicon.net/data/2015/12/14/2078${num}_face_300x300.png`
+        ava.width = "80"
+        yield ava
+    }
+}
+
+let getAvatar = avaGenerator ()
 ```
 ***
 ### [:briefcase: Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSf3HcSENvJodCQjaW_azeh_lMXwCD6HsRq3adiPnyqRFm_6Vg/viewform)
