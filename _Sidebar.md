@@ -206,9 +206,6 @@
 * [Фабричные методы](fabric)
 * [Деструктуризация](Destructuring)
 * [Генераторы и итераторы](generators-and-iterators)
-* []()
-* []()
-* []()
 * [💼 Homework](hw-13)
 
 | [:arrow_heading_up:](#toc-12) | <img width="800"/> | [:arrow_heading_down:](#toc-14) |
