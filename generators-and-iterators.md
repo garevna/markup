@@ -193,11 +193,11 @@ function* someGenerator ( objs ) {
 }
 
 var objects = [
-    { val: "first",       nextItem: "second" },
-    { val: "forth",      nextItem: "fifth" },
-    { val: "sixth",      nextItem: null },
-    { val: "third",      nextItem: "forth" },
-    { val: "fifth",       nextItem: "sixth" },
+    { val: "first",  nextItem: "second" },
+    { val: "forth",  nextItem: "fifth" },
+    { val: "sixth",  nextItem: null },
+    { val: "third",  nextItem: "forth" },
+    { val: "fifth",  nextItem: "sixth" },
     { val: "second", nextItem: "third" }
 ]
 
