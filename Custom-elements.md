@@ -38,7 +38,7 @@ console.dir ( HTMLUnknownElement )
 `Однако никаких "специфических" свойств и методов у этого элемента не будет, что полностью нивелирует "ценность" подобного творения`
 
 ###### :warning: При создании класса пользовательских элементов в качестве родительского класса ( **super** ) можно  использовать HTMLElement
-###### Тогда создаваемый нами элемент будет наследовать свойства и методы родительского класса ( _HTMLElement.prototype_ )
+###### Тогда создаваемый нами элемент будет наследовать свойства и методы родительского класса _HTMLElement.prototype_
 
 ## customElements
 
@@ -141,6 +141,18 @@ class SampleElement extends HTMLElement {
 ###### Зарегистрируем новый элемент класса _SampleElement_
 ```javascript
 customElements.define ( 'sample-element', SampleElement )
+```
+###### Проверим, был ли зарегистрирован наш элемент в `CustomElementRegistry`
+```javascript
+customElements.get ( 'sample-element' )
+```
+```console
+class SampleElement extends HTMLElement {
+    constructor() {
+        super ()
+        let wrapper = document.createElement ( 'div' )
+        wrapper.className = "wrapper"
+        this.picture = document.c…
 ```
 ###### Вставим новый элемент на страницу
 ```javascript
