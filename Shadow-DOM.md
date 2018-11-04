@@ -59,7 +59,7 @@ shadow.appendChild (
 )
 ```
 
-### mode: 'open'
+#### mode: 'open'
 Значение  **_'open'_**  означает, что `shadow DOM`  данного элемента будет доступен в контексте страницы через его свойство **`shadowRoot`**
 ```html
 ▼ <div>
@@ -68,5 +68,52 @@ shadow.appendChild (
        <style>img { width: 200px; }</style>
 </div>
 ```
+###### Доступные свойства shadowRoot
+```javascript
+console.dir ( elem.shadowRoot )
+```
+```console
+▼ #document-fragment
+    activeElement: null
+    baseURI: "about:blank"
+    childElementCount: 2
+  ► childNodes: NodeList(2) [img, style]
+  ► children: HTMLCollection(2) [img, style]
+    delegatesFocus: false
+  ► firstChild: img
+  ► firstElementChild: img
+  ► host: div
+    innerHTML: "<img src="http://www.radioactiva.cl/wp-content/uploads/2018/05/pikachu.jpg"><style>img { width: 200px; } 
+    </style>"
+    isConnected: true
+  ► lastChild: style
+  ► lastElementChild: style
+    mode: "open"
+    nextSibling: null
+    nodeName: "#document-fragment"
+    nodeType: 11
+    nodeValue: null
+  ► ownerDocument: document
+    parentElement: null
+    parentNode: null
+    pictureInPictureElement: null
+    pointerLockElement: null
+    previousSibling: null
+  ► styleSheets: StyleSheetList {0: CSSStyleSheet, length: 1}
+    textContent: "img { width: 200px; }"
+  ► __proto__: ShadowRoot
+```
+#### mode: 'closed'
+Значение  **_`'closed'`_**  делает shadow DOM  данного элемента недоступным для скриптов
 
-### 
+При обращении к свойству shadowRoot  элемента  будет возвращено значение  `null`
+
+###### Доступные свойства shadowRoot
+```javascript
+console.dir ( elem.shadowRoot )
+```
+```console
+null
+```
+***
+[### 💼 Упражнения](https://docs.google.com/forms/d/e/1FAIpQLSdjCWOSAVFqZqcm4sy-q-KBFmd1i2BbfYQ0pcZaqYb9YZyv5w/viewform)
