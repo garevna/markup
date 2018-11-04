@@ -216,7 +216,7 @@
 #### Занятие 14
 
 * [Shadow DOM](Shadow-DOM)
-* []()
+* [Custom elements](Custom-elements)
 * []()
 * []()
 * []()
