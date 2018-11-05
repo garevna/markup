@@ -229,7 +229,7 @@
 
 * [webpack](webpack)
 * [:briefcase: Упражнение 1](webpack-1)
-* []()
+* [ES6 модули](ES6-modules)
 * []()
 * []()
 * []()
