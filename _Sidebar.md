@@ -231,7 +231,7 @@
 * [:briefcase: Упражнение 1](webpack-1)
 * [ES6 модули](ES6-modules)
 * [:briefcase: Упражнение 2](webpack-2)
-* []()
+* [--mode | --watch](webpack-options)
 * []()
 * [💼 Homework](hw-15)
 
