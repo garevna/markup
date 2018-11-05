@@ -36,15 +36,11 @@ DocumentFragment содержит DOM-элементы ( nodes ), как и об
 Это шаблон разметки, который при необходимости может быть вставлен в нужное время в нужном месте
 
 ### :mortar_board: content
-Свойство  **_content_**  элемента  `template`  содержит код разметки, находящийся  в контейнере  
-<code>
-&lt;template>...&lt;/template>
-</code>
+###### Свойство  _content_  элемента  `template`  содержит код разметки, находящийся  в контейнере <code>&lt;template>...&lt;/template></code>
 
-var circle = document.querySelector ( "#svg" )
-console.dir ( circle.content )
 
 :coffee: :two:
+###### Шаблон разметки
 ```html
 <template id="svg">
     <svg width="400" height="400">
@@ -57,11 +53,12 @@ console.dir ( circle.content )
     </svg>
 </template>
 ```
-
+###### Выведем в консоль свойство `content`
 ```javascript
 const circle = document.querySelector ( "#svg" )
 console.dir ( circle.content )
 ```
+###### Результат
 ```console
 ▼ #document-fragment
     baseURI: "about:blank"
