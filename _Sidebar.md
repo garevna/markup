@@ -217,7 +217,7 @@
 
 * [Shadow DOM](Shadow-DOM)
 * [Custom elements](Custom-elements)
-* []()
+* [&lt;template>](template)
 * []()
 * []()
 * []()
