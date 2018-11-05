@@ -218,9 +218,6 @@
 * [Shadow DOM](Shadow-DOM)
 * [Custom elements](Custom-elements)
 * [&lt;template>](template)
-* []()
-* []()
-* []()
 * [💼 Homework](hw-14)
 
 | [:arrow_heading_up:](#toc-13) | <img width="800"/> | [:arrow_heading_down:](#toc-15) |
