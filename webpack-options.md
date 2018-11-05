@@ -12,6 +12,8 @@
 
 ###### :coffee: webpack --mode development
 
+<img src="https://lh3.googleusercontent.com/9Kw0fdiVv9zrVzwLuN9mgI_kTysz4yCDr_pz4DixW9p4EHJnAtuiYC2zjZ_Zua4hZNB9J_7mwNOsVS8BnCpsJs7MmSkxSALp431a-mnwUIog458xNgcAxmUALDz9ddZsAEqqIWRyt9V37Vg" width="500"/>
+
 `На следующем скрине показаны сообщения о дублировании значений ключей в базе данных, которые позволяют разработчику 
 внести соответствующие изменения перед окончательной сборкой, чтобы избежать проблем в дальнейшем`
 
