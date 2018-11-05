@@ -84,3 +84,58 @@ console.dir ( circle.content )
     textContent: "↵        Template header↵        Template text↵    "
   ► __proto__: DocumentFragment
 ```
+### Вставка в DOM
+
+Если выполнить код:
+```javascript
+document.body.appendChild ( circle.content )
+```
+то после вставки в DOM содержимого шаблона контейнер  `<template id="svg"></template>`  будет пустым
+
+Можно проверить это:
+```javascript
+console.dir ( circle.content )
+```
+Свойство  **`childNodes`**  будет  **_`NodeList [ ]`_**       ( пустая коллекция узлов )
+
+Свойство  **`children`**  будет  **_`HTMLCollection [ ]`_**   ( пустая коллекция элементов )
+
+:warning: Для многоразового использования шаблона разметки нужно использовать метод **cloneNode ( `true` )**
+```javascript
+document.body.appendChild ( circle.content.cloneNode ( true ) )
+```
+###### ✋ true указывает на глубокое копирование, т.е. всех подузлов дерева
+
+:coffee: :one:
+###### Шаблон разметки
+```html
+<template id="sample">
+    <style>
+        svg { border: dotted 1px; }
+        circle { stroke-width:5; }
+    </style>
+    <svg width="400" height="400" id="svg">
+        <circle cx="200" cy="200" r="100" 
+                id="circle"
+                fill="transparent" 
+                stroke="red">
+        </circle>
+    </svg>
+</template>
+```
+###### Класс
+```javascript
+class CanvasElement extends HTMLElement {
+    constructor () {
+        super()
+        var shadow = this.attachShadow ( { mode: 'open' } )
+        var sample = document.querySelector ( "#sample" )
+        shadow.appendChild ( sample.content )
+    }
+}
+customElements.define ( 'canvas-element', CanvasElement )
+```
+###### Вставка на страницу
+```html
+<canvas-element></canvas-element>
+```
