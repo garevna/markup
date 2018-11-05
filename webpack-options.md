@@ -14,9 +14,12 @@
 
 `На следующем скрине показаны сообщения о дублировании значений ключей в базе данных, которые позволяют разработчику 
 внести соответствующие изменения перед окончательной сборкой, чтобы избежать проблем в дальнейшем`
+
 ![](https://lh4.googleusercontent.com/jWl0b6D9RUO5Xmi51lrJE0l63pAHk-RYJFK9b5WFh0WRoKePjL5OlkWd40yzRnGzIORy7kN0wkJRiM_kxykFfRJE7yU1soHiOBvAhsTcfYdaETJfamHOacUtPMR5raxqMtMGOtPIRFqqkb0)
 
 При этом результирующий бандл  main.js  не минимизирован, что облегчает отладку приложения ( переход к строке с ошибкой )
+
+<img src="https://lh4.googleusercontent.com/ug6vfxniKfZP8CHRCCH6J3MrjMmmkInYejG-8ApUMOPQlHlKLpnEubIstwhRX0gLBx1HD797H-PjkRQMhkgcrVaiGFwOVHDFCWlywS8xoB5t1YLYReZZF7qkW4DrqRHuqKHpURWkrZsDQ4k" width="800"/>
 
 ###### :coffee: webpack --mode production
 Окончательная сборка
