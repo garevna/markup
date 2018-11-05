@@ -232,7 +232,7 @@
 * [ES6 модули](ES6-modules)
 * [:briefcase: Упражнение 2](webpack-2)
 * [--mode | --watch](webpack-options)
-* []()
+* [:briefcase: Упражнение 3](webpack-3)
 * [💼 Homework](hw-15)
 
 | [:arrow_heading_up:](#toc-14) | <img width="800"/> | [:arrow_heading_down:](#toc-16) |
