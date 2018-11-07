@@ -45,6 +45,13 @@ document.body.appendChild ( elem )
 let shadow = elem.attachShadow ( { mode: 'open' } )
 shadow.appendChild (
     ( () => {
+        var script = document.createElement ( 'script' )
+        script.innerText = `console.log ( "HELLO!" )`
+        return script
+    })()
+)
+shadow.appendChild (
+    ( () => {
         var pict = document.createElement ( 'img' )
         pict.src = "http://www.radioactiva.cl/wp-content/uploads/2018/05/pikachu.jpg"
         return pict
