@@ -23,7 +23,7 @@
 ```
 ###### :open_file_folder: src
 
-Cоздайте папку  src  и поместите туда файл  :pencil: index.js
+Cоздайте папку  **src**  и поместите туда файл  :pencil: **_index.js_**
 
 ###### :pencil: index.js
 
@@ -43,9 +43,10 @@ promise.then ( response => document.write ( response ) )
 
 webpack был вызван нами без каких-либо параметров и опций
 
-В консоли видно предупреждение, что опция  **`mode`** отсутствует, поэтому использовано значение по умолчанию - **_`production`_**
+В консоли видно предупреждение, что опция  **`mode`** отсутствует,<br/>
+поэтому использовано значение по умолчанию - **_`production`_**
 
-![](https://lh5.googleusercontent.com/zhM1TwRySgAAGrg8ts-n8mvlACifQXHzQudaUs37ce45AtHM9VjMa8CswyohFhG0y9p9sV15jw_rqV8hyOMGX62y5o829hATXLXNLPEN8h779mjS2yC140CdCuwFMvqYGhcu-b9lD1lvquQ)
+![](http://icecream.me/uploads/676b38d4712353e1e73a346dd7b55477.png)
 
 Обратите внимание, что в папке проекта появилась новая папка  :open_file_folder: **dist**,
 
@@ -53,7 +54,9 @@ webpack был вызван нами без каких-либо параметр
 
 ![](https://lh6.googleusercontent.com/0pagIMHm51JuHbTPqLkRnHIEBD3WxdGhsLjsbb7h0faFhCO7cSVQc2gPhsLvisAFmqwymX0xhX2N4qYMH61DP8L7Aq-VesPwpso5WkBWpmT9WyDw9MU1QG1O7Glri7wN-sGxODtftnmxsOs)
 
-Как видите, мы обошлись без файла конфигурации, поскольку  Webpack 4  позволяет это при использовании дефолтных имен файлов и папок:
+Как видите, мы обошлись без файла конфигурации,<br/>
+поскольку  Webpack 4  позволяет это<br/>
+при использовании дефолтных имен файлов и папок:
 
 :warning: Исходный файл должен находиться в папке :open_file_folder: **src** и называться :pencil: **_index.js_**
 
