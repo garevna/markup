@@ -21,7 +21,7 @@
 
 При этом результирующий бандл  main.js  не минимизирован, что облегчает отладку приложения ( переход к строке с ошибкой )
 
-<img src="https://lh4.googleusercontent.com/ug6vfxniKfZP8CHRCCH6J3MrjMmmkInYejG-8ApUMOPQlHlKLpnEubIstwhRX0gLBx1HD797H-PjkRQMhkgcrVaiGFwOVHDFCWlywS8xoB5t1YLYReZZF7qkW4DrqRHuqKHpURWkrZsDQ4k" width="800"/>
+![](https://lh4.googleusercontent.com/ug6vfxniKfZP8CHRCCH6J3MrjMmmkInYejG-8ApUMOPQlHlKLpnEubIstwhRX0gLBx1HD797H-PjkRQMhkgcrVaiGFwOVHDFCWlywS8xoB5t1YLYReZZF7qkW4DrqRHuqKHpURWkrZsDQ4k)
 
 ###### :coffee: webpack --mode production
 Окончательная сборка
