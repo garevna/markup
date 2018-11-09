@@ -246,6 +246,7 @@
 |-|-|-|
 
 ###### :ledger: Справочная инфо
-* [:notebook: localhost](localhost)
+* [:notebook: **Git Bush**](Git-Bush)
+* [:notebook: **_localhost_**](localhost)
 ***
 ###### [:open_file_folder: ECMAScript](ECMAScript)
