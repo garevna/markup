@@ -5,14 +5,13 @@
 в юниксоподобных системах ( **[GNU](#refs)/Linux** )
 
 [<img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> **Установка**](https://gitforwindows.org/)
-
+***
 ## CR | LF
-Болезненная проблема для разработчиков, работающих на разных платформах,<br/>
-таких как ПК под управлением Windows и веб-сервер под управлением Linux, - <br/>
+Проблема для разработчиков, работающих на разных платформах, - <br/>
 это разные _коды символов перевода строки_ в текстовых файлах
 
 | Платформа | символы перевода строки |
-|-|-|
+|:-:|:-:|
 | Windows ( и DOS ) | CR и LF |
 | UNIX ( Linux ) | LF |
 | OS X | LF |
@@ -26,7 +25,7 @@
 
 ## <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> Commands
 
-### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> echo
+### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> `echo`
 ###### вывод аргументов, разделенных пробелами, на стандартное устройство вывода
 
     echo 'my name is Irina'
@@ -38,8 +37,10 @@
 в текщей папке создаст ( или перезапишет ) файл  **sample.txt**  с текстом '_my name is Irina_'
 
 ***
-### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> cat
-
+### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> `cat`
+###### Вывод с указанного устройства ввода в файл
+###### имя файла для вывода следует после `>`
+###### если устройство ввода пропущено, то вывод будет из устройства по умолчанию ( консоль )
 :coffee: :one:
 
     cat > sample.txt
@@ -61,9 +62,12 @@
 
 ***
 
-### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> touch
+### <img src="https://gitforwindows.org/img/gwindows_logo.png" width="20"/> `touch`
 
-Команда  **`touch`**  в основном используется для изменения временных меток файла, но если файл, имя которого передано как аргумент, не существует, то команда  **`touch`**  создает его ( пустым, если не указана опция  `-c`  или  `-h` )
+> Команда  **`touch`**  в основном используется для изменения временных меток файла,<br/>
+> но если файл, имя которого передано как аргумент, не существует, <br/>
+> то команда  **`touch`**  создает его <br/>
+> ( пустым, если не указана опция  `-c`  или  `-h` )
 
 :coffee: :one:
 
