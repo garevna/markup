@@ -246,6 +246,7 @@
 |-|-|-|
 
 ###### :ledger: Справочная инфо
+* [:not(:defined)](not-defined)
 * [:notebook: **Git Bush**](Git-Bush)
 * [:notebook: **_localhost_**](localhost)
 ***
