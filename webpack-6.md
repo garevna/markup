@@ -2,8 +2,8 @@
 
 ###### ✅ file-loader
 ***
-###### [:link: file-loader]https://www.npmjs.com/package/file-loader
-###### [:link: loaders]https://webpack.js.org/loaders/
+###### [:link: file-loader](https://www.npmjs.com/package/file-loader)
+###### [:link: loaders](https://webpack.js.org/loaders/)
 ***
 ### :open_file_folder: images
 
