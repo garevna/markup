@@ -227,6 +227,7 @@
 <a name="toc-15"></a>
 #### Занятие 15
 
+* [npm](npm)
 * [webpack](webpack)
 * [:briefcase: Упражнение 1](webpack-1)
 * [ES6 модули](ES6-modules)
