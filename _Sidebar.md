@@ -237,6 +237,8 @@
 * [:briefcase: Упражнение 4](webpack-4)
 * [:briefcase: Упражнение 5](webpack-5)
 * [:briefcase: Упражнение 6](webpack-6)
+* [:briefcase: Упражнение 7](webpack-7)
+* [:briefcase: Упражнение 8](webpack-8)
 * [💼 Homework](hw-15)
 
 | [:arrow_heading_up:](#toc-14) | <img width="800"/> | [:arrow_heading_down:](#toc-16) |
