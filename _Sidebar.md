@@ -214,7 +214,7 @@
 ***
 <a name="toc-14"></a>
 #### Занятие 14
-
+* [:not(:defined)](not-defined)
 * [Shadow DOM](Shadow-DOM)
 * [Custom elements](Custom-elements)
 * [&lt;template>](template)
@@ -246,7 +246,7 @@
 |-|-|-|
 
 ###### :ledger: Справочная инфо
-* [:not(:defined)](not-defined)
+
 * [:notebook: **Git Bush**](Git-Bush)
 * [:notebook: **_localhost_**](localhost)
 ***
