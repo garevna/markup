@@ -81,11 +81,11 @@ body {
 
 ### :wrench: file-loader
 
-Установим загрузчик **file-loader**<br/>
-и внесем необходимые изменения в файл конфигурации <br/>
-:pencil: `webpack.config.js`
+Установим загрузчик **file-loader**
 
     npm install --save-dev file-loader
+
+и внесем необходимые изменения в файл конфигурации
 
 ###### :pencil: webpack.config.js
 ```javascript
