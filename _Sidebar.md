@@ -217,6 +217,7 @@
 * [:not(:defined)](not-defined)
 * [Shadow DOM](Shadow-DOM)
 * [Custom elements](Custom-elements)
+* [whenDefined](whenDefined)
 * [&lt;template>](template)
 * [💼 Homework](hw-14)
 
