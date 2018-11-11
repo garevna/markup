@@ -36,7 +36,7 @@ DocumentFragment содержит DOM-элементы ( nodes ), как и об
 Это шаблон разметки, который при необходимости может быть вставлен в нужное время в нужном месте
 
 ### :mortar_board: content
-###### Свойство  _content_  элемента  `template`  содержит код разметки, находящийся  в контейнере <code>&lt;template>...&lt;/template></code>
+Свойство  _**`content`**_  элемента  `template`  содержит код разметки, находящийся  в контейнере <code>&lt;template>...&lt;/template></code>
 
 
 :coffee: :two:
