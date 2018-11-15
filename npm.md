@@ -236,3 +236,40 @@ npm   будет добавлять соответствующие записи 
 Для отмены установленной связи используем команду:
 
     npm unlink images
+
+***
+## <img src="https://lh5.googleusercontent.com/2FfCuZPJhm_n2X-WXG_jfSFI-KLNUNs2_2FknRMEsD0hZDqLFprSadHU0HWXmHj74VljRiCJ6grDmpMZt-05vjwouVLO_ZZ65F1N_P28hyVzQWn7eMAfq2mWieGiDOxPrNUpaeFHvy8fcQc" width="50"/> package-lock.json
+
+Каждый раз при установке новой зависимости NPM автоматически генерирует lock-файл с именем package-lock.json
+
+lock-файл - это "слепок" текущего дерева зависимостей, который точно описывает дерево папок в директории `node_modules`
+
+:warning: **_`package-lock.json`_** никогда не будет опубликован, даже если его явно включить в сборку
+
+>> Указание конкретной версии пакета в **_`package.json`_** фиксирует зависимости только верхнего уровня
+
+>> Если ваше приложение будет запущено на другой машине ( пользователя ), то могут быть установлены другие версии пакетов более глубокого уровня, что может "сломать" работу приложения
+
+>> Для того, чтобы у конечного пользователя вашего приложения всегда воспроизводилось дерево зависимостей, идентичное вашему на момент публикации, следует использовать **_`shrinkwrap`_** для создания точного слепка этих зависимостей и публикации этого слепка вместе с приложением
+
+***
+
+### <img src="https://lh5.googleusercontent.com/2FfCuZPJhm_n2X-WXG_jfSFI-KLNUNs2_2FknRMEsD0hZDqLFprSadHU0HWXmHj74VljRiCJ6grDmpMZt-05vjwouVLO_ZZ65F1N_P28hyVzQWn7eMAfq2mWieGiDOxPrNUpaeFHvy8fcQc" width="50"/> npm shrinkwrap
+Каждый раз, когда выполняется развертывание ( _deploy_ ) приложения, Node.js запускает **_npm_**
+
+Развертывание может существенно затянуться за счет установки новых версий пакетов, указанных в списке зависимостей вашего приложения
+
+Избежать обновления зависимостей можно путем создания файла **_npm-shrinkwrap.json_**, который фиксирует текущие версии
+зависимостей вашего приложения
+
+Формат этого файла полностью идентичен формату **_`package-lock.json`_**
+
+:warning: **_`npm-shrinkwrap.json`_** может быть частью опубликованного пакета
+
+Если выполнить команду **`npm shrinkwrap`** в папке, в которой уже есть **_`package-lock.json`_**,
+
+**npm** переименует **_`package-lock.json`_** в **_`npm-shrinkwrap.json`_**
+
+Если в папке проекта будут оба файла, **npm** будет использовать **_`npm-shrinkwrap.json`_** и игнорировать **_`package-lock.json`_**
+
+###### [npm shrinkwrap](https://javascript.tutorialhorizon.com/2015/03/21/what-is-npm-shrinkwrap-and-when-is-it-needed/)
