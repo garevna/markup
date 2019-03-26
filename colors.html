@@ -1,0 +1,821 @@
+
+<style>
+table
+{
+	width:100%;
+	border:1px inset #fff;
+}
+tr, td
+{
+	border:1px inset #fff;
+}
+td
+{
+	padding-left:10px;
+}
+.fixed-head
+{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:auto;
+	z-index:125;
+	background-color:#dde;
+}
+.flex-div
+{
+	display:-webkit-flex;
+	-webkit-flex-flow: row nowrap;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;
+	max-width:500px;
+}
+.list_item
+{
+	-webkit-flex-basis:70px;
+	-webkit-flex-grow:1;
+	display:block;
+	margin-left:15px;
+	margin-right:15px;
+	min-width:10%;
+	margin-top:5px;
+	width:100px;
+}
+</style>
+</head>
+
+<body>
+  <div class="fixed-head">
+    <h1>&nbsp;&nbsp;<img src="/html-css/module-02/colors.png" style="width:50px; height:auto" "alt=""/>Веб-палитра</h1>
+    <div class="flex-div" style="background-color:#595959; color:white;">
+      <div class="list_item">Name</div>
+          <div class="list_item">Color</div>
+          <div class="list_item">Value</div>
+        </div>
+     </div>
+  </div><!--end of fixed-head -->
+<div style="position:relative; top:100px; overflow:auto; background-color:#DDDDEE; height:300px;" onmouseover="this.style.height=(window.innerHeight*0.9-100)+'px'">
+  <div class="flex-div"> 
+    <div class="list_item">aliceblue</div>
+    <div class="list_item" style="background-color:#f0f8ff">&nbsp;</div>
+    <div class="list_item">#f0f8ff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">antiquewhite</div>
+    <div class="list_item" style="background-color:#faebd7" width="40px">&nbsp;</div>
+    <div class="list_item">#faebd7</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">aqua</div>
+    <div class="list_item" style="background-color:#00ffff" width="40px">&nbsp;</div>
+    <div class="list_item">#00ffff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">aquamarine</div>
+    <div class="list_item" style="background-color:#7fffd4">&nbsp;</div>
+    <div class="list_item">#7fffd4</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">azure</div>
+    <div class="list_item" style="background-color:#f0ffff">&nbsp;</div>
+    <div class="list_item">#f0ffff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">beige</div>
+    <div class="list_item" style="background-color:#f5f5dc">&nbsp;</div>
+    <div class="list_item">#f5f5dc</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">bisque</div>
+    <div class="list_item" style="background-color:#ffe4c4">&nbsp;</div>
+    <div class="list_item">#ffe4c4</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">black</div>
+    <div class="list_item" style="background-color:black">&nbsp;</div>
+    <div class="list_item">#000000</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">blanchedalmond</div>
+    <div class="list_item" style="background-color:#ffebcd">&nbsp;</div>
+    <div class="list_item">#ffebcd</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">blue</div>
+    <div class="list_item" style="background-color:blue">&nbsp;</div>
+    <div class="list_item">#0000ff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">blueviolet</div>
+    <div class="list_item" style="background-color:#8a2be2">&nbsp;</div>
+    <div class="list_item">#8a2be2</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">brown</div>
+    <div class="list_item" style="background-color:#a52a2a">&nbsp;</div>
+    <div class="list_item">#a52a2a</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">burlywood</div>
+    <div class="list_item" style="background-color:#de8887">&nbsp;</div>
+    <div class="list_item">#de8887</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">cadetblue</div>
+    <div class="list_item" style="background-color:#5f9ea0">&nbsp;</div>
+    <div class="list_item">#5f9ea0</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">chocolate</div>
+    <div class="list_item" style="background-color:#d2691e">&nbsp;</div>
+    <div class="list_item">#d2691e</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">coral</div>
+    <div class="list_item" style="background-color:#ff7f50">&nbsp;</div>
+    <div class="list_item">#ff7f50</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">cornflowerblue</div>
+    <div class="list_item" style="background-color:#6495ed">&nbsp;</div>
+    <div class="list_item">#6495ed</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">cornsilk</div>
+    <div class="list_item" style="background-color:#fff8dc">&nbsp;</div>
+    <div class="list_item">#fff8dc</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">crimson</div>
+    <div class="list_item" style="background-color:#dc143c">&nbsp;</div>
+    <div class="list_item">#dc143c</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">cyan</div>
+    <div class="list_item" style="background-color:cyan">&nbsp;</div>
+    <div class="list_item">#00ffff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">darkblue</div>
+    <div class="list_item" style="background-color:#00008b">&nbsp;</div>
+    <div class="list_item">#00008b</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">darkcyan</div>
+    <div class="list_item" style="background-color:#008b8b">&nbsp;</div>
+    <div class="list_item">#008b8b</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkgoldenrod</div>
+    <div class="list_item" style="background-color:darkgoldenrod">&nbsp;</div>
+    <div class="list_item">#b8860b</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">darkgray</div>
+    <div class="list_item" style="background-color:darkgray">&nbsp;</div>
+    <div class="list_item">#a9a9a9</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">darkgreen</div>
+    <div class="list_item" style="background-color:darkgreen">&nbsp;</div>
+    <div class="list_item">#006400</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">darkkhaki</div>
+    <div class="list_item" style="background-color:darkkhaki">&nbsp;</div>
+    <div class="list_item">#bdb76d</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkmagenta</div>
+    <div class="list_item" style="background-color:darkmagenta">&nbsp;</div>
+    <div class="list_item">#8b008b</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkolivegreen</div>
+    <div class="list_item" style="background-color:darkolivegreen">&nbsp;</div>
+    <div class="list_item">#556b2f</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkorange</div>
+    <div class="list_item" style="background-color:darkorange">&nbsp;</div>
+    <div class="list_item">#ff8c00</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkorchid</div>
+    <div class="list_item" style="background-color:darkorchid">&nbsp;</div>
+    <div class="list_item">#9932cc</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkred</div>
+    <div class="list_item" style="background-color:darkred">&nbsp;</div>
+    <div class="list_item">#8b0000</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darksalmon</div>
+    <div class="list_item" style="background-color:darksalmon">&nbsp;</div>
+    <div class="list_item">#e9967a</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkseagreen</div>
+    <div class="list_item" style="background-color:darkseagreen">&nbsp;</div>
+    <div class="list_item">#8fbc8f</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkslateblue</div>
+    <div class="list_item" style="background-color:darkslateblue">&nbsp;</div>
+    <div class="list_item">#483d8b</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkslategray</div>
+    <div class="list_item" style="background-color:darkslategray">&nbsp;</div>
+    <div class="list_item">#2f4f4f</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkturquoise</div>
+    <div class="list_item" style="background-color:darkturquoise">&nbsp;</div>
+    <div class="list_item">#00ced1</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">darkviolet</div>
+    <div class="list_item" style="background-color:darkviolet">&nbsp;</div>
+    <div class="list_item">#9400d3</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">deeppink</div>
+    <div class="list_item" style="background-color:deeppink">&nbsp;</div>
+    <div class="list_item">#ff1493</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">deepskyblue</div>
+    <div class="list_item" style="background-color:deepskyblue">&nbsp;</div>
+    <div class="list_item">#00bfff</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">dimgray</div>
+    <div class="list_item" style="background-color:dimgray">&nbsp;</div>
+    <div class="list_item">#696969</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">dodgerblue</div>
+    <div class="list_item" style="background-color:dodgerblue">&nbsp;</div>
+    <div class="list_item">#1e90ff</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">firebrick</div>
+    <div class="list_item" style="background-color:firebrick">&nbsp;</div>
+    <div class="list_item">#b22222</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">floralwhite</div>
+    <div class="list_item" style="background-color:floralwhite">&nbsp;</div>
+    <div class="list_item">#fffaf0</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">forestgreen</div>
+    <div class="list_item" style="background-color:forestgreen">&nbsp;</div>
+    <div class="list_item">#228b22</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">fuchsia</div>
+    <div class="list_item" style="background-color:fuchsia">&nbsp;</div>
+    <div class="list_item">#ff00ff</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">gainsboro</div>
+    <div class="list_item" style="background-color:gainsboro">&nbsp;</div>
+    <div class="list_item">#dcdcdc</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">ghostwhite</div>
+    <div class="list_item" style="background-color:ghostwhite">&nbsp;</div>
+    <div class="list_item">#f8f8ff</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">gold</div>
+    <div class="list_item" style="background-color:gold">&nbsp;</div>
+    <div class="list_item">#ffd700</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">goldenrod</div>
+    <div class="list_item" style="background-color:goldenrod">&nbsp;</div>
+    <div class="list_item">#daa520</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">gray</div>
+    <div class="list_item" style="background-color:gray">&nbsp;</div>
+    <div class="list_item">#808080</div>
+  </div>
+
+  <div class="flex-div">
+    <div class="list_item">grey</div>
+    <div class="list_item" style="background-color:#808080">&nbsp;</div>
+    <div class="list_item">#808080</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">green</div>
+    <div class="list_item" style="background-color:green">&nbsp;</div>
+    <div class="list_item">#008000</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">greenyellow</div>
+    <div class="list_item" style="background-color:greenyellow">&nbsp;</div>
+    <div class="list_item">#adff2f</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">honeydew</div>
+    <div class="list_item" style="background-color:honeydew">&nbsp;</div>
+    <div class="list_item">#f0fff0</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">hotpink</div>
+    <div class="list_item" style="background-color:hotpink">&nbsp;</div>
+    <div class="list_item">#ff69b4</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">indianred</div>
+    <div class="list_item" style="background-color:indianred">&nbsp;</div>
+    <div class="list_item">#cd5c5c</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">indigo</div>
+    <div class="list_item" style="background-color:indigo">&nbsp;</div>
+    <div class="list_item">#4b0082</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">ivory</div>
+    <div class="list_item" style="background-color:ivory">&nbsp;</div>
+    <div class="list_item">#fffff0</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">khaki</div>
+    <div class="list_item" style="background-color:khaki">&nbsp;</div>
+    <div class="list_item">#f0e68c</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lavender</div>
+    <div class="list_item" style="background-color:lavender">&nbsp;</div>
+    <div class="list_item">#e6e6fa</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lavenderblush</div>
+    <div class="list_item" style="background-color:lavenderblush">&nbsp;</div>
+    <div class="list_item">fff0f5</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lemonchiffon</div>
+    <div class="list_item" style="background-color:lemonchiffon">&nbsp;</div>
+    <div class="list_item">#fffacd</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightblue</div>
+    <div class="list_item" style="background-color:lightblue">&nbsp;</div>
+    <div class="list_item">#add8e6</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightcoral</div>
+    <div class="list_item" style="background-color:lightcoral">&nbsp;</div>
+    <div class="list_item">#f08080</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightcyan</div>
+    <div class="list_item" style="background-color:lightcyan">&nbsp;</div>
+    <div class="list_item">#e0ffff</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightgoldenrodyellow</div>
+    <div class="list_item" style="background-color:lightgoldenrodyellow">&nbsp;</div>
+    <div class="list_item">#fafad2</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightgreen</div>
+    <div class="list_item" style="background-color:lightgreen">&nbsp;</div>
+    <div class="list_item">#90ee90</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightpink</div>
+    <div class="list_item" style="background-color:lightpink">&nbsp;</div>
+    <div class="list_item">#ffb6c1</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightsalmon</div>
+    <div class="list_item" style="background-color:lightsalmon">&nbsp;</div>
+    <div class="list_item">#ffa07a</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightseagreen</div>
+    <div class="list_item" style="background-color:lightseagreen">&nbsp;</div>
+    <div class="list_item">#20b2aa</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightskyblue</div>
+    <div class="list_item" style="background-color:lightskyblue">&nbsp;</div>
+    <div class="list_item">#87cefa</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightslategray</div>
+    <div class="list_item" style="background-color:lightslategray">&nbsp;</div>
+    <div class="list_item">#778899</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">lightsteelblue</div>
+    <div class="list_item" style="background-color:lightsteelblue">&nbsp;</div>
+    <div class="list_item">#b0c4de</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">lightyellow</div>
+    <div class="list_item" style="background-color:lightyellow">&nbsp;</div>
+    <div class="list_item">#ffffe0</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">lime</div>
+    <div class="list_item" style="background-color:lime">&nbsp;</div>
+    <div class="list_item">#00ff00</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">limegreen</div>
+    <div class="list_item" style="background-color:limegreen">&nbsp;</div>
+    <div class="list_item">#32cd32</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">linen</div>
+    <div class="list_item" style="background-color:linen">&nbsp;</div>
+    <div class="list_item">#faf0f6</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">magenta</div>
+    <div class="list_item" style="background-color:magenta">&nbsp;</div>
+    <div class="list_item">#ff00ff</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">maroon</div>
+    <div class="list_item" style="background-color:maroon">&nbsp;</div>
+    <div class="list_item">#800000</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumaquamarine</div>
+    <div class="list_item" style="background-color:mediumaquamarine">&nbsp;</div>
+    <div class="list_item">#66cdaa</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumblue</div>
+    <div class="list_item" style="background-color:mediumblue">&nbsp;</div>
+    <div class="list_item">#0000cd</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumorchid</div>
+    <div class="list_item" style="background-color:mediumorchid">&nbsp;</div>
+    <div class="list_item">#ba55d3</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumpurple</div>
+    <div class="list_item" style="background-color:mediumpurple">&nbsp;</div>
+    <div class="list_item">#9370db</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">mediumseagreen</div>
+    <div class="list_item" style="background-color:mediumseagreen">&nbsp;</div>
+    <div class="list_item">#3cb371</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumslateblue</div>
+    <div class="list_item" style="background-color:mediumslateblue">&nbsp;</div>
+    <div class="list_item">#7b68ee</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumspringgreen</div>
+    <div class="list_item" style="background-color:mediumspringgreen">&nbsp;</div>
+    <div class="list_item">#00fa9a</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumturquoise</div>
+    <div class="list_item" style="background-color:mediumturquoise">&nbsp;</div>
+    <div class="list_item">#48d1cc</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mediumvioletred</div>
+    <div class="list_item" style="background-color:mediumvioletred">&nbsp;</div>
+    <div class="list_item">#c71585</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">midnightblue</div>
+    <div class="list_item" style="background-color:midnightblue">&nbsp;</div>
+    <div class="list_item">#191970</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">mintcream</div>
+    <div class="list_item" style="background-color:mintcream">&nbsp;</div>
+    <div class="list_item">#f5fffa</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">mistyrose</div>
+    <div class="list_item" style="background-color:mistyrose">&nbsp;</div>
+    <div class="list_item">#ffe4e1</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">moccasin</div>
+    <div class="list_item" style="background-color:moccasin">&nbsp;</div>
+    <div class="list_item">#ffe4b5</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">navajowhite</div>
+    <div class="list_item" style="background-color:navajowhite">&nbsp;</div>
+    <div class="list_item">#ffdead</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">navy</div>
+    <div class="list_item" style="background-color:navy">&nbsp;</div>
+    <div class="list_item">#000080</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">oldlace</div>
+    <div class="list_item" style="background-color:oldlace">&nbsp;</div>
+    <div class="list_item">#fdf5e6</div>
+  </div>
+
+  <div class="flex-div"> 
+    <div class="list_item">olive</div>
+    <div class="list_item" style="background-color:olive">&nbsp;</div>
+    <div class="list_item">#808000</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">olivedrab</div>
+    <div class="list_item" style="background-color:olivedrab">&nbsp;</div>
+    <div class="list_item">#6b8e23</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">orange</div>
+    <div class="list_item" style="background-color:orange">&nbsp;</div>
+    <div class="list_item">#ffa500</div>
+  </div>
+  
+  <div class="flex-div"> 
+    <div class="list_item">orangered</div>
+    <div class="list_item" style="background-color:orangered">&nbsp;</div>
+    <div class="list_item">#ff4500</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">orchid</div>
+    <div class="list_item" style="background-color:orchid">&nbsp;</div>
+    <div class="list_item">#da70d6</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">palegoldenrod</div>
+    <div class="list_item" style="background-color:palegoldenrod">&nbsp;</div>
+    <div class="list_item">#eee8aa</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">palegreen</div>
+    <div class="list_item" style="background-color:palegreen">&nbsp;</div>
+    <div class="list_item">#98fb98</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">paleturquoise</div>
+    <div class="list_item" style="background-color:paleturquoise">&nbsp;</div>
+    <div class="list_item">#afeeee</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">palevioletred</div>
+    <div class="list_item" style="background-color:palevioletred">&nbsp;</div>
+    <div class="list_item">#db7093</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">papayawhip</div>
+    <div class="list_item" style="background-color:papayawhip">&nbsp;</div>
+    <div class="list_item">#ffefd5</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">peachpuff</div>
+    <div class="list_item" style="background-color:peachpuff">&nbsp;</div>
+    <div class="list_item">#ffdab9</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">peru</div>
+    <div class="list_item" style="background-color:peru">&nbsp;</div>
+    <div class="list_item">#cd853f</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">pink</div>
+    <div class="list_item" style="background-color:pink">&nbsp;</div>
+    <div class="list_item">#ffc0cb</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">plum</div>
+    <div class="list_item" style="background-color:plum">&nbsp;</div>
+    <div class="list_item">#dda0dd</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">powderblue</div>
+    <div class="list_item" style="background-color:powderblue">&nbsp;</div>
+    <div class="list_item">#b0e0e6</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">purple</div>
+    <div class="list_item" style="background-color:purple">&nbsp;</div>
+    <div class="list_item">#800080</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">red</div>
+    <div class="list_item" style="background-color:red">&nbsp;</div>
+    <div class="list_item">#ff0000</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">rosybrown</div>
+    <div class="list_item" style="background-color:rosybrown">&nbsp;</div>
+    <div class="list_item">#bc8f8f</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">royalblue</div>
+    <div class="list_item" style="background-color:royalblue">&nbsp;</div>
+    <div class="list_item">#4169e1</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">salmon</div>
+    <div class="list_item" style="background-color:salmon">&nbsp;</div>
+    <div class="list_item">#fa8072</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">sandybrown</div>
+    <div class="list_item" style="background-color:sandybrown">&nbsp;</div>
+    <div class="list_item">#f4a460</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">seagreen</div>
+    <div class="list_item" style="background-color:#2e2b57">&nbsp;</div>
+    <div class="list_item">#2e2b57</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">seashell</div>
+    <div class="list_item" style="background-color:#ffe5ee">&nbsp;</div>
+    <div class="list_item">#ffe5ee</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">sienna</div>
+    <div class="list_item" style="background-color:#a0522d">&nbsp;</div>
+    <div class="list_item">#a0522d</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">silver</div>
+    <div class="list_item" style="background-color:silver">&nbsp;</div>
+    <div class="list_item">#c0c0c0</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">skyblue</div>
+    <div class="list_item" style="background-color:#87ceeb">&nbsp;</div>
+    <div class="list_item">#87ceeb</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">slateblue</div>
+    <div class="list_item" style="background-color:#6a5acd">&nbsp;</div>
+    <div class="list_item">#6a5acd</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">slategray</div>
+    <div class="list_item" style="background-color:#708090">&nbsp;</div>
+    <div class="list_item">#708090</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">snow</div>
+    <div class="list_item" style="background-color:#fffafa">&nbsp;</div>
+    <div class="list_item">#fffafa</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">springgreen</div>
+    <div class="list_item" style="background-color:#00ff7f">&nbsp;</div>
+    <div class="list_item">#00ff7f</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">steelblue</div>
+    <div class="list_item" style="background-color:#4682b4">&nbsp;</div>
+    <div class="list_item">#4682b4</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">tan</div>
+    <div class="list_item" style="background-color:#d2b48c">&nbsp;</div>
+    <div class="list_item">#d2b48c</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">teal</div>
+    <div class="list_item" style="background-color:#008080">&nbsp;</div>
+    <div class="list_item">#008080</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">thistle</div>
+    <div class="list_item" style="background-color:#d8bfd8">&nbsp;</div>
+    <div class="list_item">#d8bfd8</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">tomato</div>
+    <div class="list_item" style="background-color:#ff6347">&nbsp;</div>
+    <div class="list_item">#ff6347</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">turquoise</div>
+    <div class="list_item" style="background-color:#40e0d0">&nbsp;</div>
+    <div class="list_item">#40e0d0</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">violet</div>
+    <div class="list_item" style="background-color:violet">&nbsp;</div>
+    <div class="list_item">#ee82ee</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">wheat</div>
+    <div class="list_item" style="background-color:wheat">&nbsp;</div>
+    <div class="list_item">#f5deb3</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">white</div>
+    <div class="list_item" style="background-color:white">&nbsp;</div>
+    <div class="list_item">#ffffff</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">whitesmoke</div>
+    <div class="list_item" style="background-color:whitesmoke">&nbsp;</div>
+    <div class="list_item">#f5f5f5</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">yellow</div>
+    <div class="list_item" style="background-color:yellow">&nbsp;</div>
+    <div class="list_item">#ffff00</div>
+  </div>
+  <div class="flex-div"> 
+    <div class="list_item">yellowgreen</div>
+    <div class="list_item" style="background-color:yellowgreen">&nbsp;</div>
+    <div class="list_item">#9acd32</div>
+  </div>
+</div>
+
